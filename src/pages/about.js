@@ -6,9 +6,11 @@ import styled from "styled-components"
 import NavBar from "../components/navbar"
 import "../styles/main.css"
 
-const IndexPage = () => (
+const About = () => (
   <div>
-    <NavBar/>
+    <NavBar about="selected"/>
+    <p>
+    </p>
     <Test />
   </div>
 )
@@ -17,4 +19,4 @@ const Test = styled.div`
   height: 150vh;
 `
 
-export default IndexPage
+export default About

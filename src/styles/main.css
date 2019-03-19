@@ -20,19 +20,17 @@ a {
   color: rgb(31, 31, 31);
 }
 
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.selected::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #c7dafc;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 1px;
+  top: 0;
+  bottom: 1;
+  height: 0.6em;
+  z-index: -1;
+  border-radius: 4px;
 }
