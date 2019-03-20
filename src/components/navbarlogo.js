@@ -1,7 +1,7 @@
 import React from "react"
 import Styled from "styled-components"
 import { Link } from "gatsby"
-import logo from "../../images/cru-hash.png"
+import logo from "../images/cru-hash.png"
 
 const NavBarLogo = () => (
   <Container>

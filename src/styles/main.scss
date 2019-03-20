@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Lato", sans-serif;
-  background-color: rgb(247, 247, 247);
+  background-color: rgba(245, 245, 245, 0.89);
 }
 
 h1,
@@ -34,18 +34,15 @@ a {
   height: 0.7em;
   z-index: -1;
   border-radius: 4px;
+
 }
 
-.unSelected:active::after{
-  background:#277dff8e;
+.unSelected:active::after {
+  background: #2b27ff8e;
+}
+
+li {
+  list-style-type: none;
 }
 
 
-
-// For animating a shadow on page reload to make page transitions with the nav bar smoother
-@keyframes shadowStart {
-  50% {box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);}
-}
-@-webkit-keyframes shadowStart {
-  100% {box-shadow: none;}
-}

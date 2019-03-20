@@ -6,9 +6,9 @@ import styled from "styled-components"
 import NavBar from "../components/navbar"
 import "../styles/main.scss"
 
-const Technologies = () => (
+const People = () => (
   <div>
-    <NavBar technologies="selected" />
+    <NavBar people="people" />
     <Test />
   </div>
 )
@@ -17,4 +17,4 @@ const Test = styled.div`
   height: 150vh;
 `
 
-export default Technologies
+export default People
