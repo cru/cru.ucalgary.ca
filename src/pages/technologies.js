@@ -4,7 +4,7 @@ import styled from "styled-components"
 /*import { Link } from "gatsby"*/
 
 import NavBar from "../components/navbar"
-import "../styles/main.css"
+import "../styles/main.scss"
 
 const Technologies = () => (
   <div>

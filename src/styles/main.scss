@@ -20,17 +20,27 @@ a {
   color: rgb(31, 31, 31);
 }
 
+.unSelected:hover::after,
 .selected::after {
   content: "";
   position: absolute;
   width: 100%;
-  background: #c7dafc;
+  background: #277dff5b;
   left: 0;
-  margin-top: 10px;
-  margin-left: 1px;
+  margin-top: 9px;
+  margin-left: 2px;
   top: 0;
   bottom: 1;
-  height: 0.6em;
+  height: 0.7em;
   z-index: -1;
   border-radius: 4px;
+}
+
+
+// For animating a shadow on page reload to make page transitions with the nav bar smoother
+@keyframes shadowStart {
+  50% {box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);}
+}
+@-webkit-keyframes shadowStart {
+  100% {box-shadow: none;}
 }
