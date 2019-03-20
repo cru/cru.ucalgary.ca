@@ -36,6 +36,11 @@ a {
   border-radius: 4px;
 }
 
+.unSelected:active::after{
+  background:#277dff8e;
+}
+
+
 
 // For animating a shadow on page reload to make page transitions with the nav bar smoother
 @keyframes shadowStart {

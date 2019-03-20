@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 /*import { Link } from "gatsby"*/
 
-import NavBar from "../components/navbar"
+import NavBar from "../components/NavBar/navbar"
 import "../styles/main.scss"
 
 const Services = () => (
