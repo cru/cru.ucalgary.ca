@@ -9,6 +9,7 @@ import "../styles/main.scss"
 const People = () => (
   <div>
     <NavBar about="selected" subSelected="people" />
+    <h1>People</h1>
     <Test />
   </div>
 )

@@ -10,6 +10,7 @@ const AboutUs = () => (
   <div>
     <NavBar about="selected" subSelected="aboutus" />
     <p />
+    <h1>About Us</h1>
     <Test />
   </div>
 )

@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Styled from "styled-components"
 
 import NavbarLogo from "./navbarlogo.js"
+import NavbarUofC from "./navbaruofc"
 import NavBarLinks from "./navbarlinks.js"
 import NavbarDropDown from "./navbardropdown.js"
 
@@ -17,11 +18,14 @@ class NavBar extends Component {
           selected={about}
           subSelected={subSelected}
         />
-        
-        <LinkContainer>
-          <NavBarLinks page="/services" text="services" selected={services} />
-        </LinkContainer>
 
+        <SingleLinkContainer>
+          <NavBarLinks page="/services" text="services" selected={services} />
+        </SingleLinkContainer>
+
+        <ImgLinkContainer>
+          <NavbarUofC />
+        </ImgLinkContainer>
       </Container>
     )
   }
@@ -31,6 +35,7 @@ export default NavBar
 
 /* Styles */
 const Container = Styled.div`
+  display: flex;
   background-color: white;
   outline: 1px solid #D8D8D8;
   width: 100%;
@@ -40,7 +45,6 @@ const Container = Styled.div`
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  display: flex;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   :hover {
@@ -49,8 +53,12 @@ const Container = Styled.div`
   }
 `
 
-const LinkContainer = Styled.div`
+const SingleLinkContainer = Styled.div`
     margin: 27px;
     margin-left: 20px;
     margin-right: 20px;
+`
+const ImgLinkContainer = Styled.div`
+    margin-left: auto;
+    margin-right:20px;
 `
