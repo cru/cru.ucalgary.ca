@@ -1,25 +1,32 @@
-import React from "react"
+import React, { Component } from "react"
 import Styled from "styled-components"
 
 import NavbarLogo from "./navbarlogo.js"
 import NavBarLinks from "./navbarlinks.js"
 import NavbarDropDown from "./navbardropdown.js"
 
+class NavBar extends Component {
+  render() {
+    const { about, subSelected, services } = this.props
+    return (
+      <Container>
+        <NavbarLogo />
+        <NavbarDropDown
+          page={["aboutus", "people"]}
+          text="about"
+          selected={about}
+          subSelected={subSelected}
+        />
+        
+        <LinkContainer>
+          <NavBarLinks page="/services" text="services" selected={services} />
+        </LinkContainer>
 
-const NavBar = props => (
-  <Container>
-    <NavbarLogo />
-    <NavBarLinks page="/about" text="about" selected={props.about} />
-    <NavBarLinks page="/services" text="services" selected={props.services} />
-    <NavBarLinks
-      page="/technologies"
-      text="technologies"
-      selected={props.technologies}
-    />
-    <NavbarDropDown text="people" selected = {props.people} />
+      </Container>
+    )
+  }
+}
 
-  </Container>
-)
 export default NavBar
 
 /* Styles */
@@ -40,4 +47,10 @@ const Container = Styled.div`
     outline: 0px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
   }
+`
+
+const LinkContainer = Styled.div`
+    margin: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
 `

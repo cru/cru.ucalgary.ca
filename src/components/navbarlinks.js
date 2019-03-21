@@ -15,11 +15,7 @@ const NavBarLinks = props => (
 export default NavBarLinks
 
 const LinkText = Styled.div`
-    pointer-events:all;        
-    z-index:-2;
-    margin: 27px;
-    margin-left: 20px;
-    margin-right: 20px;
+    pointer-events:all;   
     font-size: 14.5px;
     font-weight: 400;
     position: relative;
