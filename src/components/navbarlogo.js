@@ -13,16 +13,16 @@ const NavBarLogo = () => (
 export default NavBarLogo
 
 const Container = Styled.div`
-  width: 45px;
-  height: 45px;
-  margin: 10px;
+  width: 43px;
+  height: 43px;
+  margin: 11px;
   margin-right: 20px;
   margin-left: 40px;
 `
 
 const LogoImg = Styled.img`
-  width: 45px;
-  height: 45px;
+  width: 43px;
+  height: 43px;
   padding:3px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 50%;

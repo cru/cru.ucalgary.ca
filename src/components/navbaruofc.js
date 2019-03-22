@@ -11,8 +11,7 @@ const NavBarUofC = () => (
   <Container>
     <a href="https://www.ucalgary.ca/">
       <LogoImg src={logo} />
-
-      <FontAwesomeIcon className="test" icon="link" />
+      <FontAwesomeIcon className="linkIcon" icon="link" />
     </a>
   </Container>
 )
@@ -34,7 +33,7 @@ const Container = Styled.div`
       box-shadow: none;
 
     }
-    .test{
+    .linkIcon{
       padding:2px;
       margin-bottom:7px;
       margin-left:3px;

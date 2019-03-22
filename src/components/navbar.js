@@ -12,16 +12,19 @@ class NavBar extends Component {
     return (
       <Container>
         <NavbarLogo />
-        <NavbarDropDown
-          page={["aboutus", "people"]}
-          text="about"
-          selected={about}
-          subSelected={subSelected}
-        />
 
-        <SingleLinkContainer>
+        <LinkContainer>
+          <NavbarDropDown
+            page={["aboutus", "people"]}
+            text="about"
+            selected={about}
+            subSelected={subSelected}
+          />
+        </LinkContainer>
+
+        <LinkContainer>
           <NavBarLinks page="/services" text="services" selected={services} />
-        </SingleLinkContainer>
+        </LinkContainer>
 
         <ImgLinkContainer>
           <NavbarUofC />
@@ -35,6 +38,7 @@ export default NavBar
 
 /* Styles */
 const Container = Styled.div`
+  max-width:1400px;
   display: flex;
   background-color: white;
   outline: 1px solid #D8D8D8;
@@ -53,8 +57,8 @@ const Container = Styled.div`
   }
 `
 
-const SingleLinkContainer = Styled.div`
-    margin: 27px;
+const LinkContainer = Styled.div`
+    margin: 26px;
     margin-left: 20px;
     margin-right: 20px;
 `

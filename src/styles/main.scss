@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
+$brand-blue: rgb(12, 122, 192);
+
 html,
 body {
   margin: 0;
@@ -34,7 +36,6 @@ a {
   height: 0.7em;
   z-index: -1;
   border-radius: 4px;
-
 }
 
 .unSelected:active::after {
@@ -44,5 +45,3 @@ a {
 li {
   list-style-type: none;
 }
-
-
