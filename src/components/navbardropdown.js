@@ -4,7 +4,6 @@ import NavBarLinks from "./navbarlinks"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
-import "../styles/main.scss"
 
 library.add(faCaretDown)
 
@@ -63,9 +62,9 @@ const Menu = Styled.div`
   position: absolute;
   z-index:-1;
   padding-top:8px;
-  outline: 1.5px solid #f9f9f9; 
-  background-color:white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+  background-color: ${props => props.theme.navBarPrimary};
+  outline: 1.5px solid ${props => props.theme.navBarAccent}; 
+  box-shadow: ${props => props.theme.boxShadow};
   li {
     list-style-type: none;
   }

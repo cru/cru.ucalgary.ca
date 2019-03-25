@@ -1,34 +1,38 @@
 import React, { Component } from "react"
-import Styled from "styled-components"
+import Styled, { ThemeProvider } from "styled-components"
 import NavbarLogo from "./navbarlogo.js"
 import NavbarUofC from "./navbaruofc"
 import NavBarLinks from "./navbarlinks.js"
 import NavbarDropDown from "./navbardropdown.js"
+import theme from "./theme"
+
 
 class NavBar extends Component {
   render() {
     const { about, subSelected, services } = this.props
     return (
-      <Container>
-        <LinkSpace />
-        <div style={{ marginTop: 5 }}>
-          <NavbarLogo />
-        </div>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <LinkSpace />
+          <div style={{ marginTop: 5 }}>
+            <NavbarLogo />
+          </div>
 
-        <LinkSpace />
-        <NavbarDropDown
-          page={["aboutus", "people"]}
-          text="about"
-          selected={about}
-          subSelected={subSelected}
-        />
-        <LinkSpace />
-        <NavBarLinks page="/services" text="services" selected={services} />
+          <LinkSpace />
+          <NavbarDropDown
+            page={["aboutus", "people"]}
+            text="about"
+            selected={about}
+            subSelected={subSelected}
+          />
+          <LinkSpace />
+          <NavBarLinks page="/services" text="services" selected={services} />
 
-        <ImgLinkContainer>
-          <NavbarUofC />
-        </ImgLinkContainer>
-      </Container>
+          <ImgLinkContainer>
+            <NavbarUofC />
+          </ImgLinkContainer>
+        </Container>
+      </ThemeProvider>
     )
   }
 }
@@ -39,8 +43,8 @@ export default NavBar
 const Container = Styled.div`
   display: flex;
   align-items: center;
-  background-color: white;
-  outline: 1px solid #D8D8D8;
+  background-color: ${props => props.theme.navBarPrimary};
+  outline: 1px solid ${props => props.theme.navBarAccent};
   width: 100%;
   height: 80px;
   margin: 0;
@@ -48,11 +52,11 @@ const Container = Styled.div`
   top:0;
   position: -webkit-sticky;
   position: sticky;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all ${props => props.theme.boxShadowTrans};
 
   :hover {
-    outline: 0px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+    outline: 0;
+    box-shadow: ${props => props.theme.boxShadow};
   }
 `
 const LinkSpace = Styled.div`

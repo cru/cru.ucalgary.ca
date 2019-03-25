@@ -13,10 +13,10 @@ export default NavBarLogo
 const LogoImg = Styled.img`
   width: 43px;
   height: 43px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all ${props => props.theme.boxShadowTrans};
   border-radius: 50%;
   :hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+    box-shadow: ${props => props.theme.boxShadow};
   }
   :active {
     box-shadow: none;

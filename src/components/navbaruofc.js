@@ -9,7 +9,11 @@ library.add(faLink)
 
 const NavBarUofC = () => (
   <Container>
-    <a href="https://www.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://www.ucalgary.ca/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <LogoImg src={logo} />
       <FontAwesomeIcon className="linkIcon" icon="link" />
     </a>
@@ -21,11 +25,10 @@ const Container = Styled.div`
     display:flex;
     padding:8px;
     padding-bottom:3px;
-
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all ${props => props.theme.boxShadowTrans};
     border-radius: 5px;
         :hover {
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+          box-shadow: ${props => props.theme.boxShadow};
     }
     :active {
       box-shadow: none;
