@@ -1,8 +1,12 @@
 import React from "react"
-import styled from "styled-components"
+import { ThemeProvider } from "styled-components"
 import NavBar from "../components/navbar"
+import "../styles/main.scss"
+
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
 
 const IndexPage = () => (
+  <ThemeProvider theme={theme}>
     <div>
       <NavBar />
       <p>
@@ -13,12 +17,8 @@ const IndexPage = () => (
         ipsum non nisi dolore non. Excepteur incididunt excepteur ipsum fugiat
         do aute sit culpa dolore officia in est consectetur irure.
       </p>
-      <Test />
+      <div style={{ height: 3000 }} />
     </div>
+  </ThemeProvider>
 )
-
-const Test = styled.div`
-  height: 150vh;
-`
-
 export default IndexPage

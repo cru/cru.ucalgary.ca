@@ -2,10 +2,7 @@ import React, { Component } from "react"
 import Styled from "styled-components"
 import NavBarLinks from "./navbarlinks"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 
-library.add(faCaretDown)
 
 class NavBarDropDown extends Component {
   render() {
@@ -40,15 +37,14 @@ export default NavBarDropDown
 
 const Container = Styled.div`
   position: relative;
-  display: inline-block;
 
-:hover .navbardropdown-menu {
-  display:flex;
-}
+  :hover .navbardropdown-menu {
+    display:flex;
+  }
 `
 
 const LinkText = Styled.a`
-  font-size: 14.5px;
+  font-size: ${props => props.theme.navBarFontSize};
   font-weight: 400;
   position: relative;
   display: inline-block;
@@ -62,6 +58,7 @@ const Menu = Styled.div`
   position: absolute;
   z-index:-1;
   padding-top:8px;
+  width:120px;
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1.5px solid ${props => props.theme.navBarAccent}; 
   box-shadow: ${props => props.theme.boxShadow};

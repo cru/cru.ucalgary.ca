@@ -1,38 +1,57 @@
 import React, { Component } from "react"
-import Styled, { ThemeProvider } from "styled-components"
+import Styled from "styled-components"
+import MenuButton from "./menubutton"
 import NavbarLogo from "./navbarlogo.js"
 import NavbarUofC from "./navbaruofc"
 import NavBarLinks from "./navbarlinks.js"
 import NavbarDropDown from "./navbardropdown.js"
-import theme from "./theme"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
+library.add(faLink)
+library.add(faCaretDown)
+library.add(faBars)
 
 class NavBar extends Component {
   render() {
     const { about, subSelected, services } = this.props
     return (
-      <ThemeProvider theme={theme}>
-        <Container>
-          <LinkSpace />
-          <div style={{ marginTop: 5 }}>
-            <NavbarLogo />
-          </div>
+      
+      <Container>
+        
+        <MenuContainer>
+          <LinkSpacing />
+          <MenuButton />
+        </MenuContainer>
 
-          <LinkSpace />
+        <LinkSpacing />
+        <div style={{ marginTop: 5 }}>
+          <NavbarLogo />
+        </div>
+        <LinkSpacing />
+
+        <LinkContainer>
           <NavbarDropDown
-            page={["aboutus", "people"]}
-            text="about"
+            text="Drop Down"
+            page={["about_us", "people"]}
             selected={about}
             subSelected={subSelected}
           />
-          <LinkSpace />
-          <NavBarLinks page="/services" text="services" selected={services} />
+        </LinkContainer>
+        <LinkSpacing />
 
-          <ImgLinkContainer>
-            <NavbarUofC />
-          </ImgLinkContainer>
-        </Container>
-      </ThemeProvider>
+        <LinkContainer>
+          <NavBarLinks page="/services" text="services" selected={services} />
+        </LinkContainer>
+
+        <RightAlign>
+          <NavbarUofC />
+        </RightAlign>
+
+        <LinkSpacing />
+      </Container>
     )
   }
 }
@@ -46,7 +65,7 @@ const Container = Styled.div`
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1px solid ${props => props.theme.navBarAccent};
   width: 100%;
-  height: 80px;
+  height: 70px;
   margin: 0;
   padding: 0;
   top:0;
@@ -59,10 +78,26 @@ const Container = Styled.div`
     box-shadow: ${props => props.theme.boxShadow};
   }
 `
-const LinkSpace = Styled.div`
-  width:33px;
+
+const LinkSpacing = Styled.div`
+  width:25px;
+  @media only screen and (max-width: ${props => props.theme.navbarBreakPoint}){
+    width:13px;
+  }
 `
-const ImgLinkContainer = Styled.div`
+const MenuContainer = Styled.div`
+  display:flex;
+    @media only screen and (min-width: ${props =>
+      props.theme.navbarBreakPoint}){
+    display:none;
+  }
+`
+
+const LinkContainer = Styled.div`
+  @media only screen and (max-width: ${props => props.theme.navbarBreakPoint}){
+    display:none;
+  }
+`
+const RightAlign = Styled.div`
     margin-left: auto;
-    margin-right:30px;
 `

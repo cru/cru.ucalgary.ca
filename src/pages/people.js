@@ -1,17 +1,16 @@
 import React from "react"
-import styled from "styled-components"
+import { ThemeProvider } from "styled-components"
 import NavBar from "../components/navbar"
 
-const People = () => (
-  <div>
-    <NavBar about="selected" subSelected="people" />
-    <h1>People</h1>
-    <Test />
-  </div>
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
+
+const PeoplePage = () => (
+  <ThemeProvider theme={theme}>
+    <div>
+      <NavBar about="selected" subSelected="people" />
+      <h1>People</h1>
+      <div style={{ height: 3000 }} />
+    </div>
+  </ThemeProvider>
 )
-
-const Test = styled.div`
-  height: 150vh;
-`
-
-export default People
+export default PeoplePage

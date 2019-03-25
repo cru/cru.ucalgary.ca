@@ -1,11 +1,7 @@
 import React from "react"
 import Styled from "styled-components"
 import logo from "../images/uc-horz-rgb.png"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
-library.add(faLink)
 
 const NavBarUofC = () => (
   <Container>
@@ -26,7 +22,7 @@ const Container = Styled.div`
     padding:8px;
     padding-bottom:3px;
     transition: all ${props => props.theme.boxShadowTrans};
-    border-radius: 5px;
+    border-radius: ${props => props.theme.borderRadius};
         :hover {
           box-shadow: ${props => props.theme.boxShadow};
     }
