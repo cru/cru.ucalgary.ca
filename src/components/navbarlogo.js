@@ -4,26 +4,15 @@ import { Link } from "gatsby"
 import logo from "../images/cru-hash.png"
 
 const NavBarLogo = () => (
-  <Container>
-    <Link to="/">
-      <LogoImg src={logo} />
-    </Link>
-  </Container>
+  <Link to="/">
+    <LogoImg src={logo} />
+  </Link>
 )
 export default NavBarLogo
-
-const Container = Styled.div`
-  width: 43px;
-  height: 43px;
-  margin: 11px;
-  margin-right: 20px;
-  margin-left: 40px;
-`
 
 const LogoImg = Styled.img`
   width: 43px;
   height: 43px;
-  padding:3px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 50%;
   :hover {
@@ -31,6 +20,5 @@ const LogoImg = Styled.img`
   }
   :active {
     box-shadow: none;
-
   }
 `

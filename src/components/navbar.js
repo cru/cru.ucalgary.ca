@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
-
 import NavbarLogo from "./navbarlogo.js"
 import NavbarUofC from "./navbaruofc"
 import NavBarLinks from "./navbarlinks.js"
@@ -11,20 +10,20 @@ class NavBar extends Component {
     const { about, subSelected, services } = this.props
     return (
       <Container>
-        <NavbarLogo />
+        <LinkSpace />
+        <div style={{ marginTop: 5 }}>
+          <NavbarLogo />
+        </div>
 
-        <LinkContainer>
-          <NavbarDropDown
-            page={["aboutus", "people"]}
-            text="about"
-            selected={about}
-            subSelected={subSelected}
-          />
-        </LinkContainer>
-
-        <LinkContainer>
-          <NavBarLinks page="/services" text="services" selected={services} />
-        </LinkContainer>
+        <LinkSpace />
+        <NavbarDropDown
+          page={["aboutus", "people"]}
+          text="about"
+          selected={about}
+          subSelected={subSelected}
+        />
+        <LinkSpace />
+        <NavBarLinks page="/services" text="services" selected={services} />
 
         <ImgLinkContainer>
           <NavbarUofC />
@@ -38,15 +37,15 @@ export default NavBar
 
 /* Styles */
 const Container = Styled.div`
-  max-width:1400px;
   display: flex;
+  align-items: center;
   background-color: white;
   outline: 1px solid #D8D8D8;
   width: 100%;
-  height: 68px;
+  height: 80px;
   margin: 0;
   padding: 0;
-  top: 0;
+  top:0;
   position: -webkit-sticky;
   position: sticky;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -56,13 +55,10 @@ const Container = Styled.div`
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
   }
 `
-
-const LinkContainer = Styled.div`
-    margin: 26px;
-    margin-left: 20px;
-    margin-right: 20px;
+const LinkSpace = Styled.div`
+  width:33px;
 `
 const ImgLinkContainer = Styled.div`
     margin-left: auto;
-    margin-right:20px;
+    margin-right:30px;
 `

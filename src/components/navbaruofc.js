@@ -9,7 +9,7 @@ library.add(faLink)
 
 const NavBarUofC = () => (
   <Container>
-    <a href="https://www.ucalgary.ca/">
+    <a href="https://www.ucalgary.ca/" target="_blank" rel="noopener noreferrer">
       <LogoImg src={logo} />
       <FontAwesomeIcon className="linkIcon" icon="link" />
     </a>
@@ -18,9 +18,7 @@ const NavBarUofC = () => (
 export default NavBarUofC
 
 const Container = Styled.div`
-    margin: 15px;
     display:flex;
-    flex-direction: column;
     padding:8px;
     padding-bottom:3px;
 

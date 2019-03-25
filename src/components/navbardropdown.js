@@ -6,9 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import "../styles/main.scss"
 
-
 library.add(faCaretDown)
-
 
 class NavBarDropDown extends Component {
   render() {
@@ -32,7 +30,7 @@ class NavBarDropDown extends Component {
           {text} <FontAwesomeIcon icon="caret-down" />
         </LinkText>
         <Menu className="navbardropdown-menu">
-          <ul style={{ paddingLeft: 22, paddingRight:22}}>{pages}</ul>
+          <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
         </Menu>
       </Container>
     )
@@ -64,7 +62,11 @@ const Menu = Styled.div`
   flex-direction:column;
   position: absolute;
   z-index:-1;
-  outline: 1px dotted #D8D8D8; 
+  padding-top:8px;
+  outline: 1.5px solid #f9f9f9; 
   background-color:white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+  li {
+    list-style-type: none;
+  }
 `
