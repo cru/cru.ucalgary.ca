@@ -1,14 +1,16 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
 import MenuButton from "./menubutton"
-import NavbarLogo from "./navbarlogo.js"
-import NavbarUofC from "./navbaruofc"
+import ImgButton from "./imgbutton"
 import NavBarLinks from "./navbarlinks.js"
 import NavbarDropDown from "./navbardropdown.js"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faLink } from "@fortawesome/free-solid-svg-icons"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+
+import uofcImg from "../images/uc-horz-rgb.png"
+import cruImg from "../images/cru_logo.png"
 
 library.add(faLink)
 library.add(faCaretDown)
@@ -18,18 +20,15 @@ class NavBar extends Component {
   render() {
     const { about, subSelected, services } = this.props
     return (
-      
       <Container>
-        
         <MenuContainer>
           <LinkSpacing />
           <MenuButton />
         </MenuContainer>
 
         <LinkSpacing />
-        <div style={{ marginTop: 5 }}>
-          <NavbarLogo />
-        </div>
+        <ImgButton logo={cruImg} to = "/"/>
+
         <LinkSpacing />
 
         <LinkContainer>
@@ -47,7 +46,7 @@ class NavBar extends Component {
         </LinkContainer>
 
         <RightAlign>
-          <NavbarUofC />
+          <ImgButton logo={uofcImg} icon="link" href = "https://www.ucalgary.ca/" />
         </RightAlign>
 
         <LinkSpacing />
@@ -71,7 +70,7 @@ const Container = Styled.div`
   top:0;
   position: -webkit-sticky;
   position: sticky;
-  transition: all ${props => props.theme.boxShadowTrans};
+  transition: box-shadow ${props => props.theme.boxShadowTrans};
 
   :hover {
     outline: 0;
