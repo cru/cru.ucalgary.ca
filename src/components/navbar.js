@@ -1,38 +1,63 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
+
+import NavBarLinks from "./navbarlinks.js"
+import NavBarDropDown from "./navbardropdown.js"
+import NavBarPage from "./navbarpage.js"
 import MenuButton from "./menubutton"
 import ImgButton from "./imgbutton"
-import NavBarLinks from "./navbarlinks.js"
-import NavbarDropDown from "./navbardropdown.js"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
 
-library.add(faLink)
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 library.add(faCaretDown)
 library.add(faBars)
+library.add(faTimes)
+library.add(faExternalLinkAlt)
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mobileMenu: "none",
+      mobileMenuButtonBars: "block",
+      mobileMenuButtonTimes: "none",
+    }
+  }
+
   render() {
     const { about, subSelected, services } = this.props
+
+    const toggleNavBarPage = () => {
+      if (this.state.mobileMenu === "none") {
+        this.setState({ mobileMenu: "block", mobileMenuButtonBars: "none", mobileMenuButtonTimes: "block" })
+      } else {
+        this.setState({ mobileMenu: "none", mobileMenuButtonBars: "block", mobileMenuButtonTimes: "none" })
+      }
+    }
+
     return (
       <Container>
         <MenuContainer>
           <LinkSpacing />
-          <MenuButton />
+          <MenuButton onClick={toggleNavBarPage} icon="bars" toggle= {this.state.mobileMenuButtonBars} color="black"/>
+          <MenuButton onClick={toggleNavBarPage} icon="times" toggle= {this.state.mobileMenuButtonTimes} color="white"/>
+          <NavBarPage toggle={this.state.mobileMenu} />
         </MenuContainer>
 
         <LinkSpacing />
-        <ImgButton logo={cruImg} to = "/"/>
+
+        <ImgButton logo={cruImg} to="/" />
 
         <LinkSpacing />
 
         <LinkContainer>
-          <NavbarDropDown
+          <NavBarDropDown
             text="Drop Down"
             page={["about_us", "people"]}
             selected={about}
@@ -46,7 +71,11 @@ class NavBar extends Component {
         </LinkContainer>
 
         <RightAlign>
-          <ImgButton logo={uofcImg} icon="link" href = "https://www.ucalgary.ca/" />
+          <ImgButton
+            logo={uofcImg}
+            icon="external-link-alt"
+            href="https://www.ucalgary.ca/"
+          />
         </RightAlign>
 
         <LinkSpacing />

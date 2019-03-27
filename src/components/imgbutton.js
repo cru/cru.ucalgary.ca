@@ -7,22 +7,22 @@ class ImgButton extends Component {
   render() {
     const { logo, to, href, icon } = this.props
 
-    const insideLogo = () => {
+    const content = () => {
       return (
-        <div>
+        <>
           <LogoImg src={logo} />
           <FontAwesomeIcon className="icon" icon={icon} />
-        </div>
+        </>
       )
     }
 
     const links = () => {
       if (to) {
-        return <Link to={to}>{insideLogo()}</Link>
+        return <Link to={to}>{content()}</Link>
       } else if (href) {
         return (
           <a href={href} target="_blank" rel="noopener noreferrer">
-            {insideLogo()}
+            {content()}
           </a>
         )
       }
@@ -40,19 +40,19 @@ const Container = Styled.div`
     padding-bottom:3px;
     transition: all ${props => props.theme.boxShadowTrans};
     border-radius: ${props => props.theme.borderRadius};
-        :hover {
-          box-shadow: ${props => props.theme.boxShadow};
+    :hover {
+      box-shadow: ${props => props.theme.boxShadow};
     }
     :active {
       box-shadow: none;
 
     }
     .icon{
-      padding:2px;
       margin-bottom:7px;
+      padding:2px;
       margin-left:3px;
       font-size:13px;
-      color: rgb(20, 20, 20);
+      color: grey;
     }
 `
 
