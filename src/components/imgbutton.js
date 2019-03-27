@@ -52,7 +52,7 @@ const Container = Styled.div`
       padding:2px;
       margin-left:3px;
       font-size:13px;
-      color: grey;
+      color: ${props => props.theme.imgButtonIcon};
     }
 `
 

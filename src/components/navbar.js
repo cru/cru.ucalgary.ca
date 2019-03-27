@@ -35,9 +35,17 @@ class NavBar extends Component {
 
     const toggleNavBarPage = () => {
       if (this.state.mobileMenu === "none") {
-        this.setState({ mobileMenu: "block", mobileMenuButtonBars: "none", mobileMenuButtonTimes: "block" })
+        this.setState({
+          mobileMenu: "block",
+          mobileMenuButtonBars: "none",
+          mobileMenuButtonTimes: "block",
+        })
       } else {
-        this.setState({ mobileMenu: "none", mobileMenuButtonBars: "block", mobileMenuButtonTimes: "none" })
+        this.setState({
+          mobileMenu: "none",
+          mobileMenuButtonBars: "block",
+          mobileMenuButtonTimes: "none",
+        })
       }
     }
 
@@ -45,8 +53,18 @@ class NavBar extends Component {
       <Container>
         <MenuContainer>
           <LinkSpacing />
-          <MenuButton onClick={toggleNavBarPage} icon="bars" toggle= {this.state.mobileMenuButtonBars} color="black"/>
-          <MenuButton onClick={toggleNavBarPage} icon="times" toggle= {this.state.mobileMenuButtonTimes} color="white"/>
+          <MenuButton
+            onClick={toggleNavBarPage}
+            icon="bars"
+            className="menu-button-bars-icon"
+            toggle={this.state.mobileMenuButtonBars}
+          />
+          <MenuButton
+            onClick={toggleNavBarPage}
+            icon="times"
+            className="menu-button-times-icon"
+            toggle={this.state.mobileMenuButtonTimes}
+          />
           <NavBarPage toggle={this.state.mobileMenu} />
         </MenuContainer>
 
@@ -104,6 +122,14 @@ const Container = Styled.div`
   :hover {
     outline: 0;
     box-shadow: ${props => props.theme.boxShadow};
+  }
+
+  .menu-button-times-icon {
+    color: ${props => props.theme.navBarTimesColor};
+  }
+  
+  .menu-button-bars-icon {
+    color: ${props => props.theme.navBarBarsColor};
   }
 `
 

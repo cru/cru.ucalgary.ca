@@ -4,9 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class MenuButton extends Component {
   render() {
-    const { onClick, icon, toggle, color } = this.props
+    const { onClick, icon, toggle, className } = this.props
     return (
-      <Container onClick={onClick} style = {{display:toggle, color:color}}>
+      <Container
+        onClick={onClick}
+        style={{ display: toggle }}
+        className={className}
+      >
         <FontAwesomeIcon icon={icon} />
       </Container>
     )
