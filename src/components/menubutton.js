@@ -30,7 +30,6 @@ const Container = Styled.button`
   background-color:transparent;
   border: none;
   transition: all ${props => props.theme.boxShadowTrans};
-
   cursor:pointer;
 
   :hover {

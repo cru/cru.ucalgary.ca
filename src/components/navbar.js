@@ -24,7 +24,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      mobileMenu: "none",
+      mobileMenu: "0",
       mobileMenuButtonBars: "block",
       mobileMenuButtonTimes: "none",
     }
@@ -34,15 +34,15 @@ class NavBar extends Component {
     const { about, subSelected, services } = this.props
 
     const toggleNavBarPage = () => {
-      if (this.state.mobileMenu === "none") {
+      if (this.state.mobileMenu === "0") {
         this.setState({
-          mobileMenu: "block",
+          mobileMenu: "1",
           mobileMenuButtonBars: "none",
           mobileMenuButtonTimes: "block",
         })
       } else {
         this.setState({
-          mobileMenu: "none",
+          mobileMenu: "0",
           mobileMenuButtonBars: "block",
           mobileMenuButtonTimes: "none",
         })
@@ -50,54 +50,56 @@ class NavBar extends Component {
     }
 
     return (
-      <Container>
-        <MenuContainer>
+      <>
+        <Container>
+          <MenuContainer>
+            <LinkSpacing />
+            <MenuButton
+              onClick={toggleNavBarPage}
+              icon="bars"
+              className="menu-button-bars-icon"
+              toggle={this.state.mobileMenuButtonBars}
+            />
+            <MenuButton
+              onClick={toggleNavBarPage}
+              icon="times"
+              className="menu-button-times-icon"
+              toggle={this.state.mobileMenuButtonTimes}
+            />
+            <NavBarPage toggle={this.state.mobileMenu} />
+          </MenuContainer>
+
           <LinkSpacing />
-          <MenuButton
-            onClick={toggleNavBarPage}
-            icon="bars"
-            className="menu-button-bars-icon"
-            toggle={this.state.mobileMenuButtonBars}
-          />
-          <MenuButton
-            onClick={toggleNavBarPage}
-            icon="times"
-            className="menu-button-times-icon"
-            toggle={this.state.mobileMenuButtonTimes}
-          />
-          <NavBarPage toggle={this.state.mobileMenu} />
-        </MenuContainer>
 
-        <LinkSpacing />
+          <ImgButton logo={cruImg} to="/" />
 
-        <ImgButton logo={cruImg} to="/" />
+          <LinkSpacing />
 
-        <LinkSpacing />
+          <LinkContainer>
+            <NavBarDropDown
+              text="Drop Down"
+              page={["about_us", "people"]}
+              selected={about}
+              subSelected={subSelected}
+            />
+          </LinkContainer>
+          <LinkSpacing />
 
-        <LinkContainer>
-          <NavBarDropDown
-            text="Drop Down"
-            page={["about_us", "people"]}
-            selected={about}
-            subSelected={subSelected}
-          />
-        </LinkContainer>
-        <LinkSpacing />
+          <LinkContainer>
+            <NavBarLinks page="/services" text="services" selected={services} />
+          </LinkContainer>
 
-        <LinkContainer>
-          <NavBarLinks page="/services" text="services" selected={services} />
-        </LinkContainer>
+          <RightAlign>
+            <ImgButton
+              logo={uofcImg}
+              icon="external-link-alt"
+              href="https://www.ucalgary.ca/"
+            />
+          </RightAlign>
 
-        <RightAlign>
-          <ImgButton
-            logo={uofcImg}
-            icon="external-link-alt"
-            href="https://www.ucalgary.ca/"
-          />
-        </RightAlign>
-
-        <LinkSpacing />
-      </Container>
+          <LinkSpacing />
+        </Container>
+      </>
     )
   }
 }
