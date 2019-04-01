@@ -42,4 +42,15 @@ a {
   border-radius: 3px;
 }
 
-
+.select {
+  background-color:transparent;
+  &:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  &:after {
+    margin-top: -3.5px;
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}

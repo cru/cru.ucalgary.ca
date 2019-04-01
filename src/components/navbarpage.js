@@ -7,9 +7,9 @@ class NavBarPage extends Component {
 
     const getToggle = () => {
       if (toggle === "0") {
-        return "translate3d(-150vw, 0, 0)"
+        return "translate3d(-110vw, 0, 0)"
       } else {
-        return "translate3d(0, -16px, 0)"
+        return "translate3d(-8vw, -15px, 0)"
       }
     }
 
@@ -25,10 +25,11 @@ export default NavBarPage
 const Container = Styled.div`
     z-index:0;
     position:fixed;
-    background-color:#141414;
+    background-color: ${props => props.theme.navBarPrimary};
+    box-shadow: ${props => props.theme.boxShadow};
     height:100vh;
     width:100vw;
-    transform: translate3d(-150vw, 0, 0);
-    transition: transform 0.2s linear;
+    transform: translate3d(-110vw, 0, 0);
+    transition: transform 0.3s linear;
     transform-style: flat;
     `

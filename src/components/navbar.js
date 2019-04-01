@@ -4,8 +4,8 @@ import Styled from "styled-components"
 import NavBarLinks from "./navbarlinks.js"
 import NavBarDropDown from "./navbardropdown.js"
 import NavBarPage from "./navbarpage.js"
-import MenuButton from "./menubutton"
 import ImgButton from "./imgbutton"
+import Hamburger from "./hamburger"
 
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
@@ -25,8 +25,7 @@ class NavBar extends Component {
     super(props)
     this.state = {
       mobileMenu: "0",
-      mobileMenuButtonBars: "block",
-      mobileMenuButtonTimes: "none",
+      mobileHamburger: "",
     }
   }
 
@@ -37,14 +36,12 @@ class NavBar extends Component {
       if (this.state.mobileMenu === "0") {
         this.setState({
           mobileMenu: "1",
-          mobileMenuButtonBars: "none",
-          mobileMenuButtonTimes: "block",
+          mobileHamburger: "select",
         })
       } else {
         this.setState({
           mobileMenu: "0",
-          mobileMenuButtonBars: "block",
-          mobileMenuButtonTimes: "none",
+          mobileHamburger: "",
         })
       }
     }
@@ -54,17 +51,9 @@ class NavBar extends Component {
         <Container>
           <MenuContainer>
             <LinkSpacing />
-            <MenuButton
+            <Hamburger
               onClick={toggleNavBarPage}
-              icon="bars"
-              className="menu-button-bars-icon"
-              toggle={this.state.mobileMenuButtonBars}
-            />
-            <MenuButton
-              onClick={toggleNavBarPage}
-              icon="times"
-              className="menu-button-times-icon"
-              toggle={this.state.mobileMenuButtonTimes}
+              toggle={this.state.mobileHamburger}
             />
             <NavBarPage toggle={this.state.mobileMenu} />
           </MenuContainer>

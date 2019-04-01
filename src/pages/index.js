@@ -9,7 +9,7 @@ const IndexPage = () => (
   <ThemeProvider theme={theme}>
     <div>
       <NavBar />
-      <p>
+      <p style= {{padding:30}}>
         Nostrud ut tempor commodo quis Lorem in in in proident enim mollit nulla
         esse. Qui in elit consectetur nulla esse minim ad laborum sit consequat
         cillum. Cupidatat cillum ea eiusmod fugiat. Cillum nulla fugiat cillum
