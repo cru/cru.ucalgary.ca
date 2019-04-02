@@ -15,7 +15,7 @@ class Hamburger extends Component {
 export default Hamburger
 
 const Container = Styled.button`
-    z-index:6;
+    z-index:100;
     height:30px;
     width:30px;
     border: none;
@@ -34,31 +34,32 @@ const Container = Styled.button`
 `
 
 const Contents = Styled.span`
-    border-radius:1px;
+    border-radius:1.5px;
     height:4px;
-    width:25px;
-    margin-left:-13px;
+    width:22px;
+    margin-left:-11px;
     background-color: ${props => props.theme.fontPrimColor};;
     display: block;
     content: '';
     position:relative;
-    transition: all 0.7s ease-in;
+    transition: all 0.2s linear;
+    
 
-    &:before {
-        border-radius:1px;
-        height:4px;
-        width:25px;
-        background-color: ${props => props.theme.fontPrimColor};;
-        display: block;
-        content: '';
-        position:relative;
-        top:-8px;
+    :before {
+      border-radius:1.5px;
+      height:4px;
+      width:22px;
+      background-color: ${props => props.theme.fontPrimColor};;
+      display: block;
+      content: '';
+      position:relative;
+      top:-8px;
     }
 
-    &:after {
-        border-radius:1px;
+    :after {
+        border-radius:1.5px;
         height:4px;
-        width:25px;
+        width:22px;
         background-color: ${props => props.theme.fontPrimColor};;
         display: block;
         content: '';

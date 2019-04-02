@@ -10,16 +10,6 @@ import Hamburger from "./hamburger"
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { faTimes } from "@fortawesome/free-solid-svg-icons"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-library.add(faCaretDown)
-library.add(faBars)
-library.add(faTimes)
-library.add(faExternalLinkAlt)
-
 class NavBar extends Component {
   constructor(props) {
     super(props)
@@ -36,7 +26,7 @@ class NavBar extends Component {
       if (this.state.mobileMenu === "0") {
         this.setState({
           mobileMenu: "1",
-          mobileHamburger: "select",
+          mobileHamburger: "hamburger-active",
         })
       } else {
         this.setState({
@@ -49,44 +39,51 @@ class NavBar extends Component {
     return (
       <>
         <Container>
-          <MenuContainer>
+          <Bar>
+            <MenuContainer>
+              <LinkSpacing />
+              <Hamburger
+                onClick={toggleNavBarPage}
+                toggle={this.state.mobileHamburger}
+              />
+              <NavBarPage toggle={this.state.mobileMenu} />
+            </MenuContainer>
+            <MenuContainerOpposite>
+              <LinkSpacing />
+            </MenuContainerOpposite>
+
+            <ImgButton logo={cruImg} to="/" />
+
             <LinkSpacing />
-            <Hamburger
-              onClick={toggleNavBarPage}
-              toggle={this.state.mobileHamburger}
-            />
-            <NavBarPage toggle={this.state.mobileMenu} />
-          </MenuContainer>
 
-          <LinkSpacing />
+            <LinkContainer>
+              <NavBarDropDown
+                text="Drop Down"
+                page={["about_us", "people"]}
+                selected={about}
+                subSelected={subSelected}
+              />
+            </LinkContainer>
+            <LinkSpacing />
 
-          <ImgButton logo={cruImg} to="/" />
+            <LinkContainer>
+              <NavBarLinks
+                page="/services"
+                text="services"
+                selected={services}
+              />
+            </LinkContainer>
 
-          <LinkSpacing />
+            <RightAlign>
+              <ImgButton
+                logo={uofcImg}
+                icon="external-link-alt"
+                href="https://www.ucalgary.ca/"
+              />
+            </RightAlign>
 
-          <LinkContainer>
-            <NavBarDropDown
-              text="Drop Down"
-              page={["about_us", "people"]}
-              selected={about}
-              subSelected={subSelected}
-            />
-          </LinkContainer>
-          <LinkSpacing />
-
-          <LinkContainer>
-            <NavBarLinks page="/services" text="services" selected={services} />
-          </LinkContainer>
-
-          <RightAlign>
-            <ImgButton
-              logo={uofcImg}
-              icon="external-link-alt"
-              href="https://www.ucalgary.ca/"
-            />
-          </RightAlign>
-
-          <LinkSpacing />
+            <LinkSpacing />
+          </Bar>
         </Container>
       </>
     )
@@ -96,7 +93,12 @@ class NavBar extends Component {
 export default NavBar
 
 /* Styles */
+
 const Container = Styled.div`
+
+`
+
+const Bar = Styled.div`
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.navBarPrimary};
@@ -122,6 +124,7 @@ const Container = Styled.div`
   .menu-button-bars-icon {
     color: ${props => props.theme.navBarBarsColor};
   }
+
 `
 
 const LinkSpacing = Styled.div`
@@ -133,6 +136,13 @@ const LinkSpacing = Styled.div`
 const MenuContainer = Styled.div`
   display:flex;
     @media only screen and (min-width: ${props =>
+      props.theme.navbarBreakPoint}){
+    display:none;
+  }
+`
+const MenuContainerOpposite = Styled.div`
+  display:flex;
+    @media only screen and (max-width: ${props =>
       props.theme.navbarBreakPoint}){
     display:none;
   }
