@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
+import "../styles/hamburger.scss"
 
 class Hamburger extends Component {
   render() {

@@ -38,53 +38,47 @@ class NavBar extends Component {
 
     return (
       <>
-        <Container>
-          <Bar>
-            <MenuContainer>
-              <LinkSpacing />
-              <Hamburger
-                onClick={toggleNavBarPage}
-                toggle={this.state.mobileHamburger}
-              />
-              <NavBarPage toggle={this.state.mobileMenu} />
-            </MenuContainer>
-            <MenuContainerOpposite>
-              <LinkSpacing />
-            </MenuContainerOpposite>
-
-            <ImgButton logo={cruImg} to="/" />
-
+        <Bar>
+          <MenuContainer>
             <LinkSpacing />
-
-            <LinkContainer>
-              <NavBarDropDown
-                text="Drop Down"
-                page={["about_us", "people"]}
-                selected={about}
-                subSelected={subSelected}
-              />
-            </LinkContainer>
+            <Hamburger
+              onClick={toggleNavBarPage}
+              toggle={this.state.mobileHamburger}
+            />
+            <NavBarPage toggle={this.state.mobileMenu} />
+          </MenuContainer>
+          <MenuContainerOpposite>
             <LinkSpacing />
+          </MenuContainerOpposite>
 
-            <LinkContainer>
-              <NavBarLinks
-                page="/services"
-                text="services"
-                selected={services}
-              />
-            </LinkContainer>
+          <ImgButton logo={cruImg} to="/" />
 
-            <RightAlign>
-              <ImgButton
-                logo={uofcImg}
-                icon="external-link-alt"
-                href="https://www.ucalgary.ca/"
-              />
-            </RightAlign>
+          <LinkSpacing />
 
-            <LinkSpacing />
-          </Bar>
-        </Container>
+          <LinkContainer>
+            <NavBarDropDown
+              text="Drop Down"
+              page={["about_us", "people"]}
+              selected={about}
+              subSelected={subSelected}
+            />
+          </LinkContainer>
+          <LinkSpacing />
+
+          <LinkContainer>
+            <NavBarLinks page="/services" text="services" selected={services} />
+          </LinkContainer>
+
+          <RightAlign>
+            <ImgButton
+              logo={uofcImg}
+              icon="external-link-alt"
+              href="https://www.ucalgary.ca/"
+            />
+          </RightAlign>
+
+          <LinkSpacing />
+        </Bar>
       </>
     )
   }
@@ -93,10 +87,6 @@ class NavBar extends Component {
 export default NavBar
 
 /* Styles */
-
-const Container = Styled.div`
-
-`
 
 const Bar = Styled.div`
   display: flex;

@@ -15,6 +15,7 @@ body {
   background-size: cover;
 }
 
+// All text color
 h1,
 h2,
 h3,
@@ -26,12 +27,13 @@ a {
   color: $fontPrimColor;
 }
 
+//Hover over style
 .unSelected:hover::after,
 .selected::after {
   content: "";
   position: absolute;
   width: 100%;
-  background: $brandBlueOpac;
+  background: $brandPrimColor;
   left: 0;
   margin-top: 9px;
   margin-left: 2px;
@@ -42,15 +44,3 @@ a {
   border-radius: 3px;
 }
 
-.hamburger-active {
-  background-color:transparent;
-  &:before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-  &:after {
-    margin-top: -3.5px;
-    top: 0;
-    transform: rotate(-45deg);
-  }
-}

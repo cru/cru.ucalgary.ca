@@ -3,9 +3,7 @@ import Styled from "styled-components"
 
 class MaxWidth extends Component {
   render() {
-    return (
-        <Container>{this.props.children}</Container>
-    )
+    return <Container>{this.props.children}</Container>
   }
 }
 export default MaxWidth

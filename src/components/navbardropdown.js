@@ -3,7 +3,6 @@ import Styled from "styled-components"
 import NavBarLinks from "./navbarlinks"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-
 class NavBarDropDown extends Component {
   render() {
     const { selected, subSelected, text } = this.props
