@@ -2,7 +2,7 @@ import React from "react"
 import { ThemeProvider } from "styled-components"
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
-import Mail from "../components/mail"
+import MailButton from "../components/mailbutton"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
@@ -45,7 +45,7 @@ const Root = () => {
           </p>
         </div>
         <div style={{ height: 500 }} />
-        <Mail />
+        <MailButton />
         <div style={{ height: 500, backgroundColor:"black" }} />
       </MaxWidth>
     </>
