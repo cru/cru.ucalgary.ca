@@ -1,7 +1,7 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
 import NavBar from "../components/navbar"
-import MailButton from "../components/mailbutton"
+import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
@@ -9,9 +9,8 @@ const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../s
 const PeoplePage = () => (
   <ThemeProvider theme={theme}>
     <MaxWidth>
-      <MailButton />
       <NavBar about="selected" subSelected="people" />
-      <div style = {{padding:40}}>
+      <div style={{ padding: 40 }}>
         <h4>People</h4>
         <p>
           Reprehenderit duis consectetur et eu tempor sint magna culpa aliquip.
@@ -23,6 +22,7 @@ const PeoplePage = () => (
         </p>
         <div style={{ height: 3000 }} />
       </div>
+      <EmailFAB />
     </MaxWidth>
   </ThemeProvider>
 )

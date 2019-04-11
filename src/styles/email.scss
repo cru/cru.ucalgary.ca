@@ -1,0 +1,44 @@
+@import "./vars.scss";
+
+$containerHeight: 400px;
+
+.placeHolder {
+  display: none;
+}
+
+.mailButton {
+  position: static;
+  bottom: 0;
+  margin: 0;
+  height: $containerHeight;
+  width: 100%;
+  padding: 0;
+}
+
+.mailButton-expand {
+  border-radius: 0px;
+  width: 100%;
+  height: $containerHeight;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  cursor: default;
+
+
+  &:hover {
+    height: $containerHeight;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: $brandPrimColor;
+  }
+}
+
+.mailButton-expand-icon {
+  display: none;
+}
+
+.mailButton-expand-form {
+  display: none;
+}

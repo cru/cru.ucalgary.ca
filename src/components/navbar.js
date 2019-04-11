@@ -89,6 +89,7 @@ export default NavBar
 /* Styles */
 
 const Bar = Styled.div`
+  z-index:100;
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.navBarPrimary};
@@ -114,7 +115,6 @@ const Bar = Styled.div`
   .menu-button-bars-icon {
     color: ${props => props.theme.navBarBarsColor};
   }
-
 `
 
 const LinkSpacing = Styled.div`

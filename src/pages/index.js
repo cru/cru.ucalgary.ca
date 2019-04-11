@@ -1,15 +1,15 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
+import "../styles/main.scss"
+
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
-import MailButton from "../components/mailbutton"
+import EmailFAB from "../components/emailfab"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-
-import "../styles/main.scss"
 
 library.add(faCaretDown)
 library.add(faExternalLinkAlt)
@@ -45,8 +45,8 @@ const Root = () => {
           </p>
         </div>
         <div style={{ height: 500 }} />
-        <MailButton />
-        <div style={{ height: 500, backgroundColor:"black" }} />
+        <EmailFAB />
+        <div style={{ height: 500, backgroundColor: "black" }} />
       </MaxWidth>
     </>
   )
