@@ -14,8 +14,8 @@ class NavBar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      mobileMenu: "0",
-      mobileHamburger: "",
+      navbarpage: false,
+      hamburger: false,
     }
   }
 
@@ -23,15 +23,15 @@ class NavBar extends Component {
     const { about, subSelected, services } = this.props
 
     const toggleNavBarPage = () => {
-      if (this.state.mobileMenu === "0") {
+      if (this.state.navbarpage === false) {
         this.setState({
-          mobileMenu: "1",
-          mobileHamburger: "hamburger-active",
+          navbarpage: true,
+          hamburger: true,
         })
       } else {
         this.setState({
-          mobileMenu: "0",
-          mobileHamburger: "",
+          navbarpage: false,
+          hamburger: false,
         })
       }
     }
@@ -43,9 +43,9 @@ class NavBar extends Component {
             <LinkSpacing />
             <Hamburger
               onClick={toggleNavBarPage}
-              toggle={this.state.mobileHamburger}
+              toggle={this.state.hamburger}
             />
-            <NavBarPage toggle={this.state.mobileMenu} />
+            <NavBarPage toggle={this.state.navbarpage} />
           </MenuContainer>
           <MenuContainerOpposite>
             <LinkSpacing />

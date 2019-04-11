@@ -1,7 +1,5 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
-import "../styles/email.scss"
-
 // eslint-disable-next-line
 import ScrollTrigger from "react-scroll-trigger"
 import { Link } from "react-scroll"
@@ -33,15 +31,15 @@ class EmailFAB extends Component {
     return (
       <>
         <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-          <ButtonContainer className={!this.state.toggle && "mailButton"}>
+          <ButtonContainer toggle={this.state.toggle}>
             <Link
-              to={this.state.button}
+              to={this.state.toggle && "form"}
               spy={true}
               smooth={true}
               offset={-150}
               duration={400}
             >
-              <Button className={!this.state.toggle && "mailButton-expand"}>
+              <Button toggle={this.state.toggle}>
                 <FontAwesomeIcon
                   style={{ display: this.state.toggle ? "block" : "none" }}
                   icon="envelope"
@@ -70,35 +68,37 @@ const PlaceHolderContainer = Styled.div`
 `
 
 const ButtonContainer = Styled.div`
-    position: fixed;
     bottom: 0;
     width:100%;
     max-width: ${props => props.theme.pageMaxWidth};
+    position: ${props => (props.toggle ? "fixed" : "static")};
+    height: ${props => (props.toggle ? "auto" : "400px")};
 `
 
 const Button = Styled.div`
     float:right;
-    cursor:pointer;
-    margin:40px;
-    height:56px;
-    width:56px;
-    border-radius:50%;
+
+    cursor: ${props => (props.toggle ? "pointer" : "default")};
+    margin: ${props => (props.toggle ? "40px" : "0")};
+    height: ${props => (props.toggle ? "56px" : "400px")};
+    width: ${props => (props.toggle ? "56px" : "100%")};
+    border-radius: ${props => (props.toggle ? "50%" : "0%")};
     background-color:${props => props.theme.brandPrimColor};
+    box-shadow:${props =>
+      props.toggle ? props.theme.boxShadowAccent : "none"};
     font-size:18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: none;
     color:white;
-    /* This transition might be too laggy on old hardware */
-    transition: all 0.3s linear; 
-     
-    box-shadow:${props => props.theme.boxShadowAccent};
+    transition: all 0.3s linear;      
     overflow:hidden;
 
     :hover {
-        box-shadow: ${props => props.theme.boxShadow};
-        background-color:${props => props.theme.brandPrimAccent};
+        box-shadow:  ${props =>
+          props.toggle ? props.theme.boxShadow : "none"};
+        background-color: ${props =>
+          props.toggle ? props.theme.brandPrimAccent : "none"};
     }
     
     :active {

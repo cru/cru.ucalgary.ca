@@ -6,7 +6,7 @@ class NavBarPage extends Component {
     const { toggle } = this.props
 
     const getToggle = () => {
-      if (toggle === "0") {
+      if (toggle === false) {
         return "translate3d(-110vw, -15px, 0)"
       } else {
         return "translate3d(-15px, -15px, 0)"
