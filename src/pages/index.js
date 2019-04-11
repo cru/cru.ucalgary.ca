@@ -1,10 +1,11 @@
 import React from "react"
 import { ThemeProvider } from "styled-components"
-import "../styles/main.scss"
 
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
+
+import "../styles/main.scss"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"

@@ -40,6 +40,12 @@ const Container = Styled.div`
     padding-bottom:3px;
     transition: all ${props => props.theme.boxShadowTrans};
     border-radius: ${props => props.theme.borderRadius};
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     :hover {
       box-shadow: ${props => props.theme.boxShadow};
     }

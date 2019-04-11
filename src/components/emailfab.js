@@ -44,6 +44,9 @@ class EmailFAB extends Component {
                   style={{ display: this.state.toggle ? "block" : "none" }}
                   icon="envelope"
                 />
+                <Text style={{ display: this.state.toggle ? "block" : "none" }}>
+                  <span>&nbsp;&nbsp;</span>Email Us
+                </Text>
                 <EmailForm
                   style={{ display: this.state.toggle ? "none" : "flex" }}
                 />
@@ -72,27 +75,33 @@ const ButtonContainer = Styled.div`
     width:100%;
     max-width: ${props => props.theme.pageMaxWidth};
     position: ${props => (props.toggle ? "fixed" : "static")};
-    height: ${props => (props.toggle ? "auto" : "400px")};
+    height: ${props => (props.toggle ? "auto" : "600px")};
 `
 
 const Button = Styled.div`
     float:right;
-
-    cursor: ${props => (props.toggle ? "pointer" : "default")};
-    margin: ${props => (props.toggle ? "40px" : "0")};
-    height: ${props => (props.toggle ? "56px" : "400px")};
-    width: ${props => (props.toggle ? "56px" : "100%")};
-    border-radius: ${props => (props.toggle ? "50%" : "0%")};
-    background-color:${props => props.theme.brandPrimColor};
-    box-shadow:${props =>
-      props.toggle ? props.theme.boxShadowAccent : "none"};
     font-size:18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
     transition: all 0.3s linear;      
     overflow:hidden;
+
+    -webkit-user-select: ${props => (props.toggle ? "none" : "auto")};
+    -moz-user-select: ${props => (props.toggle ? "none" : "auto")};
+    -ms-user-select: ${props => (props.toggle ? "none" : "auto")};
+    user-select: ${props => (props.toggle ? "none" : "auto")};
+
+    cursor: ${props => (props.toggle ? "pointer" : "default")};
+    margin-bottom: ${props => (props.toggle ? "30px" : "0")};
+    margin-right: ${props => (props.toggle ? "17px" : "0")};
+    height: ${props => (props.toggle ? "56px" : "600px")};
+    width: ${props => (props.toggle ? "120px" : "100%")};
+    border-radius: ${props => (props.toggle ? "50px" : "0%")};
+    background-color:${props => props.theme.brandPrimColor};
+    box-shadow:${props =>
+      props.toggle ? props.theme.boxShadowAccent : "none"};
 
     :hover {
         box-shadow:  ${props =>
@@ -104,4 +113,11 @@ const Button = Styled.div`
     :active {
         box-shadow:none;
     }
+
+`
+
+const Text = Styled.p`
+    font-size:16.5px;
+    color: white;
+
 `

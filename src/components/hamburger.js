@@ -44,7 +44,11 @@ const Contents = Styled.span`
     content: '';
     position:relative;
     transition: all 0.2s linear;
-    
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     :before {
       border-radius:1.5px;
