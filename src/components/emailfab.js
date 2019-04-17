@@ -31,30 +31,38 @@ class EmailFAB extends Component {
     return (
       <>
         <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-          <ButtonContainer toggle={this.state.toggle}>
-            <Link
-              to={this.state.toggle && "form"}
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={400}
-            >
-              <Button toggle={this.state.toggle}>
-                <FontAwesomeIcon
-                  style={{ display: this.state.toggle ? "block" : "none" }}
-                  icon="envelope"
-                />
-                <Text style={{ display: this.state.toggle ? "block" : "none" }}>
-                  <span>&nbsp;&nbsp;</span>Email Us
-                </Text>
-                <EmailForm
-                  style={{ display: this.state.toggle ? "none" : "flex" }}
-                />
-              </Button>
-            </Link>
-          </ButtonContainer>
-          <div id="form" />
+          <div
+            style={{
+              backgroundColor: "transparent",
+              height: 200,
+              marginBottom: "-500px",
+            }}
+          />
         </ScrollTrigger>
+        <ButtonContainer toggle={this.state.toggle}>
+          <Link
+            to={this.state.toggle && "form"}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={400}
+          >
+            <Button toggle={this.state.toggle}>
+              <FontAwesomeIcon
+                style={{ display: this.state.toggle ? "block" : "none" }}
+                icon="envelope"
+              />
+              <Text style={{ display: this.state.toggle ? "block" : "none" }}>
+                <span>&nbsp;&nbsp;</span>Email Us
+              </Text>
+
+              <EmailForm
+                style={{ display: this.state.toggle ? "none" : "flex" }}
+              />
+            </Button>
+          </Link>
+        </ButtonContainer>
+        <div id="form" />
         <PlaceHolderContainer
           style={{ display: this.state.toggle ? "block" : "none" }}
         />

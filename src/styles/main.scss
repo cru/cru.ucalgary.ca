@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import "./vars.scss";
+@import "node_modules/@fortawesome/fontawesome-svg-core/styles";
 
 html,
 body {
@@ -43,4 +44,3 @@ a {
   z-index: -1;
   border-radius: 3px;
 }
-

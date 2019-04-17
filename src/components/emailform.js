@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Styled from "styled-components"
 import Input from "./input"
 import TextArea from "./textarea"
+import Button from "./button"
 
 class EmailForm extends Component {
   render() {
@@ -33,6 +34,9 @@ class EmailForm extends Component {
             <div style={{ height: 5 }} />
             <TextArea />
           </Row>
+          <Row style={{ display: "flex", flexDirection:"row-reverse", marginRight:"0" }}>
+            <Button>Send</Button>
+          </Row>
         </Form>
       </>
     )
@@ -57,5 +61,4 @@ const Row = Styled.div`
   max-width:600px;
   color:black;
   font-size:15px;
-  /* outline:2px solid black; */
 `

@@ -1,13 +1,14 @@
+import "../styles/main.scss"
+
 import React from "react"
+
 import { ThemeProvider } from "styled-components"
 
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 
-import "../styles/main.scss"
-
-import { library } from "@fortawesome/fontawesome-svg-core"
+import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
@@ -15,6 +16,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 library.add(faCaretDown)
 library.add(faExternalLinkAlt)
 library.add(faEnvelope)
+
+config.autoAddCss = false
+
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
 
