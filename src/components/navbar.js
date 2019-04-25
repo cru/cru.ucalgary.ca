@@ -87,7 +87,6 @@ class NavBar extends Component {
 export default NavBar
 
 /* Styles */
-
 const Bar = Styled.div`
   z-index:100;
   display: flex;

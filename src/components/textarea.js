@@ -15,7 +15,7 @@ export default TextArea
 
 const Field = Styled.textarea`
     border-radius:3px;
-    border: 1px solid transparent;
+    border: 1px solid black;
     padding:5px;
     transition: all 0.2s linear;
     font-size:14px;

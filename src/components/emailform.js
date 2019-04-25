@@ -42,6 +42,7 @@ class EmailForm extends Component {
     )
   }
 }
+
 export default EmailForm
 
 const Form = Styled.form`

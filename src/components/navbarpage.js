@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
+import NavBarLinks from "./navbarlinks"
 
 class NavBarPage extends Component {
   render() {
@@ -17,7 +18,11 @@ class NavBarPage extends Component {
       transform: getToggle(),
     }
 
-    return <Container style={css} />
+    return (
+      <Container style={css}>
+        <div style={{ marginLeft: 40, marginTop: 100 }} />
+      </Container>
+    )
   }
 }
 export default NavBarPage

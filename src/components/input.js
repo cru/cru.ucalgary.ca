@@ -15,7 +15,7 @@ export default Input
 
 const Field = Styled.input`
     border-radius:3px;
-    border: 1px solid transparent;
+    border: 1px solid black;
     height:28px;
     padding:5px;
     transition: all 0.2s linear;

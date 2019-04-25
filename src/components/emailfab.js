@@ -92,7 +92,7 @@ const Button = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color:  ${props => props.theme.fontPrimColor};
     transition: all 0.3s linear;      
     overflow:hidden;
 
@@ -126,6 +126,5 @@ const Button = Styled.div`
 
 const Text = Styled.p`
     font-size:16.5px;
-    color: white;
-
+    color:  ${props => props.theme.fontPrimColor};
 `
