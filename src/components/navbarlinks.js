@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 class NavBarLinks extends Component {
   render() {
-    const { page, selected, text } = this.props
+    const { page, category, text } = this.props
 
     return (
       <Link to={page} style={{ textDecoration: "none", pointerEvents: "none" }}>
-        <LinkText className={(selected && "selected") || "unSelected"}>
+        <LinkText className={(category && "selected") || "unSelected"}>
           {convert(text)}
         </LinkText>
       </Link>

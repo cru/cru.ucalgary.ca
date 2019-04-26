@@ -9,7 +9,7 @@ const AboutUsPage = () => (
   <ThemeProvider theme={theme}>
     <MaxWidth>
       <div>
-        <NavBar about="selected" subSelected="about_us" />
+        <NavBar about="about" subCategory="about_us" />
         <div style = {{padding:40}}>
           <h4>About Us</h4>
           <p>

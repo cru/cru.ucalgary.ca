@@ -20,7 +20,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const { about, subSelected, services } = this.props
+    const { about, subCategory, services, publications } = this.props
 
     const toggleNavBarPage = () => {
       if (this.state.navbarpage === false) {
@@ -45,7 +45,21 @@ class NavBar extends Component {
               onClick={toggleNavBarPage}
               toggle={this.state.hamburger}
             />
-            <NavBarPage toggle={this.state.navbarpage} />
+            <NavBarPage toggle={this.state.navbarpage}>
+              <>
+                <p>
+                  Proident duis enim ad sint commodo ex non culpa do consectetur
+                  pariatur minim dolore. Est esse in irure officia officia
+                  incididunt commodo occaecat cupidatat aliqua ullamco nulla
+                  consequat. Non anim ex aliqua cillum culpa nisi ullamco Lorem
+                  ea consectetur laboris laborum sit. Reprehenderit laboris
+                  magna occaecat dolor culpa enim consequat sit dolore voluptate
+                  consequat tempor enim. Ad pariatur dolor magna occaecat
+                  eiusmod sint anim nostrud minim deserunt incididunt est culpa
+                  deserunt.
+                </p>
+              </>
+            </NavBarPage>
           </MenuContainer>
           <MenuContainerOpposite>
             <LinkSpacing />
@@ -59,14 +73,23 @@ class NavBar extends Component {
             <NavBarDropDown
               text="Drop Down"
               page={["about_us", "people"]}
-              selected={about}
-              subSelected={subSelected}
+              category={about}
+              subCategory={subCategory}
             />
           </LinkContainer>
           <LinkSpacing />
 
           <LinkContainer>
-            <NavBarLinks page="/services" text="services" selected={services} />
+            <NavBarLinks page="/services" text="services" category={services} />
+          </LinkContainer>
+          <LinkSpacing />
+
+          <LinkContainer>
+            <NavBarLinks
+              page="/publications"
+              text="publications"
+              category={publications}
+            />
           </LinkContainer>
 
           <RightAlign>

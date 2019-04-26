@@ -9,7 +9,7 @@ const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../s
 const PeoplePage = () => (
   <ThemeProvider theme={theme}>
     <MaxWidth>
-      <NavBar about="selected" subSelected="people" />
+      <NavBar about="about" subCategory="people" />
       <div style={{ padding: 40 }}>
         <h4>People</h4>
         <p>

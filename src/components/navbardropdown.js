@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class NavBarDropDown extends Component {
   render() {
-    const { selected, subSelected, text } = this.props
+    const { category, subCategory, text } = this.props
     const routes = this.props.page
 
     const pages = routes.map(routes => (
@@ -13,7 +13,7 @@ class NavBarDropDown extends Component {
         <NavBarLinks
           page={"/" + routes}
           text={routes}
-          selected={subSelected === routes && selected}
+          category={subCategory === routes && category}
         />
         <div style={{ height: 5 }} />
       </li>
@@ -21,7 +21,7 @@ class NavBarDropDown extends Component {
 
     return (
       <Container>
-        <LinkText className={selected && "selected"}>
+        <LinkText className={category && "selected"}>
           {text} <FontAwesomeIcon icon="caret-down" />
         </LinkText>
         <Menu className="navbardropdown-menu">

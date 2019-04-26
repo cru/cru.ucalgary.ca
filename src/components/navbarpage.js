@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
-import NavBarLinks from "./navbarlinks"
 
 class NavBarPage extends Component {
   render() {
@@ -20,7 +19,9 @@ class NavBarPage extends Component {
 
     return (
       <Container style={css}>
-        <div style={{ marginLeft: 40, marginTop: 100 }} />
+        <div style={{ marginLeft: 40, marginTop: 80, marginRight: 20 }}>
+          {this.props.children}
+        </div>
       </Container>
     )
   }
@@ -37,3 +38,5 @@ const Container = Styled.div`
     transition: transform 0.3s linear;
     transform-style: flat;
 `
+
+
