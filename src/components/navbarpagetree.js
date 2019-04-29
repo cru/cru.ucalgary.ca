@@ -34,6 +34,7 @@ export default NavBarPageTree
 
 const Category = Styled.div`
   text-transform:uppercase;
+  margin-bottom:-8px;
   h2 {
     font-size:15px;
   }

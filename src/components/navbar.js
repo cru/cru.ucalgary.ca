@@ -77,16 +77,6 @@ class NavBar extends Component {
           <LinkSpacing />
 
           <LinkContainer>
-            <NavBarDropDown
-              text="Drop Down"
-              page={["about_us", "people"]}
-              category={about}
-              subCategory={subCategory}
-            />
-          </LinkContainer>
-          <LinkSpacing />
-
-          <LinkContainer>
             <NavBarLinks page="/services" text="services" category={services} />
           </LinkContainer>
           <LinkSpacing />
@@ -96,6 +86,17 @@ class NavBar extends Component {
               page="/publications"
               text="publications"
               category={publications}
+            />
+          </LinkContainer>
+
+          <LinkSpacing />
+
+          <LinkContainer>
+            <NavBarDropDown
+              text="Drop Down"
+              page={["about_us", "people"]}
+              category={about}
+              subCategory={subCategory}
             />
           </LinkContainer>
 
