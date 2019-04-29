@@ -4,6 +4,7 @@ import Styled from "styled-components"
 import NavBarLinks from "./navbarlinks.js"
 import NavBarDropDown from "./navbardropdown.js"
 import NavBarPage from "./navbarpage.js"
+import NavBarPageTree from "./navbarpagetree"
 import ImgButton from "./imgbutton"
 import Hamburger from "./hamburger"
 
@@ -47,17 +48,23 @@ class NavBar extends Component {
             />
             <NavBarPage toggle={this.state.navbarpage}>
               <>
-                <p>
-                  Proident duis enim ad sint commodo ex non culpa do consectetur
-                  pariatur minim dolore. Est esse in irure officia officia
-                  incididunt commodo occaecat cupidatat aliqua ullamco nulla
-                  consequat. Non anim ex aliqua cillum culpa nisi ullamco Lorem
-                  ea consectetur laboris laborum sit. Reprehenderit laboris
-                  magna occaecat dolor culpa enim consequat sit dolore voluptate
-                  consequat tempor enim. Ad pariatur dolor magna occaecat
-                  eiusmod sint anim nostrud minim deserunt incididunt est culpa
-                  deserunt.
-                </p>
+                <NavBarLinks
+                  page="/services"
+                  text="services"
+                  category={services}
+                />
+                <div style={{ height: 6 }} />
+                <NavBarLinks
+                  page="/publications"
+                  text="publications"
+                  category={publications}
+                />
+                <NavBarPageTree
+                  text="Drop Down"
+                  page={["about_us", "people"]}
+                  category={about}
+                  subCategory={subCategory}
+                />
               </>
             </NavBarPage>
           </MenuContainer>

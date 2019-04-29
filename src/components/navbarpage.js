@@ -19,9 +19,7 @@ class NavBarPage extends Component {
 
     return (
       <Container style={css}>
-        <div style={{ marginLeft: 40, marginTop: 80, marginRight: 20 }}>
-          {this.props.children}
-        </div>
+        <CenterContent>{this.props.children}</CenterContent>
       </Container>
     )
   }
@@ -37,6 +35,11 @@ const Container = Styled.div`
     transform: translate3d(-110vw, -10px, 0);
     transition: transform 0.3s linear;
     transform-style: flat;
+    display: flex;
+    align-items: center;
 `
 
-
+const CenterContent = Styled.div`
+  margin: 0 auto;
+  width:98px
+`

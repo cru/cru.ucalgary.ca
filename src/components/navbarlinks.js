@@ -3,13 +3,20 @@ import Styled from "styled-components"
 import { Link } from "gatsby"
 
 class NavBarLinks extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentPage: true,
+    }
+  }
+
   render() {
     const { page, category, text } = this.props
 
     return (
       <Link to={page} style={{ textDecoration: "none", pointerEvents: "none" }}>
         <LinkText className={(category && "selected") || "unSelected"}>
-          {convert(text)}
+          {removeUnderscores(text)}
         </LinkText>
       </Link>
     )
@@ -17,7 +24,7 @@ class NavBarLinks extends Component {
 }
 export default NavBarLinks
 
-const convert = x => x.replace(/_/g, " ")
+const removeUnderscores = x => x.replace(/_/g, " ")
 
 const LinkText = Styled.div`
     pointer-events:all;   

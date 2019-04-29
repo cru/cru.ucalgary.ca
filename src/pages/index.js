@@ -51,7 +51,7 @@ const Root = () => {
         </div>
         <div style={{ height: 500 }} />
         <EmailFAB />
-        <div style={{ height: 500, backgroundColor: "black" }} />
+        <div style={{ height: 300, backgroundColor: "black" }} />
       </MaxWidth>
     </>
   )
