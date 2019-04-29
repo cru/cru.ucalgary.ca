@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components"
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
+import Footer from "../components/footer"
 
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
@@ -18,7 +19,6 @@ library.add(faExternalLinkAlt)
 library.add(faEnvelope)
 
 config.autoAddCss = false
-
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
 
@@ -51,7 +51,7 @@ const Root = () => {
         </div>
         <div style={{ height: 500 }} />
         <EmailFAB />
-        <div style={{ height: 300, backgroundColor: "black" }} />
+        <Footer />
       </MaxWidth>
     </>
   )

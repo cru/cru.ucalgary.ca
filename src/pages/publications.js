@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
+import Footer from "../components/footer"
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
 
@@ -17,6 +18,7 @@ const PublicationsPage = () => (
         <div style={{ height: 3000 }} />
       </div>
       <EmailFAB />
+      <Footer />
     </MaxWidth>
   </ThemeProvider>
 )
