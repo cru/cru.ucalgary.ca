@@ -34,8 +34,8 @@ class EmailFAB extends Component {
           <div
             style={{
               backgroundColor: "transparent",
-              height: 200,
-              marginBottom: "-500px",
+              height: 600,
+              marginBottom: "-800px",
             }}
           />
         </ScrollTrigger>

@@ -19,7 +19,7 @@ class Footer extends Component {
         {/* ***************** Site Map Links  ***************** */}
         <Column>
           <Content>
-            <Title>Site Map</Title>
+            <Title>Explore</Title>
 
             <Link style={{ textDecoration: "none" }} to="/services">
               <LinkStyle>Services</LinkStyle>
@@ -42,7 +42,7 @@ class Footer extends Component {
         {/* ***************** External Links  ***************** */}
         <Column>
           <Content>
-            <Title>Links</Title>
+            <Title>Discover</Title>
             <LinkStyle href="/">Careers{icon()}</LinkStyle>
             <Spacing />
             <LinkStyle href="/">University of Calgary{icon()}</LinkStyle>
