@@ -6,35 +6,42 @@ import Button from "./button"
 
 class EmailForm extends Component {
   render() {
+    const label = name => {
+      return (
+        <>
+          <label>
+            {name}
+            <label style={{ color: "red" }}>*</label>
+          </label>
+        </>
+      )
+    }
     const { style } = this.props
     return (
       <>
         <Form style={style}>
           <Row>
-            <label>
-              Name
-              <label style={{ color: "red" }}>*</label>
-            </label>
-            <div style={{ height: 5 }} />
+            {label("Name")}
+            <Space />
             <Input placeholder="John Doe" />
           </Row>
           <Row>
-            <label>
-              Email
-              <label style={{ color: "red" }}>*</label>
-            </label>
-            <div style={{ height: 5 }} />
+            {label("Email")}
+            <Space />
             <Input placeholder="contact@example.com" />
           </Row>
           <Row>
-            <label>
-              Message
-              <label style={{ color: "red" }}>*</label>
-            </label>
-            <div style={{ height: 5 }} />
+            {label("Message")}
+            <Space />
             <TextArea />
           </Row>
-          <Row style={{ display: "flex", flexDirection:"row-reverse", marginRight:"0" }}>
+          <Row
+            style={{
+              display: "flex",
+              flexDirection: "row-reverse",
+              marginRight: "0",
+            }}
+          >
             <Button>Send</Button>
           </Row>
         </Form>
@@ -62,4 +69,7 @@ const Row = Styled.div`
   max-width:600px;
   color:black;
   font-size:15px;
+`
+const Space = Styled.div`
+  height: 5px;
 `

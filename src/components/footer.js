@@ -43,13 +43,28 @@ class Footer extends Component {
         <Column>
           <Content>
             <Title>Discover</Title>
-            <LinkStyle href="/">Careers{icon()}</LinkStyle>
+            <LinkStyle
+              href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
+              target="_blank"
+            >
+              Careers{icon()}
+            </LinkStyle>
             <Spacing />
-            <LinkStyle href="/">University of Calgary{icon()}</LinkStyle>
+            <LinkStyle href="https://cumming.ucalgary.ca/" target="_blank">
+              Cumming School of Medicine{icon()}
+            </LinkStyle>
             <Spacing />
-            <LinkStyle href="/">Cumming School of Medicine{icon()}</LinkStyle>
+            <LinkStyle href="https://www.ucalgary.ca/" target="_blank">
+              University of Calgary{icon()}
+            </LinkStyle>
+
             <Spacing />
-            <LinkStyle href="/">Alberta Health Services{icon()}</LinkStyle>
+            <LinkStyle
+              href="https://www.albertahealthservices.ca/"
+              target="_blank"
+            >
+              Alberta Health Services{icon()}
+            </LinkStyle>
           </Content>
         </Column>
 
@@ -76,7 +91,7 @@ export default Footer
 
 const Container = Styled.div`
     width:100%;
-    background-color: #0a0a0a;
+    background-color: #212121;
     display: flex;
     flex-direction:row;
 
@@ -97,8 +112,7 @@ const Content = Styled.div`
   display: inline-block;
   margin: 0 auto;
   font-size:15px;
-  @media only screen and (max-width: ${props =>
-      props.theme.mobileBreakPoint}){
+  @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
         margin:0;
         padding-left:25px;
   }
