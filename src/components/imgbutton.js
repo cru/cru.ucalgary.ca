@@ -8,12 +8,20 @@ class ImgButton extends Component {
     const { logo, to, href, icon } = this.props
 
     const content = () => {
-      return (
-        <>
-          <LogoImg src={logo} />
-          <FontAwesomeIcon className="icon" icon={icon} />
-        </>
-      )
+      if (icon) {
+        return (
+          <>
+            <LogoImg src={logo} />
+            <FontAwesomeIcon className="icon" icon={icon} />
+          </>
+        )
+      } else {
+        return (
+          <>
+            <LogoImg src={logo} />
+          </>
+        )
+      }
     }
 
     const links = () => {

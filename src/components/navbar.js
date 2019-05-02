@@ -51,12 +51,14 @@ class NavBar extends Component {
                 <NavBarLinks
                   page="/services"
                   text="services"
+                  style={{ fontSize: 17 }}
                   category={services}
                 />
                 <div style={{ height: 6 }} />
                 <NavBarLinks
                   page="/publications"
                   text="publications"
+                  style={{ fontSize: 17 }}
                   category={publications}
                 />
                 <NavBarPageTree
@@ -72,7 +74,7 @@ class NavBar extends Component {
             <LinkSpacing />
           </MenuContainerOpposite>
 
-          <ImgButton logo={cruImg} to="/" />
+          <ImgButton logo={cruImg} to="/"/>
 
           <LinkSpacing />
 
@@ -150,7 +152,7 @@ const Bar = Styled.div`
 const LinkSpacing = Styled.div`
   width:25px;
   @media only screen and (max-width: ${props => props.theme.navbarBreakPoint}){
-    width:13px;
+    width:20px;
   }
 `
 const MenuContainer = Styled.div`

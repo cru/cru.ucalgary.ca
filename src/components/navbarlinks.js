@@ -11,11 +11,11 @@ class NavBarLinks extends Component {
   }
 
   render() {
-    const { page, category, text } = this.props
+    const { page, category, text, style } = this.props
 
     return (
       <Link to={page} style={{ textDecoration: "none", pointerEvents: "none" }}>
-        <LinkText className={(category && "selected") || "unSelected"}>
+        <LinkText className={(category && "selected") || "unSelected"} style = {style}>
           {removeUnderscores(text)}
         </LinkText>
       </Link>

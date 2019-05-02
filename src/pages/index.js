@@ -9,14 +9,14 @@ import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import Footer from "../components/footer"
 
-import { library, config } from "@fortawesome/fontawesome-svg-core"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
-library.add(faCaretDown)
-library.add(faExternalLinkAlt)
-library.add(faEnvelope)
+import { library, config } from "@fortawesome/fontawesome-svg-core"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons/faCaretDown"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
+
+library.add(faCaretDown, faExternalLinkAlt,faEnvelope )
+
 
 config.autoAddCss = false
 

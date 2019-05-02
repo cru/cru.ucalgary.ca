@@ -41,7 +41,7 @@ class EmailFAB extends Component {
         </ScrollTrigger>
         <ButtonContainer toggle={this.state.toggle}>
           <Link
-            to={this.state.toggle && "form"}
+            to={"form"}
             spy={true}
             smooth={true}
             offset={-50}

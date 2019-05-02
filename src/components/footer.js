@@ -122,7 +122,7 @@ const Spacing = Styled.div`
   height:12px;
 `
 
-const LinkStyle = Styled.a`
+const LinkStyle = Styled.span`
   color: ${props => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;

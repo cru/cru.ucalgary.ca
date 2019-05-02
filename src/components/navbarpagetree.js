@@ -9,11 +9,12 @@ class NavBarPageTree extends Component {
     const routes = this.props.page
 
     const pages = routes.map(routes => (
-      <SubCategory>
+      <SubCategory key={routes.toString()}>
         <>- </>
         <NavBarLinks
           page={"/" + routes}
           text={routes}
+          style={{ fontSize: 17 }}
           category={subCategory === routes && category}
         />
       </SubCategory>
@@ -34,9 +35,10 @@ export default NavBarPageTree
 
 const Category = Styled.div`
   text-transform:uppercase;
+  width:150px;
   margin-bottom:-8px;
   h2 {
-    font-size:15px;
+    font-size:17px;
   }
 `
 

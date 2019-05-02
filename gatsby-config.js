@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Testing`,
+    title: `Clinical Research Unit`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@cru`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,8 +28,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#82d3d6;`,
-        theme_color: `#82d3d6;`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
       },
     },
