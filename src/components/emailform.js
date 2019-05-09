@@ -21,6 +21,8 @@ class EmailForm extends Component {
       <>
         <Form style={style}>
           <Row>
+            <h2>Get in Touch</h2>
+            <br />
             {label("Name")}
             <Space />
             <Input placeholder="John Doe" />

@@ -8,7 +8,6 @@ import NavBarPageTree from "./navbarpagetree"
 import ImgButton from "./imgbutton"
 import Hamburger from "./hamburger"
 
-
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
 

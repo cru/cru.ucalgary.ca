@@ -7,7 +7,7 @@ class ConstructionBanner extends Component {
       <>
         <Banner>
           <p>
-            🚧&nbsp;&nbsp;👷🏽‍&nbsp;&nbsp;&nbsp;This website is currently under
+            🚧 👷🏽‍ This website is currently under
             construction&nbsp;&nbsp;&nbsp;&nbsp;🚧
           </p>
         </Banner>
@@ -23,15 +23,18 @@ const Banner = Styled.div`
     position: fixed;
     bottom:0;
     width: 100%;
-    height:25px;
+    height:24px;
     max-width: ${props => props.theme.pageMaxWidth};
-    background-color:#F7C906;
+    background-color:#D3202E;
     text-align:center;
-    outline: 2px dotted black;
+    outline: 1px dotted black;
+    margin:2px;
     p{
+        padding-top:3px;
         margin: 0 auto;
-        color:black;
-        font-size:14.5px;
+        color:white;
+        font-size:14px;
+        font-weight:700;
     }
 
 `
