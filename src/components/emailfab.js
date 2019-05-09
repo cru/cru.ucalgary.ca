@@ -41,7 +41,7 @@ class EmailFAB extends Component {
         </ScrollTrigger>
         <ButtonContainer toggle={this.state.toggle}>
           <Link
-            to={"form"}
+            to={this.state.toggle ? "form" : "none"}
             spy={true}
             smooth={true}
             offset={-50}
@@ -108,7 +108,7 @@ const Button = Styled.div`
     width: ${props => (props.toggle ? "120px" : "100%")};
     border-radius: ${props => (props.toggle ? "50px" : "0%")};
     background-color:  ${props =>
-          props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
+      props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
     box-shadow:${props =>
       props.toggle ? props.theme.boxShadowAccent : "none"};
 

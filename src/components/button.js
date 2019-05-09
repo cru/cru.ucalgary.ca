@@ -16,7 +16,7 @@ const DefaultButton = Styled.button`
     height: 38px;
     width: 100px;
     background-color:transparent;
-    border: 1.5px solid black;
+    border: 1px solid black;
     border-radius:4px;
     cursor:pointer;
     transition: box-shadow ${props => props.theme.boxShadowTrans};

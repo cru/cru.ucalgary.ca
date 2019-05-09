@@ -8,6 +8,7 @@ import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import Footer from "../components/footer"
+import ConstructionBanner from "../components/constructionbanner"
 
 
 import { library, config } from "@fortawesome/fontawesome-svg-core"
@@ -15,8 +16,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons/faCaretDown"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
 
-library.add(faCaretDown, faExternalLinkAlt,faEnvelope )
-
+library.add(faCaretDown, faExternalLinkAlt, faEnvelope)
 
 config.autoAddCss = false
 
@@ -27,6 +27,7 @@ const Root = () => {
     <>
       <MaxWidth>
         <NavBar />
+        <ConstructionBanner />
         <div style={{ height: 500, padding: 40 }}>
           <p>
             Mollit aliqua ut amet excepteur. Laborum incididunt aliqua labore

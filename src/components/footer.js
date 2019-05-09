@@ -21,7 +21,7 @@ class Footer extends Component {
           <Content>
             <Title>Explore</Title>
 
-            <Link style={{ textDecoration: "none" }} to="/services">
+            {/* <Link style={{ textDecoration: "none" }} to="/services">
               <LinkStyle>Services</LinkStyle>
             </Link>
             <Spacing />
@@ -32,7 +32,7 @@ class Footer extends Component {
             <Link style={{ textDecoration: "none" }} to="/people">
               <LinkStyle>People</LinkStyle>
             </Link>
-            <Spacing />
+            <Spacing /> */}
             <Link style={{ textDecoration: "none" }} to="/publications">
               <LinkStyle>Publications</LinkStyle>
             </Link>
@@ -122,7 +122,7 @@ const Spacing = Styled.div`
   height:12px;
 `
 
-const LinkStyle = Styled.span`
+const LinkStyle = Styled.a`
   color: ${props => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;
@@ -147,7 +147,3 @@ const Address = Styled.p`
     font-weight:400;
     color:grey;
 `
-
-// Site Map
-// Relevat Links
-// Address

@@ -8,6 +8,7 @@ import NavBarPageTree from "./navbarpagetree"
 import ImgButton from "./imgbutton"
 import Hamburger from "./hamburger"
 
+
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
 
@@ -48,12 +49,12 @@ class NavBar extends Component {
             />
             <NavBarPage toggle={this.state.navbarpage}>
               <>
-                <NavBarLinks
+                {/* <NavBarLinks
                   page="/services"
                   text="services"
                   style={{ fontSize: 17 }}
                   category={services}
-                />
+                /> */}
                 <div style={{ height: 6 }} />
                 <NavBarLinks
                   page="/publications"
@@ -61,12 +62,12 @@ class NavBar extends Component {
                   style={{ fontSize: 17 }}
                   category={publications}
                 />
-                <NavBarPageTree
+                {/* <NavBarPageTree
                   text="Drop Down"
                   page={["about_us", "people"]}
                   category={about}
                   subCategory={subCategory}
-                />
+                /> */}
               </>
             </NavBarPage>
           </MenuContainer>
@@ -74,14 +75,14 @@ class NavBar extends Component {
             <LinkSpacing />
           </MenuContainerOpposite>
 
-          <ImgButton logo={cruImg} to="/"/>
+          <ImgButton logo={cruImg} to="/" />
 
           <LinkSpacing />
 
-          <LinkContainer>
+          {/* <LinkContainer>
             <NavBarLinks page="/services" text="services" category={services} />
           </LinkContainer>
-          <LinkSpacing />
+          <LinkSpacing /> */}
 
           <LinkContainer>
             <NavBarLinks
@@ -93,14 +94,14 @@ class NavBar extends Component {
 
           <LinkSpacing />
 
-          <LinkContainer>
+          {/* <LinkContainer>
             <NavBarDropDown
               text="Drop Down"
               page={["about_us", "people"]}
               category={about}
               subCategory={subCategory}
             />
-          </LinkContainer>
+          </LinkContainer> */}
 
           <RightAlign>
             <ImgButton
