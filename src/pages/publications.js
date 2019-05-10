@@ -7,6 +7,15 @@ import Footer from "../components/footer"
 import ConstructionBanner from "../components/constructionbanner"
 import PublicationLink from "../components/publicationlink"
 
+import { library, config } from "@fortawesome/fontawesome-svg-core"
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons/faCaretDown"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
+
+library.add(faCaretDown, faExternalLinkAlt, faEnvelope)
+
+config.autoAddCss = false
+
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
 
 const PublicationsPage = () => (
