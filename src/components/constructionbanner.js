@@ -27,7 +27,7 @@ const Banner = Styled.div`
     max-width: ${props => props.theme.pageMaxWidth};
     background-color:#D3202E;
     text-align:center;
-    outline: 1px dotted black;
+    outline: 2px dotted black;
     margin:2px;
     p{
         padding-top:3px;
