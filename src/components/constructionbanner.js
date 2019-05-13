@@ -19,9 +19,7 @@ class ConstructionBanner extends Component {
 export default ConstructionBanner
 
 const Banner = Styled.div`
-
-    position: fixed;
-    bottom:0;
+    
     width: 100%;
     height:24px;
     max-width: ${props => props.theme.pageMaxWidth};
@@ -33,8 +31,8 @@ const Banner = Styled.div`
         padding-top:3px;
         margin: 0 auto;
         color:white;
-        font-size:14px;
-        font-weight:700;
+        font-size:15px;
+        font-weight:400;
     }
 
 `

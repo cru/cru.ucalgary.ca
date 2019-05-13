@@ -19,14 +19,13 @@ library.add(faCaretDown, faExternalLinkAlt, faEnvelope)
 
 config.autoAddCss = false
 
-const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
 const Root = () => {
   return (
     <>
       <MaxWidth>
         <NavBar />
-        <ConstructionBanner />
         <div style={{ height: 500, padding: 40 }}>
           <h3>
             The Clinical Research Unit (CRU) is a core support centre of the

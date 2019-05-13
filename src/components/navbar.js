@@ -7,6 +7,7 @@ import NavBarPage from "./navbarpage.js"
 import NavBarPageTree from "./navbarpagetree"
 import ImgButton from "./imgbutton"
 import Hamburger from "./hamburger"
+import ConstructionBanner from "../components/constructionbanner"
 
 import uofcImg from "../images/uc-horz-rgb.png"
 import cruImg from "../images/cru_logo.png"
@@ -39,6 +40,10 @@ class NavBar extends Component {
 
     return (
       <>
+      
+        <ConstructionBanner />
+      
+
         <Bar>
           <MenuContainer>
             <LinkSpacing />

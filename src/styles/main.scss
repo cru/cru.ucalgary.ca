@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-@import "./vars.scss";
+@import "./theme.scss";
 @import "node_modules/@fortawesome/fontawesome-svg-core/styles";
 
 html,
 body {
   font-family: "Lato", sans-serif;
-  background-color: rgb(251, 252, 255);
+  background-color: white;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

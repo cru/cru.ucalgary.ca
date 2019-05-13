@@ -4,7 +4,6 @@ import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
 import Footer from "../components/footer"
-import ConstructionBanner from "../components/constructionbanner"
 import PublicationLink from "../components/publicationlink"
 
 import { library, config } from "@fortawesome/fontawesome-svg-core"
@@ -16,13 +15,12 @@ library.add(faCaretDown, faExternalLinkAlt, faEnvelope)
 
 config.autoAddCss = false
 
-const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/vars.scss')
+const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
 const PublicationsPage = () => (
   <ThemeProvider theme={theme}>
     <MaxWidth>
       <NavBar publications="publications" />
-      <ConstructionBanner />
       <div style={{ padding: 40 }}>
         <h2>Publications</h2>
         <PublicationLink
