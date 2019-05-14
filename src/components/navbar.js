@@ -40,10 +40,7 @@ class NavBar extends Component {
 
     return (
       <>
-      
         <ConstructionBanner />
-      
-
         <Bar>
           <MenuContainer>
             <LinkSpacing />

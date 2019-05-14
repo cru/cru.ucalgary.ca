@@ -5,11 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class Footer extends Component {
   render() {
-    const icon = () => {
+    const externalLinkIcon = name => {
       return (
         <>
           &nbsp;&nbsp;
-          <FontAwesomeIcon className="linkStyleIcon" icon="external-link-alt" />
+          <FontAwesomeIcon className="linkStyleIcon" icon={name} />
+        </>
+      )
+    }
+
+    const contactIcon = name => {
+      return (
+        <>
+          <FontAwesomeIcon className="contactStyleIcon" icon={name} />
+          &nbsp;&nbsp;
         </>
       )
     }
@@ -47,15 +56,15 @@ class Footer extends Component {
               href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
               target="_blank"
             >
-              Careers{icon()}
+              Careers{externalLinkIcon("external-link-alt")}
             </LinkStyle>
             <Spacing />
             <LinkStyle href="https://cumming.ucalgary.ca/" target="_blank">
-              Cumming School of Medicine{icon()}
+              Cumming School of Medicine{externalLinkIcon("external-link-alt")}
             </LinkStyle>
             <Spacing />
             <LinkStyle href="https://www.ucalgary.ca/" target="_blank">
-              University of Calgary{icon()}
+              University of Calgary{externalLinkIcon("external-link-alt")}
             </LinkStyle>
 
             <Spacing />
@@ -63,7 +72,7 @@ class Footer extends Component {
               href="https://www.albertahealthservices.ca/"
               target="_blank"
             >
-              Alberta Health Services{icon()}
+              Alberta Health Services{externalLinkIcon("external-link-alt")}
             </LinkStyle>
           </Content>
         </Column>
@@ -76,10 +85,10 @@ class Footer extends Component {
               Health Sciences Centre <br />
               3330 Hospital Drive NW <br />
               Calgary, AB T2N 4N1 <br />
-              <br />
-              Tel: 1(403)-210-3845 <br />
-              Fax: 1(403)-210-7820 <br />
-              Email: cru@ucalgary.ca
+              <div style = {{height:10}}/>
+              {contactIcon("phone")}
+              1-403-210-3845 <br />
+              {contactIcon("envelope")} cru@ucalgary.ca
             </Address>
           </Content>
         </Column>
@@ -134,6 +143,10 @@ const LinkStyle = Styled.a`
     font-size:11px;
     color:grey;
   }
+  .contactStyleIcon{
+    color:grey;
+    font-size:7px;
+  }
 `
 
 const Title = Styled.p`
@@ -146,4 +159,5 @@ const Address = Styled.p`
     font-size:14px;
     font-weight:400;
     color:grey;
+    line-height:20px;
 `
