@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "cru.ucalgary.ca",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple homepage website for the CRU (clinical research unit)",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jared Rooprai <hello@jaredrooprai.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.16",
     "@fortawesome/free-solid-svg-icons": "^5.8.0",
