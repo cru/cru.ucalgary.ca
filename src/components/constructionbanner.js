@@ -7,8 +7,13 @@ class ConstructionBanner extends Component {
       <>
         <Banner>
           <p>
-            🚧 👷🏽‍ This website is currently under
-            construction&nbsp;&nbsp;&nbsp;&nbsp;🚧
+            <span role="img" aria-label="Construction warning">
+              🚧 👷🏽‍
+            </span>{" "}
+            This website is currently under construction&nbsp;&nbsp;&nbsp;&nbsp;
+            <span role="img" aria-label="Construction warning">
+              >🚧
+            </span>
           </p>
         </Banner>
       </>

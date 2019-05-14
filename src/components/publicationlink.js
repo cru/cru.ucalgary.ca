@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class PublicationLink extends Component {
   render() {
-    const { url, title, authors, number, year, publisher } = this.props
+    const { url, title, authors, year, publisher } = this.props
     const icon = () => {
       return (
         <>
@@ -20,7 +20,6 @@ class PublicationLink extends Component {
     return (
       <>
         <Container>
-          <Number>{number}</Number>
           <Information>
             <Title href={url} target="_blank">
               {title}
@@ -41,12 +40,14 @@ export default PublicationLink
 
 const Container = Styled.div`
     display:flex;
-    padding:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+
 `
 
 const Information = Styled.div`
     display:block;
-    padding-left:50px;
     max-width:550px;
 `
 
@@ -67,10 +68,7 @@ const Title = Styled.a`
 
     }
 `
-const Number = Styled.p`
-    font-size:14px;
-    width:6px;
-`
+
 const Year = Styled.p`
     margin-left: auto;
     font-size:14px;

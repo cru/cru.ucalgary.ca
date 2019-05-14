@@ -33,15 +33,12 @@ class Footer extends Component {
             {/* <Link style={{ textDecoration: "none" }} to="/services">
               <LinkStyle>Services</LinkStyle>
             </Link>
-            <Spacing />
             <Link style={{ textDecoration: "none" }} to="/about_us">
               <LinkStyle>About Us</LinkStyle>
             </Link>
-            <Spacing />
             <Link style={{ textDecoration: "none" }} to="/people">
               <LinkStyle>People</LinkStyle>
-            </Link>
-            <Spacing /> */}
+            </Link> */}
             <Link style={{ textDecoration: "none" }} to="/publications">
               <LinkStyle>Publications</LinkStyle>
             </Link>
@@ -52,28 +49,43 @@ class Footer extends Component {
         <Column>
           <Content>
             <Title>Discover</Title>
-            <LinkStyle
+            <a
               href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Careers{externalLinkIcon("external-link-alt")}
-            </LinkStyle>
-            <Spacing />
-            <LinkStyle href="https://cumming.ucalgary.ca/" target="_blank">
-              Cumming School of Medicine{externalLinkIcon("external-link-alt")}
-            </LinkStyle>
-            <Spacing />
-            <LinkStyle href="https://www.ucalgary.ca/" target="_blank">
-              University of Calgary{externalLinkIcon("external-link-alt")}
-            </LinkStyle>
-
-            <Spacing />
-            <LinkStyle
+              <LinkStyle>
+                Careers{externalLinkIcon("external-link-alt")}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://cumming.ucalgary.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                Cumming School of Medicine
+                {externalLinkIcon("external-link-alt")}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://www.ucalgary.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                University of Calgary{externalLinkIcon("external-link-alt")}
+              </LinkStyle>
+            </a>
+            <a
               href="https://www.albertahealthservices.ca/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Alberta Health Services{externalLinkIcon("external-link-alt")}
-            </LinkStyle>
+              <LinkStyle>
+                Alberta Health Services{externalLinkIcon("external-link-alt")}
+              </LinkStyle>
+            </a>
           </Content>
         </Column>
 
@@ -85,7 +97,8 @@ class Footer extends Component {
               Health Sciences Centre <br />
               3330 Hospital Drive NW <br />
               Calgary, AB T2N 4N1 <br />
-              <div style = {{height:10}}/>
+            </Address>
+            <Address>
               {contactIcon("phone")}
               1-403-210-3845 <br />
               {contactIcon("envelope")} cru@ucalgary.ca
@@ -127,11 +140,7 @@ const Content = Styled.div`
   }
 `
 
-const Spacing = Styled.div`
-  height:12px;
-`
-
-const LinkStyle = Styled.a`
+const LinkStyle = Styled.p`
   color: ${props => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;
@@ -159,5 +168,5 @@ const Address = Styled.p`
     font-size:14px;
     font-weight:400;
     color:grey;
-    line-height:20px;
+    line-height:22px;
 `
