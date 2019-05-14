@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 
 import { ThemeProvider } from "styled-components"
 import "../styles/main.scss"
@@ -14,6 +15,11 @@ const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../s
 const Root = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Clinical Research Unit</title>
+        <link href="https://cru-prototype.researchcalgary.ca" />
+      </Helmet>
       <MaxWidth>
         <NavBar />
         <div style={{ height: 500, padding: 40 }}>

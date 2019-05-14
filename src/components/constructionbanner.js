@@ -12,7 +12,7 @@ class ConstructionBanner extends Component {
             </span>{" "}
             This website is currently under construction&nbsp;&nbsp;&nbsp;&nbsp;
             <span role="img" aria-label="Construction warning">
-              >🚧
+              🚧
             </span>
           </p>
         </Banner>
@@ -27,17 +27,19 @@ const Banner = Styled.div`
     
     width: 100%;
     height:24px;
+    bottom:0;
+    position:fixed;
     max-width: ${props => props.theme.pageMaxWidth};
-    background-color:#D3202E;
+    background-color:white;
     text-align:center;
-    outline: 2px dotted black;
+    outline: 5px dotted #d90006;
     margin:2px;
     p{
         padding-top:3px;
         margin: 0 auto;
-        color:white;
+        color:black;
         font-size:15px;
-        font-weight:400;
+        font-weight:700;
     }
 
 `
