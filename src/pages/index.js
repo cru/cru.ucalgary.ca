@@ -1,16 +1,13 @@
-import "../styles/main.scss"
-import "../data/fontawesomeimports"
-
 import React from "react"
 
 import { ThemeProvider } from "styled-components"
+import "../styles/main.scss"
+import "../data/fontawesomeimports"
 
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import Footer from "../components/footer"
-
-
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
