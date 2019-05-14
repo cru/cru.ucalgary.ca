@@ -8,7 +8,7 @@ import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
 import Footer from "../components/footer"
-import PublicationsList from "../components/PublicationsList"
+import PublicationsList from "../components/publicationslist"
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
