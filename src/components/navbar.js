@@ -153,27 +153,27 @@ const Bar = Styled.div`
 
 const LinkSpacing = Styled.div`
   width:25px;
-  @media only screen and (max-width: ${props => props.theme.navbarBreakPoint}){
+  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
     width:20px;
   }
 `
 const MenuContainer = Styled.div`
   display:flex;
     @media only screen and (min-width: ${props =>
-      props.theme.navbarBreakPoint}){
+      props.theme.tabletBreakPoint}){
     display:none;
   }
 `
 const MenuContainerOpposite = Styled.div`
   display:flex;
     @media only screen and (max-width: ${props =>
-      props.theme.navbarBreakPoint}){
+      props.theme.tabletBreakPoint}){
     display:none;
   }
 `
 
 const LinkContainer = Styled.div`
-  @media only screen and (max-width: ${props => props.theme.navbarBreakPoint}){
+  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
     display:none;
   }
 `

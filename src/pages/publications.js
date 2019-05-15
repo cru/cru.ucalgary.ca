@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
+import Padding from "../components/padding"
 import Footer from "../components/footer"
 import PublicationsList from "../components/publicationslist"
 
@@ -18,11 +19,12 @@ const PublicationsPage = () => (
     <ThemeProvider theme={theme}>
       <MaxWidth>
         <NavBar publications="publications" />
-        <div style={{ padding: 40 }}>
+        <Padding>
           <h2>Publications</h2>
-          <PublicationsList />
-          <div style={{ height: 200 }} />
-        </div>
+        </Padding>
+
+        <PublicationsList />
+        <div style={{ height: 200 }} />
         <EmailFAB />
         <Footer />
       </MaxWidth>

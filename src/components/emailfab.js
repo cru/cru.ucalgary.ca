@@ -109,8 +109,7 @@ const Button = Styled.div`
     height: ${props => (props.toggle ? "56px" : "600px")};
     width: ${props => (props.toggle ? "120px" : "100%")};
     border-radius: ${props => (props.toggle ? "50px" : "0%")};
-    background-color:  ${props =>
-      props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
+    background-color:  ${props => props.theme.brandPrimColor};
     box-shadow:${props =>
       props.toggle ? props.theme.boxShadowAccent : "none"};
 

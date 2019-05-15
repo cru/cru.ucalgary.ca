@@ -11,7 +11,7 @@ class EmailForm extends Component {
         <>
           <label>
             {name}
-            <label style={{ color: "red" }}>*</label>
+            <label style={{ color: "black" }} />
           </label>
         </>
       )
@@ -25,12 +25,12 @@ class EmailForm extends Component {
             <br />
             {label("Name")}
             <Space />
-            <Input placeholder="John Doe" />
+            <Input />
           </Row>
           <Row>
             {label("Email")}
             <Space />
-            <Input placeholder="contact@example.com" />
+            <Input />
           </Row>
           <Row>
             {label("Message")}
@@ -69,7 +69,7 @@ const Row = Styled.div`
 
   width:100%;
   max-width:600px;
-  color:black;
+  color: ${props => props.theme.fontPrimColor};
   font-size:15px;
 `
 const Space = Styled.div`

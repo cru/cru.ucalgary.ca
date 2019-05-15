@@ -40,7 +40,6 @@ export default PublicationLink
 
 const Container = Styled.div`
     display:flex;
-    padding-right:20px;
     padding-top:20px;
     padding-bottom:20px;
 
@@ -61,11 +60,10 @@ const Title = Styled.a`
     font-size:15px;
     text-decoration:none;
     :hover {
-      color:red;
+      color: ${props => props.theme.brandSecondColor};
     }
     :active {
-      color:blue;
-
+      color:#1A0DAB;
     }
 `
 
@@ -75,7 +73,7 @@ const MobileYear = Styled.p`
     @media only screen and (min-width: ${props =>
       props.theme.tabletBreakPoint}){
       display:none;
-  }
+    }
 `
 
 
@@ -86,7 +84,7 @@ const DesktopYear = Styled.p`
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       display:none;
-  }
+    }
 `
 
 
