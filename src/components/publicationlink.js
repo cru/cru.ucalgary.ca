@@ -25,11 +25,11 @@ class PublicationLink extends Component {
               {title}
               {icon()}
             </Title>
-
+            <MobileYear>{year}</MobileYear>
             <Authors>{authors}</Authors>
             <Publisher>{publisher}</Publisher>
           </Information>
-          <Year>{year}</Year>
+          <DesktopYear>{year}</DesktopYear>
         </Container>
       </>
     )
@@ -69,10 +69,26 @@ const Title = Styled.a`
     }
 `
 
-const Year = Styled.p`
+const MobileYear = Styled.p`
+    font-size:14px;
+    font-weight:700;
+    @media only screen and (min-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      display:none;
+  }
+`
+
+
+const DesktopYear = Styled.p`
     margin-left: auto;
     font-size:14px;
+    font-weight:700;
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      display:none;
+  }
 `
+
 
 const Authors = Styled.p`
     font-size:13px;
