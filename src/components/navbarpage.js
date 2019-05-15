@@ -33,7 +33,7 @@ const Container = Styled.div`
     height:100vh;
     width:100vw;
     transform: translate3d(-110vw, -10px, 0);
-    transition: transform 0.3s linear;
+    transition: transform 0s linear;
     transform-style: flat;
     display: flex;
     align-items: center;
