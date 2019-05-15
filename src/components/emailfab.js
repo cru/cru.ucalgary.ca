@@ -79,6 +79,7 @@ const PlaceHolderContainer = Styled.div`
 `
 
 const ButtonContainer = Styled.div`
+    pointer-events: none;
     bottom: 0;
     width:100%;
     max-width: ${props => props.theme.pageMaxWidth};
@@ -87,6 +88,7 @@ const ButtonContainer = Styled.div`
 `
 
 const Button = Styled.div`
+    pointer-events: auto;
     float:right;
     font-size:18px;
     display: flex;
