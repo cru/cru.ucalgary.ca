@@ -1,8 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Clinical Research Unit`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@cru`,
+    title: "Clinical Research Unit",
+    titleTemplate: "CRU · %s",
+    description: `Working with researchers in the Cumming School of Medicine to support the delivery of cutting edge research support services in the areas of data, technology and methodology.`,
+    url: "https://cru-prototype.researchcalgary.ca/",
+    siteUrl: "https://cru-prototype.researchcalgary.ca/",
+    image: "src/images/cru-hash.png",
+    twitterUsername: "@crucalgary",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,7 +35,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon:`src/images/cru-hash.png`
+        icon: `src/images/cru-hash.png`
       },
     },
     `gatsby-transformer-json`,
@@ -42,9 +46,13 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://cru-prototype.researchcalgary.ca/',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
 
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
   ],
 }

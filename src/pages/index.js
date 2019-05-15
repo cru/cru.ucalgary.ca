@@ -1,10 +1,10 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import { ThemeProvider } from "styled-components"
 import "../styles/main.scss"
 import "../data/fontawesomeimports"
 
+import SEO from "../components/seo"
 import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
@@ -15,11 +15,7 @@ const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../s
 const Root = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Clinical Research Unit</title>
-        <link href="https://cru-prototype.researchcalgary.ca" />
-      </Helmet>
+      <SEO />
       <MaxWidth>
         <NavBar />
         <div style={{ height: 500, padding: 40 }}>

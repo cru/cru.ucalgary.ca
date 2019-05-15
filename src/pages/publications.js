@@ -1,9 +1,9 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import "../data/fontawesomeimports"
 import { ThemeProvider } from "styled-components"
 
+import SEO from "../components/seo"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import MaxWidth from "../components/maxwidth"
@@ -14,11 +14,7 @@ const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../s
 
 const PublicationsPage = () => (
   <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Clinical Research Unit - Publications</title>
-      <link href="https://cru-prototype.researchcalgary.ca/publications" />
-    </Helmet>
+    <SEO title="Publications" />
     <ThemeProvider theme={theme}>
       <MaxWidth>
         <NavBar publications="publications" />
