@@ -19,9 +19,11 @@ const PublicationsPage = () => (
     <ThemeProvider theme={theme}>
       <MaxWidth>
         <NavBar publications="publications" />
+        <div style={{ height: 75 }} />
         <Padding>
           <h2>Publications</h2>
         </Padding>
+        <div style={{ height: 20 }} />
 
         <PublicationsList />
         <div style={{ height: 200 }} />
