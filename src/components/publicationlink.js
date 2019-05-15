@@ -25,9 +25,9 @@ class PublicationLink extends Component {
               {title}
               {icon()}
             </Title>
-            <MobileYear>{year}</MobileYear>
             <Authors>{authors}</Authors>
             <Publisher>{publisher}</Publisher>
+            <MobileYear>{year}</MobileYear>
           </Information>
           <DesktopYear>{year}</DesktopYear>
         </Container>
