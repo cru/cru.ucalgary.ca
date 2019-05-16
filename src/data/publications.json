@@ -32,14 +32,16 @@
         "authors": "C Weaver, K McBrien, T Sajobi, PE Ronksley, B Lethebe, T Williamson",
         "publisher": "International Journal of Population Data Science 3 (4)",
         "year": "2018",
-        "url": "https://ijpds.org/article/view/840"
+        "url": "https://ijpds.org/article/view/840",
+        "group": "machineLearning"
     },
     {
         "title": "Developing a Primary Care EMR-based Frailty Definition using Machine Learning",
         "authors": "S Aponte-Hao, B Mele, D Jackson, A Katz, C Leduc, B Lethebe, S Wong, ...",
         "publisher": "International Journal of Population Data Science 3 (4)",
         "year": "2018",
-        "url": "https://ijpds.org/article/view/811"
+        "url": "https://ijpds.org/article/view/811",
+        "group": "machineLearning"
     },
     {
         "title": "Identification of validated case definitions for medical conditions used in primary care electronic medical record databases: a systematic review",
@@ -60,7 +62,8 @@
         "authors": "BC Lethebe",
         "publisher": "Cumming School of Medicine",
         "year": "2018",
-        "url": "https://prism.ucalgary.ca/handle/1880/106538"
+        "url": "https://prism.ucalgary.ca/handle/1880/106538",
+        "group": "machineLearning"
     },
     {
         "title": "A randomized trial comparing high definition colonoscopy alone with high definition dye spraying and electronic virtual chromoendoscopy for detection of colonic neoplastic …",
@@ -74,28 +77,32 @@
         "authors": "IA Vallerand, RT Lewinson, LM Parsons, J Hardin, RM Haber, ...",
         "publisher": "JAMA dermatology",
         "year": "2019",
-        "url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2720311"
+        "url": "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2720311",
+        "group": "depression"
     },
     {
         "title": "Vitiligo and major depressive disorder: a bidirectional population-based cohort study",
         "authors": "IA Vallerand, RT Lewinson, LM Parsons, J Hardin, RM Haber, ...",
         "publisher": "Journal of the American Academy of Dermatology",
         "year": "2018",
-        "url": "https://www.sciencedirect.com/science/article/pii/S0190962218329827"
+        "url": "https://www.sciencedirect.com/science/article/pii/S0190962218329827",
+        "group": "depression"
     },
     {
         "title": "Depression increases the risk of inflammatory bowel disease, which may be mitigated by the use of antidepressants in the treatment of depression",
         "authors": "AD Frolkis, IA Vallerand, AA Shaheen, MW Lowerison, MG Swain, ...",
         "publisher": "Gut, gutjnl-2018-317182",
         "year": "2018",
-        "url": "https://gut.bmj.com/content/early/2018/10/18/gutjnl-2018-317182.full?int_source=trendmd&int_medium=trendmd&int_campaign=trendmd"
+        "url": "https://gut.bmj.com/content/early/2018/10/18/gutjnl-2018-317182.full?int_source=trendmd&int_medium=trendmd&int_campaign=trendmd",
+        "group": "depression"
     },
     {
         "title": "Risk of depression among patients with acne: A population-based cohort study using The Health Improvement Network (THIN) database",
         "authors": "I Vallerand, R Lewinson, L Parsons, M Lowerison, A Frolkis, G Kaplan, ...",
         "publisher": "Journal of the American Academy of Dermatology 79 (3)",
         "year": "2018",
-        "url": "https://insights.ovid.com/american-academy-dermatology/jaade/2018/09/001/risk-depression-among-patients-acne-population/936/00004725"
+        "url": "https://insights.ovid.com/american-academy-dermatology/jaade/2018/09/001/risk-depression-among-patients-acne-population/936/00004725",
+        "group": "depression"
     },
     {
         "title": "Psoriasis and the risk of foot and ankle tendinopathy or enthesopathy: A population-based study",
@@ -123,6 +130,7 @@
         "authors": "IA Vallerand, RT Lewinson, LM Parsons, MW Lowerison, AD Frolkis, ...",
         "publisher": "The British journal of dermatology 178 (3), e194",
         "year": "2018",
-        "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/bjd.16099"
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/bjd.16099",
+        "group": "depression"
     }
 ]

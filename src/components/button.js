@@ -5,7 +5,9 @@ class Button extends Component {
   render() {
     return (
       <>
-        <DefaultButton>{this.props.children}</DefaultButton>
+        <DefaultButton style={this.props.style} onClick={this.props.onClick}>
+          {this.props.children}
+        </DefaultButton>
       </>
     )
   }
@@ -17,7 +19,7 @@ const DefaultButton = Styled.button`
     width: 100px;
     background-color:transparent;
     border: 1px solid black;
-    border-radius:4px;
+    border-radius:50px;
     cursor:pointer;
     transition: box-shadow ${props => props.theme.boxShadowTrans};
     font-size:14.5px;

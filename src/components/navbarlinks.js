@@ -3,19 +3,15 @@ import Styled from "styled-components"
 import { Link } from "gatsby"
 
 class NavBarLinks extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      currentPage: true,
-    }
-  }
-
   render() {
     const { page, category, text, style } = this.props
 
     return (
       <Link to={page} style={{ textDecoration: "none", pointerEvents: "none" }}>
-        <LinkText className={(category && "selected") || "unSelected"} style = {style}>
+        <LinkText
+          className={(category && "selected") || "unSelected"}
+          style={style}
+        >
           {removeUnderscores(text)}
         </LinkText>
       </Link>

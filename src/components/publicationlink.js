@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class PublicationLink extends Component {
   render() {
-    const { url, title, authors, year, publisher } = this.props
+    const { url, title, authors, year, publisher, style } = this.props
     const icon = () => {
       return (
         <>
@@ -19,7 +19,7 @@ class PublicationLink extends Component {
     }
     return (
       <>
-        <Container>
+        <Container style={style}>
           <Information>
             <Title href={url} target="_blank">
               {title}
@@ -27,9 +27,8 @@ class PublicationLink extends Component {
             </Title>
             <Authors>{authors}</Authors>
             <Publisher>{publisher}</Publisher>
-            <MobileYear>{year}</MobileYear>
+            <Year>{year}</Year>
           </Information>
-          <DesktopYear>{year}</DesktopYear>
         </Container>
       </>
     )
@@ -42,12 +41,11 @@ const Container = Styled.div`
     display:flex;
     padding-top:20px;
     padding-bottom:20px;
-
 `
 
 const Information = Styled.div`
     display:block;
-    max-width:550px;
+    max-width:600px;
 `
 
 const Publisher = Styled.p`
@@ -67,26 +65,10 @@ const Title = Styled.a`
     }
 `
 
-const MobileYear = Styled.p`
+const Year = Styled.p`
     font-size:14px;
     font-weight:700;
-    @media only screen and (min-width: ${props =>
-      props.theme.tabletBreakPoint}){
-      display:none;
-    }
 `
-
-
-const DesktopYear = Styled.p`
-    margin-left: auto;
-    font-size:14px;
-    font-weight:700;
-    @media only screen and (max-width: ${props =>
-      props.theme.tabletBreakPoint}){
-      display:none;
-    }
-`
-
 
 const Authors = Styled.p`
     font-size:13px;
