@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Padding from "./padding"
 
 class Footer extends Component {
   render() {

@@ -3,6 +3,7 @@ import Styled from "styled-components"
 import Input from "./input"
 import TextArea from "./textarea"
 import Button from "./button"
+import Padding from "./padding"
 
 class EmailForm extends Component {
   render() {
@@ -59,16 +60,15 @@ const Form = Styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column; 
-  padding:30px;
   width: 100vw;
+  padding: ${props => props.theme.pageMobilePadding};
 `
 const Row = Styled.div`
   padding:13px;
   margin-right:13px;
   margin-left:0px;
-
-  width:100%;
-  max-width:600px;
+  width:97.5%;
+  max-width:650px;
   color: ${props => props.theme.fontPrimColor};
   font-size:15px;
 `
