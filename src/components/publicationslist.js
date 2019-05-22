@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import PublicationLink from "./publicationlink"
 import Padding from "./padding"
@@ -81,12 +82,22 @@ class PublicationsList extends Component {
       })
     }
 
+    const icon = () => {
+      return (
+        <>
+          &nbsp;
+          <FontAwesomeIcon style={{ fontSize: 12 }} icon="filter" />
+        </>
+      )
+    }
+
     return (
       <>
         <Padding>
           <Button
             style={{
               margin: 5,
+              width: 80,
               backgroundColor: this.state.allbutton && "#d90006",
               borderColor: this.state.allbutton && "transparent",
               color: this.state.allbutton && "white",
@@ -97,7 +108,7 @@ class PublicationsList extends Component {
           </Button>
           <Button
             style={{
-              width: 180,
+              width: 185,
               margin: 5,
               backgroundColor: this.state.mlbutton && "#d90006",
               borderColor: this.state.mlbutton && "transparent",
@@ -106,10 +117,11 @@ class PublicationsList extends Component {
             onClick={machineLearningClick}
           >
             Machine Learning
+            {icon()}
           </Button>
           <Button
             style={{
-              width: 130,
+              width: 135,
               margin: 5,
               backgroundColor: this.state.dpbutton && "#d90006",
               borderColor: this.state.dpbutton && "transparent",
@@ -118,6 +130,7 @@ class PublicationsList extends Component {
             onClick={depressionClick}
           >
             Depression
+            {icon()}
           </Button>
           <br />
           <br />
