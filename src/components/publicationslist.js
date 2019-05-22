@@ -98,9 +98,8 @@ class PublicationsList extends Component {
             style={{
               margin: 5,
               width: 80,
-              backgroundColor: this.state.allbutton && "#d90006",
+              backgroundColor: this.state.allbutton && "#83c3ff",
               borderColor: this.state.allbutton && "transparent",
-              color: this.state.allbutton && "white",
             }}
             onClick={miscCLick}
           >
@@ -110,9 +109,8 @@ class PublicationsList extends Component {
             style={{
               width: 185,
               margin: 5,
-              backgroundColor: this.state.mlbutton && "#d90006",
+              backgroundColor: this.state.mlbutton && "#83c3ff",
               borderColor: this.state.mlbutton && "transparent",
-              color: this.state.mlbutton && "white",
             }}
             onClick={machineLearningClick}
           >
@@ -123,9 +121,8 @@ class PublicationsList extends Component {
             style={{
               width: 135,
               margin: 5,
-              backgroundColor: this.state.dpbutton && "#d90006",
+              backgroundColor: this.state.dpbutton && "#83c3ff",
               borderColor: this.state.dpbutton && "transparent",
-              color: this.state.dpbutton && "white",
             }}
             onClick={depressionClick}
           >

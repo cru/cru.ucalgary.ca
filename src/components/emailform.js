@@ -3,7 +3,6 @@ import Styled from "styled-components"
 import Input from "./input"
 import TextArea from "./textarea"
 import Button from "./button"
-import Padding from "./padding"
 
 class EmailForm extends Component {
   render() {
