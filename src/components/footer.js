@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Padding from "./padding"
 
 class Footer extends Component {
   render() {
@@ -136,7 +137,9 @@ const Content = Styled.div`
   font-size:15px;
   @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
         margin:0;
-        padding-left:25px;
+        margin-bottom:-40px;
+        padding-left: ${props => props.theme.pageMobilePadding};
+        padding-right: ${props => props.theme.pageMobilePadding};
   }
 `
 
