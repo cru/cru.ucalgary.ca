@@ -21,6 +21,7 @@ const DefaultButton = Styled.button`
     border: 1px solid lightGrey;
     border-radius:50px;
     cursor:pointer;
+    outline:none;
     transition: box-shadow ${props => props.theme.boxShadowTrans};
     font-size:14.5px;
     text-transform:uppercase;
@@ -32,5 +33,6 @@ const DefaultButton = Styled.button`
 
     :active{
       box-shadow:none;
+      transform: translateY(2px);
     }
 `

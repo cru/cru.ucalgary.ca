@@ -91,6 +91,10 @@ class PublicationsList extends Component {
       )
     }
 
+    const filterSelected = () => {
+      return "3px dotted red"
+    }
+
     return (
       <>
         <Padding>
@@ -98,8 +102,7 @@ class PublicationsList extends Component {
             style={{
               margin: 5,
               width: 80,
-              backgroundColor: this.state.allbutton && "#83c3ff",
-              borderColor: this.state.allbutton && "transparent",
+              border: this.state.allbutton && filterSelected(),
             }}
             onClick={miscCLick}
           >
@@ -109,8 +112,7 @@ class PublicationsList extends Component {
             style={{
               width: 185,
               margin: 5,
-              backgroundColor: this.state.mlbutton && "#83c3ff",
-              borderColor: this.state.mlbutton && "transparent",
+              border: this.state.mlbutton && filterSelected(),
             }}
             onClick={machineLearningClick}
           >
@@ -121,8 +123,7 @@ class PublicationsList extends Component {
             style={{
               width: 135,
               margin: 5,
-              backgroundColor: this.state.dpbutton && "#83c3ff",
-              borderColor: this.state.dpbutton && "transparent",
+              border: this.state.dpbutton && filterSelected(),
             }}
             onClick={depressionClick}
           >
