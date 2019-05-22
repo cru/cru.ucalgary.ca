@@ -29,13 +29,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Clinical Research Unit`,
+        short_name: `CRU`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/cru-hash.png`
+        icon: `src/images/cru-hash.png`,
       },
     },
     `gatsby-transformer-json`,
@@ -47,12 +47,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://cru-prototype.researchcalgary.ca/',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
-    }
-
+        host: "https://cru-prototype.researchcalgary.ca/",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
 }

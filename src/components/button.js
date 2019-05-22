@@ -18,16 +18,16 @@ const DefaultButton = Styled.button`
     height: 38px;
     width: 100px;
     background-color:transparent;
-    border: 1px solid black;
+    border: 1px solid lightGrey;
     border-radius:50px;
     cursor:pointer;
     transition: box-shadow ${props => props.theme.boxShadowTrans};
     font-size:14.5px;
     text-transform:uppercase;
-    color:black;
+    color:${props => props.theme.fontPrimColor};
 
     :hover {
-      box-shadow: ${props => props.theme.boxShadow};
+      border: 1px solid grey;
     }
 
     :active{

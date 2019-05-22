@@ -45,7 +45,7 @@ class EmailForm extends Component {
               marginRight: "0",
             }}
           >
-            <Button>Send</Button>
+            <Button style={{ border: "1px solid black" }}>Send</Button>
           </Row>
         </Form>
       </>
