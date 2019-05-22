@@ -9,13 +9,12 @@ class Padding extends Component {
 export default Padding
 
 const Container = Styled.div`
-    padding-left:50px;
-    padding-right:50px;
+    padding-left: ${props => props.theme.pageDesktopPadding};
+    padding-right: ${props => props.theme.pageDesktopPadding};
 
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-      padding-left:25px;
-      padding-right:25px;
-
+      padding-left: ${props => props.theme.pageMobilePadding};
+      padding-right: ${props => props.theme.pageMobilePadding};
     }
 `
