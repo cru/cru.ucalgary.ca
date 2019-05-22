@@ -9,9 +9,12 @@ class PublicationsList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      machineLearning: false,
+      machineLearning: true,
       depression: true,
-      misc: false,
+      misc: true,
+      mlbutton: false,
+      dpbutton: false,
+      allbutton: true,
     }
   }
 
@@ -52,6 +55,9 @@ class PublicationsList extends Component {
         machineLearning: true,
         depression: false,
         misc: false,
+        mlbutton: true,
+        dpbutton: false,
+        allbutton: false,
       })
     }
     const depressionClick = () => {
@@ -59,6 +65,9 @@ class PublicationsList extends Component {
         machineLearning: false,
         depression: true,
         misc: false,
+        mlbutton: false,
+        dpbutton: true,
+        allbutton: false,
       })
     }
     const miscCLick = () => {
@@ -66,22 +75,48 @@ class PublicationsList extends Component {
         machineLearning: true,
         depression: true,
         misc: true,
+        mlbutton: false,
+        dpbutton: false,
+        allbutton: true,
       })
     }
 
     return (
       <>
         <Padding>
-          <Button style={{ margin: 5 }} onClick={miscCLick}>
+          <Button
+            style={{
+              margin: 5,
+              backgroundColor: this.state.allbutton && "#d90006",
+              borderColor: this.state.allbutton && "transparent",
+              color: this.state.allbutton && "white",
+            }}
+            onClick={miscCLick}
+          >
             All
           </Button>
           <Button
-            style={{ width: 180, margin: 5 }}
+            style={{
+              width: 180,
+              margin: 5,
+              backgroundColor: this.state.mlbutton && "#d90006",
+              borderColor: this.state.mlbutton && "transparent",
+              color: this.state.mlbutton && "white",
+            }}
             onClick={machineLearningClick}
           >
             Machine Learning
           </Button>
-          <Button style={{ width: 130, margin: 5 }} onClick={depressionClick}>
+          <Button
+            style={{
+              width: 130,
+              margin: 5,
+              backgroundColor: this.state.dpbutton && "#d90006",
+              borderColor: this.state.dpbutton && "transparent",
+              color: this.state.dpbutton && "white",
+            }}
+            onClick={depressionClick}
+          >
             Depression
           </Button>
           <br />

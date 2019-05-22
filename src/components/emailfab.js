@@ -94,7 +94,7 @@ const Button = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color:  ${props => props.theme.fontPrimColor};
+    color: ${props => props.theme.fontPrimColor};
     transition: all 0.3s linear;      
     overflow:hidden;
 
