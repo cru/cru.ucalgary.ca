@@ -15,6 +15,7 @@ class Hamburger extends Component {
 export default Hamburger
 
 const Container = Styled.button`
+    outline:none;
     z-index:100;
     height:30px;
     width:30px;
