@@ -2,7 +2,7 @@ import React from "react"
 
 import { ThemeProvider } from "styled-components"
 import "../styles/main.scss"
-import "../data/fontawesomeimports"
+import "../helpers/fontawesomeimports"
 
 import SEO from "../components/seo"
 import MaxWidth from "../components/maxwidth"

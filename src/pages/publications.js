@@ -1,6 +1,6 @@
 import React from "react"
 
-import "../data/fontawesomeimports"
+import "../helpers/fontawesomeimports"
 import { ThemeProvider } from "styled-components"
 
 import SEO from "../components/seo"
