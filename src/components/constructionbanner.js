@@ -24,7 +24,6 @@ class ConstructionBanner extends Component {
 export default ConstructionBanner
 
 const Banner = Styled.div`
-    
     width: 100%;
     height:24px;
     bottom:0;
@@ -41,5 +40,4 @@ const Banner = Styled.div`
         font-size:15px;
         font-weight:700;
     }
-
 `

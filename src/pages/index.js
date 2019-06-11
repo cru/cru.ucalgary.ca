@@ -9,6 +9,7 @@ import MaxWidth from "../components/maxwidth"
 import NavBar from "../components/navbar"
 import EmailFAB from "../components/emailfab"
 import Footer from "../components/footer"
+import StudyManagerBanner from "../components/studymanagerbanner"
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
@@ -28,6 +29,8 @@ const Root = () => {
           </h3>
         </div>
         <div style={{ height: 500 }} />
+        <StudyManagerBanner />
+        <div style={{ height: "100vh" }} />
         <EmailFAB />
         <Footer />
       </MaxWidth>
