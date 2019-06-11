@@ -10,7 +10,7 @@ class StudyManagerBanner extends Component {
         <Container>
           <Padding>
             <Title>
-              Study Manager{" "}
+              study manager{" "}
               <span style={{ fontSize: "29px" }} role="img">
                 🧪
               </span>
@@ -56,5 +56,5 @@ const Body = Styled.p`
     max-width:600px;
     margin: 0 auto;
     font-size:17px;
-    font-weight:700;
+    font-weight:500;
 `
