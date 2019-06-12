@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import choppedSVG from "../images/svg-backgrounds/chopped-asset.svg"
 
 class Footer extends Component {
   render() {
@@ -24,13 +25,14 @@ class Footer extends Component {
     }
 
     return (
-      <Container>
-        {/* ***************** Site Map Links  ***************** */}
-        <Column>
-          <Content>
-            <Title>Explore</Title>
+      <>
+        <Container>
+          {/* ***************** Site Map Links  ***************** */}
+          <Column>
+            <Content>
+              <Title>Explore</Title>
 
-            {/* <Link style={{ textDecoration: "none" }} to="/services">
+              {/* <Link style={{ textDecoration: "none" }} to="/services">
               <LinkStyle>Services</LinkStyle>
             </Link>
             <Link style={{ textDecoration: "none" }} to="/about_us">
@@ -39,73 +41,79 @@ class Footer extends Component {
             <Link style={{ textDecoration: "none" }} to="/people">
               <LinkStyle>People</LinkStyle>
             </Link> */}
-            <Link style={{ textDecoration: "none" }} to="/publications">
-              <LinkStyle>Publications</LinkStyle>
-            </Link>
-          </Content>
-        </Column>
+              <Link style={{ textDecoration: "none" }} to="/publications">
+                <LinkStyle>Publications</LinkStyle>
+              </Link>
+            </Content>
+          </Column>
 
-        {/* ***************** External Links  ***************** */}
-        <Column>
-          <Content>
-            <Title>Discover</Title>
-            <a
-              href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkStyle>
-                Careers{externalLinkIcon("external-link-alt")}
-              </LinkStyle>
-            </a>
-            <a
-              href="https://cumming.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkStyle>
-                Cumming School of Medicine
-                {externalLinkIcon("external-link-alt")}
-              </LinkStyle>
-            </a>
-            <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkStyle>
-                University of Calgary{externalLinkIcon("external-link-alt")}
-              </LinkStyle>
-            </a>
-            <a
-              href="https://www.albertahealthservices.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkStyle>
-                Alberta Health Services{externalLinkIcon("external-link-alt")}
-              </LinkStyle>
-            </a>
-          </Content>
-        </Column>
+          {/* ***************** External Links  ***************** */}
+          <Column>
+            <Content>
+              <Title>Discover</Title>
+              <a
+                href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkStyle>
+                  Careers{externalLinkIcon("external-link-alt")}
+                </LinkStyle>
+              </a>
+              <a
+                href="https://cumming.ucalgary.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkStyle>
+                  Cumming School of Medicine
+                  {externalLinkIcon("external-link-alt")}
+                </LinkStyle>
+              </a>
+              <a
+                href="https://www.ucalgary.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkStyle>
+                  University of Calgary{externalLinkIcon("external-link-alt")}
+                </LinkStyle>
+              </a>
+              <a
+                href="https://www.albertahealthservices.ca/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkStyle>
+                  Alberta Health Services{externalLinkIcon("external-link-alt")}
+                </LinkStyle>
+              </a>
+            </Content>
+          </Column>
 
-        {/* ***************** Address  ***************** */}
-        <Column>
-          <Content>
-            <Title>Contact</Title>
-            <Address>
-              Health Sciences Centre <br />
-              3330 Hospital Drive NW <br />
-              Calgary, AB T2N 4N1 <br />
-            </Address>
-            <Address>
-              {contactIcon("phone")}
-              1-403-210-3845 <br />
-              {contactIcon("envelope")} cru@ucalgary.ca
-            </Address>
-          </Content>
-        </Column>
-      </Container>
+          {/* ***************** Address  ***************** */}
+          <Column>
+            <Content>
+              <Title>Contact</Title>
+              <Address>
+                Health Sciences Centre <br />
+                3330 Hospital Drive NW <br />
+                Calgary, AB T2N 4N1 <br />
+              </Address>
+              <Address>
+                {contactIcon("phone")}
+                1-403-210-3845 <br />
+                {contactIcon("envelope")} cru@ucalgary.ca
+              </Address>
+            </Content>
+          </Column>
+        </Container>
+        <Strip />
+        <Greeting>
+          <p>Handmade 👋 by CRU</p>
+          <p style={{ color: "grey", fontSize: "13px" }}>Copyright © 2019</p>
+        </Greeting>
+      </>
     )
   }
 }
@@ -113,9 +121,11 @@ export default Footer
 
 const Container = Styled.div`
     width:100%;
+    /* 212121 */
     background-color: #212121;
     display: flex;
     flex-direction:row;
+    margin-bottom:-2px;
 
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
@@ -140,6 +150,13 @@ const Content = Styled.div`
         padding-left: ${props => props.theme.pageMobilePadding};
         padding-right: ${props => props.theme.pageMobilePadding};
   }
+`
+const Strip = Styled.div`
+   background-image:url(${choppedSVG});
+    background-position: top;
+    background-repeat: repeat-x;
+
+    height:30px;
 `
 
 const LinkStyle = Styled.p`
@@ -171,4 +188,11 @@ const Address = Styled.p`
     font-weight:400;
     color:grey;
     line-height:22px;
+`
+
+const Greeting = Styled.div`
+text-align:center;
+    p{
+      font-size:14px;
+    }
 `

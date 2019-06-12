@@ -41,7 +41,6 @@ const Container = Styled.div`
     background-repeat: no-repeat;
     background-size: 155vh, 200vh;
     text-align:center;
-    border: 2px dotted white;
 `
 
 const Title = Styled.h2`

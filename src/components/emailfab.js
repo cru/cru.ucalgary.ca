@@ -113,7 +113,6 @@ const Button = Styled.div`
       props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
     box-shadow:${props =>
       props.toggle ? props.theme.boxShadowAccent : "none"};
-    border: ${props => (props.toggle ? "none" : "3px dotted white")};
 
     :hover {
         box-shadow:  ${props =>

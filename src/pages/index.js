@@ -21,8 +21,9 @@ const Root = () => {
       <MaxWidth>
         <NavBar />
         <IntroHero />
+        <div style={{ height: "50vh", backgroundColor:"white" }} />
         <StudyManagerBanner />
-        <div style={{ height: "100vh" }} />
+        <div style={{ height: "50vh", backgroundColor:"white" }} />
         <EmailFAB />
         <Footer />
       </MaxWidth>
