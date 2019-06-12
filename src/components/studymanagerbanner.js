@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
-import Padding from "./padding"
+import Padding from "../containers/padding"
 import bannerImage from "../images/pawel-czerwinski-capsol.png"
 
 class StudyManagerBanner extends Component {

@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import PublicationLink from "./publicationlink"
-import Padding from "./padding"
+import Padding from "../containers/padding"
 import Button from "./button"
 
 class PublicationsList extends Component {

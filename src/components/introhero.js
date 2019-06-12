@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
-import Padding from "./padding"
+import Padding from "../containers/padding"
 import BackgroundImage from "../images/intro-hero-background.svg"
 
 class IntroHero extends Component {

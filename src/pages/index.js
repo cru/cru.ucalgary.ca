@@ -5,7 +5,7 @@ import "../styles/main.scss"
 import "../helpers/fontawesomeimports"
 
 import SEO from "../components/seo"
-import MaxWidth from "../components/maxwidth"
+import MaxWidth from "../containers/maxwidth"
 import NavBar from "../components/navbar"
 import IntroHero from "../components/introhero"
 import EmailFAB from "../components/emailfab"
