@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Styled from "styled-components"
 import Padding from "../containers/padding"
-import bannerImage from "../images/pawel-czerwinski-capsol.png"
+import BackgroundImage from "../images/svg-backgrounds/green-crop-top.svg"
 
 class StudyManagerBanner extends Component {
   render() {
@@ -10,7 +10,7 @@ class StudyManagerBanner extends Component {
         <Container>
           <Padding>
             <Title>
-              study manager{" "}
+              Study Manager{" "}
               <span style={{ fontSize: "29px" }} role="img">
                 🧪
               </span>
@@ -37,17 +37,18 @@ export default StudyManagerBanner
 const Container = Styled.div`
     height:80vh;
     width:100%;
-    background-image:url(${bannerImage});
-    background-size:cover;
+    background-image:url(${BackgroundImage});
     background-repeat: no-repeat;
+    background-size: 155vh, 200vh;
     text-align:center;
     border: 2px dotted white;
 `
 
-const Title = Styled.h1`
+const Title = Styled.h2`
     margin: 0 auto;
     color:black;
-    padding-top:18vh;
+    padding-top:26vh;
+    font-size:30px;
 `
 
 const Body = Styled.p`
