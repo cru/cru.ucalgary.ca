@@ -11,7 +11,11 @@ class StudyManagerBanner extends Component {
           <Padding>
             <Title>
               Study Manager{" "}
-              <span style={{ fontSize: "29px" }} role="img">
+              <span
+                style={{ fontSize: "29px" }}
+                role="img"
+                aria-label="Test Tube"
+              >
                 🧪
               </span>
             </Title>

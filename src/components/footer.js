@@ -110,7 +110,13 @@ class Footer extends Component {
         </Container>
         <Strip />
         <Greeting>
-          <p>Handmade 👋 by CRU</p>
+          <p>
+            Handmade{" "}
+            <span role="img" aria-label="Hand Waving">
+              👋{" "}
+            </span>{" "}
+            by CRU
+          </p>
           <p style={{ color: "grey", fontSize: "13px" }}>Copyright © 2019</p>
         </Greeting>
       </>
@@ -121,7 +127,6 @@ export default Footer
 
 const Container = Styled.div`
     width:100%;
-    /* 212121 */
     background-color: #212121;
     display: flex;
     flex-direction:row;
@@ -164,7 +169,7 @@ const LinkStyle = Styled.p`
   text-decoration:none;
   cursor:pointer;
   :hover {
-    color: ${props => props.theme.brandPrimColor};
+    color: red;
   }
 
   .linkStyleIcon{

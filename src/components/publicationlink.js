@@ -58,7 +58,7 @@ const Title = Styled.a`
     font-size:15px;
     text-decoration:none;
     :hover {
-      color: ${props => props.theme.brandSecondColor};
+      color: red;
     }
     :active {
       color:#1A0DAB;

@@ -44,10 +44,11 @@ const Container = Styled.div`
 `
 
 const Title = Styled.h1`
-    max-width:500px;
+    max-width:600px;
     margin:0 auto;
     padding-top:20vh;
     color: ${props => props.theme.fontPrimColor};
+    font-size:38px;
 `
 
 const BodyContainer = Styled.div`
