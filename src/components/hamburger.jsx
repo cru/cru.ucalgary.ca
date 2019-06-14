@@ -1,12 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const Hamburger = (onClick, toggle) => {
+const Hamburger = ({ onClick, toggle }) => {
   return (
     <Container onClick={onClick}>
       <Contents toggle={toggle} />
     </Container>
   )
+}
+
+Hamburger.propTypes = {
+  onClick: PropTypes.node.isRequired,
+  toggle: PropTypes.node.isRequired,
 }
 
 export default Hamburger

@@ -1,43 +1,45 @@
-import React, { Component } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-class ImgButton extends Component {
-  render() {
-    const { logo, to, href, icon } = this.props
-
-    const content = () => {
-      if (icon) {
-        return (
-          <>
-            <LogoImg src={logo} />
-            <FontAwesomeIcon className="icon" icon={icon} />
-          </>
-        )
-      } else {
-        return (
-          <>
-            <LogoImg src={logo} />
-          </>
-        )
-      }
+const ImgButton = ({ logo, to, href, icon }) => {
+  const content = () => {
+    if (icon) {
+      return (
+        <>
+          <LogoImg src={logo} />
+          <FontAwesomeIcon className="icon" icon={icon} />
+        </>
+      )
     }
-
-    const links = () => {
-      if (to) {
-        return <Link to={to}>{content()}</Link>
-      } else if (href) {
-        return (
-          <a href={href} target="_blank" rel="noopener noreferrer">
-            {content()}
-          </a>
-        )
-      }
-    }
-
-    return <Container>{links()}</Container>
+    return (
+      <>
+        <LogoImg src={logo} />
+      </>
+    )
   }
+
+  const links = () => {
+    if (to) {
+      return <Link to={to}>{content()}</Link>
+    }
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {content()}
+      </a>
+    )
+  }
+
+  return <Container>{links()}</Container>
+}
+
+ImgButton.propTypes = {
+  logo: PropTypes.node.isRequired,
+  to: PropTypes.node.isRequired,
+  href: PropTypes.node.isRequired,
+  icon: PropTypes.node.isRequired,
 }
 
 export default ImgButton
