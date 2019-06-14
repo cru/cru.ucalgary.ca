@@ -1,15 +1,12 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React from 'react'
+import Styled from 'styled-components'
 
-class Hamburger extends Component {
-  render() {
-    const { onClick, toggle } = this.props
-    return (
-      <Container onClick={onClick}>
-        <Contents toggle={toggle} />
-      </Container>
-    )
-  }
+const Hamburger = (onClick, toggle) => {
+  return (
+    <Container onClick={onClick}>
+      <Contents toggle={toggle} />
+    </Container>
+  )
 }
 
 export default Hamburger
@@ -40,7 +37,7 @@ const Contents = Styled.span`
     width:22px;
     margin-left:-11px;
     background-color: ${props =>
-      props.toggle ? "transparent" : props.theme.fontPrimColor};
+      props.toggle ? 'transparent' : props.theme.fontPrimColor};
     display: block;
     content: '';
     position:relative;
@@ -59,8 +56,8 @@ const Contents = Styled.span`
       display: block;
       content: '';
       position:relative;
-      top: ${props => (props.toggle ? "0" : "-8px")};
-      transform: ${props => (props.toggle ? "rotate(45deg)" : "")};
+      top: ${props => (props.toggle ? '0' : '-8px')};
+      transform: ${props => (props.toggle ? 'rotate(45deg)' : '')};
     }
 
     :after {
@@ -72,9 +69,9 @@ const Contents = Styled.span`
       content: '';
       position:relative;
       bottom:-4px;
-      margin-top: ${props => (props.toggle ? "-4px" : "")};
-      top: ${props => (props.toggle ? "0" : "")};
-      transform: ${props => (props.toggle ? "rotate(-45deg)" : "")};
+      margin-top: ${props => (props.toggle ? '-4px' : '')};
+      top: ${props => (props.toggle ? '0' : '')};
+      transform: ${props => (props.toggle ? 'rotate(-45deg)' : '')};
 
     }
 

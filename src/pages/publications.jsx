@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react'
 
-import "../helpers/fontawesomeimports"
-import { ThemeProvider } from "styled-components"
+import '../helpers/fontawesomeimports'
+import { ThemeProvider } from 'styled-components'
 
-import SEO from "../components/seo"
-import NavBar from "../components/navbar"
-import EmailFAB from "../components/emailfab"
-import MaxWidth from "../containers/maxwidth"
-import Padding from "../containers/padding"
-import Footer from "../components/footer"
-import PublicationsList from "../components/publicationslist"
+import SEO from '../components/seo'
+import NavBar from '../components/navbar'
+import EmailFAB from '../components/emailfab'
+import MaxWidth from '../containers/maxwidth'
+import Padding from '../containers/padding'
+import Footer from '../components/footer'
+import PublicationsList from '../components/publicationslist'
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 

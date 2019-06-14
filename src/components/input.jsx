@@ -1,16 +1,20 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Styled from 'styled-components'
 
-class Input extends Component {
-  render() {
-    const { placeholder } = this.props
-    return (
-      <>
-        <Field placeholder={placeholder} />
-      </>
-    )
-  }
+const Input = ({ placeholder, id }) => {
+  return (
+    <>
+      <Field id={id} placeholder={placeholder} />
+    </>
+  )
 }
+
+Input.propTypes = {
+  id: PropTypes.node.isRequired,
+  placeholder: PropTypes.node.isRequired,
+}
+
 export default Input
 
 const Field = Styled.input`

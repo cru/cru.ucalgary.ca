@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import Styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
+import Styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class ImgButton extends Component {
   render() {

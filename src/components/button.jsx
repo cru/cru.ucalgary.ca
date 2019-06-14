@@ -1,17 +1,23 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Styled from 'styled-components'
 
-class Button extends Component {
-  render() {
-    return (
-      <>
-        <DefaultButton style={this.props.style} onClick={this.props.onClick}>
-          {this.props.children}
-        </DefaultButton>
-      </>
-    )
-  }
+const Button = ({ style, onClick, children }) => {
+  return (
+    <>
+      <DefaultButton style={style} onClick={onClick}>
+        {children}
+      </DefaultButton>
+    </>
+  )
 }
+
+Button.propTypes = {
+  style: PropTypes.node.isRequired,
+  onClick: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
+}
+
 export default Button
 
 const DefaultButton = Styled.button`

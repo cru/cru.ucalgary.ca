@@ -1,11 +1,15 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React from 'react'
+import Styled from 'styled-components'
+import PropTypes from 'prop-types'
 
-class Padding extends Component {
-  render() {
-    return <Container>{this.props.children}</Container>
-  }
+const Padding = ({ children }) => {
+  return <Container>{children}</Container>
 }
+
+Padding.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export default Padding
 
 const Container = Styled.div`
