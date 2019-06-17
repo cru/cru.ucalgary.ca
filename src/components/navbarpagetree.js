@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
-import NavBarLinks from "./navbarlinks"
-import "../styles/main.scss"
+import React, { Component } from 'react'
+import Styled from 'styled-components'
+import NavBarLinks from './navbarlinks'
+import '../styles/main.scss'
 
 class NavBarPageTree extends Component {
   render() {
@@ -12,7 +12,7 @@ class NavBarPageTree extends Component {
       <SubCategory key={routes.toString()}>
         <>- </>
         <NavBarLinks
-          page={"/" + routes}
+          page={'/' + routes}
           text={routes}
           style={{ fontSize: 17 }}
           category={subCategory === routes && category}

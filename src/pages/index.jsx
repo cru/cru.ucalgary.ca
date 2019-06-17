@@ -10,7 +10,6 @@ import NavBar from '../components/navbar'
 import IntroHero from '../components/introhero'
 import EmailFAB from '../components/emailfab'
 import Footer from '../components/footer'
-import StudyManagerBanner from '../components/studymanagerbanner'
 
 const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
 
@@ -22,7 +21,6 @@ const Root = () => {
         <NavBar />
         <IntroHero />
         <div style={{ height: '50vh', backgroundColor: 'white' }} />
-        <StudyManagerBanner />
         <div style={{ height: '50vh', backgroundColor: 'white' }} />
         <EmailFAB />
         <Footer />

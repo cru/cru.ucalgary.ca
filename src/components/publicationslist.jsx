@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import { StaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { Component } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import PublicationLink from "./publicationlink"
-import Padding from "../containers/padding"
-import Button from "./button"
+import PublicationLink from './publicationlink'
+import Padding from '../containers/padding'
+import Button from './button'
 
 class PublicationsList extends Component {
   constructor(props) {
@@ -20,6 +20,26 @@ class PublicationsList extends Component {
   }
 
   render() {
+    const {
+      machineLearning,
+      depression,
+      misc,
+      mlbutton,
+      dpbutton,
+      allbutton,
+    } = this.state
+
+    const getCondition = group => {
+      switch (group) {
+        case 'machineLearning':
+          return (machineLearning && 'block') || 'none'
+        case 'depression':
+          return (depression && 'block') || 'none'
+        default:
+          return (misc && 'block') || 'none'
+      }
+    }
+
     const getPublicationsList = data => {
       const publicationsArray = []
       data.allPublicationsJson.edges.forEach(item =>
@@ -38,17 +58,6 @@ class PublicationsList extends Component {
         )
       )
       return publicationsArray
-    }
-
-    const getCondition = group => {
-      switch (group) {
-        case "machineLearning":
-          return (this.state.machineLearning && "block") || "none"
-        case "depression":
-          return (this.state.depression && "block") || "none"
-        default:
-          return (this.state.misc && "block") || "none"
-      }
     }
 
     const machineLearningClick = () => {
@@ -92,7 +101,7 @@ class PublicationsList extends Component {
     }
 
     const filterSelected = () => {
-      return "3px dotted red"
+      return '3px dotted red'
     }
 
     return (
@@ -102,7 +111,7 @@ class PublicationsList extends Component {
             style={{
               margin: 5,
               width: 80,
-              border: this.state.allbutton && filterSelected(),
+              border: allbutton && filterSelected(),
             }}
             onClick={miscCLick}
           >
@@ -112,7 +121,7 @@ class PublicationsList extends Component {
             style={{
               width: 185,
               margin: 5,
-              border: this.state.mlbutton && filterSelected(),
+              border: mlbutton && filterSelected(),
             }}
             onClick={machineLearningClick}
           >
@@ -123,7 +132,7 @@ class PublicationsList extends Component {
             style={{
               width: 135,
               margin: 5,
-              border: this.state.dpbutton && filterSelected(),
+              border: dpbutton && filterSelected(),
             }}
             onClick={depressionClick}
           >

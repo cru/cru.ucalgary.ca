@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
-import NavBarLinks from "./navbarlinks"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { Component } from 'react'
+import Styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import NavBarLinks from './navbarlinks'
 
 class NavBarDropDown extends Component {
   render() {
@@ -11,7 +11,7 @@ class NavBarDropDown extends Component {
     const pages = routes.map(routes => (
       <li key={routes.toString()}>
         <NavBarLinks
-          page={"/" + routes}
+          page={'/' + routes}
           text={routes}
           category={subCategory === routes && category}
         />
@@ -21,7 +21,7 @@ class NavBarDropDown extends Component {
 
     return (
       <Container>
-        <LinkText className={category && "selected"}>
+        <LinkText className={category && 'selected'}>
           {text} <FontAwesomeIcon icon="caret-down" />
         </LinkText>
         <Menu className="navbardropdown-menu">

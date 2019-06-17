@@ -1,15 +1,17 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Styled from 'styled-components'
 
-class TextArea extends Component {
-  render() {
-    const { placeholder } = this.props
-    return (
-      <>
-        <Field rows="7" placeholder={placeholder} />
-      </>
-    )
-  }
+const TextArea = ({ placeholder }) => {
+  return (
+    <>
+      <Field rows="7" placeholder={placeholder} />
+    </>
+  )
+}
+
+TextArea.propTypes = {
+  placeholder: PropTypes.node.isRequired,
 }
 export default TextArea
 

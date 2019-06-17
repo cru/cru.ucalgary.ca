@@ -1,15 +1,15 @@
-import React, { Component } from "react"
-import Styled from "styled-components"
+import React, { Component } from 'react'
+import Styled from 'styled-components'
+import PropTypes from 'prop-types'
+import NavBarLinks from './navbarlinks'
+import NavBarDropDown from './navbardropdown'
+import NavBarPage from './navbarpage'
+// import NavBarPageTree from './navbarpagetree'
+import ImgButton from './imgbutton'
+import Hamburger from './hamburger'
 
-import NavBarLinks from "./navbarlinks.js"
-import NavBarDropDown from "./navbardropdown.js"
-import NavBarPage from "./navbarpage.js"
-import NavBarPageTree from "./navbarpagetree"
-import ImgButton from "./imgbutton"
-import Hamburger from "./hamburger"
-
-import uofcImg from "../images/uc-horz-rgb.png"
-import cruImg from "../images/cru_logo.png"
+import uofcImg from '../images/uc-horz-rgb.png'
+import cruImg from '../images/cru_logo.png'
 
 class NavBar extends Component {
   constructor(props) {
@@ -21,20 +21,19 @@ class NavBar extends Component {
   }
 
   render() {
-    const { about, subCategory, services, publications } = this.props
-
-    const toggleNavBarPage = () => {
-      if (this.state.navbarpage === false) {
-        this.setState({
-          navbarpage: true,
-          hamburger: true,
-        })
-      } else {
-        this.setState({
-          navbarpage: false,
-          hamburger: false,
-        })
-      }
+    const { publications } = this.props
+    const { navbarpage, hamburger } = this.state
+    const NavBarPageOn = () => {
+      this.setState({
+        navbarpage: true,
+        hamburger: true,
+      })
+    }
+    const NavBarPageOff = () => {
+      this.setState({
+        navbarpage: false,
+        hamburger: false,
+      })
     }
 
     return (
@@ -43,10 +42,10 @@ class NavBar extends Component {
           <MenuContainer>
             <LinkSpacing />
             <Hamburger
-              onClick={toggleNavBarPage}
-              toggle={this.state.hamburger}
+              onClick={hamburger ? NavBarPageOff : NavBarPageOn}
+              toggle={hamburger}
             />
-            <NavBarPage toggle={this.state.navbarpage}>
+            <NavBarPage toggle={navbarpage}>
               <>
                 {/* <NavBarLinks
                   page="/services"
@@ -93,14 +92,14 @@ class NavBar extends Component {
 
           <LinkSpacing />
 
-          {/* <LinkContainer>
+          <LinkContainer>
             <NavBarDropDown
               text="Drop Down"
-              page={["about_us", "people"]}
-              category={about}
-              subCategory={subCategory}
+              page={['about_us', 'people']}
+              category={publications}
+              subCategory={publications}
             />
-          </LinkContainer> */}
+          </LinkContainer>
 
           <RightAlign>
             <ImgButton
@@ -117,6 +116,9 @@ class NavBar extends Component {
   }
 }
 
+NavBar.propTypes = {
+  publications: PropTypes.node.isRequired,
+}
 export default NavBar
 
 /* Styles */

@@ -119,9 +119,13 @@ const Footer = () => {
       <Greeting>
         <p>
           Handmade
+          <span> </span>
+          <span> </span>
           <span role="img" aria-label="Hand Waving">
             👋
           </span>
+          <span> </span>
+          <span> </span>
           by CRU
         </p>
         <p style={{ color: 'grey', fontSize: '13px' }}>Copyright © 2019</p>
