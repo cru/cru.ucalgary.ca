@@ -26,7 +26,7 @@ const PublicationsPage = () => (
         <div style={{ height: 20 }} />
 
         <PublicationsList />
-        <div style={{ height: 200 }} />
+        <div style={{ height: 300 }} />
         <EmailFAB />
         <Footer />
       </MaxWidth>

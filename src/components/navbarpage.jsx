@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
+import Padding from '../containers/padding'
 
 const NavBarPage = ({ toggle, children }) => {
   const getToggle = () => {
     if (toggle === false) {
       return 'translate3d(-110vw, -15px, 0)'
     }
-    return 'translate3d(-15px, -15px, 0)'
+    return 'translate3d(-0.05rem, -1.1rem, 0)'
   }
 
   const css = {
@@ -16,7 +17,9 @@ const NavBarPage = ({ toggle, children }) => {
 
   return (
     <Container style={css}>
-      <CenterContent>{children}</CenterContent>
+      <CenterContent>
+        <Padding>{children}</Padding>
+      </CenterContent>
     </Container>
   )
 }
@@ -35,7 +38,7 @@ const Container = Styled.div`
     height:100vh;
     width:100vw;
     transform: translate3d(-110vw, -10px, 0);
-    transition: transform 0s linear;
+    transition: transform 0.1s linear;
     transform-style: flat;
     display: flex;
     align-items: center;
@@ -43,5 +46,4 @@ const Container = Styled.div`
 
 const CenterContent = Styled.div`
   margin: 0 auto;
-  width:98px
 `

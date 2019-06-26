@@ -57,7 +57,7 @@ class NavBar extends Component {
                 <NavBarLinks
                   page="/publications"
                   text="publications"
-                  style={{ fontSize: 17 }}
+                  style={{ fontSize: 18 }}
                   category={publications}
                 />
                 {/* <NavBarPageTree
@@ -94,10 +94,10 @@ class NavBar extends Component {
 
           <LinkContainer>
             <NavBarDropDown
-              text="Drop Down"
-              page={['about_us', 'people']}
-              category={publications}
-              subCategory={publications}
+              text="About"
+              page={['History', 'people']}
+              category=""
+              subCategory=""
             />
           </LinkContainer>
 

@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-@import "./theme.scss";
-@import "node_modules/@fortawesome/fontawesome-svg-core/styles";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import './theme.scss';
+@import 'node_modules/@fortawesome/fontawesome-svg-core/styles';
 
 html,
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 // All text color
@@ -24,16 +23,25 @@ a {
   color: $fontPrimColor;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 //Hover over style
 .unSelected:hover::after,
 .selected::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
-  background: rgba(255, 0, 0, 0.692);
+  background: rgba(0, 162, 255, 0.692);
   left: 0;
-  margin-top: 9px;
-  margin-left: 4px;
+  margin-top: 10px;
+  margin-left: 5px;
   top: 0;
   bottom: 1;
   height: 0.7em;

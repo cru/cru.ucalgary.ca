@@ -12,7 +12,7 @@ const NavBarDropDown = ({ category, subCategory, text, page }) => {
         text={pageName}
         category={subCategory === pageName && category}
       />
-      <div style={{ height: 5 }} />
+      <div style={{ height: 9 }} />
     </li>
   ))
 
@@ -20,6 +20,7 @@ const NavBarDropDown = ({ category, subCategory, text, page }) => {
     <Container>
       <LinkText className={category && 'selected'}>
         {text}
+        <span> </span>
         <FontAwesomeIcon icon="caret-down" />
       </LinkText>
       <Menu className="navbardropdown-menu">
@@ -61,7 +62,7 @@ const Menu = Styled.div`
   position: absolute;
   z-index:-1;
   padding-top:8px;
-  width:120px;
+  width:170px;
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1.5px solid ${props => props.theme.navBarAccent}; 
   box-shadow: ${props => props.theme.boxShadow};

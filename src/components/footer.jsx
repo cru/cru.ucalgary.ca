@@ -118,15 +118,11 @@ const Footer = () => {
       <Strip />
       <Greeting>
         <p>
-          Handmade
-          <span> </span>
+          Handmade by CRU
           <span> </span>
           <span role="img" aria-label="Hand Waving">
             👋
           </span>
-          <span> </span>
-          <span> </span>
-          by CRU
         </p>
         <p style={{ color: 'grey', fontSize: '13px' }}>Copyright © 2019</p>
       </Greeting>
@@ -145,6 +141,7 @@ const Container = Styled.div`
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
         display: block;
+        padding-bottom:40px;
       }
 `
 
@@ -167,11 +164,11 @@ const Content = Styled.div`
   }
 `
 const Strip = Styled.div`
-   background-image:url(${choppedSVG});
-    background-position: top;
-    background-repeat: repeat-x;
-
-    height:30px;
+  background-image:url(${choppedSVG});
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 400px;
+  height:30px;
 `
 
 const LinkStyle = Styled.p`

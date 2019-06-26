@@ -8,29 +8,34 @@ import EmailForm from './emailform'
 class EmailFAB extends Component {
   constructor(props) {
     super(props)
+    this.onEnterViewport = this.onEnterViewport.bind(this)
+    this.onExitViewport = this.onExitViewport.bind(this)
     this.state = {
       toggle: true,
     }
   }
 
+  onEnterViewport() {
+    this.setState({
+      toggle: false,
+    })
+  }
+
+  onExitViewport() {
+    this.setState({
+      toggle: true,
+    })
+  }
+
   render() {
     const { toggle } = this.state
 
-    const onEnterViewport = () => {
-      this.setState({
-        toggle: false,
-      })
-    }
-
-    const onExitViewport = () => {
-      this.setState({
-        toggle: true,
-      })
-    }
-
     return (
       <>
-        <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
+        <ScrollTrigger
+          onEnter={this.onEnterViewport}
+          onExit={this.onExitViewport}
+        >
           <div
             style={{
               backgroundColor: 'transparent',
@@ -53,8 +58,8 @@ class EmailFAB extends Component {
                 icon="envelope"
               />
               <Text style={{ display: toggle ? 'block' : 'none' }}>
-                <span>&nbsp;&nbsp;</span>
-                Email Us
+                <span>&nbsp;</span>
+                Email CRU
               </Text>
               <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
             </Button>
@@ -103,7 +108,7 @@ const Button = Styled.div`
     margin-bottom: ${props => (props.toggle ? '30px' : '0')};
     margin-right: ${props => (props.toggle ? '17px' : '0')};
     height: ${props => (props.toggle ? '56px' : '600px')};
-    width: ${props => (props.toggle ? '120px' : '100%')};
+    width: ${props => (props.toggle ? '130px' : '100%')};
     border-radius: ${props => (props.toggle ? '50px' : '0%')};
     background-color:  ${props =>
       props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
