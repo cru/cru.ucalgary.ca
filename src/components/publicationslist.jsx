@@ -10,33 +10,25 @@ class PublicationsList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      machineLearning: true,
-      depression: true,
-      misc: true,
-      mlbutton: false,
-      dpbutton: false,
-      allbutton: true,
+      activeList: 'all',
     }
   }
 
+  setList(x) {
+    this.setState({ activeList: x })
+  }
+
   render() {
-    const {
-      machineLearning,
-      depression,
-      misc,
-      mlbutton,
-      dpbutton,
-      allbutton,
-    } = this.state
+    const { activeList } = this.state
 
     const getCondition = group => {
       switch (group) {
         case 'machineLearning':
-          return (machineLearning && 'block') || 'none'
+          return (activeList === 'machineLearning' && 'block') || 'none'
         case 'depression':
-          return (depression && 'block') || 'none'
+          return (activeList === 'depression' && 'block') || 'none'
         default:
-          return (misc && 'block') || 'none'
+          return (activeList === 'all' && 'block') || 'none'
       }
     }
 
@@ -60,37 +52,6 @@ class PublicationsList extends Component {
       return publicationsArray
     }
 
-    const machineLearningClick = () => {
-      this.setState({
-        machineLearning: true,
-        depression: false,
-        misc: false,
-        mlbutton: true,
-        dpbutton: false,
-        allbutton: false,
-      })
-    }
-    const depressionClick = () => {
-      this.setState({
-        machineLearning: false,
-        depression: true,
-        misc: false,
-        mlbutton: false,
-        dpbutton: true,
-        allbutton: false,
-      })
-    }
-    const miscCLick = () => {
-      this.setState({
-        machineLearning: true,
-        depression: true,
-        misc: true,
-        mlbutton: false,
-        dpbutton: false,
-        allbutton: true,
-      })
-    }
-
     const icon = () => {
       return (
         <>
@@ -101,7 +62,7 @@ class PublicationsList extends Component {
     }
 
     const filterSelected = () => {
-      return '3px dotted red'
+      return '3px solid red'
     }
 
     return (
@@ -111,9 +72,9 @@ class PublicationsList extends Component {
             style={{
               margin: 5,
               width: 80,
-              border: allbutton && filterSelected(),
+              border: activeList === 'all' && filterSelected(),
             }}
-            onClick={miscCLick}
+            onClick={() => this.setList('all')}
           >
             All
           </Button>
@@ -121,9 +82,9 @@ class PublicationsList extends Component {
             style={{
               width: 185,
               margin: 5,
-              border: mlbutton && filterSelected(),
+              border: activeList === 'machineLearning' && filterSelected(),
             }}
-            onClick={machineLearningClick}
+            onClick={() => this.setList('machineLearning')}
           >
             Machine Learning
             {icon()}
@@ -132,9 +93,9 @@ class PublicationsList extends Component {
             style={{
               width: 135,
               margin: 5,
-              border: dpbutton && filterSelected(),
+              border: activeList === 'depression' && filterSelected(),
             }}
-            onClick={depressionClick}
+            onClick={() => this.setList('depression')}
           >
             Depression
             {icon()}
