@@ -10,24 +10,24 @@ const EmailForm = ({ style }) => {
     <>
       <Form style={style}>
         <Row>
-          <h2>Get in Touch</h2>
+          <h2>Email CRU</h2>
           <br />
           <label htmlFor="name">
-            name
+            Name
             <Space />
             <Input id="name" />
           </label>
         </Row>
         <Row>
           <label htmlFor="email">
-            email
+            Email
             <Space />
             <Input id="email" />
           </label>
         </Row>
         <Row>
           <label htmlFor="message">
-            message
+            Message
             <Space />
             <TextArea id="message" />
           </label>
@@ -39,7 +39,8 @@ const EmailForm = ({ style }) => {
             marginRight: '0',
           }}
         >
-          <Button style={{ border: '1px solid black' }}>Send</Button>
+          <Space />
+          <Button style={{ border: '2px solid grey' }}>Send</Button>
         </Row>
       </Form>
     </>
@@ -73,5 +74,5 @@ const Row = Styled.div`
   font-size:15px;
 `
 const Space = Styled.div`
-  height: 5px;
+  height: 10px;
 `

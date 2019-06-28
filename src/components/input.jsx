@@ -19,7 +19,7 @@ export default Input
 
 const Field = Styled.input`
     border-radius:3px;
-    border: 1px solid black;
+    border: 2px solid grey;
     height:28px;
     padding:5px;
     transition: all 0.2s linear;
@@ -29,7 +29,7 @@ const Field = Styled.input`
 
     :focus {
         box-shadow: ${props => props.theme.boxShadowAccent};
-        border: 1px solid grey;
-
+        border: 2px solid darkblue;
+        outline: none;
     }
 `

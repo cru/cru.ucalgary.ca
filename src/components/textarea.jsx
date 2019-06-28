@@ -17,7 +17,7 @@ export default TextArea
 
 const Field = Styled.textarea`
     border-radius:3px;
-    border: 1px solid black;
+    border: 2px solid grey;
     padding:5px;
     transition: all 0.2s linear;
     font-size:14px;
@@ -27,7 +27,8 @@ const Field = Styled.textarea`
 
     :focus {
         box-shadow: ${props => props.theme.boxShadowAccent};
-        border: 1px solid grey;
+        border: 2px solid darkblue;
+        outline: none;
 
     }
 `
