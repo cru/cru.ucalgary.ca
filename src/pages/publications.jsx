@@ -18,7 +18,7 @@ const PublicationsPage = () => (
     <SEO title="Publications" />
     <ThemeProvider theme={theme}>
       <MaxWidth>
-        <NavBar publications="publications" />
+        <NavBar page="publications" />
         <div style={{ height: 75 }} />
         <Padding>
           <h2>Publications</h2>

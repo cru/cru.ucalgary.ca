@@ -4,13 +4,13 @@ import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavBarLinks from './navbarlinks'
 
-const NavBarDropDown = ({ category, subCategory, text, page }) => {
+const NavBarDropDown = ({ group, selectedPage, text, page }) => {
   const pages = page.map(pageName => (
     <li key={pageName.toString()}>
       <NavBarLinks
         page={`/${pageName}`}
         text={pageName}
-        category={subCategory === pageName && category}
+        group={selectedPage === pageName && selectedPage}
       />
       <div style={{ height: 9 }} />
     </li>
@@ -18,7 +18,7 @@ const NavBarDropDown = ({ category, subCategory, text, page }) => {
 
   return (
     <Container>
-      <LinkText className={category && 'selected'}>
+      <LinkText className={group && 'selected'}>
         {text}
         <span> </span>
         <FontAwesomeIcon icon="caret-down" />
@@ -31,8 +31,8 @@ const NavBarDropDown = ({ category, subCategory, text, page }) => {
 }
 
 NavBarDropDown.propTypes = {
-  category: PropTypes.node.isRequired,
-  subCategory: PropTypes.node.isRequired,
+  group: PropTypes.node.isRequired,
+  selectedPage: PropTypes.node.isRequired,
   text: PropTypes.node.isRequired,
   page: PropTypes.node.isRequired,
 }

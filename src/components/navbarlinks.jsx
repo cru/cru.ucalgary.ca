@@ -5,13 +5,10 @@ import { Link } from 'gatsby'
 
 const removeUnderscores = x => x.replace(/_/g, ' ')
 
-const NavBarLinks = ({ page, category, text, style }) => {
+const NavBarLinks = ({ page, group, text, style }) => {
   return (
     <Link to={page} style={{ textDecoration: 'none', pointerEvents: 'none' }}>
-      <LinkText
-        className={(category && 'selected') || 'unSelected'}
-        style={style}
-      >
+      <LinkText className={(group && 'selected') || 'unSelected'} style={style}>
         {removeUnderscores(text)}
       </LinkText>
     </Link>
@@ -20,7 +17,7 @@ const NavBarLinks = ({ page, category, text, style }) => {
 
 NavBarLinks.propTypes = {
   page: PropTypes.node.isRequired,
-  category: PropTypes.node.isRequired,
+  group: PropTypes.node.isRequired,
   text: PropTypes.node.isRequired,
   style: PropTypes.node.isRequired,
 }

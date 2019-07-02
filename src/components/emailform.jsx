@@ -9,6 +9,7 @@ const EmailForm = ({ style }) => {
   return (
     <>
       <Form style={style}>
+        <Space />
         <Row>
           <h2>Email CRU</h2>
           <br />
@@ -32,6 +33,8 @@ const EmailForm = ({ style }) => {
             <TextArea id="message" />
           </label>
         </Row>
+        <Space />
+
         <Row
           style={{
             display: 'flex',
@@ -39,9 +42,11 @@ const EmailForm = ({ style }) => {
             marginRight: '0',
           }}
         >
-          <Space />
           <Button style={{ border: '2px solid grey' }}>Send</Button>
         </Row>
+        <Space />
+        <Space />
+        <Space />
       </Form>
     </>
   )

@@ -21,7 +21,7 @@ class NavBar extends Component {
   }
 
   render() {
-    const { publications } = this.props
+    const { page, group } = this.props
     const { navbarpage, hamburger } = this.state
     const NavBarPageOn = () => {
       this.setState({
@@ -47,24 +47,12 @@ class NavBar extends Component {
             />
             <NavBarPage toggle={navbarpage}>
               <>
-                {/* <NavBarLinks
-                  page="/services"
-                  text="services"
-                  style={{ fontSize: 17 }}
-                  category={services}
-                /> */}
                 <div style={{ height: 6 }} />
-                <NavBarLinks
+                {/* <NavBarLinks
                   page="/publications"
                   text="publications"
                   style={{ fontSize: 18 }}
                   category={publications}
-                />
-                {/* <NavBarPageTree
-                  text="Drop Down"
-                  page={["about_us", "people"]}
-                  category={about}
-                  subCategory={subCategory}
                 /> */}
               </>
             </NavBarPage>
@@ -77,16 +65,11 @@ class NavBar extends Component {
 
           <LinkSpacing />
 
-          {/* <LinkContainer>
-            <NavBarLinks page="/services" text="services" category={services} />
-          </LinkContainer>
-          <LinkSpacing /> */}
-
           <LinkContainer>
             <NavBarLinks
               page="/publications"
               text="publications"
-              category={publications}
+              group={page === 'publications' && 'publications'}
             />
           </LinkContainer>
 
@@ -95,9 +78,12 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarDropDown
               text="About"
-              page={['History', 'people']}
-              category=""
-              subCategory=""
+              page={['history', 'people']}
+              group={group === 'about'}
+              selectedPage={
+                (page === 'history' && 'history') ||
+                (page === 'people' && 'people')
+              }
             />
           </LinkContainer>
 
@@ -117,7 +103,8 @@ class NavBar extends Component {
 }
 
 NavBar.propTypes = {
-  publications: PropTypes.node.isRequired,
+  page: PropTypes.node.isRequired,
+  group: PropTypes.node.isRequired,
 }
 export default NavBar
 
