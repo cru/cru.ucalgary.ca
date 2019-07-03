@@ -167,7 +167,8 @@ const Strip = Styled.div`
   background-image:url(${choppedSVG});
   background-position: top;
   background-repeat: repeat-x;
-  background-size: 400px;
+  background-size: 410px;
+
   height:30px;
 `
 

@@ -64,17 +64,6 @@ class NavBar extends Component {
           <ImgButton logo={cruImg} to="/" />
 
           <LinkSpacing />
-
-          <LinkContainer>
-            <NavBarLinks
-              page="/publications"
-              text="publications"
-              group={page === 'publications' && 'publications'}
-            />
-          </LinkContainer>
-
-          <LinkSpacing />
-
           <LinkContainer>
             <NavBarDropDown
               text="About"
@@ -86,6 +75,17 @@ class NavBar extends Component {
               }
             />
           </LinkContainer>
+          <LinkSpacing />
+
+          <LinkContainer>
+            <NavBarLinks
+              page="/publications"
+              text="publications"
+              group={page === 'publications' && 'publications'}
+            />
+          </LinkContainer>
+
+          <LinkSpacing />
 
           <RightAlign>
             <ImgButton
