@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Filter } from 'react-feather'
 
 import PublicationLink from './publicationlink'
 import Padding from '../containers/padding'
@@ -55,8 +55,8 @@ class PublicationsList extends Component {
     const icon = () => {
       return (
         <>
-          &nbsp;
-          <FontAwesomeIcon style={{ fontSize: 12 }} icon="filter" />
+          <span> </span>
+          <Filter style={{ marginBottom: '-3px' }} size={15} color="grey" />
         </>
       )
     }
