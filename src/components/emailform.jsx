@@ -63,7 +63,7 @@ const Form = Styled.form`
   align-items: center;
   justify-content: center;
   flex-direction: column; 
-  width: 100vw;
+  width: 100%;
   padding: ${props => props.theme.pageMobilePadding};
   h2 {
     font-size:25px;

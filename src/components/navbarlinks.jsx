@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 import { Link } from 'gatsby'
 
-const removeUnderscores = x => x.replace(/_/g, ' ')
+const removeUnderscores = x => x.replace(/-/g, ' ')
 
 const NavBarLinks = ({ page, group, text, style }) => {
   return (

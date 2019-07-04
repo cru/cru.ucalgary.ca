@@ -11,6 +11,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
         page={`/${pageName}`}
         text={pageName}
         group={selectedPage === pageName && selectedPage}
+        style={{ fontSize: '15px' }}
       />
       <div style={{ height: 9 }} />
     </li>
@@ -21,7 +22,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
       <LinkText className={group && 'selected'}>
         {text}
         <span> </span>
-        <FontAwesomeIcon icon="caret-down" />
+        <FontAwesomeIcon style={{ fontSize: '13px' }} icon="caret-down" />
       </LinkText>
       <Menu className="navbardropdown-menu">
         <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
@@ -60,9 +61,9 @@ const Menu = Styled.div`
   display:none;
   flex-direction:column;
   position: absolute;
-  z-index:-1;
-  padding-top:8px;
-  width:170px;
+  z-index:99;
+  padding-top:10px;
+  width:200px;
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1.5px solid ${props => props.theme.navBarAccent}; 
   box-shadow: ${props => props.theme.boxShadow};

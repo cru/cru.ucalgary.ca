@@ -67,12 +67,40 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarDropDown
               text="About"
-              page={['history', 'people']}
+              page={['services', 'history', 'people']}
               group={group === 'about'}
               selectedPage={
                 (page === 'history' && 'history') ||
                 (page === 'people' && 'people')
               }
+            />
+          </LinkContainer>
+          <LinkSpacing />
+          <LinkContainer>
+            <NavBarDropDown
+              text="Portfolio"
+              page={['custom-projects', 'clinical-trials', 'testimonials']}
+              group={group === 'portfolio'}
+              selectedPage=""
+            />
+          </LinkContainer>
+          <LinkSpacing />
+          <LinkContainer>
+            <NavBarDropDown
+              text="Client Favs"
+              page={['study-manager']}
+              group={group === 'favs'}
+              selectedPage=""
+            />
+          </LinkContainer>
+
+          <LinkSpacing />
+          <LinkContainer>
+            <NavBarDropDown
+              text="FAQS"
+              page={['workflow', 'collaborators']}
+              group={group === 'faqs'}
+              selectedPage=""
             />
           </LinkContainer>
           <LinkSpacing />
@@ -84,8 +112,6 @@ class NavBar extends Component {
               group={page === 'publications' && 'publications'}
             />
           </LinkContainer>
-
-          <LinkSpacing />
 
           <RightAlign>
             <ImgButton
@@ -116,7 +142,7 @@ const Bar = Styled.div`
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1px solid ${props => props.theme.navBarAccent};
   width: 100%;
-  height: 70px;
+  height: 76px;
   margin: 0;
   padding: 0;
   top:0;

@@ -30,7 +30,7 @@ const DefaultButton = Styled.button`
     cursor:pointer;
     outline:none;
     transition: box-shadow ${props => props.theme.boxShadowTrans};
-    font-size:14.5px;
+    font-size:13.5px;
     text-transform:uppercase;
     color:${props => props.theme.fontPrimColor};
 

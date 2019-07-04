@@ -14,15 +14,6 @@ const Footer = () => {
     )
   }
 
-  const contactIcon = name => {
-    return (
-      <>
-        <FontAwesomeIcon className="contactStyleIcon" icon={name} />
-        &nbsp;&nbsp;
-      </>
-    )
-  }
-
   return (
     <>
       <Container>
@@ -96,7 +87,7 @@ const Footer = () => {
         {/* ***************** Address  ***************** */}
         <Column>
           <Content>
-            <Title>Contact</Title>
+            <Title>Contact Information</Title>
             <Address>
               Health Sciences Centre
               <br />
@@ -106,11 +97,20 @@ const Footer = () => {
               <br />
             </Address>
             <Address>
-              {contactIcon('phone')}
-              1-403-210-3845
+              Phone
+              <span> </span>
+              <a style={{ textDecoration: 'none' }} href="tel:14032103845">
+                1 403 210 3845
+              </a>
               <br />
-              {contactIcon('envelope')}
-              cru@ucalgary.ca
+              Email
+              <span> </span>
+              <a
+                style={{ textDecoration: 'none' }}
+                href="mailto:cru@ucalgary.ca"
+              >
+                cru@ucalgary.ca
+              </a>
             </Address>
           </Content>
         </Column>
@@ -124,7 +124,7 @@ const Footer = () => {
             👋
           </span>
         </p>
-        <p style={{ color: 'grey', fontSize: '13px' }}>Copyright © 2019</p>
+        <p style={{ color: 'grey', fontSize: '13px' }}>© 2019</p>
       </Greeting>
     </>
   )
@@ -177,7 +177,7 @@ const LinkStyle = Styled.p`
   text-decoration:none;
   cursor:pointer;
   :hover {
-    color: red;
+    color: ${props => props.theme.brandPrimColor};
   }
 
   .linkStyleIcon{
@@ -201,6 +201,13 @@ const Address = Styled.p`
     font-weight:400;
     color:grey;
     line-height:22px;
+    text-decoration:none;
+    a{
+      color: ${props => props.theme.fontSecColor};
+      :hover{
+        color: ${props => props.theme.brandPrimColor};
+      }
+    }
 `
 
 const Greeting = Styled.div`

@@ -1,12 +1,14 @@
 import React from 'react'
 
 import Layout from '../containers/layout'
+import NavBar from '../components/navbar'
 import EmailFAB from '../components/emailfab'
 import Padding from '../containers/padding'
 import PublicationsList from '../components/publicationslist'
 
 const PublicationsPage = () => (
-  <Layout page="publications">
+  <Layout title="Publications">
+    <NavBar page="publications" />
     <div style={{ height: 75 }} />
     <Padding>
       <h2>Publications</h2>

@@ -15,9 +15,11 @@ const IntroHero = () => {
             <Logo src={cruHashImage} />
             <Body>
               The
+              <span> </span>
               <span style={{ color: 'red', fontWeight: '700' }}>
                 Clinical Research Unit
               </span>
+              <span> </span>
               (CRU) is a core support centre of the Cumming School of Medicine
               (CSM). The mandate of the CRU is to support university researchers
               and their collegues in the delivery of world class clinical
