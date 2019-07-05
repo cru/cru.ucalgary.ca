@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
-import { ChevronDown } from 'react-feather'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavBarLinks from './navbarlinks'
 
 const NavBarDropDown = ({ group, selectedPage, text, page }) => {
@@ -22,10 +22,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
       <LinkText className={group && 'selected'}>
         {text}
         <span> </span>
-        <ChevronDown
-          size={13.5}
-          style={{ marginBottom: '-2px', marginLeft: '-0.1rem' }}
-        />
+        <FontAwesomeIcon style={{ fontSize: '14px' }} icon="caret-down" />
       </LinkText>
       <Menu className="navbardropdown-menu">
         <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>

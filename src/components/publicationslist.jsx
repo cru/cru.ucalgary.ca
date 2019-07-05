@@ -56,7 +56,7 @@ class PublicationsList extends Component {
       return (
         <>
           <span> </span>
-          <Filter style={{ marginBottom: '-3px' }} size={15} color="grey" />
+          <Filter style={{ marginBottom: '-3px' }} size={14.5} color="grey" />
         </>
       )
     }

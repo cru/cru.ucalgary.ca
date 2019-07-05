@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
 import NavBarPage from './navbarpage'
-// import NavBarPageTree from './navbarpagetree'
+import NavBarPageTree from './navbarpagetree'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
 
@@ -47,13 +47,19 @@ class NavBar extends Component {
             />
             <NavBarPage toggle={navbarpage}>
               <>
-                <div style={{ height: 6 }} />
-                {/* <NavBarLinks
-                  page="/publications"
-                  text="publications"
-                  style={{ fontSize: 18 }}
-                  category={publications}
-                /> */}
+                <div
+                  style={{
+                    zoom: '120%',
+                    width: '80vw',
+                    paddingLeft: '60px',
+                  }}
+                >
+                  <NavBarLinks
+                    page="/publications"
+                    text="publications"
+                    group={page === 'publications' && 'publications'}
+                  />
+                </div>
               </>
             </NavBarPage>
           </MenuContainer>
@@ -166,6 +172,7 @@ const Bar = Styled.div`
 
 const LinkSpacing = Styled.div`
   width:25px;
+  height:10px;
   @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
     width:20px;
   }

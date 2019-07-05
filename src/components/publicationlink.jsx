@@ -9,7 +9,7 @@ const PublicationLink = ({ url, title, authors, year, publisher, style }) => {
       <>
         &nbsp;&nbsp;
         <FontAwesomeIcon
-          style={{ fontSize: 9 }}
+          style={{ fontSize: 10 }}
           className="linkStyleIcon"
           icon="external-link-alt"
         />
