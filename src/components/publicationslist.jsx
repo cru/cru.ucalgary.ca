@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Filter } from 'react-feather'
-
+import { Trail, animated } from 'react-spring/renderprops'
 import PublicationLink from './publicationlink'
 import Padding from '../containers/padding'
 import Button from './button'
@@ -37,7 +37,16 @@ class PublicationsList extends Component {
           )
         )
       )
-      return publicationsArray
+      return (
+        <Trail
+          items={publicationsArray}
+          from={{ transform: 'translate3d(-50px,0,0)', opacity: 0 }}
+          to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
+          keys={item => item.key}
+        >
+          {item => props => <animated.div style={props}>{item}</animated.div>}
+        </Trail>
+      )
     }
 
     const icon = () => {

@@ -4,25 +4,18 @@ import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PublicationLink = ({ url, title, authors, year, publisher, style }) => {
-  const icon = () => {
-    return (
-      <>
-        &nbsp;&nbsp;
-        <FontAwesomeIcon
-          style={{ fontSize: 10 }}
-          className="linkStyleIcon"
-          icon="external-link-alt"
-        />
-      </>
-    )
-  }
   return (
     <>
       <Container style={style}>
         <Information>
           <Title href={url} target="_blank">
             {title}
-            {icon()}
+            &nbsp;&nbsp;
+            <FontAwesomeIcon
+              style={{ fontSize: 10 }}
+              className="linkStyleIcon"
+              icon="external-link-alt"
+            />
           </Title>
           <Authors>{authors}</Authors>
           <Publisher>{publisher}</Publisher>
@@ -64,7 +57,7 @@ const Title = Styled.a`
     font-size:15px;
     text-decoration:none;
     :hover {
-      color: red;
+      text-decoration:underline;
     }
     :active {
       color:#1A0DAB;
