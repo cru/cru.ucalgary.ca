@@ -4,21 +4,17 @@ import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const ImgButton = ({ logo, to, href, icon }) => {
+const ImgButton = ({ to, href, icon, children }) => {
   const content = () => {
     if (icon) {
       return (
         <>
-          <LogoImg src={logo} />
+          {children}
           <FontAwesomeIcon className="icon" icon={icon} />
         </>
       )
     }
-    return (
-      <>
-        <LogoImg src={logo} />
-      </>
-    )
+    return <>{children}</>
   }
 
   const links = () => {
@@ -36,10 +32,10 @@ const ImgButton = ({ logo, to, href, icon }) => {
 }
 
 ImgButton.propTypes = {
-  logo: PropTypes.node.isRequired,
   to: PropTypes.node.isRequired,
   href: PropTypes.node.isRequired,
   icon: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default ImgButton
@@ -50,11 +46,11 @@ const Container = Styled.div`
     padding-bottom:3px;
     transition: all ${props => props.theme.boxShadowTrans};
     border-radius: ${props => props.theme.borderRadius};
-
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 
     :hover {
       box-shadow: ${props => props.theme.boxShadow};
@@ -70,8 +66,4 @@ const Container = Styled.div`
       font-size:13px;
       color: ${props => props.theme.imgButtonIcon};
     }
-`
-
-const LogoImg = Styled.img`
-    height: 25px;
 `

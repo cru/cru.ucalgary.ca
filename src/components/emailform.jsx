@@ -42,7 +42,13 @@ const EmailForm = ({ style }) => {
             marginRight: '0',
           }}
         >
-          <Button style={{ border: '2px solid grey' }}>Send</Button>
+          <Button
+            style={{
+              fontSize: '15px',
+            }}
+          >
+            Send
+          </Button>
         </Row>
         <Space />
         <Space />

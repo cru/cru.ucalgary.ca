@@ -17,17 +17,17 @@ export default TextArea
 
 const Field = Styled.textarea`
     border-radius:3px;
-    border: 2px solid grey;
+    border: 2px solid rgb(252, 252, 252);
     padding:5px;
     transition: all 0.2s linear;
     font-size:14px;
     width:100%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(252, 252, 252);
     resize: none;
 
     :focus {
         box-shadow: ${props => props.theme.boxShadowAccent};
-        border: 2px solid darkblue;
+        border: 2px solid ${props => props.theme.fontPrimColor};
         outline: none;
 
     }

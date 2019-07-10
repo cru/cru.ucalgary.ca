@@ -29,7 +29,6 @@ const NavBarPageTree = ({ text, selectedPage, page }) => {
 
 NavBarPageTree.propTypes = {
   text: PropTypes.node.isRequired,
-  group: PropTypes.node.isRequired,
   selectedPage: PropTypes.node.isRequired,
   page: PropTypes.node.isRequired,
 }

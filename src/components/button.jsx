@@ -24,7 +24,7 @@ export default Button
 const DefaultButton = Styled.button`
     height: 38px;
     width: 100px;
-    background-color:transparent;
+    background-color:white;
     border: 1px solid lightGrey;
     border-radius:50px;
     cursor:pointer;
@@ -40,6 +40,6 @@ const DefaultButton = Styled.button`
 
     :active{
       box-shadow:none;
-      transform: translateY(2px);
+      transform: translateY(2.5px);
     }
 `

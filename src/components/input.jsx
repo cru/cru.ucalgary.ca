@@ -19,17 +19,17 @@ export default Input
 
 const Field = Styled.input`
     border-radius:3px;
-    border: 2px solid grey;
-    height:28px;
+    border: 2px solid white;
+    height:25px;
     padding:5px;
     transition: all 0.2s linear;
     font-size:14px;
     width:100%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: white;
 
     :focus {
         box-shadow: ${props => props.theme.boxShadowAccent};
-        border: 2px solid darkblue;
+        border: 2px solid ${props => props.theme.fontPrimColor};
         outline: none;
     }
 `

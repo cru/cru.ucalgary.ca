@@ -51,7 +51,7 @@ const Container = Styled.div`
 
 const Information = Styled.div`
     display:block;
-    max-width:700px;
+    max-width:580px;
 `
 
 const Publisher = Styled.p`

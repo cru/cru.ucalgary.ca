@@ -4,10 +4,8 @@ import PropTypes from 'prop-types'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
 import NavBarPage from './navbarpage'
-import NavBarPageTree from './navbarpagetree'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
-
 import uofcImg from '../images/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 
@@ -66,18 +64,17 @@ class NavBar extends Component {
           <MenuContainerOpposite>
             <LinkSpacing />
           </MenuContainerOpposite>
-
-          <ImgButton logo={cruImg} to="/" />
-
+          <ImgButton to="/">
+            <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
+          </ImgButton>
           <LinkSpacing />
           <LinkContainer>
             <NavBarDropDown
               text="About"
-              page={['services', 'history', 'people']}
+              page={['history', 'services', 'team']}
               group={group === 'about'}
               selectedPage={
-                (page === 'history' && 'history') ||
-                (page === 'people' && 'people')
+                (page === 'history' && 'history') || (page === 'team' && 'team')
               }
             />
           </LinkContainer>
@@ -92,25 +89,22 @@ class NavBar extends Component {
           </LinkContainer>
           <LinkSpacing />
           <LinkContainer>
-            <NavBarDropDown
-              text="Client Favs"
-              page={['study-manager']}
-              group={group === 'favs'}
-              selectedPage=""
+            <NavBarLinks
+              page="/client-favorites"
+              text="client favorites"
+              group={page === 'client-favorites' && 'client-favorites'}
             />
           </LinkContainer>
-
           <LinkSpacing />
           <LinkContainer>
             <NavBarDropDown
-              text="FAQS"
-              page={['workflow', 'collaborators']}
-              group={group === 'faqs'}
+              text="support"
+              page={['workflow', 'resources']}
+              group={group === 'support'}
               selectedPage=""
             />
           </LinkContainer>
           <LinkSpacing />
-
           <LinkContainer>
             <NavBarLinks
               page="/publications"
@@ -118,15 +112,11 @@ class NavBar extends Component {
               group={page === 'publications' && 'publications'}
             />
           </LinkContainer>
-
           <RightAlign>
-            <ImgButton
-              logo={uofcImg}
-              icon="external-link-alt"
-              href="https://www.ucalgary.ca/"
-            />
+            <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
+              <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
+            </ImgButton>
           </RightAlign>
-
           <LinkSpacing />
         </Bar>
       </>

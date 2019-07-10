@@ -54,7 +54,6 @@ const Title = Styled.h1`
 const BodyContainer = Styled.div`
     display:flex;
     justify-content: center; /* center items vertically, in this case */
-
     margin: 0 auto;
     padding-top:6vh;
 `
