@@ -118,13 +118,13 @@ const Footer = () => {
       <Strip />
       <Greeting>
         <p>
-          Handmade by CRU
-          <span> </span>
           <span role="img" aria-label="Hand Waving">
             👋
           </span>
+          <span> </span>
+          made by CRU
         </p>
-        <p style={{ color: 'grey', fontSize: '13px' }}>© 2019</p>
+        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
       </Greeting>
     </>
   )
@@ -150,6 +150,7 @@ const Column = Styled.div`
     display:flex;
     padding-top:30px;
     padding-bottom:40px;
+    margin-left:-10px;
 `
 
 const Content = Styled.div`

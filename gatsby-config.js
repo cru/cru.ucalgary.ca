@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Clinical Research Unit",
-    titleTemplate: "CRU · %s",
+    title: 'Clinical Research Unit',
+    titleTemplate: 'CRU · %s',
     description: `Working with researchers in the Cumming School of Medicine to support the delivery of cutting edge research support services in the areas of data, technology and methodology.`,
-    url: "https://cru-prototype.researchcalgary.ca/",
-    siteUrl: "https://cru-prototype.researchcalgary.ca/",
-    image: "src/images/cru-hash.png",
-    twitterUsername: "@crucalgary",
+    url: 'https://cru-prototype.researchcalgary.ca/',
+    siteUrl: 'https://cru-prototype.researchcalgary.ca/',
+    image: 'src/images/cru-hash.png',
+    twitterUsername: '@crucalgary',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -47,10 +47,10 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://cru-prototype.researchcalgary.ca/",
-        policy: [{ userAgent: "*", allow: "/" }],
+        host: 'https://cru-prototype.researchcalgary.ca/',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
   ],

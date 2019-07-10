@@ -22,7 +22,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
       <LinkText className={group && 'selected'}>
         {text}
         <span> </span>
-        <FontAwesomeIcon style={{ fontSize: '13px' }} icon="caret-down" />
+        <FontAwesomeIcon style={{ fontSize: '14px' }} icon="caret-down" />
       </LinkText>
       <Menu className="navbardropdown-menu">
         <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
