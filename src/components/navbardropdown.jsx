@@ -11,7 +11,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
         page={`/${pageName}`}
         text={pageName}
         group={selectedPage === pageName && selectedPage}
-        style={{ fontSize: '15px' }}
+        style={{ fontSize: '18.5px' }}
       />
       <div style={{ height: 9 }} />
     </li>
@@ -49,11 +49,12 @@ const Container = Styled.div`
 `
 
 const LinkText = Styled.a`
-  font-size: ${props => props.theme.navBarFontSize};
+  font-family: futura-pt, sans-serif;
+  font-size: 19.5px;
   font-weight: 400;
+  letter-spacing:0.2px;
   position: relative;
   display: inline-block;
-  text-transform: uppercase;
   cursor:default;
 `
 

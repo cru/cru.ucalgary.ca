@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+@import url('https://use.typekit.net/atr1btp.css');
 @import './theme.scss';
 @import 'node_modules/@fortawesome/fontawesome-svg-core/styles';
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   background-color: white;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -35,7 +36,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-family: futura-pt-bold, sans-serif;
+  font-style: normal;
+  color: rgb(63, 63, 63);
+}
+label {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+h1 {
+  font-size: 34px;
+  letter-spacing: 0.06em;
 }
 
 //Hover over style
@@ -46,11 +58,61 @@ h6 {
   width: 100%;
   background: rgba(0, 162, 255, 0.692);
   left: 0;
-  margin-top: 9px;
-  margin-left: 4.5px;
+  margin-top: 14px;
+  margin-left: 5px;
   top: 0;
   bottom: 1;
-  height: 0.74em;
+  height: 0.6em;
   z-index: -1;
   border-radius: 3px;
 }
+
+// Futura PT Heavy
+// font-family: futura-pt, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Futura PT Heavy Oblique
+// font-family: futura-pt, sans-serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Futura PT Book
+// font-family: futura-pt, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Futura PT Book Oblique
+// font-family: futura-pt, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Futura PT Bold
+// font-family: futura-pt-bold, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Futura PT Bold Oblique
+// font-family: futura-pt-bold, sans-serif;
+// font-weight: 700;
+// font-style: italic;
+
+// Futura PT Cond Book
+// font-family: futura-pt-condensed, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Futura PT Cond Book Oblique
+// font-family: futura-pt-condensed, sans-serif;
+// font-weight: 400;
+// font-style: italic;
+
+// Futura PT Cond Bold
+// font-family: futura-pt-condensed, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Futura PT Cond Bold Oblique
+// font-family: futura-pt-condensed, sans-serif;
+// font-weight: 700;
+// font-style: italic;

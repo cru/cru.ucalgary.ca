@@ -71,7 +71,7 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarDropDown
               text="About"
-              page={['history', 'services', 'team']}
+              page={['History', 'Services', 'Team']}
               group={group === 'about'}
               selectedPage={
                 (page === 'history' && 'history') || (page === 'team' && 'team')
@@ -82,7 +82,7 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarDropDown
               text="Portfolio"
-              page={['custom-projects', 'clinical-trials', 'testimonials']}
+              page={['Custom-Projects', 'Clinical-Trials', 'Testimonials']}
               group={group === 'portfolio'}
               selectedPage=""
             />
@@ -91,15 +91,15 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarLinks
               page="/client-favorites"
-              text="client favorites"
+              text="Client Favorites"
               group={page === 'client-favorites' && 'client-favorites'}
             />
           </LinkContainer>
           <LinkSpacing />
           <LinkContainer>
             <NavBarDropDown
-              text="support"
-              page={['workflow', 'resources']}
+              text="Support"
+              page={['Workflow', 'Resources']}
               group={group === 'support'}
               selectedPage=""
             />
@@ -108,7 +108,7 @@ class NavBar extends Component {
           <LinkContainer>
             <NavBarLinks
               page="/publications"
-              text="publications"
+              text="Publications"
               group={page === 'publications' && 'publications'}
             />
           </LinkContainer>

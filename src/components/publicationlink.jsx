@@ -53,7 +53,7 @@ const Publisher = Styled.p`
 `
 
 const Title = Styled.a`
-    color:#1A0DAB;
+    color: #1A0DAB;
     font-size:15px;
     text-decoration:none;
     :hover {

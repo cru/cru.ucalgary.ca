@@ -16,15 +16,11 @@ class EmailFAB extends Component {
   }
 
   onEnterViewport() {
-    this.setState({
-      toggle: false,
-    })
+    this.setState({ toggle: false })
   }
 
   onExitViewport() {
-    this.setState({
-      toggle: true,
-    })
+    this.setState({ toggle: true })
   }
 
   render() {
@@ -32,6 +28,7 @@ class EmailFAB extends Component {
 
     return (
       <>
+        <div style={{ height: '200px' }} />
         <ScrollTrigger
           onEnter={this.onEnterViewport}
           onExit={this.onExitViewport}
@@ -129,6 +126,8 @@ const Button = Styled.div`
 `
 
 const Text = Styled.p`
-    font-size:16.5px;
+    font-size:18px;
+    font-family: futura-pt, sans-serif;
+    font-weight:500;
     color:  ${props => props.theme.fontPrimColor};
 `
