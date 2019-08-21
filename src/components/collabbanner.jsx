@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Padding from '../containers/padding'
 import Styled from 'styled-components'
 
 const CollabBanner = () => {
   return (
     <>
-      <div>
-        Cillum ullamco velit ad laboris aliqua adipisicing nisi ea veniam magna
-        eiusmod. Magna ad sint anim et. Ipsum enim eu veniam nulla aliqua
-        officia tempor.
-      </div>
+      <Header>
+        <h2>Collaborators</h2>
+      </Header>
+      <Container>
+        <div />
+      </Container>
     </>
   )
 }
@@ -17,3 +19,13 @@ const CollabBanner = () => {
 CollabBanner.propTypes = {}
 
 export default CollabBanner
+
+const Header = Styled.div`
+  align-content:center;
+  text-align: center;
+`
+
+const Container = Styled.div`
+    height:150px;
+    outline:2px solid lightgrey;
+`
