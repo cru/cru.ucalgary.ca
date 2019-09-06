@@ -30,10 +30,12 @@
     "react-helmet": "^5.2.0",
     "react-scroll": "^1.7.14",
     "react-scroll-trigger": "^0.5.3",
+    "react-slick": "^0.25.2",
     "react-spring": "^8.0.27",
     "sass-extract": "^2.1.0",
     "sass-extract-js": "^0.4.0",
     "sass-extract-loader": "^1.1.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {

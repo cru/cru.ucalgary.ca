@@ -12,6 +12,8 @@ const IndexPage = () => {
       <IntroHero />
       <div style={{ height: '50vh', backgroundColor: 'white' }} />
       <CollabBanner />
+      <div style={{ height: '30px', backgroundColor: 'white' }} />
+
       <EmailFAB />
     </Layout>
   )
