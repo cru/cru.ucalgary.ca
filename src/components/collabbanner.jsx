@@ -104,6 +104,7 @@ const Header = Styled.div`
 
 const Banner = Styled.div`
   padding:30px;
+  padding-top:15px;
   cursor:grab;
 `
 
@@ -115,6 +116,7 @@ const ImgContainer = Styled.div`
   img{
     height:38px;
     margin:20px;
+    margin-top:7px;
     padding:7px;
     padding-left:15px;
     padding-right:15px;
