@@ -13,95 +13,89 @@ const NavBar = ({ page, group }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
-    <>
-      <Bar>
-        <MenuContainer>
-          <LinkSpacing />
-          <Hamburger
-            onClick={
-              navbarpage
-                ? () => setNavbarpage(false)
-                : () => setNavbarpage(true)
-            }
-            toggle={navbarpage}
-          />
-          <NavBarPage toggle={navbarpage}>
-            <>
-              <div
-                style={{
-                  zoom: '120%',
-                  width: '80vw',
-                  paddingLeft: '60px',
-                }}
-              >
-                <NavBarLinks
-                  page="/publications"
-                  text="publications"
-                  group={page === 'publications' && 'publications'}
-                />
-              </div>
-            </>
-          </NavBarPage>
-        </MenuContainer>
-        <MenuContainerOpposite>
-          <LinkSpacing />
-        </MenuContainerOpposite>
-        <ImgButton to="/">
-          <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
+    <Bar>
+      <MenuContainer>
+        <LinkSpacing />
+        <Hamburger
+          onClick={
+            navbarpage ? () => setNavbarpage(false) : () => setNavbarpage(true)
+          }
+          toggle={navbarpage}
+        />
+        <NavBarPage toggle={navbarpage}>
+          <div
+            style={{
+              zoom: '120%',
+              width: '80vw',
+              paddingLeft: '60px',
+            }}
+          >
+            <NavBarLinks
+              page="/publications"
+              text="publications"
+              group={page === 'publications' && 'publications'}
+            />
+          </div>
+        </NavBarPage>
+      </MenuContainer>
+      <MenuContainerOpposite>
+        <LinkSpacing />
+      </MenuContainerOpposite>
+      <ImgButton to="/">
+        <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
+      </ImgButton>
+      <LinkSpacing />
+      <LinkContainer>
+        <NavBarDropDown
+          text="About"
+          page={['History', 'Services', 'Team']}
+          group={group === 'about'}
+          selectedPage={
+            (page === 'history' && 'history') || (page === 'team' && 'team')
+          }
+        />
+      </LinkContainer>
+      <LinkSpacing />
+      <LinkContainer>
+        <NavBarDropDown
+          text="Portfolio"
+          page={['Custom-Projects', 'Clinical-Trials', 'Testimonials']}
+          group={group === 'portfolio'}
+          selectedPage=""
+        />
+      </LinkContainer>
+      <LinkSpacing />
+      <LinkContainer>
+        <NavBarLinks
+          page="/client-favorites"
+          text="Client Favorites"
+          group={page === 'client-favorites' && 'client-favorites'}
+        />
+      </LinkContainer>
+      <LinkSpacing />
+      <LinkContainer>
+        <NavBarDropDown
+          text="Support"
+          page={['Workflow', 'Resources']}
+          group={group === 'support'}
+          selectedPage=""
+        />
+      </LinkContainer>
+      <LinkSpacing />
+      <LinkContainer>
+        <NavBarLinks
+          page="/publications"
+          text="Publications"
+          group={page === 'publications' && 'publications'}
+        />
+      </LinkContainer>
+      <RightAlign>
+        <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
+          <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
         </ImgButton>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarDropDown
-            text="About"
-            page={['History', 'Services', 'Team']}
-            group={group === 'about'}
-            selectedPage={
-              (page === 'history' && 'history') || (page === 'team' && 'team')
-            }
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarDropDown
-            text="Portfolio"
-            page={['Custom-Projects', 'Clinical-Trials', 'Testimonials']}
-            group={group === 'portfolio'}
-            selectedPage=""
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarLinks
-            page="/client-favorites"
-            text="Client Favorites"
-            group={page === 'client-favorites' && 'client-favorites'}
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarDropDown
-            text="Support"
-            page={['Workflow', 'Resources']}
-            group={group === 'support'}
-            selectedPage=""
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarLinks
-            page="/publications"
-            text="Publications"
-            group={page === 'publications' && 'publications'}
-          />
-        </LinkContainer>
-        <RightAlign>
-          <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
-            <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
-          </ImgButton>
-        </RightAlign>
-        <LinkSpacing />
-      </Bar>
-    </>
+      </RightAlign>
+      <LinkSpacing />
+    </Bar>
   )
 }
 

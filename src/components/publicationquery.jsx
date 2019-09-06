@@ -5,19 +5,19 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Trail, animated } from 'react-spring/renderprops'
 import PublicationLink from './publicationlink'
 
-const getPublicationsList = (data, group, key) => {
+const getPublicationsList = (data, group) => {
   const publicationsArray = []
   data.allPublicationsJson.edges.forEach(
     item =>
       (item.node.group === group || group === 'all') &&
       publicationsArray.push(
         <PublicationLink
-          key={key && item.node.index}
           title={item.node.title}
           authors={item.node.authors}
           publisher={item.node.publisher}
           year={item.node.year}
           url={item.node.url}
+          key={item.node.url}
         />
       )
   )
@@ -33,7 +33,7 @@ const getPublicationsList = (data, group, key) => {
   )
 }
 
-const PublicationQuery = ({ group, key }) => {
+const PublicationQuery = ({ group }) => {
   return (
     <>
       <StaticQuery
@@ -53,14 +53,13 @@ const PublicationQuery = ({ group, key }) => {
             }
           }
         `}
-        render={data => <>{getPublicationsList(data, group, key)}</>}
+        render={data => <>{getPublicationsList(data, group)}</>}
       />
     </>
   )
 }
 PublicationQuery.propTypes = {
   group: PropTypes.node.isRequired,
-  key: PropTypes.node.isRequired,
 }
 
 export default PublicationQuery
