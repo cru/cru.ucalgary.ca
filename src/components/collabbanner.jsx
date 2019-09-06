@@ -16,6 +16,29 @@ const sliderSettings = {
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 860,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 }
 
 const CollabBanner = () => {
@@ -30,13 +53,17 @@ const CollabBanner = () => {
             <img src={cruImg} alt="cru logo" />
           </ImgContainer>
           <ImgContainer>
-            <img src={uofcImg} alt="uofcImg logo" />
+            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
+              <img src={uofcImg} alt="uofcImg logo" />
+            </a>
           </ImgContainer>
           <ImgContainer>
             <img src={cruImg} alt="cru logo" />
           </ImgContainer>
           <ImgContainer>
-            <img src={uofcImg} alt="uofcImg logo" />
+            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
+              <img src={uofcImg} alt="uofcImg logo" />
+            </a>
           </ImgContainer>
           <ImgContainer>
             <img src={cruImg} alt="cru logo" />
@@ -45,13 +72,17 @@ const CollabBanner = () => {
             <img src={cruImg} alt="cru logo" />
           </ImgContainer>
           <ImgContainer>
-            <img src={uofcImg} alt="uofcImg logo" />
+            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
+              <img src={uofcImg} alt="uofcImg logo" />
+            </a>
           </ImgContainer>
           <ImgContainer>
             <img src={cruImg} alt="cru logo" />
           </ImgContainer>
           <ImgContainer>
-            <img src={uofcImg} alt="uofcImg logo" />
+            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
+              <img src={uofcImg} alt="uofcImg logo" />
+            </a>
           </ImgContainer>
           <ImgContainer>
             <img src={cruImg} alt="cru logo" />
@@ -97,5 +128,6 @@ const ImgContainer = Styled.div`
   img:active{
     cursor:pointer;
     box-shadow: none;
+    outline: none !important;
   }
 `
