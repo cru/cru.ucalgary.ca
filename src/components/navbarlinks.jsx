@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 import { Link } from 'gatsby'
 
-const removeUnderscores = x => x.replace(/-/g, ' ')
+const removeDashes = x => x.replace(/-/g, ' ')
 
 const NavBarLinks = ({ page, group, text, style }) => {
   return (
     <Link to={page} style={{ textDecoration: 'none', pointerEvents: 'none' }}>
       <LinkText className={(group && 'selected') || 'unSelected'} style={style}>
-        {removeUnderscores(text)}
+        {removeDashes(text)}
       </LinkText>
     </Link>
   )
@@ -26,9 +26,12 @@ export default NavBarLinks
 
 const LinkText = Styled.div`
     pointer-events:all;   
-    font-size: ${props => props.theme.navBarFontSize};
-    font-weight: 400;
+
+    letter-spacing:0.2px;
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
+
+    font-family: futura-pt, sans-serif;
+    font-size: 19.5px;
+    font-weight: 400;
 `

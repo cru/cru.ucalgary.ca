@@ -9,14 +9,20 @@ import PublicationsList from '../components/publicationslist'
 const PublicationsPage = () => (
   <Layout title="Publications">
     <NavBar page="publications" />
-    <div style={{ height: 75 }} />
+    <div style={{ height: '20px' }} />
+    <div
+      style={{
+        height: 75,
+        width: '100%',
+        backgroundColor: 'white',
+      }}
+    />
     <Padding>
-      <h2>Publications</h2>
+      <h1>Publications</h1>
     </Padding>
-    <div style={{ height: 20 }} />
+    <div style={{ height: 50 }} />
 
     <PublicationsList />
-    <div style={{ height: 300 }} />
     <EmailFAB />
   </Layout>
 )

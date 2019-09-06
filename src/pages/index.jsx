@@ -3,6 +3,7 @@ import Layout from '../containers/layout'
 import IntroHero from '../components/introhero'
 import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
+import CollabBanner from '../components/collabbanner'
 
 const IndexPage = () => {
   return (
@@ -10,7 +11,9 @@ const IndexPage = () => {
       <NavBar />
       <IntroHero />
       <div style={{ height: '50vh', backgroundColor: 'white' }} />
-      <div style={{ height: '50vh', backgroundColor: 'white' }} />
+      <CollabBanner />
+      <div style={{ height: '30px', backgroundColor: 'white' }} />
+
       <EmailFAB />
     </Layout>
   )

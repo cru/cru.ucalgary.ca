@@ -122,7 +122,7 @@ const Footer = () => {
             👋
           </span>
           <span> </span>
-          made by CRU
+          Made by CRU
         </p>
         <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
       </Greeting>
@@ -174,6 +174,7 @@ const Strip = Styled.div`
 `
 
 const LinkStyle = Styled.p`
+  font-family: 'Roboto';
   color: ${props => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;
@@ -192,12 +193,15 @@ const LinkStyle = Styled.p`
 `
 
 const Title = Styled.p`
-   color:grey;
-   font-weight:700;
-   cursor:default;
+  font-family: futura-pt, sans-serif;
+  color:grey;
+  font-weight:500;
+  font-size:17px;
+  cursor:default;
 `
 
 const Address = Styled.p`
+    font-family: 'Roboto';
     font-size:14px;
     font-weight:400;
     color:grey;
@@ -214,6 +218,7 @@ const Address = Styled.p`
 const Greeting = Styled.div`
 text-align:center;
     p{
-      font-size:14px;
+      font-family: futura-pt, sans-serif;
+      font-size:15px;
     }
 `

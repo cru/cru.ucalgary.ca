@@ -30,9 +30,11 @@ const DefaultButton = Styled.button`
     cursor:pointer;
     outline:none;
     transition: box-shadow ${props => props.theme.boxShadowTrans};
-    font-size:13.5px;
-    text-transform:uppercase;
     color:${props => props.theme.fontPrimColor};
+
+    font-family: futura-pt, sans-serif;
+    font-size:17px;
+    letter-spacing:0.2px;
 
     :hover {
       border: 1px solid grey;

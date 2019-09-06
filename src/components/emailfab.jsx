@@ -1,76 +1,55 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import Styled from 'styled-components'
 import ScrollTrigger from 'react-scroll-trigger'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import EmailForm from './emailform'
 
-class EmailFAB extends Component {
-  constructor(props) {
-    super(props)
-    this.onEnterViewport = this.onEnterViewport.bind(this)
-    this.onExitViewport = this.onExitViewport.bind(this)
-    this.state = {
-      toggle: true,
-    }
-  }
+const EmailFAB = () => {
+  const [toggle, setToggle] = useState(true)
 
-  onEnterViewport() {
-    this.setState({
-      toggle: false,
-    })
-  }
-
-  onExitViewport() {
-    this.setState({
-      toggle: true,
-    })
-  }
-
-  render() {
-    const { toggle } = this.state
-
-    return (
-      <>
-        <ScrollTrigger
-          onEnter={this.onEnterViewport}
-          onExit={this.onExitViewport}
+  return (
+    <>
+      <div style={{ height: '200px' }} />
+      <ScrollTrigger
+        onEnter={() => setToggle(false)}
+        onExit={() => setToggle(true)}
+      >
+        <div
+          style={{
+            backgroundColor: 'transparent',
+            height: 600,
+            marginBottom: '-800px',
+          }}
+        />
+      </ScrollTrigger>
+      <ButtonContainer toggle={toggle}>
+        <Link
+          to={toggle ? 'form' : 'none'}
+          spy="true"
+          smooth="true"
+          offset={-50}
+          duration={400}
         >
-          <div
-            style={{
-              backgroundColor: 'transparent',
-              height: 600,
-              marginBottom: '-800px',
-            }}
-          />
-        </ScrollTrigger>
-        <ButtonContainer toggle={toggle}>
-          <Link
-            to={toggle ? 'form' : 'none'}
-            spy="true"
-            smooth="true"
-            offset={-50}
-            duration={400}
-          >
-            <Button toggle={toggle}>
-              <FontAwesomeIcon
-                style={{ display: toggle ? 'block' : 'none' }}
-                icon="envelope"
-              />
-              <Text style={{ display: toggle ? 'block' : 'none' }}>
-                <span>&nbsp;</span>
-                Email CRU
-              </Text>
-              <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
-            </Button>
-          </Link>
-        </ButtonContainer>
-        <div id="form" />
-        <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
-      </>
-    )
-  }
+          <Button toggle={toggle}>
+            <FontAwesomeIcon
+              style={{ display: toggle ? 'block' : 'none' }}
+              icon="envelope"
+            />
+            <Text style={{ display: toggle ? 'block' : 'none' }}>
+              <span>&nbsp;</span>
+              Email CRU
+            </Text>
+            <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
+          </Button>
+        </Link>
+      </ButtonContainer>
+      <div id="form" />
+      <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
+    </>
+  )
 }
+
 export default EmailFAB
 
 const PlaceHolderContainer = Styled.div`
@@ -129,6 +108,8 @@ const Button = Styled.div`
 `
 
 const Text = Styled.p`
-    font-size:16.5px;
+    font-size:18px;
+    font-family: futura-pt, sans-serif;
+    font-weight:500;
     color:  ${props => props.theme.fontPrimColor};
 `
