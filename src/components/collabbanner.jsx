@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const sliderSettings = {
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 1500,
   speed: 2000,
   pauseOnFocus: true,
   dots: false,
@@ -103,8 +103,8 @@ const Header = Styled.div`
 `
 
 const Banner = Styled.div`
-  padding:30px;
   padding-top:15px;
+  padding-bottom:30px;
   cursor:grab;
 `
 
