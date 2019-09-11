@@ -1,8 +1,8 @@
+/* eslint-disable global-require */
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import Styled from 'styled-components'
 import Slider from 'react-slick'
-import uofcImg from '../images/uc-horz-rgb.png'
-import cruImg from '../images/cru_logo.png'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -41,54 +41,57 @@ const sliderSettings = {
   ],
 }
 
+const getCollaboratorList = data => {
+  const collaboratorsArray = []
+
+  data.allCollaboratorsJson.edges.forEach((item, index) =>
+    collaboratorsArray.push(
+      <ImgContainer
+        key={index && item.node.name}
+        href={item.node.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          // eslint-disable-next-line import/no-dynamic-require
+          src={require(`../images/collaborators/${item.node.fileName}`)}
+          alt={item.node.name}
+        />
+      </ImgContainer>
+    )
+  )
+
+  return collaboratorsArray
+}
+
 const CollabBanner = () => {
   return (
     <>
-      <Header>
-        <h2>Collaborators</h2>
-      </Header>
-      <Banner>
-        <Slider {...sliderSettings}>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-          <ImgContainer>
-            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
-              <img src={uofcImg} alt="uofcImg logo" />
-            </a>
-          </ImgContainer>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-          <ImgContainer>
-            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
-              <img src={uofcImg} alt="uofcImg logo" />
-            </a>
-          </ImgContainer>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-          <ImgContainer>
-            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
-              <img src={uofcImg} alt="uofcImg logo" />
-            </a>
-          </ImgContainer>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-          <ImgContainer>
-            <a href="//ucalgary.ca" target="_blank" rel="noopener noreferrer">
-              <img src={uofcImg} alt="uofcImg logo" />
-            </a>
-          </ImgContainer>
-          <ImgContainer>
-            <img src={cruImg} alt="cru logo" />
-          </ImgContainer>
-        </Slider>
-      </Banner>
+      <StaticQuery
+        query={graphql`
+          query collaboratorsQuery {
+            allCollaboratorsJson {
+              edges {
+                node {
+                  name
+                  fileName
+                  url
+                }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <>
+            <Header>
+              <h2>Collaborators</h2>
+            </Header>
+            <Banner>
+              <Slider {...sliderSettings}>{getCollaboratorList(data)}</Slider>
+            </Banner>
+          </>
+        )}
+      />
     </>
   )
 }
@@ -103,33 +106,42 @@ const Header = Styled.div`
 `
 
 const Banner = Styled.div`
+  cursor:grab;
   padding-top:15px;
   padding-bottom:30px;
-  cursor:grab;
+
+  -webkit-user-select:  none;
+  -moz-user-select:  none;
+  -ms-user-select:  none;
+  user-select: none;
 `
 
-const ImgContainer = Styled.div`
-  :focus{
+const ImgContainer = Styled.a`
+  cursor:grab;
+  margin:5px;
+  margin-left:35px;
+  padding:15px;
+  height:35px !important;
+  width:140px !important;
+  transition: all ${props => props.theme.boxShadowTrans};
+  border-radius: ${props => props.theme.borderRadius};
+
+  :hover{
+    box-shadow: ${props => props.theme.boxShadow};
+    cursor:pointer;
     outline: none !important;
+  }
+
+  :active{
+    box-shadow:none;
+  }
+  :focus{
+    outline:none !important;
   }
 
   img{
-    height:38px;
-    margin:20px;
-    margin-top:7px;
-    padding:7px;
-    padding-left:15px;
-    padding-right:15px;
-    border-radius: ${props => props.theme.borderRadius};
+    height:35px;
+    margin: 0 auto;
+  }
 
-  }
-  img:hover{
-    cursor:pointer;
-    box-shadow: ${props => props.theme.boxShadow};
-  }
-  img:active{
-    cursor:pointer;
-    box-shadow: none;
-    outline: none !important;
-  }
 `
