@@ -45,7 +45,7 @@ const NavBar = ({ page, group }) => {
         <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
       </ImgButton>
       <LinkSpacing />
-      <LinkContainer>
+      {/* <LinkContainer>
         <NavBarDropDown
           text="About"
           page={['History', 'Services', 'Team']}
@@ -72,13 +72,20 @@ const NavBar = ({ page, group }) => {
           group={page === 'client-favorites' && 'client-favorites'}
         />
       </LinkContainer>
-      <LinkSpacing />
+      <LinkSpacing /> 
       <LinkContainer>
         <NavBarDropDown
           text="Support"
           page={['Workflow', 'Resources']}
           group={group === 'support'}
           selectedPage=""
+        />
+      </LinkContainer> */}
+      <LinkContainer>
+        <NavBarLinks
+          page="/resources"
+          text="Resources"
+          group={page === 'resources' && 'resources'}
         />
       </LinkContainer>
       <LinkSpacing />

@@ -4,15 +4,18 @@ import IntroHero from '../components/introhero'
 import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import CollabBanner from '../components/collabbanner'
+import ServiceList from '../components/serviceList'
 
 const IndexPage = () => {
   return (
     <Layout>
       <NavBar />
       <IntroHero />
-      <div style={{ height: '50vh', backgroundColor: 'white' }} />
+      <ServiceList style={{ marginTop: '-720px' }} />
+      <div style={{ height: '100px' }} />
+
       <CollabBanner />
-      <div style={{ height: '30px', backgroundColor: 'white' }} />
+      <div style={{ height: '30px' }} />
 
       <EmailFAB />
     </Layout>

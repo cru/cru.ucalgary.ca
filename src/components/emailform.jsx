@@ -11,8 +11,7 @@ const EmailForm = ({ style }) => {
       <Form style={style}>
         <Space />
         <Row>
-          <h2>Email CRU</h2>
-          <br />
+          <h3>Email CRU</h3>
           <label htmlFor="name">
             Name
             <Space />
@@ -71,9 +70,7 @@ const Form = Styled.form`
   flex-direction: column; 
   width: 100%;
   padding: ${props => props.theme.pageMobilePadding};
-  h2 {
-    font-size:25px;
-  }
+
 `
 const Row = Styled.div`
   padding:13px;

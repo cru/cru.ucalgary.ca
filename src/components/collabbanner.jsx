@@ -84,7 +84,7 @@ const CollabBanner = () => {
         render={data => (
           <>
             <Header>
-              <h2>Collaborators</h2>
+              <h4>Collaborators</h4>
             </Header>
             <Banner>
               <Slider {...sliderSettings}>{getCollaboratorList(data)}</Slider>
