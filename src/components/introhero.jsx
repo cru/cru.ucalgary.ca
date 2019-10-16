@@ -2,7 +2,7 @@ import React from 'react'
 import Styled from 'styled-components'
 import Padding from '../containers/padding'
 import CRUDescription from './cruDescription'
-import Balloons from '../images/svg-backgrounds/cru-balloons.svg'
+import Balloons from '../images/svg-backgrounds/cru-hex.svg'
 
 const IntroHero = () => {
   return (
