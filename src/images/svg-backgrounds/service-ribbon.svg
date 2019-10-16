@@ -3,8 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 530 725" style="enable-background:new 0 0 530 725;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.9;fill:#FFFFFF;stroke:#95C4E9;stroke-width:7;stroke-miterlimit:10;enable-background:new    ;}
+	.st0{opacity:0.65;fill:none;stroke:#E83838;stroke-width:10;stroke-miterlimit:10;}
+	.st1{opacity:0.65;fill:none;stroke:#8DC7FD;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
 </style>
-<polygon class="st0" points="7.5,6.6 7.5,710.4 96.7,633.6 186.4,710.9 273.3,636 359.9,710.7 440.7,641.1 522.5,711.6 522.5,6.6 
+<polyline class="st0" points="14.1,711.6 121.1,621.6 213.1,704.2 301.1,621.6 398.1,711.6 475.1,631.6 538.5,686 "/>
+<polygon class="st1" points="7.5,6.6 7.5,710.4 96.7,633.6 186.4,710.9 273.3,636 359.9,710.7 440.7,641.1 522.5,711.6 522.5,6.6 
 	"/>
 </svg>

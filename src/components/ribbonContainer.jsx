@@ -35,7 +35,7 @@ const Container = Styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     width:330px;
-    height:445px;
+    height:450px;
     margin: 0 auto;
 `
 

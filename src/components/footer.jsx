@@ -21,16 +21,9 @@ const Footer = () => {
         <Column>
           <Content>
             <Title>Explore</Title>
-
-            {/* <Link style={{ textDecoration: "none" }} to="/services">
-              <LinkStyle>Services</LinkStyle>
+            <Link style={{ textDecoration: 'none' }} to="/resources">
+              <LinkStyle>Resources</LinkStyle>
             </Link>
-            <Link style={{ textDecoration: "none" }} to="/about_us">
-              <LinkStyle>About Us</LinkStyle>
-            </Link>
-            <Link style={{ textDecoration: "none" }} to="/people">
-              <LinkStyle>People</LinkStyle>
-            </Link> */}
             <Link style={{ textDecoration: 'none' }} to="/publications">
               <LinkStyle>Publications</LinkStyle>
             </Link>
