@@ -18,4 +18,5 @@ const Container = Styled.h4`
     margin: 0 auto;
     max-width:600px;
     text-align: center;
+    background-color:white;
 `
