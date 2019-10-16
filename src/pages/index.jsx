@@ -11,7 +11,7 @@ const IndexPage = () => {
     <Layout>
       <NavBar />
       <IntroHero />
-      <ServiceList style={{ marginTop: '-720px' }} />
+      <ServiceList style={{ marginTop: '-1240px' }} />
       <div style={{ height: '100px' }} />
 
       <CollabBanner />
