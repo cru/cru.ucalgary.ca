@@ -1,4 +1,5 @@
 import React from 'react'
+import { Download } from 'react-feather'
 import Layout from '../containers/layout'
 import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
@@ -24,9 +25,13 @@ const ResourcesPage = () => (
         <div style={{ height: 10 }} />
 
         <div style={{ display: 'flex' }}>
-          <div style={{ maxWidth: 175, textAlign: 'center' }}>
+          <div style={{ maxWidth: 195, textAlign: 'center' }}>
             <a href="./downloads/DFexplore5.1.4.pkg" download>
-              <Button style={{ width: '175px' }}>Download for Mac</Button>
+              <Button style={{ width: '195px' }}>
+                Download for Mac
+                <span> </span>
+                <Download style={{ height: '16px' }} />
+              </Button>
             </a>
             <p style={{ fontSize: '11px' }}>macOS 10.12 (Sierra) and newer</p>
           </div>
@@ -35,7 +40,11 @@ const ResourcesPage = () => (
 
           <div style={{ textAlign: 'center' }}>
             <a href="./downloads/DFexplore5.1.4.msi" download>
-              <Button style={{ width: '220px' }}>Download for Windows</Button>
+              <Button style={{ width: '220px' }}>
+                Download for Windows
+                <span> </span>
+                <Download style={{ height: '16px' }} />
+              </Button>
             </a>
             <p style={{ fontSize: '11px' }}>Windows 8.1, Windows 10</p>
           </div>
