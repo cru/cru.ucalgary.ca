@@ -7,24 +7,30 @@ const ServiceList = ({ style }) => {
   return (
     <div style={style}>
       <Header>
-        <h4>Our Services</h4>
+        <h4>What we do</h4>
       </Header>
       <Container>
-        <RibbonContainer
-          title="Custom Software"
-          description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
-          icon="code"
-        />
-        <RibbonContainer
-          title="Electronic Data Capture"
-          description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
-          icon="laptop"
-        />
-        <RibbonContainer
-          title="Methods and Analytics"
-          description="The CRU supports project management and analysis needs of the University of Calgary Biostatistics Centre and the Alberta SPOR support Unit."
-          icon="chart-bar"
-        />
+        <Item>
+          <RibbonContainer
+            title="Custom Software"
+            description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
+            icon="code"
+          />
+        </Item>
+        <Item>
+          <RibbonContainer
+            title="Electronic Data Capture"
+            description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
+            icon="laptop"
+          />
+        </Item>
+        <Item>
+          <RibbonContainer
+            title="Methods and Analytics"
+            description="The CRU supports project management and analysis needs of the University of Calgary Biostatistics Centre and the Alberta SPOR support Unit."
+            icon="chart-bar"
+          />
+        </Item>
       </Container>
     </div>
   )
@@ -42,4 +48,11 @@ const Header = Styled.div`
 `
 const Container = Styled.div`
     display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+`
+
+const Item = Styled.div`
+    margin:20px;
 `

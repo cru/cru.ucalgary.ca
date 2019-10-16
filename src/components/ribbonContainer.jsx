@@ -2,15 +2,14 @@ import React from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Ribbon from '../images/svg-backgrounds/ribbon.svg'
+import Ribbon from '../images/svg-backgrounds/service-ribbon.svg'
 
 const RibbonContainer = ({ title, description, icon }) => {
   return (
     <>
       <Container>
         <Content>
-          <div style={{ height: '40px' }} />
-
+          <div style={{ height: '10px' }} />
           <FontAwesomeIcon
             style={{ fontSize: '25px', color: 'grey' }}
             icon={icon}
@@ -35,8 +34,8 @@ const Container = Styled.div`
     background-image:url(${Ribbon});
     background-repeat: no-repeat;
     background-size: cover;
-    width:340px;
-    height:530px;
+    width:330px;
+    height:445px;
     margin: 0 auto;
 `
 

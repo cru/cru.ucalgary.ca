@@ -40,7 +40,7 @@ const ResourcesPage = () => (
 
           <div style={{ textAlign: 'center' }}>
             <a href="./downloads/DFexplore5.1.4.msi" download>
-              <Button style={{ width: '220px' }}>
+              <Button style={{ width: '225px' }}>
                 Download for Windows
                 <span> </span>
                 <Download style={{ height: '16px' }} />
