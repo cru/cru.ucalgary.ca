@@ -1,26 +1,18 @@
 import React from 'react'
 import Styled from 'styled-components'
 import { Spring } from 'react-spring/renderprops'
-import Padding from '../containers/padding'
-import CRUDescription from './cruDescription'
 import hexagonPattern from '../images/svg-backgrounds/cru-hex.svg'
 
 const CRUHexPattern = () => {
   return (
     <>
       <Spring
-        from={{ backgroundPosition: '0px 2000px', opacity: 0 }}
-        to={{ backgroundPosition: '0px 0px', opacity: 1 }}
+        from={{ transform: 'translate3d(-50px,-50px,0)', opacity: 0 }}
+        to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
       >
         {props => (
           <div style={props}>
-            <Container>
-              <Padding>
-                <Title>Better Data, Better Research</Title>
-                <div style={{ height: '40px' }} />
-                <CRUDescription />
-              </Padding>
-            </Container>
+            <Container />
           </div>
         )}
       </Spring>
@@ -41,17 +33,9 @@ const Container = Styled.div`
       props.theme.tabletBreakPoint}){
         background-image:url(${hexagonPattern});
         background-repeat: no-repeat;
-        background-position: 0px 300px; 
-
-        height:2500px;
+        background-position: 0px 150px;
+        margin-left:27px;
+        height:2200px;
         width:100%;    
      }
-`
-
-const Title = Styled.h1`
-    max-width:500px;
-    margin:0 auto;
-    padding-top:20vh;
-    font-size:55px;
-    background-color:white;
 `
