@@ -33,8 +33,11 @@ const Background = Styled.div`
       props.theme.tabletBreakPoint}){
         background-image:url(${hexagonPattern});
         background-repeat: no-repeat;
-        background-position: 0px 300px; 
-        height:800px;
-        width:100%;    
+        background-position: 0px 100px; 
+        height:900px;
+        width:100%;
+        margin-top:50px;
+        margin-bottom:50px;
+        margin-left:30px;
      }
 `
