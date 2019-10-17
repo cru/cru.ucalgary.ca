@@ -7,12 +7,12 @@ const CRUHexPattern = () => {
   return (
     <>
       <Spring
-        from={{ transform: 'translate3d(-50px,-50px,0)', opacity: 0 }}
-        to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
+        from={{ transform: 'translate3d(-50px,-50px,-50px)', opacity: 0 }}
+        to={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
       >
         {props => (
           <div style={props}>
-            <Container />
+            <Background />
           </div>
         )}
       </Spring>
@@ -22,20 +22,19 @@ const CRUHexPattern = () => {
 
 export default CRUHexPattern
 
-const Container = Styled.div`
+const Background = Styled.div`
     background-image:url(${hexagonPattern});
     background-repeat: no-repeat;
     background-size: cover;
-    height:2000px;
+    height:800px;
     width:100%;    
     text-align:center;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
         background-image:url(${hexagonPattern});
         background-repeat: no-repeat;
-        background-position: 0px 150px;
-        margin-left:27px;
-        height:2200px;
+        background-position: 0px 300px; 
+        height:800px;
         width:100%;    
      }
 `
