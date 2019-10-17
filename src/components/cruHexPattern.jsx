@@ -1,24 +1,34 @@
 import React from 'react'
 import Styled from 'styled-components'
+import { Spring } from 'react-spring/renderprops'
 import Padding from '../containers/padding'
 import CRUDescription from './cruDescription'
 import hexagonPattern from '../images/svg-backgrounds/cru-hex.svg'
 
-const IntroHero = () => {
+const CRUHexPattern = () => {
   return (
     <>
-      <Container>
-        <Padding>
-          <Title>Better Data, Better Research</Title>
-          <div style={{ height: '40px' }} />
-          <CRUDescription />
-        </Padding>
-      </Container>
+      <Spring
+        from={{ backgroundPosition: '0px 2000px', opacity: 0 }}
+        to={{ backgroundPosition: '0px 0px', opacity: 1 }}
+      >
+        {props => (
+          <div style={props}>
+            <Container>
+              <Padding>
+                <Title>Better Data, Better Research</Title>
+                <div style={{ height: '40px' }} />
+                <CRUDescription />
+              </Padding>
+            </Container>
+          </div>
+        )}
+      </Spring>
     </>
   )
 }
 
-export default IntroHero
+export default CRUHexPattern
 
 const Container = Styled.div`
     background-image:url(${hexagonPattern});

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../containers/layout'
-import IntroHero from '../components/introhero'
+import CRUHexPattern from '../components/cruHexPattern'
 import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import CollabBanner from '../components/collabbanner'
@@ -10,10 +10,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <NavBar />
-      <IntroHero />
+      <CRUHexPattern />
       <ServiceList style={{ marginTop: '-1240px' }} />
       <div style={{ height: '100px' }} />
-
       <CollabBanner />
       <div style={{ height: '30px' }} />
 
