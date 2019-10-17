@@ -106,9 +106,11 @@ const Header = Styled.div`
 `
 
 const Banner = Styled.div`
+
   cursor:grab;
   padding-top:15px;
   padding-bottom:30px;
+  overflow:hidden;
 
   -webkit-user-select:  none;
   -moz-user-select:  none;
