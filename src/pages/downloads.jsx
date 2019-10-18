@@ -27,7 +27,7 @@ const DownloadsPage = () => (
           <div style={{ height: 10 }} />
 
           <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-            <div
+            {/* <div
               style={{
                 textAlign: 'center',
                 paddingRight: '12px',
@@ -57,7 +57,7 @@ const DownloadsPage = () => (
                   <Download style={{ height: '16px' }} />
                 </Button>
               </a>
-            </div>
+            </div> */}
 
             <div
               style={{
