@@ -48,13 +48,13 @@ const Information = Styled.div`
 `
 
 const Publisher = Styled.p`
-    font-size:13px;
+    font-size:14px;
     margin-top:-7px;
 `
 
 const Title = Styled.a`
     color: #1A0DAB;
-    font-size:15px;
+    font-size:16x;
     text-decoration:none;
     :hover {
       text-decoration:underline;
@@ -65,10 +65,10 @@ const Title = Styled.a`
 `
 
 const Year = Styled.p`
-    font-size:14px;
+    font-size:15px;
     font-weight:700;
 `
 
 const Authors = Styled.p`
-    font-size:13px;
+    font-size:14px;
 `
