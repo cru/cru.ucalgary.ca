@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 import NavBarLinks from './navbarlinks'
-// import NavBarDropDown from './navbardropdown'
+import NavBarDropDown from './navbardropdown'
 import NavBarPage from './navbarpage'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
@@ -10,7 +10,7 @@ import uofcImg from '../images/collaborators/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 
 // group is a prop aswell
-const NavBar = ({ page }) => {
+const NavBar = ({ page, group }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
@@ -73,15 +73,8 @@ const NavBar = ({ page }) => {
           group={page === 'client-favorites' && 'client-favorites'}
         />
       </LinkContainer>
-      <LinkSpacing /> 
-      <LinkContainer>
-        <NavBarDropDown
-          text="Support"
-          page={['Workflow', 'Resources']}
-          group={group === 'support'}
-          selectedPage=""
-        />
-      </LinkContainer> */}
+      */}
+
       <LinkContainer>
         <NavBarLinks
           page="/publications"
@@ -90,12 +83,12 @@ const NavBar = ({ page }) => {
         />
       </LinkContainer>
       <LinkSpacing />
-
       <LinkContainer>
-        <NavBarLinks
-          page="/resources"
+        <NavBarDropDown
           text="Resources"
-          group={page === 'resources' && 'resources'}
+          page={['Downloads']}
+          group={group === 'resources'}
+          selectedPage={page === 'downloads' && 'downloads'}
         />
       </LinkContainer>
 
@@ -111,7 +104,7 @@ const NavBar = ({ page }) => {
 
 NavBar.propTypes = {
   page: PropTypes.node.isRequired,
-  // group: PropTypes.node.isRequired,
+  group: PropTypes.node.isRequired,
 }
 export default NavBar
 

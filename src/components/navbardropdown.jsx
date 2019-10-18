@@ -8,7 +8,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
   const pages = page.map(pageName => (
     <li key={pageName.toString()}>
       <NavBarLinks
-        page={`/${pageName}`}
+        page={`/${pageName.toLowerCase()}`}
         text={pageName}
         group={selectedPage === pageName && selectedPage}
         style={{ fontSize: '18.5px' }}
