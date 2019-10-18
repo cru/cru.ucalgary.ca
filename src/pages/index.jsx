@@ -1,4 +1,5 @@
 import React from 'react'
+import Styled from 'styled-components'
 import Layout from '../containers/layout'
 import CRUHexPattern from '../components/cruHexPattern'
 import CRUDescription from '../components/cruDescription'
@@ -11,7 +12,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <NavBar />
-      <div style={{ height: '20vh' }} />
+      <Spacing />
       <CRUDescription style={{ marginBottom: '-410px' }} />
       <CRUHexPattern />
       <ServiceList />
@@ -24,3 +25,11 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+const Spacing = Styled.div`
+  height: 20vh;
+  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+    height: 10vh;
+  }
+
+`

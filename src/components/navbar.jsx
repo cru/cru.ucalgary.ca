@@ -2,14 +2,15 @@ import React, { useState } from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 import NavBarLinks from './navbarlinks'
-import NavBarDropDown from './navbardropdown'
+// import NavBarDropDown from './navbardropdown'
 import NavBarPage from './navbarpage'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
 import uofcImg from '../images/collaborators/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 
-const NavBar = ({ page, group }) => {
+// group is a prop aswell
+const NavBar = ({ page }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
@@ -110,7 +111,7 @@ const NavBar = ({ page, group }) => {
 
 NavBar.propTypes = {
   page: PropTypes.node.isRequired,
-  group: PropTypes.node.isRequired,
+  // group: PropTypes.node.isRequired,
 }
 export default NavBar
 
