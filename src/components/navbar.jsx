@@ -83,19 +83,21 @@ const NavBar = ({ page, group }) => {
       </LinkContainer> */}
       <LinkContainer>
         <NavBarLinks
-          page="/resources"
-          text="Resources"
-          group={page === 'resources' && 'resources'}
-        />
-      </LinkContainer>
-      <LinkSpacing />
-      <LinkContainer>
-        <NavBarLinks
           page="/publications"
           text="Publications"
           group={page === 'publications' && 'publications'}
         />
       </LinkContainer>
+      <LinkSpacing />
+
+      <LinkContainer>
+        <NavBarLinks
+          page="/resources"
+          text="Resources"
+          group={page === 'resources' && 'resources'}
+        />
+      </LinkContainer>
+
       <RightAlign>
         <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
           <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
