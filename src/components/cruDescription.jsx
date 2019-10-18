@@ -31,6 +31,11 @@ const Title = Styled.h1`
     margin:0 auto;
     font-size:55px;
     background-color:white;
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      font-size: 45px;
+      max-width:400px;
+  }
 `
 
 const Body = Styled.h4`
@@ -38,4 +43,10 @@ const Body = Styled.h4`
     max-width:600px;
     text-align: center;
     background-color:white;
+
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      font-size: 20px;
+      max-width:400px;
+  }
 `
