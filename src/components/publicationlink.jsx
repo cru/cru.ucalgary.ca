@@ -59,9 +59,7 @@ const Title = Styled.a`
     :hover {
       text-decoration:underline;
     }
-    :active {
-      color:#1A0DAB;
-    }
+
 `
 
 const Year = Styled.p`

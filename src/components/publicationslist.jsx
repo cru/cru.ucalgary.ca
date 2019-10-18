@@ -18,7 +18,7 @@ const PublicationsList = () => {
   }
 
   const filterSelected = () => {
-    return '3px solid rgb(232, 56, 56)'
+    return '4px solid rgb(232, 56, 56, 0.6)'
   }
 
   return (
