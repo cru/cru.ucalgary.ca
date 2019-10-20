@@ -121,7 +121,7 @@ const Banner = Styled.div`
 const ImgContainer = Styled.a`
   cursor:grab;
   margin:5px;
-  margin-left:35px;
+  margin-left:2vw;
   padding:15px;
   height:35px !important;
   width:140px !important;

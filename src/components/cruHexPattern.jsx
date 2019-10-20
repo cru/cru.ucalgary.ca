@@ -31,12 +31,9 @@ const Background = Styled.div`
     text-align:center;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-        background-image:url(${hexagonPattern});
         background-repeat: no-repeat;
-        background-position: 0px 100px; 
-        height:900px;
-        width:100%;
-        margin-top:50px;
+        background-position: 0px 60px; 
+        margin-top:70px;
         margin-bottom:50px;
      }
 `
