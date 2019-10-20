@@ -109,7 +109,7 @@ const Banner = Styled.div`
 
   cursor:grab;
   padding-top:15px;
-  padding-bottom:30px;
+  padding-bottom:10px;
   overflow:hidden;
 
   -webkit-user-select:  none;
