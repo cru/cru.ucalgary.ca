@@ -60,6 +60,7 @@ const NavBar = ({ page, group }) => {
         <LinkSpacing />
       </Bar>
       <MobilePage navbarpage={navbarpage}>
+        <div style={{ height: '70px' }} />
         <Link to="/publications">
           <MobileLink>
             <p style={{ color: 'white' }}>Publications</p>
@@ -94,17 +95,23 @@ const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
   overflow:hidden;
-  height: ${props => (props.navbarpage ? '230px' : '0px')};
+  height: ${props => (props.navbarpage ? '300px' : '0px')};
+  width:100vw;
   -moz-transition: height 0.5s ease;
   -webkit-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
+  position: fixed;
+  top: 0; 
+  z-index:1;
   @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
     display:none;
   }
 `
 
 const Bar = Styled.div`
+  flex-wrap: wrap;
+
   z-index:100;
   display: flex;
   align-items: center;
