@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
-import NavBarPage from './navbarpage'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
 import uofcImg from '../images/collaborators/uc-horz-rgb.png'
@@ -14,91 +14,64 @@ const NavBar = ({ page, group }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
-    <Bar>
-      <MenuContainer>
-        <LinkSpacing />
-        <Hamburger
-          onClick={
-            navbarpage ? () => setNavbarpage(false) : () => setNavbarpage(true)
-          }
-          toggle={navbarpage}
-        />
-        <NavBarPage toggle={navbarpage}>
-          <div
-            style={{
-              zoom: '120%',
-              width: '80vw',
-              paddingLeft: '60px',
-            }}
-          >
-            <NavBarLinks
-              page="/publications"
-              text="publications"
-              group={page === 'publications' && 'publications'}
-            />
-          </div>
-        </NavBarPage>
-      </MenuContainer>
-      <MenuContainerOpposite>
-        <LinkSpacing />
-      </MenuContainerOpposite>
-      <ImgButton to="/">
-        <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
-      </ImgButton>
-      <LinkSpacing />
-      {/* <LinkContainer>
-        <NavBarDropDown
-          text="About"
-          page={['History', 'Services', 'Team']}
-          group={group === 'about'}
-          selectedPage={
-            (page === 'history' && 'history') || (page === 'team' && 'team')
-          }
-        />
-      </LinkContainer>
-      <LinkSpacing />
-      <LinkContainer>
-        <NavBarDropDown
-          text="Portfolio"
-          page={['Custom-Projects', 'Clinical-Trials', 'Testimonials']}
-          group={group === 'portfolio'}
-          selectedPage=""
-        />
-      </LinkContainer>
-      <LinkSpacing />
-      <LinkContainer>
-        <NavBarLinks
-          page="/client-favorites"
-          text="Client Favorites"
-          group={page === 'client-favorites' && 'client-favorites'}
-        />
-      </LinkContainer>
-      */}
-
-      <LinkContainer>
-        <NavBarLinks
-          page="/publications"
-          text="Publications"
-          group={page === 'publications' && 'publications'}
-        />
-      </LinkContainer>
-      <LinkSpacing />
-      <LinkContainer>
-        <NavBarDropDown
-          text="Resources"
-          page={['Downloads']}
-          group={group === 'resources'}
-          selectedPage={page === 'downloads' && 'downloads'}
-        />
-      </LinkContainer>
-
-      <RightAlign>
-        <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
-          <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
+    <>
+      <Bar navbarpage={navbarpage}>
+        <MenuContainer>
+          <LinkSpacing />
+          <Hamburger
+            onClick={
+              navbarpage
+                ? () => setNavbarpage(false)
+                : () => setNavbarpage(true)
+            }
+            toggle={navbarpage}
+          />
+        </MenuContainer>
+        <MenuContainerOpposite>
+          <LinkSpacing />
+        </MenuContainerOpposite>
+        <ImgButton to="/">
+          <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
         </ImgButton>
-      </RightAlign>
-      <LinkSpacing />
-    </Bar>
+        <LinkSpacing />
+
+        <LinkContainer>
+          <NavBarLinks
+            page="/publications"
+            text="Publications"
+            group={page === 'publications' && 'publications'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarDropDown
+            text="Resources"
+            page={['Downloads']}
+            group={group === 'resources'}
+            selectedPage={page === 'downloads' && 'downloads'}
+          />
+        </LinkContainer>
+
+        <RightAlign>
+          <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
+            <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
+          </ImgButton>
+        </RightAlign>
+        <LinkSpacing />
+      </Bar>
+      <MobilePage navbarpage={navbarpage}>
+        <Link to="/publications">
+          <MobileLink>
+            <p style={{ color: 'white' }}>Publications</p>
+          </MobileLink>
+        </Link>
+        <Link to="/downloads">
+          <MobileLink>
+            <p style={{ color: 'white' }}>Downloads</p>
+          </MobileLink>
+        </Link>
+      </MobilePage>
+    </>
   )
 }
 
@@ -109,12 +82,35 @@ NavBar.propTypes = {
 export default NavBar
 
 /* Styles */
+
+const MobileLink = Styled.div`
+  outline: 5px solid ${props => props.theme.brandPrimColor};
+  margin: 30px;
+  padding: 10px;
+  color: white;
+`
+
+const MobilePage = Styled.div`
+  margin: 0 auto;
+  background-color: #212121;
+  overflow:hidden;
+  height: ${props => (props.navbarpage ? '230px' : '0px')};
+  -moz-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
+    display:none;
+  }
+`
+
 const Bar = Styled.div`
   z-index:100;
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.navBarPrimary};
-  outline: 1px solid ${props => props.theme.navBarAccent};
+  outline: 1px solid ${props =>
+    props.navbarpage ? 'white' : props.theme.navBarAccent};
   width: 100%;
   height: 76px;
   margin: 0;
@@ -126,7 +122,7 @@ const Bar = Styled.div`
 
   :hover {
     outline: 0;
-    box-shadow: ${props => props.theme.boxShadow};
+    box-shadow: ${props => (props.navbarpage ? '0' : props.theme.boxShadow)};
   }
 
   .menu-button-times-icon {
@@ -136,6 +132,13 @@ const Bar = Styled.div`
   .menu-button-bars-icon {
     color: ${props => props.theme.navBarBarsColor};
   }
+
+  @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
+      outline: 1px solid ${props => props.theme.navBarAccent};
+      :hover{
+        box-shadow: ${props => props.theme.boxShadow};
+      }
+    }
 `
 
 const LinkSpacing = Styled.div`
