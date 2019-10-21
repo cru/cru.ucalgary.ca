@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
+import { ArrowRight } from 'react-feather'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
 import ImgButton from './imgbutton'
@@ -63,12 +64,30 @@ const NavBar = ({ page, group }) => {
         <div style={{ height: '70px' }} />
         <Link to="/publications">
           <MobileLink>
-            <p style={{ color: 'white' }}>Publications</p>
+            <h5 style={{ color: 'white' }}>
+              Publications
+              <ArrowRight
+                style={{
+                  float: 'right',
+                  marginTop: '-11px',
+                  marginRight: '20px',
+                }}
+              />
+            </h5>
           </MobileLink>
         </Link>
         <Link to="/downloads">
           <MobileLink>
-            <p style={{ color: 'white' }}>Downloads</p>
+            <h5 style={{ color: 'white' }}>
+              Downloads
+              <ArrowRight
+                style={{
+                  float: 'right',
+                  marginTop: '-11px',
+                  marginRight: '20px',
+                }}
+              />
+            </h5>
           </MobileLink>
         </Link>
       </MobilePage>
@@ -85,17 +104,22 @@ export default NavBar
 /* Styles */
 
 const MobileLink = Styled.div`
-  outline: 5px solid ${props => props.theme.brandPrimColor};
-  margin: 30px;
-  padding: 10px;
+  outline: 4px solid ${props => props.theme.brandPrimColor};
+  margin: 35px;
+  padding: 2px;
+  padding-left:20px;
   color: white;
+
+  h5{
+    line-height:0px;
+  }
 `
 
 const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
   overflow:hidden;
-  height: ${props => (props.navbarpage ? '300px' : '0px')};
+  height: ${props => (props.navbarpage ? '320px' : '0px')};
   width:100vw;
   -moz-transition: height 0.5s ease;
   -webkit-transition: height 0.5s ease;
