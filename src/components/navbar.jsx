@@ -105,7 +105,7 @@ export default NavBar
 
 const MobileLink = Styled.div`
   outline: 4px solid ${props => props.theme.brandPrimColor};
-  margin: 35px;
+  margin: 28px;
   padding: 2px;
   padding-left:20px;
   color: white;

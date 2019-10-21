@@ -30,13 +30,14 @@ const Background = Styled.div`
     height:800px;
     width:100%;    
     text-align:center;
+
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
         background-image:url(${newAgeLogo});
         background-repeat: no-repeat;
         background-position: center;
         background-size: 400px;
-        margin-top:300px;
-        margin-bottom:-200px;
+        margin-top:220px;
+        margin-bottom:-120px;
      }
 `

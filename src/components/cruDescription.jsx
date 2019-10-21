@@ -43,7 +43,6 @@ const Body = Styled.h4`
     max-width:600px;
     text-align: center;
     background-color:white;
-
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       font-size: 20px;
