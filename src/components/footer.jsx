@@ -22,11 +22,11 @@ const Footer = () => {
         <Column>
           <Content>
             <Title>Explore</Title>
-            <Link style={{ textDecoration: 'none' }} to="/resources">
-              <LinkStyle>Resources</LinkStyle>
-            </Link>
             <Link style={{ textDecoration: 'none' }} to="/publications">
               <LinkStyle>Publications</LinkStyle>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} to="/downloads">
+              <LinkStyle>Downloads</LinkStyle>
             </Link>
           </Content>
         </Column>

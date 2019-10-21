@@ -6,7 +6,7 @@ import Padding from '../containers/padding'
 import Button from '../components/button'
 
 const DownloadsPage = () => (
-  <Layout title="Resources">
+  <Layout title="Downloads">
     <NavBar page="downloads" group="resources" />
     <div style={{ minHeight: '100vh' }}>
       <div style={{ height: 100 }} />
