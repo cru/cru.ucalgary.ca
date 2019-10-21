@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { ArrowRight } from 'react-feather'
+import MobileMenu from './mobilemenu'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
 import ImgButton from './imgbutton'
@@ -10,7 +9,6 @@ import Hamburger from './hamburger'
 import uofcImg from '../images/collaborators/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 
-// group is a prop aswell
 const NavBar = ({ page, group }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
@@ -60,37 +58,7 @@ const NavBar = ({ page, group }) => {
         </RightAlign>
         <LinkSpacing />
       </Bar>
-      <MobilePage navbarpage={navbarpage}>
-        <div style={{ height: '70px' }} />
-        <Link to="/publications">
-          <MobileLink>
-            <h5 style={{ color: 'white' }}>
-              Publications
-              <ArrowRight
-                style={{
-                  float: 'right',
-                  marginTop: '-11px',
-                  marginRight: '20px',
-                }}
-              />
-            </h5>
-          </MobileLink>
-        </Link>
-        <Link to="/downloads">
-          <MobileLink>
-            <h5 style={{ color: 'white' }}>
-              Downloads
-              <ArrowRight
-                style={{
-                  float: 'right',
-                  marginTop: '-11px',
-                  marginRight: '20px',
-                }}
-              />
-            </h5>
-          </MobileLink>
-        </Link>
-      </MobilePage>
+      <MobileMenu navbarpage={navbarpage} />
     </>
   )
 }
@@ -102,35 +70,6 @@ NavBar.propTypes = {
 export default NavBar
 
 /* Styles */
-
-const MobileLink = Styled.div`
-  outline: 4px solid ${props => props.theme.brandPrimColor};
-  margin: 28px;
-  padding: 2px;
-  padding-left:20px;
-  color: white;
-  h5{
-    line-height:0px;
-  }
-`
-
-const MobilePage = Styled.div`
-  margin: 0 auto;
-  background-color: #212121;
-  overflow:hidden;
-  height: ${props => (props.navbarpage ? '320px' : '0px')};
-  width:100vw;
-  -moz-transition: height 0.5s ease;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
-  position: fixed;
-  top: 0; 
-  z-index:1;
-  @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
-    display:none;
-  }
-`
 
 const Bar = Styled.div`
   flex-wrap: wrap;
