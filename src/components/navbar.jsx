@@ -109,7 +109,6 @@ const MobileLink = Styled.div`
   padding: 2px;
   padding-left:20px;
   color: white;
-
   h5{
     line-height:0px;
   }
