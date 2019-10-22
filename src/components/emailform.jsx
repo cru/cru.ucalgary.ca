@@ -5,44 +5,39 @@ import Input from './input'
 import TextArea from './textarea'
 import Button from './button'
 
-// const onSubmit = e => {
-//   console.log('testing')
-//   const form = e.target
-//   fetch('/', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-//     body: encode({
-//       'form-name': form.getAttribute('name'),
-//       ...this.state,
-//     }),
-//   })
-// }
-
 const EmailForm = ({ style }) => {
   return (
     <>
-      <Form id="contact-form" style={style}>
+      <Form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        style={style}
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <Space />
         <Row>
           <h3>Email CRU</h3>
           <label htmlFor="name">
             Name
             <Space />
-            <Input id="name" />
+            <Input name="name" type="text" />
           </label>
         </Row>
         <Row>
           <label htmlFor="email">
             Email
             <Space />
-            <Input id="email" />
+            <Input name="email" type="email" />
           </label>
         </Row>
         <Row>
           <label htmlFor="message">
             Message
             <Space />
-            <TextArea id="message" />
+            <TextArea name="message" />
           </label>
         </Row>
         <Space />
@@ -56,7 +51,6 @@ const EmailForm = ({ style }) => {
         >
           <Button
             type="submit"
-            form="contact-form"
             style={{
               fontSize: '15px',
             }}

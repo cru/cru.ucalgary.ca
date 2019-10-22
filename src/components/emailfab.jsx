@@ -37,18 +37,16 @@ const EmailFAB = () => {
           <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
         </FabButton>
       </ButtonContainer>
+
       <div id="target" />
       <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
-      <ScrollButtonContainer>
-        <Link
-          to={toggle ? 'target' : 'none'}
-          smooth="true"
-          offset={-200}
-          duration={400}
-        >
-          <ScrollButton toggle={toggle} />
-        </Link>
-      </ScrollButtonContainer>
+      {toggle && (
+        <ScrollButtonContainer>
+          <Link to="target" smooth="true" offset={-200} duration={400}>
+            <ScrollButton toggle={toggle} />
+          </Link>
+        </ScrollButtonContainer>
+      )}
     </>
   )
 }
