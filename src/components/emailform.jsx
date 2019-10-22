@@ -5,10 +5,23 @@ import Input from './input'
 import TextArea from './textarea'
 import Button from './button'
 
+// const onSubmit = e => {
+//   console.log('testing')
+//   const form = e.target
+//   fetch('/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//     body: encode({
+//       'form-name': form.getAttribute('name'),
+//       ...this.state,
+//     }),
+//   })
+// }
+
 const EmailForm = ({ style }) => {
   return (
     <>
-      <Form style={style}>
+      <Form id="contact-form" style={style}>
         <Space />
         <Row>
           <h3>Email CRU</h3>
@@ -42,6 +55,8 @@ const EmailForm = ({ style }) => {
           }}
         >
           <Button
+            type="submit"
+            form="contact-form"
             style={{
               fontSize: '15px',
             }}
@@ -70,7 +85,6 @@ const Form = Styled.form`
   flex-direction: column; 
   width: 100%;
   padding: ${props => props.theme.pageMobilePadding};
-
 `
 const Row = Styled.div`
   padding:13px;

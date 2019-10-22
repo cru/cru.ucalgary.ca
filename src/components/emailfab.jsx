@@ -23,29 +23,32 @@ const EmailFAB = () => {
           }}
         />
       </ScrollTrigger>
+
       <ButtonContainer toggle={toggle}>
+        <FabButton toggle={toggle}>
+          <FontAwesomeIcon
+            style={{ display: toggle ? 'block' : 'none' }}
+            icon="envelope"
+          />
+          <Text style={{ display: toggle ? 'block' : 'none' }}>
+            <span>&nbsp;</span>
+            Email CRU
+          </Text>
+          <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
+        </FabButton>
+      </ButtonContainer>
+      <div id="target" />
+      <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
+      <ScrollButtonContainer>
         <Link
-          to={toggle ? 'form' : 'none'}
-          spy="true"
+          to={toggle ? 'target' : 'none'}
           smooth="true"
-          offset={-50}
+          offset={-200}
           duration={400}
         >
-          <FabButton toggle={toggle}>
-            <FontAwesomeIcon
-              style={{ display: toggle ? 'block' : 'none' }}
-              icon="envelope"
-            />
-            <Text style={{ display: toggle ? 'block' : 'none' }}>
-              <span>&nbsp;</span>
-              Email CRU
-            </Text>
-            <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
-          </FabButton>
+          <ScrollButton toggle={toggle} />
         </Link>
-      </ButtonContainer>
-      <div id="form" />
-      <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
+      </ScrollButtonContainer>
     </>
   )
 }
@@ -65,6 +68,30 @@ const ButtonContainer = Styled.div`
     max-width: ${props => props.theme.pageMaxWidth};
     position: ${props => (props.toggle ? 'fixed' : 'static')};
     height: ${props => (props.toggle ? 'auto' : '600px')};
+`
+const ScrollButtonContainer = Styled.div`
+     position:fixed;
+     width:100%;
+     max-width: ${props => props.theme.pageMaxWidth};
+     bottom:0;
+     height:auto;
+`
+const ScrollButton = Styled.div`
+    width:150px;
+    float:right;
+    height:56px;
+    width:130px;
+    margin-right:17px;
+    margin-bottom:30px;
+    cursor: ${props => (props.toggle ? 'pointer' : 'default')};
+    border-radius: ${props => (props.toggle ? '50px' : '0%')};
+    background-color:  transparent;
+
+    :hover {
+        box-shadow:  ${props =>
+          props.toggle ? props.theme.boxShadow : 'none'};
+        background-color: transparent;
+    } 
 `
 
 const FabButton = Styled.div`
@@ -95,8 +122,7 @@ const FabButton = Styled.div`
       props.toggle ? props.theme.boxShadowAccent : 'none'};
 
     :hover {
-        box-shadow:  ${props =>
-          props.toggle ? props.theme.boxShadow : 'none'};
+
         background-color: ${props =>
           props.toggle ? props.theme.brandPrimAccent : 'none'};
     }
