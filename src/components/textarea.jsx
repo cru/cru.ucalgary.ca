@@ -2,16 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const TextArea = ({ placeholder }) => {
+const TextArea = ({ placeholder, name }) => {
   return (
     <>
-      <Field rows="7" placeholder={placeholder} />
+      <Field rows="7" placeholder={placeholder} name={name} />
     </>
   )
 }
 
 TextArea.propTypes = {
   placeholder: PropTypes.node.isRequired,
+  name: PropTypes.node.isRequired,
 }
 export default TextArea
 

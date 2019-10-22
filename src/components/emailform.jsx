@@ -8,28 +8,37 @@ import Button from './button'
 const EmailForm = ({ style }) => {
   return (
     <>
-      <Form style={style}>
+      <Form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/success"
+        style={style}
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <Space />
         <Row>
           <h3>Email CRU</h3>
           <label htmlFor="name">
             Name
             <Space />
-            <Input id="name" />
+            <Input name="name" type="text" />
           </label>
         </Row>
         <Row>
           <label htmlFor="email">
             Email
             <Space />
-            <Input id="email" />
+            <Input name="email" type="email" />
           </label>
         </Row>
         <Row>
           <label htmlFor="message">
             Message
             <Space />
-            <TextArea id="message" />
+            <TextArea name="message" />
           </label>
         </Row>
         <Space />
@@ -42,6 +51,7 @@ const EmailForm = ({ style }) => {
           }}
         >
           <Button
+            type="submit"
             style={{
               fontSize: '15px',
             }}
@@ -70,7 +80,6 @@ const Form = Styled.form`
   flex-direction: column; 
   width: 100%;
   padding: ${props => props.theme.pageMobilePadding};
-
 `
 const Row = Styled.div`
   padding:13px;

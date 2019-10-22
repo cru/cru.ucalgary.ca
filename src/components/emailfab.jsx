@@ -23,29 +23,30 @@ const EmailFAB = () => {
           }}
         />
       </ScrollTrigger>
+
       <ButtonContainer toggle={toggle}>
-        <Link
-          to={toggle ? 'form' : 'none'}
-          spy="true"
-          smooth="true"
-          offset={-50}
-          duration={400}
-        >
-          <Button toggle={toggle}>
-            <FontAwesomeIcon
-              style={{ display: toggle ? 'block' : 'none' }}
-              icon="envelope"
-            />
-            <Text style={{ display: toggle ? 'block' : 'none' }}>
-              <span>&nbsp;</span>
-              Email CRU
-            </Text>
-            <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
-          </Button>
-        </Link>
+        <FabButton toggle={toggle}>
+          <FontAwesomeIcon
+            style={{ display: toggle ? 'block' : 'none' }}
+            icon="envelope"
+          />
+          <Text style={{ display: toggle ? 'block' : 'none' }}>
+            <span>&nbsp;</span>
+            Email CRU
+          </Text>
+          <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
+        </FabButton>
       </ButtonContainer>
-      <div id="form" />
+
+      <div id="target" />
       <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
+      {toggle && (
+        <ScrollButtonContainer>
+          <Link to="target" smooth="true" offset={-200} duration={400}>
+            <ScrollButton toggle={toggle} />
+          </Link>
+        </ScrollButtonContainer>
+      )}
     </>
   )
 }
@@ -66,8 +67,32 @@ const ButtonContainer = Styled.div`
     position: ${props => (props.toggle ? 'fixed' : 'static')};
     height: ${props => (props.toggle ? 'auto' : '600px')};
 `
+const ScrollButtonContainer = Styled.div`
+     position:fixed;
+     width:100%;
+     max-width: ${props => props.theme.pageMaxWidth};
+     bottom:0;
+     height:auto;
+`
+const ScrollButton = Styled.div`
+    width:150px;
+    float:right;
+    height:56px;
+    width:130px;
+    margin-right:17px;
+    margin-bottom:30px;
+    cursor: ${props => (props.toggle ? 'pointer' : 'default')};
+    border-radius: ${props => (props.toggle ? '50px' : '0%')};
+    background-color:  transparent;
 
-const Button = Styled.div`
+    :hover {
+        box-shadow:  ${props =>
+          props.toggle ? props.theme.boxShadow : 'none'};
+        background-color: transparent;
+    } 
+`
+
+const FabButton = Styled.div`
     pointer-events: auto;
     float:right;
     font-size:18px;
@@ -95,8 +120,7 @@ const Button = Styled.div`
       props.toggle ? props.theme.boxShadowAccent : 'none'};
 
     :hover {
-        box-shadow:  ${props =>
-          props.toggle ? props.theme.boxShadow : 'none'};
+
         background-color: ${props =>
           props.toggle ? props.theme.brandPrimAccent : 'none'};
     }

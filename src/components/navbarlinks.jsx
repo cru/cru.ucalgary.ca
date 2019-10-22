@@ -32,6 +32,6 @@ const LinkText = Styled.div`
     display: inline-block;
 
     font-family: futura-pt, sans-serif;
-    font-size: 19.5px;
+    font-size: 20.5px;
     font-weight: 400;
 `

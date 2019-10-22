@@ -29,11 +29,11 @@ const Title = Styled.h1`
     text-align:center;
     max-width:500px;
     margin:0 auto;
-    font-size:55px;
+    font-size:58px;
     background-color:white;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-      font-size: 45px;
+      font-size: 47px;
       max-width:400px;
   }
 `
@@ -41,8 +41,11 @@ const Title = Styled.h1`
 const Body = Styled.h4`
     margin: 0 auto;
     max-width:600px;
+    font-weight:700;
     text-align: center;
     background-color:white;
+    font-size: 23px;
+
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       font-size: 20px;

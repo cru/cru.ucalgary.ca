@@ -2,17 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const Input = ({ placeholder, id }) => {
+const Input = ({ placeholder, name, type }) => {
   return (
     <>
-      <Field id={id} placeholder={placeholder} />
+      <Field placeholder={placeholder} name={name} type={type} />
     </>
   )
 }
 
 Input.propTypes = {
-  id: PropTypes.node.isRequired,
   placeholder: PropTypes.node.isRequired,
+  name: PropTypes.node.isRequired,
+  type: PropTypes.node.isRequired,
 }
 
 export default Input
