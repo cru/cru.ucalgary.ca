@@ -47,7 +47,7 @@ const NavBar = ({ page, group }) => {
             text="Resources"
             page={['Downloads']}
             group={group === 'resources'}
-            selectedPage={page === 'downloads' && 'downloads'}
+            selectedPage={page === 'downloads' && 'Downloads'}
           />
         </LinkContainer>
 

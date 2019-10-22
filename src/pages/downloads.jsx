@@ -21,10 +21,8 @@ const DownloadsPage = () => (
         <div style={{ height: 10 }} />
 
         <h3>DFdiscover</h3>
+
         <h5>DFexplore 5.1.4</h5>
-
-        <div style={{ height: 10 }} />
-
         <DownloadTable>
           <tr style={{ backgroundColor: '#d8d8d8' }}>
             <td>Windows 8.1, Windows 10</td>
@@ -59,11 +57,9 @@ const DownloadsPage = () => (
             </td>
           </tr>
         </DownloadTable>
+        <div style={{ height: 25 }} />
 
         <h5>iDataFax 2016</h5>
-
-        <div style={{ height: 10 }} />
-
         <DownloadTable>
           <tr style={{ backgroundColor: '#d8d8d8' }}>
             <td>Windows 8.1, Windows 10</td>
