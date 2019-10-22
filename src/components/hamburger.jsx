@@ -38,9 +38,9 @@ const Container = Styled.button`
 `
 
 const Contents = Styled.span`
-    border-radius:1.5px;
+    border-radius:1px;
     height:4px;
-    width:22px;
+    width:23px;
     margin-left:-11px;
     background-color: ${props =>
       props.toggle ? 'transparent' : props.theme.fontPrimColor};
@@ -55,9 +55,9 @@ const Contents = Styled.span`
     user-select: none;
 
     :before {
-      border-radius:1.5px;
+      border-radius:1px;
       height:4px;
-      width:22px;
+      width:23px;
       background-color: ${props => props.theme.fontPrimColor};;
       display: block;
       content: '';
@@ -67,9 +67,9 @@ const Contents = Styled.span`
     }
 
     :after {
-      border-radius:1.5px;
+      border-radius:1px;
       height:4px;
-      width:22px;
+      width:23px;
       background-color: ${props => props.theme.fontPrimColor};;
       display: block;
       content: '';

@@ -30,7 +30,7 @@ const NavBar = ({ page, group }) => {
           <LinkSpacing />
         </MenuContainerOpposite>
         <ImgButton to="/">
-          <img src={cruImg} style={{ height: '25px' }} alt="cru logo" />
+          <img src={cruImg} style={{ height: '28px' }} alt="CRU" />
         </ImgButton>
         <LinkSpacing />
 
@@ -53,7 +53,7 @@ const NavBar = ({ page, group }) => {
 
         <RightAlign>
           <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
-            <img src={uofcImg} style={{ height: '25px' }} alt="uofc logo" />
+            <img src={uofcImg} style={{ height: '28px' }} alt="UofC" />
           </ImgButton>
         </RightAlign>
         <LinkSpacing />

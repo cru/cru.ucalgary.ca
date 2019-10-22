@@ -31,7 +31,7 @@ const EmailFAB = () => {
           offset={-50}
           duration={400}
         >
-          <Button toggle={toggle}>
+          <FabButton toggle={toggle}>
             <FontAwesomeIcon
               style={{ display: toggle ? 'block' : 'none' }}
               icon="envelope"
@@ -41,7 +41,7 @@ const EmailFAB = () => {
               Email CRU
             </Text>
             <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
-          </Button>
+          </FabButton>
         </Link>
       </ButtonContainer>
       <div id="form" />
@@ -67,7 +67,7 @@ const ButtonContainer = Styled.div`
     height: ${props => (props.toggle ? 'auto' : '600px')};
 `
 
-const Button = Styled.div`
+const FabButton = Styled.div`
     pointer-events: auto;
     float:right;
     font-size:18px;
