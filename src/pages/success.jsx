@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { ArrowLeft } from 'react-feather'
 import Layout from '../containers/layout'
 import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
 
-const NotFoundPage = () => {
+const SuccessPage = () => {
   return (
     <>
-      <Layout title="404 Page Not Found">
+      <Layout title="Success">
         <NavBar />
         <Padding>
           <div style={{ height: '100vh' }}>
@@ -18,17 +20,22 @@ const NotFoundPage = () => {
                 marginTop: '20vh',
               }}
             >
-              <h1>404 Page Not Found</h1>
-              <p>
-                Ooops!
-                <br />
-                <br />
-                The page you are looking for has been removed or relocated.
+              <h1>
+                Sent!
                 <span> </span>
-                <span role="img" aria-label="Sad Face">
-                  😢
+                <span role="img" aria-label="rocket">
+                  🚀
                 </span>
+              </h1>
+              <p>
+                Thank you for reaching out to us. We will get back to you as
+                soon as possible!
               </p>
+              <br />
+              <Link to="/">
+                <ArrowLeft style={{ height: '16px', marginBottom: '-3px' }} />
+                back home
+              </Link>
             </div>
           </div>
         </Padding>
@@ -37,4 +44,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default SuccessPage

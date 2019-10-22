@@ -13,6 +13,7 @@ const EmailForm = ({ style }) => {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        action="/success"
         style={style}
       >
         <input type="hidden" name="bot-field" />
