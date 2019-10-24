@@ -81,6 +81,7 @@ const ScrollButton = Styled.div`
     width:130px;
     margin-right:17px;
     margin-bottom:30px;
+    pointer-events: auto;
     cursor: ${props => (props.toggle ? 'pointer' : 'default')};
     border-radius: ${props => (props.toggle ? '50px' : '0%')};
     background-color:  transparent;
@@ -89,11 +90,13 @@ const ScrollButton = Styled.div`
         box-shadow:  ${props =>
           props.toggle ? props.theme.boxShadow : 'none'};
         background-color: transparent;
-    } 
+    }
+    :active {
+      box-shadow: none;
+    }
 `
 
 const FabButton = Styled.div`
-    pointer-events: auto;
     float:right;
     font-size:18px;
     display: flex;
@@ -102,6 +105,7 @@ const FabButton = Styled.div`
     color: ${props => props.theme.fontPrimColor};
     transition: all 0.3s linear;      
     overflow:hidden;
+    pointer-events: auto;
 
     -webkit-user-select: ${props => (props.toggle ? 'none' : 'auto')};
     -moz-user-select: ${props => (props.toggle ? 'none' : 'auto')};
@@ -118,16 +122,6 @@ const FabButton = Styled.div`
       props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
     box-shadow:${props =>
       props.toggle ? props.theme.boxShadowAccent : 'none'};
-
-    :hover {
-
-        background-color: ${props =>
-          props.toggle ? props.theme.brandPrimAccent : 'none'};
-    }
-    
-    :active {
-        box-shadow:none;
-    }
 
 `
 

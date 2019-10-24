@@ -7,7 +7,7 @@ const ServiceList = ({ style }) => {
   return (
     <div style={style}>
       <Header>
-        <h4>What we do</h4>
+        <h4>We can assist you with</h4>
       </Header>
       <Container>
         <Item>
