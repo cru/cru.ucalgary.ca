@@ -25,12 +25,15 @@ const SuccessPage = () => {
                 <h1>Sent!</h1>
 
                 <Spring
-                  config={{ duration: 2500 }}
+                  config={{ duration: 10000 }}
                   from={{
-                    transform: 'translate3d(-500px,500px,-50px)',
+                    transform: 'translate3d(-20px,20px,0px)',
+                    opacity: 1,
+                  }}
+                  to={{
+                    transform: 'translate3d(500px,-500px,0px)',
                     opacity: 0,
                   }}
-                  to={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
                 >
                   {props => (
                     <div style={props}>

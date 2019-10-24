@@ -42,7 +42,7 @@ const EmailFAB = () => {
       <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
       {toggle && (
         <ScrollButtonContainer>
-          <Link to="target" smooth="true" offset={-200} duration={400}>
+          <Link to="target" smooth="true" offset={-50} duration={400}>
             <ScrollButton toggle={toggle} />
           </Link>
         </ScrollButtonContainer>

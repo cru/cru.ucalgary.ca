@@ -9,8 +9,8 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const sliderSettings = {
   autoplay: true,
-  autoplaySpeed: 1500,
-  speed: 2000,
+  autoplaySpeed: 2500,
+  speed: 3000,
   pauseOnFocus: true,
   dots: false,
   infinite: true,
