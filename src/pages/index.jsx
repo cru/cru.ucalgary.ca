@@ -30,7 +30,7 @@ export default IndexPage
 const Spacing = Styled.div`
   height: 8vh;
   @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
-    height: 10vh;
+    height: 3vh;
   }
 
 `

@@ -9,7 +9,7 @@ const RibbonContainer = ({ title, description, icon }) => {
     <>
       <Container>
         <Content>
-          <div style={{ height: '10px' }} />
+          <div style={{ height: '35px' }} />
           <FontAwesomeIcon
             style={{ fontSize: '25px', color: 'grey' }}
             icon={icon}
@@ -42,6 +42,10 @@ const Container = Styled.div`
 const Content = Styled.div`
     text-align:center;
     padding-top:40px;
-    max-width:200px;
+    max-width:220px;
     margin:0 auto;
+    p{
+      font-family: futura-pt, sans-serif;
+      font-size: 17.5px;
+    }
 `
