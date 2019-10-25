@@ -13,7 +13,7 @@ const IndexPage = () => {
     <Layout>
       <NavBar />
       <Spacing />
-      <CRUDescription style={{ marginBottom: '-980px' }} />
+      <CRUDescription style={{ marginBottom: '-680px' }} />
       <CRUHexPattern />
       <div style={{ height: '300px' }} />
       <ServiceList />
@@ -28,7 +28,7 @@ const IndexPage = () => {
 export default IndexPage
 
 const Spacing = Styled.div`
-  height: 5vh;
+  height: 8vh;
   @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
     height: 10vh;
   }
