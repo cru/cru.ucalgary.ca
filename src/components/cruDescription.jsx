@@ -30,7 +30,7 @@ const Title = Styled.h1`
     background-color:white;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-      font-size: 37px;
+      font-size: 60px;
       max-width:400px;
   }
 `
@@ -45,7 +45,7 @@ const Body = Styled.h4`
 
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-      font-size: 20px;
+      font-size: 24px;
       max-width:400px;
   }
 `
