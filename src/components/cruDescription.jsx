@@ -8,7 +8,7 @@ const CRUDescription = ({ style }) => {
     <div style={style}>
       <Padding>
         <Title>Better Data, Better Research</Title>
-        <div style={{ height: '40px' }} />
+        <div style={{ height: '380px' }} />
         <Body>
           The Clinical Research Unit (CRU) is a core support centre of the
           Cumming School of Medicine (CSM).
@@ -25,26 +25,25 @@ CRUDescription.propTypes = {
 export default CRUDescription
 
 const Title = Styled.h1`
-    margin: 0 auto;
-    text-align:center;
+    text-align:left;
     max-width:500px;
-    margin:0 auto;
-    font-size:58px;
+    font-size:70px;
     background-color:white;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-      font-size: 47px;
+      font-size: 37px;
       max-width:400px;
   }
 `
 
 const Body = Styled.h4`
     margin: 0 auto;
-    max-width:600px;
-    font-weight:700;
+    max-width:500px;
     text-align: center;
     background-color:white;
-    font-size: 23px;
+    font-family: futura-pt, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
 
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
