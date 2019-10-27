@@ -117,6 +117,7 @@ const Footer = () => {
           <span role="img" aria-label="Hand Waving">
             ❤️
           </span>
+          <span> </span>
           by CRU
         </p>
         <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
@@ -132,13 +133,13 @@ const Container = Styled.div`
     display: flex;
     flex-direction:row;
     margin-bottom:-2px;
-    padding-bottom:45px;
+    padding-bottom:40px;
 
 
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
         display: block;
-        padding-bottom:80px;
+        padding-bottom:75px;
       }
 `
 
@@ -146,7 +147,7 @@ const Column = Styled.div`
     flex:1;
     display:flex;
     padding-top:30px;
-    padding-bottom:9px;
+    padding-bottom:15px;
     margin-left:-10px;
 `
 
