@@ -112,11 +112,12 @@ const Footer = () => {
       <Strip />
       <Greeting>
         <p>
-          <span role="img" aria-label="Hand Waving">
-            👋
-          </span>
+          Made with
           <span> </span>
-          Made by CRU
+          <span role="img" aria-label="Hand Waving">
+            ❤️
+          </span>
+          by CRU
         </p>
         <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
       </Greeting>
@@ -215,6 +216,6 @@ const Greeting = Styled.div`
 text-align:center;
     p{
       font-family: futura-pt, sans-serif;
-      font-size:15px;
+      font-size:16px;
     }
 `
