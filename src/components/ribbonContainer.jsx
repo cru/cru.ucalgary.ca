@@ -46,6 +46,6 @@ const Content = Styled.div`
     margin:0 auto;
     p{
       font-family: futura-pt, sans-serif;
-      font-size: 17.5px;
+      font-size: 18px;
     }
 `

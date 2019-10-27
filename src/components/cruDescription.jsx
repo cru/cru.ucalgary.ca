@@ -9,8 +9,8 @@ const CRUDescription = ({ style }) => {
       <Padding>
         <Title>Better Data Better Research</Title>
         <Body>
-          The Clinical Research Unit (CRU) is a core support centre of the
-          Cumming School of Medicine (CSM).
+          The Clinical Research Unit (CRU) is a core research support centre of
+          the Cumming School of Medicine (CSM).
         </Body>
       </Padding>
     </div>
@@ -36,7 +36,7 @@ const Title = Styled.h1`
 `
 
 const Body = Styled.h4`
-    max-width:450px;
+    max-width:430px;
     text-align: left;
     background-color:white;
     font-family: futura-pt, sans-serif;

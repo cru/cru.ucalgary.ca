@@ -2,10 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const Input = ({ placeholder, name, type }) => {
+const Input = ({ placeholder, name, type, style, value, onChange }) => {
   return (
     <>
-      <Field placeholder={placeholder} name={name} type={type} />
+      <Field
+        placeholder={placeholder}
+        name={name}
+        type={type}
+        style={style}
+        value={value}
+        onChange={onChange}
+        required
+      />
     </>
   )
 }
@@ -14,6 +22,9 @@ Input.propTypes = {
   placeholder: PropTypes.node.isRequired,
   name: PropTypes.node.isRequired,
   type: PropTypes.node.isRequired,
+  style: PropTypes.node.isRequired,
+  value: PropTypes.node.isRequired,
+  onChange: PropTypes.node.isRequired,
 }
 
 export default Input
@@ -33,4 +44,5 @@ const Field = Styled.input`
         border: 2px solid ${props => props.theme.fontPrimColor};
         outline: none;
     }
+
 `

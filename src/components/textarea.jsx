@@ -2,10 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const TextArea = ({ placeholder, name }) => {
+const TextArea = ({ placeholder, name, onChange }) => {
   return (
     <>
-      <Field rows="7" placeholder={placeholder} name={name} />
+      <Field
+        rows="7"
+        placeholder={placeholder}
+        name={name}
+        onChange={onChange}
+        required
+      />
     </>
   )
 }
@@ -13,6 +19,7 @@ const TextArea = ({ placeholder, name }) => {
 TextArea.propTypes = {
   placeholder: PropTypes.node.isRequired,
   name: PropTypes.node.isRequired,
+  onChange: PropTypes.node.isRequired,
 }
 export default TextArea
 
