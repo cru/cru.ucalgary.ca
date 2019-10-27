@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
@@ -25,18 +25,14 @@ const EmailForm = ({ style }) => {
           <label htmlFor="name">
             Name
             <Space />
-            <Input name="name" type="text" placeholder="Emmett Brown" />
+            <Input name="name" type="text" />
           </label>
         </Row>
         <Row>
           <label htmlFor="email">
             Email
             <Space />
-            <Input
-              name="email"
-              type="email"
-              placeholder="Emmettbrown@healthcompany.com"
-            />
+            <Input name="email" type="email" />
           </label>
         </Row>
         <Row>

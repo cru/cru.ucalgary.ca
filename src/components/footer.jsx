@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import choppedSVG from '../images/svg-backgrounds/chopped-asset.svg'
-import Padding from '../containers/padding'
 
 const Footer = () => {
   const externalLinkIcon = name => {
@@ -132,11 +131,13 @@ const Container = Styled.div`
     display: flex;
     flex-direction:row;
     margin-bottom:-2px;
+    padding-bottom:45px;
+
 
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
         display: block;
-        padding-bottom:40px;
+        padding-bottom:80px;
       }
 `
 
@@ -144,7 +145,7 @@ const Column = Styled.div`
     flex:1;
     display:flex;
     padding-top:30px;
-    padding-bottom:40px;
+    padding-bottom:9px;
     margin-left:-10px;
 `
 
