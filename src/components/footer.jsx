@@ -148,8 +148,12 @@ const Column = Styled.div`
     display:flex;
     padding-top:30px;
     padding-bottom:15px;
+    margin-left:-30px;
+    @media only screen and (max-width: ${props =>
+      props.theme.mobileBreakPoint}){
     margin-left:-10px;
-    outline: 2px solid white;
+
+  }
 `
 
 const Content = Styled.div`

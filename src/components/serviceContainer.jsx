@@ -30,7 +30,7 @@ const Content = Styled.div`
     max-width:270px;
     p{
       font-family: futura-pt, sans-serif;
-      font-size: 18px;
+      font-size: 18.5px;
     }
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){

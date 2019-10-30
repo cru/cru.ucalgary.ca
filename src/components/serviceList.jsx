@@ -55,13 +55,18 @@ const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
-    padding-left: ${props => props.theme.pageMobilePadding};
-    padding-right: ${props => props.theme.pageMobilePadding};
-    @media only screen and (max-width: ${props =>
-      props.theme.tabletBreakPoint}){
-      justify-content:left;
 
-    }
 `
 const Item = Styled.div`
+    :first-child{
+      padding-left:95px;
+
+
+      @media only screen and (max-width: ${props =>
+        props.theme.tabletBreakPoint}){
+        padding-left: 0px;
+      }
+    }
+
+
 `
