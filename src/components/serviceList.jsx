@@ -56,7 +56,6 @@ const Container = Styled.div`
     flex-wrap: wrap;
     justify-content:left;
     padding-left: ${props => props.theme.pageDesktopPadding};
-    padding-right: ${props => props.theme.pageDesktopPadding};
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       padding-left: ${props => props.theme.pageMobilePadding};
@@ -67,14 +66,14 @@ const Container = Styled.div`
 const Item = Styled.div`
 
     :first-child{
-      padding-right:62px;
+      padding-right:100px;
       @media only screen and (max-width: ${props =>
         props.theme.tabletBreakPoint}){
         padding-right:0px;
       }
     }
     :nth-child(2n){
-      padding-right:62px;
+      padding-right:100px;
       @media only screen and (max-width: ${props =>
         props.theme.tabletBreakPoint}){
         padding-right:0px;
