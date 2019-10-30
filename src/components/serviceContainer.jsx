@@ -29,14 +29,13 @@ const Container = Styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     width:330px;
-    height:450px;
     margin: 0 auto;
 `
 
 const Content = Styled.div`
-    text-align:center;
+    text-align:left;
     padding-top:20px;
-    max-width:220px;
+    max-width:260px;
     margin:0 auto;
     p{
       font-family: futura-pt, sans-serif;
