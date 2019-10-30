@@ -15,14 +15,14 @@ const ServiceList = ({ style }) => {
       <br />
       <br />
       <Container>
-        <Item style={{ marginRight: 100 }}>
+        <Item>
           <ServiceContainer
             title="Custom Software"
             description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
             image={Code}
           />
         </Item>
-        <Item style={{ marginRight: 100 }}>
+        <Item>
           <ServiceContainer
             title="Electronic Data Capture"
             description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
@@ -54,19 +54,39 @@ const Header = Styled.div`
 const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:left;
+    padding-left: ${props => props.theme.pageDesktopPadding};
+    padding-right: ${props => props.theme.pageDesktopPadding};
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      padding-left: ${props => props.theme.pageMobilePadding};
+      padding-right: ${props => props.theme.pageMobilePadding};
+      }
 
 `
 const Item = Styled.div`
+
     :first-child{
-      padding-left:95px;
-
-
+      padding-right:62px;
       @media only screen and (max-width: ${props =>
         props.theme.tabletBreakPoint}){
-        padding-left: 0px;
+        padding-right:0px;
       }
     }
+    :nth-child(2n){
+      padding-right:62px;
+      @media only screen and (max-width: ${props =>
+        props.theme.tabletBreakPoint}){
+        padding-right:0px;
+      }
+
+    }
+
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+        margin: 0 auto;
+      }
+
 
 
 `

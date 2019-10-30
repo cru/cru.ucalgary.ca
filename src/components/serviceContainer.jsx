@@ -27,13 +27,14 @@ export default ServiceContainer
 
 const Content = Styled.div`
     text-align:left;
-    max-width:270px;
+    max-width:265px;
     p{
       font-family: futura-pt, sans-serif;
       font-size: 18.5px;
     }
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
-      max-width:auto;
+      max-width:auto
     }
+
 `
