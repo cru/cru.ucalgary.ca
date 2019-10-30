@@ -5,14 +5,14 @@ import PropTypes from 'prop-types'
 const ServiceContainer = ({ title, description, image }) => {
   return (
     <>
-      <Container>
+      <div>
         <Content>
           <div style={{ height: '35px' }} />
-          <img style={{ height: '60px' }} src={image} alt="" />
-          <h4>{title}</h4>
+          <img style={{ height: '68px' }} src={image} alt="" />
+          <h5 style={{ maxWidth: 150 }}>{title}</h5>
           <p>{description}</p>
         </Content>
-      </Container>
+      </div>
     </>
   )
 }
@@ -25,20 +25,15 @@ ServiceContainer.propTypes = {
 
 export default ServiceContainer
 
-const Container = Styled.div`
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:330px;
-    margin: 0 auto;
-`
-
 const Content = Styled.div`
     text-align:left;
-    padding-top:20px;
-    max-width:260px;
-    margin:0 auto;
+    max-width:270px;
     p{
       font-family: futura-pt, sans-serif;
       font-size: 18px;
+    }
+    @media only screen and (max-width: ${props =>
+      props.theme.mobileBreakPoint}){
+      max-width:auto;
     }
 `

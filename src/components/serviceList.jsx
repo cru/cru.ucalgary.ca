@@ -12,15 +12,17 @@ const ServiceList = ({ style }) => {
       <Header>
         <h4>We can assist you with</h4>
       </Header>
+      <br />
+      <br />
       <Container>
-        <Item>
+        <Item style={{ marginRight: 100 }}>
           <ServiceContainer
             title="Custom Software"
             description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
             image={Code}
           />
         </Item>
-        <Item>
+        <Item style={{ marginRight: 100 }}>
           <ServiceContainer
             title="Electronic Data Capture"
             description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
@@ -46,16 +48,20 @@ ServiceList.propTypes = {
 export default ServiceList
 
 const Header = Styled.div`
-  align-content:center;
-  text-align: center;
+    align-content:center;
+    text-align: center;
 `
 const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
+    padding-left: ${props => props.theme.pageMobilePadding};
+    padding-right: ${props => props.theme.pageMobilePadding};
+    @media only screen and (max-width: ${props =>
+      props.theme.tabletBreakPoint}){
+      justify-content:left;
 
+    }
 `
-
 const Item = Styled.div`
-    margin:20px;
 `

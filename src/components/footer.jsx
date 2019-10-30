@@ -149,6 +149,7 @@ const Column = Styled.div`
     padding-top:30px;
     padding-bottom:15px;
     margin-left:-10px;
+    outline: 2px solid white;
 `
 
 const Content = Styled.div`
