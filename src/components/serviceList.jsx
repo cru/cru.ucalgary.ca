@@ -1,7 +1,10 @@
 import React from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
-import RibbonContainer from './ribbonContainer'
+import ServiceContainer from './serviceContainer'
+import HealtherBinder from '../images/icons/healthBinder.svg'
+import Code from '../images/icons/code.svg'
+import Methods from '../images/icons/methods.svg'
 
 const ServiceList = ({ style }) => {
   return (
@@ -11,24 +14,24 @@ const ServiceList = ({ style }) => {
       </Header>
       <Container>
         <Item>
-          <RibbonContainer
+          <ServiceContainer
             title="Custom Software"
             description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
-            icon="code"
+            image={Code}
           />
         </Item>
         <Item>
-          <RibbonContainer
+          <ServiceContainer
             title="Electronic Data Capture"
             description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
-            icon="laptop"
+            image={HealtherBinder}
           />
         </Item>
         <Item>
-          <RibbonContainer
+          <ServiceContainer
             title="Methods and Analytics"
             description="The CRU supports project management and analysis needs of the University of Calgary Biostatistics Centre and the Alberta SPOR support Unit."
-            icon="chart-bar"
+            image={Methods}
           />
         </Item>
       </Container>

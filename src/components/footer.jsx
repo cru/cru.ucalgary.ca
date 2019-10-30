@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import choppedSVG from '../images/svg-backgrounds/chopped-asset.svg'
-import Padding from '../containers/padding'
 
 const Footer = () => {
   const externalLinkIcon = name => {
