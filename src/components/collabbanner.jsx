@@ -3,6 +3,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Styled from 'styled-components'
 import Slider from 'react-slick'
+import RipRight from '../images/svg-backgrounds/collab-crop-rightside.svg'
+import RipLeft from '../images/svg-backgrounds/collab-crop-leftside.svg'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -86,9 +88,13 @@ const CollabBanner = () => {
             <Header>
               <h4>Collaborators</h4>
             </Header>
-            <Banner>
-              <Slider {...sliderSettings}>{getCollaboratorList(data)}</Slider>
-            </Banner>
+            <Row>
+              <RipContainerLeft />
+              <Banner>
+                <Slider {...sliderSettings}>{getCollaboratorList(data)}</Slider>
+              </Banner>
+              <RipContainerRight />
+            </Row>
           </>
         )}
       />
@@ -104,13 +110,35 @@ const Header = Styled.div`
   align-content:center;
   text-align: center;
 `
+const RipContainerLeft = Styled.div`
+  background-image:url(${RipLeft});
+  background-repeat: no-repeat;
+  margin-right:-22px;
+  height:100px;
+  width:90px;
+  z-index:2;
+`
+
+const RipContainerRight = Styled.div`
+  background-image:url(${RipRight});
+  background-repeat: no-repeat;
+  margin-left:-17px;
+  height:100px;
+  width:90px;
+  z-index:2;
+`
+
+const Row = Styled.div`
+  display: flex;
+  flex-direction:row;
+`
 
 const Banner = Styled.div`
-
   cursor:grab;
   padding-top:15px;
   padding-bottom:10px;
   overflow:hidden;
+  background-color:#F1F1F1;
 
   -webkit-user-select:  none;
   -moz-user-select:  none;
@@ -132,6 +160,7 @@ const ImgContainer = Styled.a`
     box-shadow: ${props => props.theme.boxShadow};
     cursor:pointer;
     outline: none !important;
+    background-color:white;
   }
 
   :active{
