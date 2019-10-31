@@ -112,6 +112,6 @@ const DownloadTable = Styled.table`
   td { 
     padding: 5px;
     margin: 0;
-    width:50vw;
+    width:50%;
 }
 `
