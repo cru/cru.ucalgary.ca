@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import choppedSVG from '../images/svg-backgrounds/chopped-asset.svg'
+import FooterCropBottom from '../images/svg-backgrounds/footer-crop-bottom.svg'
 
 const Footer = () => {
   const externalLinkIcon = name => {
@@ -168,7 +168,7 @@ const Content = Styled.div`
   }
 `
 const Strip = Styled.div`
-  background-image:url(${choppedSVG});
+  background-image:url(${FooterCropBottom});
   background-position: top;
   background-repeat: repeat-x;
   background-size: 410px;
