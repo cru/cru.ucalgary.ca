@@ -77,7 +77,7 @@ const Row = Styled.div`
   margin-right:13px;
   margin-left:0px;
   width:97.5%;
-  max-width:650px;
+  max-width:600px;
   color: ${props => props.theme.fontPrimColor};
   font-size:15px;
 `
