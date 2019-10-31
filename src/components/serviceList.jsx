@@ -12,8 +12,7 @@ const ServiceList = ({ style }) => {
       <Header>
         <h4>We can assist you with</h4>
       </Header>
-      <br />
-      <br />
+
       <Container>
         <Item>
           <ServiceContainer
@@ -54,8 +53,7 @@ const Header = Styled.div`
 const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
-    justify-content:left;
-    padding-left: ${props => props.theme.pageDesktopPadding};
+    justify-content:center;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       padding-left: ${props => props.theme.pageMobilePadding};
@@ -64,7 +62,7 @@ const Container = Styled.div`
 
 `
 const Item = Styled.div`
-
+    padding-top:40px;
     :first-child{
       padding-right:100px;
       @media only screen and (max-width: ${props =>

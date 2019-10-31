@@ -75,6 +75,7 @@ const ScrollButtonContainer = Styled.div`
      max-width: ${props => props.theme.pageMaxWidth};
      bottom:0;
      height:auto;
+     z-index:4;
 `
 const ScrollButton = Styled.div`
     width:150px;

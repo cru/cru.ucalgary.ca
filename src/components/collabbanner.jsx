@@ -88,6 +88,7 @@ const CollabBanner = () => {
             <Header>
               <h4>Collaborators</h4>
             </Header>
+            <div style={{ height: 0 }} />
             <Row>
               <RipContainerLeft />
               <Banner>
@@ -117,6 +118,9 @@ const RipContainerLeft = Styled.div`
   height:100px;
   width:90px;
   z-index:1;
+  @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
+      display:none;
+    }
 `
 
 const RipContainerRight = Styled.div`
@@ -126,6 +130,9 @@ const RipContainerRight = Styled.div`
   height:100px;
   width:90px;
   z-index:1;
+  @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
+      display:none;
+  }
 `
 
 const Row = Styled.div`

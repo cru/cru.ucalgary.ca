@@ -9,7 +9,7 @@ const ServiceContainer = ({ title, description, image }) => {
         <Content>
           <div style={{ height: '35px' }} />
           <img style={{ height: '68px' }} src={image} alt="" />
-          <h5 style={{ maxWidth: 150 }}>{title}</h5>
+          <h5>{title}</h5>
           <p>{description}</p>
         </Content>
       </div>
@@ -26,11 +26,20 @@ ServiceContainer.propTypes = {
 export default ServiceContainer
 
 const Content = Styled.div`
-    text-align:left;
-    max-width:265px;
+    text-align:center;
+    max-width:280px;
     p{
+      text-align:left;
       font-family: futura-pt, sans-serif;
-      font-size: 18.5px;
+      font-size: 19px;
+      margin: 0 auto;
+      padding-top:20px;
+      padding-left:0px;
+    }
+    h5{
+      text-align:left;
+      margin: 0 auto;
+      padding-top:20px;
     }
     @media only screen and (max-width: ${props =>
       props.theme.mobileBreakPoint}){
