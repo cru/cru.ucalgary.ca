@@ -11,7 +11,8 @@ const DownloadsPage = () => (
       <div style={{ height: 100 }} />
       <Padding>
         <h1>Downloads</h1>
-        <p style={{ maxWidth: 600 }}>
+        <p style={{ maxWidth: 450 }}>
+          <div style={{ height: 55 }} />
           <b>IMPORTANT</b>
           <span> </span>
           You may need administrative privileges to download and install
