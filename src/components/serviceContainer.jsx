@@ -33,7 +33,6 @@ const Content = Styled.div`
       font-family: futura-pt, sans-serif;
       font-size: 21px;
       margin: 0 auto;
-      padding-top:20px;
       padding-left:0px;
     }
     h5{
