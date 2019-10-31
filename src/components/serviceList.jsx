@@ -12,7 +12,6 @@ const ServiceList = ({ style }) => {
       <Header>
         <h4>We can assist you with</h4>
       </Header>
-
       <Container>
         <Item>
           <ServiceContainer

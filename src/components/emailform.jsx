@@ -20,8 +20,8 @@ const EmailForm = ({ style }) => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <Space />
+        <h4>Email CRU</h4>
         <Row>
-          <h3>Email CRU</h3>
           <label htmlFor="name">
             Name
             <Space />
