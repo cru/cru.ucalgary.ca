@@ -116,7 +116,7 @@ const RipContainerLeft = Styled.div`
   margin-right:-22px;
   height:100px;
   width:90px;
-  z-index:2;
+  z-index:1;
 `
 
 const RipContainerRight = Styled.div`
@@ -125,7 +125,7 @@ const RipContainerRight = Styled.div`
   margin-left:-17px;
   height:100px;
   width:90px;
-  z-index:2;
+  z-index:1;
 `
 
 const Row = Styled.div`
@@ -138,7 +138,7 @@ const Banner = Styled.div`
   padding-top:15px;
   padding-bottom:10px;
   overflow:hidden;
-  background-color:#F1F1F1;
+  background-color:white;
 
   -webkit-user-select:  none;
   -moz-user-select:  none;

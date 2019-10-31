@@ -3,12 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 19 95" style="enable-background:new 0 0 19 95;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#202020;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#EBEBEB;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <title>Asset 2cru</title>
-<g>
-	<g id="Layer_1-2">
-		<polyline class="st0" points="1.7,0.7 17.5,16.6 1.4,32.7 17.2,48.5 2.1,63.7 17.3,78.9 1.9,94.3 		"/>
-	</g>
-</g>
+<polyline class="st0" points="1.5,0.7 8.6,7.7 1.9,14.5 8.1,20.7 2.1,26.7 8.7,33.3 1.8,40.2 8,46.4 1.7,52.7 8.2,59.2 1.9,65.5 
+	8.3,71.9 1.7,78.5 7.9,84.7 1.4,91.2 "/>
 </svg>

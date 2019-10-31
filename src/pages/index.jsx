@@ -19,7 +19,7 @@ const IndexPage = () => {
       <ServiceList />
       <div style={{ height: '50px' }} />
       <CollabBanner />
-      <div style={{ height: '200px' }} />
+      <div style={{ height: '10px' }} />
       <EmailFAB />
     </Layout>
   )

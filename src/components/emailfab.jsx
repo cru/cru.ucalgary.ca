@@ -66,6 +66,8 @@ const ButtonContainer = Styled.div`
     max-width: ${props => props.theme.pageMaxWidth};
     position: ${props => (props.toggle ? 'fixed' : 'static')};
     height: ${props => (props.toggle ? 'auto' : '600px')};
+    z-index:3;
+
 `
 const ScrollButtonContainer = Styled.div`
      position:fixed;
@@ -106,6 +108,7 @@ const FabButton = Styled.div`
     transition: all 0.3s linear;      
     overflow:hidden;
     pointer-events: auto;
+    z-index:3;
 
     -webkit-user-select: ${props => (props.toggle ? 'none' : 'auto')};
     -moz-user-select: ${props => (props.toggle ? 'none' : 'auto')};
