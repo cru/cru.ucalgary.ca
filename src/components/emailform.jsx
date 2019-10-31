@@ -22,25 +22,15 @@ const EmailForm = ({ style }) => {
         <Space />
         <h4>Email CRU</h4>
         <Row>
-          <label htmlFor="name">
-            Name
-            <Space />
-            <Input name="name" type="text" />
-          </label>
+          <Input name="name" type="text" placeholder="name" />
         </Row>
+        <Space />
         <Row>
-          <label htmlFor="email">
-            Email
-            <Space />
-            <Input name="email" type="email" />
-          </label>
+          <Input name="email" type="email" placeholder="email" />
         </Row>
+        <Space />
         <Row>
-          <label htmlFor="message">
-            Message
-            <Space />
-            <TextArea name="message" />
-          </label>
+          <TextArea name="message" placeholder="Message" />
         </Row>
         <Space />
 
