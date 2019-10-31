@@ -8,8 +8,8 @@ const ServiceContainer = ({ title, description, image }) => {
       <div>
         <Content>
           <div style={{ height: '35px' }} />
-          <img style={{ height: '68px' }} src={image} alt="" />
-          <h5>{title}</h5>
+          <img style={{ height: '78px' }} src={image} alt="" />
+          <h4>{title}</h4>
           <p>{description}</p>
         </Content>
       </div>
@@ -26,12 +26,12 @@ ServiceContainer.propTypes = {
 export default ServiceContainer
 
 const Content = Styled.div`
-    text-align:center;
+    text-align:left;
     max-width:280px;
     p{
       text-align:left;
       font-family: futura-pt, sans-serif;
-      font-size: 19px;
+      font-size: 21px;
       margin: 0 auto;
       padding-top:20px;
       padding-left:0px;

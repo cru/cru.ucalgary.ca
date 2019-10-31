@@ -17,7 +17,7 @@ const IndexPage = () => {
       <CRUHexPattern />
       <div style={{ height: '120px' }} />
       <ServiceList />
-      <div style={{ height: '120px' }} />
+      <div style={{ height: '160px' }} />
       <CollabBanner />
       <div style={{ height: '60px' }} />
       <EmailFAB />

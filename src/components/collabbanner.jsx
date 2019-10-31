@@ -162,7 +162,6 @@ const ImgContainer = Styled.a`
   width:140px !important;
   transition: all ${props => props.theme.boxShadowTrans};
   border-radius: ${props => props.theme.borderRadius};
-
   :hover{
     box-shadow: ${props => props.theme.boxShadow};
     cursor:pointer;
