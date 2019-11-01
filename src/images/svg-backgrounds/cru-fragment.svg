@@ -5,7 +5,12 @@
 <style type="text/css">
 	.st0{opacity:0.65;fill:none;stroke:#E93938;stroke-width:3;stroke-miterlimit:10;enable-background:new    ;}
 	.st1{opacity:0.65;fill:none;stroke:#95C4E9;stroke-width:3;stroke-miterlimit:10;enable-background:new    ;}
+	.st2{fill:#F38280;}
+	.st3{fill:#BAD8EF;}
 </style>
 <polygon class="st0" points="38.8,11.4 35.4,27.9 48,39.1 64,33.8 67.4,17.3 54.8,6.1 "/>
 <polygon class="st1" points="18.4,10.6 15,27.1 27.6,38.3 43.6,33 47,16.5 34.4,5.3 "/>
+<path class="st2" d="M37.5,10.2c0.9,0.8,1.7,1.5,2.6,2.3c4.8-1.6,9.6-3.2,14.4-4.7c0.2-1.1,0.4-2.3,0.7-3.4
+	C49.3,6.3,43.4,8.3,37.5,10.2z"/>
+<polyline class="st3" points="27.9,36.6 42.3,31.9 44.8,34.1 27.2,40 "/>
 </svg>
