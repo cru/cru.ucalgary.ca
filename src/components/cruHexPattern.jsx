@@ -37,7 +37,7 @@ const Background = Styled.div`
         background-repeat: no-repeat;
         background-position: center;
         background-size: 400px;
-        margin-top:500px;
+        margin-top:550px;
         margin-bottom:-300px;
      }
 `
