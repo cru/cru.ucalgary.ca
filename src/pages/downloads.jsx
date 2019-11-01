@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 import Layout from '../containers/layout'
 import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
+import CruFragment from '../components/crufragment'
 
 const DownloadsPage = () => (
   <Layout title="Downloads">
@@ -103,6 +104,8 @@ const DownloadsPage = () => (
         <div style={{ height: 200 }} />
       </Padding>
     </div>
+    <CruFragment />
+    <div style={{ height: '100px' }} />
   </Layout>
 )
 

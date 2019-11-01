@@ -5,6 +5,7 @@ import NavBar from '../components/navbar'
 import EmailFAB from '../components/emailfab'
 import Padding from '../containers/padding'
 import PublicationsList from '../components/publicationslist'
+import CruFragment from '../components/crufragment'
 
 const PublicationsPage = () => (
   <Layout title="Publications">
@@ -15,6 +16,9 @@ const PublicationsPage = () => (
       <div style={{ height: 50 }} />
     </Padding>
     <PublicationsList />
+    <div style={{ height: '100px' }} />
+    <CruFragment />
+    <div style={{ height: '100px' }} />
     <EmailFAB />
   </Layout>
 )
