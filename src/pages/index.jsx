@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 import Layout from '../containers/layout'
 import CRUHexPattern from '../components/cruHexPattern'
 import CRUDescription from '../components/cruDescription'
+import CruFragment from '../components/crufragment'
 import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import CollabBanner from '../components/collabbanner'
@@ -17,6 +18,8 @@ const IndexPage = () => {
       <CRUHexPattern />
       <div style={{ height: '120px' }} />
       <ServiceList />
+      <div style={{ height: '160px' }} />
+      <CruFragment />
       <div style={{ height: '160px' }} />
       <CollabBanner />
       <div style={{ height: '60px' }} />
