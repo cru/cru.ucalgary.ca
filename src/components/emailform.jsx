@@ -20,8 +20,8 @@ const EmailForm = ({ style }) => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <Space />
-        <h4>Email CRU</h4>
         <Row>
+          <h4>Email CRU</h4>
           <Input name="name" type="text" placeholder="name" />
         </Row>
         <Space />
@@ -30,7 +30,7 @@ const EmailForm = ({ style }) => {
         </Row>
         <Space />
         <Row>
-          <TextArea name="message" placeholder="Message" />
+          <TextArea name="message" placeholder="message" />
         </Row>
         <Space />
 

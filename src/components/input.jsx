@@ -44,5 +44,10 @@ const Field = Styled.input`
         border: 2px solid ${props => props.theme.fontPrimColor};
         outline: none;
     }
-
+    ::placeholder{
+      font-family: futura-pt, sans-serif;
+      font-style: normal;
+      font-size:16px;
+      color: grey;
+    }
 `

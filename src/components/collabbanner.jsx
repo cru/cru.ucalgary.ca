@@ -16,7 +16,7 @@ const sliderSettings = {
   pauseOnFocus: true,
   dots: false,
   infinite: true,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
     {
