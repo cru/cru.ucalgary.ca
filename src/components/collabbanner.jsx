@@ -114,7 +114,7 @@ const Header = Styled.div`
 const RipContainerLeft = Styled.div`
   background-image:url(${RipLeft});
   background-repeat: no-repeat;
-  margin-right:-22px;
+  margin-right:-21px;
   height:100px;
   width:90px;
   z-index:1;
