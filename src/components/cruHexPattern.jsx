@@ -8,7 +8,7 @@ const CRUHexPattern = () => {
   return (
     <>
       <Spring
-        from={{ transform: 'translate3d(100px,100px,100px)', opacity: 0 }}
+        from={{ transform: 'translate3d(-50px,50px,50px)', opacity: 0 }}
         to={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
       >
         {props => (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { ArrowLeft } from 'react-feather'
 import { Spring } from 'react-spring/renderprops'
+import CruFragment from '../components/crufragment'
 import Layout from '../containers/layout'
 import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
@@ -13,7 +13,7 @@ const SuccessPage = () => {
         <NavBar />
         <div style={{ overflow: 'hidden' }}>
           <Padding>
-            <div style={{ height: '100vh' }}>
+            <div style={{ height: '45vh' }}>
               <div
                 style={{
                   height: '500px',
@@ -57,14 +57,13 @@ const SuccessPage = () => {
                   soon as possible!
                 </p>
                 <br />
-                <Link to="/">
-                  <ArrowLeft style={{ height: '16px', marginBottom: '-3px' }} />
-                  back home
-                </Link>
+                <Link to="/">back home</Link>
               </div>
             </div>
           </Padding>
         </div>
+        <CruFragment />
+        <div style={{ height: '100px' }} />
       </Layout>
     </>
   )
