@@ -38,6 +38,6 @@ const Background = Styled.div`
         background-position: center;
         background-size: 400px;
         margin-top:500px;
-        margin-bottom:-200px;
+        margin-bottom:-300px;
      }
 `
