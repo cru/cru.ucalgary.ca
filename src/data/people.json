@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Jared Rooprai",
+    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla. ",
+    "image": {
+      "src": "../images/people/people.png"
+    }
+  },
+  {
+    "name": "Brandon Lee",
+    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. Et in duis adipisicing enim.",
+    "image": {
+      "src": "../images/people/people.png"
+    }
+  }
+]
