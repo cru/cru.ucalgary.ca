@@ -1,7 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+import { Trail, animated } from 'react-spring/renderprops'
+import Styled from 'styled-components'
 import Person from './person'
-// import PropTypes from 'prop-types'
 
 const getPeopleList = data => {
   const everyone = []
@@ -14,7 +15,16 @@ const getPeopleList = data => {
       />
     )
   )
-  return everyone
+  return (
+    <Trail
+      items={everyone}
+      from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
+      to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
+      keys={item => item.key}
+    >
+      {item => props => <animated.div style={props}>{item}</animated.div>}
+    </Trail>
+  )
 }
 
 const PeopleList = () => {
@@ -31,7 +41,7 @@ const PeopleList = () => {
                   image {
                     src {
                       childImageSharp {
-                        fixed(width: 125, height: 125) {
+                        fixed(width: 150, height: 150) {
                           ...GatsbyImageSharpFixed
                         }
                       }
@@ -42,10 +52,15 @@ const PeopleList = () => {
             }
           }
         `}
-        render={data => <>{getPeopleList(data)}</>}
+        render={data => <Grid>{getPeopleList(data)}</Grid>}
       />
     </>
   )
 }
 
 export default PeopleList
+
+const Grid = Styled.div`
+display:flex;
+flex-wrap: wrap;
+`

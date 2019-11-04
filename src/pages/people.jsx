@@ -13,9 +13,11 @@ const PeoplePage = () => {
       <div style={{ height: 100 }} />
       <Padding>
         <h1>People</h1>
+        <div style={{ height: 55 }} />
+
         <PeopleList />
       </Padding>
-      <div style={{ height: '100vh' }} />
+
       <div style={{ height: '100px' }} />
       <CruFragment />
       <div style={{ height: '100px' }} />

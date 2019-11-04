@@ -8,6 +8,20 @@ const MobileMenu = ({ navbarpage }) => {
   return (
     <MobilePage navbarpage={navbarpage}>
       <div style={{ height: '70px' }} />
+      <Link to="/people">
+        <MobileLink>
+          <h5 style={{ color: 'white' }}>
+            People
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
       <Link to="/publications">
         <MobileLink>
           <h5 style={{ color: 'white' }}>
@@ -61,7 +75,7 @@ const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
   overflow:hidden;
-  height: ${props => (props.navbarpage ? '320px' : '0px')};
+  height: ${props => (props.navbarpage ? '420px' : '0px')};
   width:100vw;
   -moz-transition: height 0.5s ease;
   -webkit-transition: height 0.5s ease;
