@@ -1,107 +1,164 @@
 [
   {
     "name": "Jared Rooprai",
-    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/jared.png"
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
     }
   },
   {
     "name": "Brandon Lee",
-    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/brandon.png"
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
     }
   },
   {
     "name": "Dominic Hul",
-    "comments": "Et in duis adipisicing enim.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/dom.png"
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
     }
   },
   {
     "name": "Jared Rooprai",
-    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/jared.png"
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
     }
   },
   {
     "name": "Brandon Lee",
-    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/brandon.png"
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
     }
   },
   {
     "name": "Dominic Hul",
-    "comments": "Et in duis adipisicing enim.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/dom.png"
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
     }
   },
   {
     "name": "Jared Rooprai",
-    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/jared.png"
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
     }
   },
   {
     "name": "Brandon Lee",
-    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/brandon.png"
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
     }
   },
   {
     "name": "Dominic Hul",
-    "comments": "Et in duis adipisicing enim.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/dom.png"
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
     }
   },
   {
     "name": "Jared Rooprai",
-    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/jared.png"
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
     }
   },
   {
     "name": "Brandon Lee",
-    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/brandon.png"
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
     }
   },
   {
     "name": "Dominic Hul",
-    "comments": "Et in duis adipisicing enim.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/dom.png"
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
     }
   },
   {
     "name": "Jared Rooprai",
-    "comments": "Amet anim adipisicing minim ea amet anim anim quis ut cupidatat nulla. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/jared.png"
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
     }
   },
   {
     "name": "Brandon Lee",
-    "comments": "Ad occaecat elit aliquip pariatur labore Lorem laboris cillum incididunt sunt reprehenderit duis exercitation. ",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/brandon.png"
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
     }
   },
   {
     "name": "Dominic Hul",
-    "comments": "Et in duis adipisicing enim.",
+    "title": "Software Developer",
+    "comments": "love appes",
     "image": {
-      "src": "../images/people/dom.png"
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
+    }
+  },
+  {
+    "name": "Jared Rooprai",
+    "title": "Software Developer",
+    "comments": "love appes",
+    "image": {
+      "src": "../images/people/jared.png",
+      "color": "rgba(63, 191, 63, 0.5)"
+    }
+  },
+  {
+    "name": "Brandon Lee",
+    "title": "Software Developer",
+    "comments": "love appes",
+    "image": {
+      "src": "../images/people/brandon.png",
+      "color": "rgba(55, 22, 63, 0.5)"
+    }
+  },
+  {
+    "name": "Dominic Hul",
+    "title": "Software Developer",
+    "comments": "love appes",
+    "image": {
+      "src": "../images/people/dom.png",
+      "color": "rgba(63, 191, 255, 0.5)"
     }
   }
 ]

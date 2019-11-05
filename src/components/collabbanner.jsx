@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Styled from 'styled-components'
@@ -55,6 +54,7 @@ const getCollaboratorList = data => {
         rel="noopener noreferrer"
       >
         <img
+          /* eslint-disable global-require */
           // eslint-disable-next-line import/no-dynamic-require
           src={require(`../images/collaborators/${item.node.fileName}`)}
           alt={item.node.name}

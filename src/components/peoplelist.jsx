@@ -8,11 +8,15 @@ const getPeopleList = data => {
   const everyone = []
   data.allPeopleJson.edges.forEach(item =>
     everyone.push(
-      <Person
-        name={item.node.name}
-        comment={item.node.comments}
-        fixed={item.node.image.src.childImageSharp.fixed}
-      />
+      <PersonContainer>
+        <Person
+          name={item.node.name}
+          title={item.node.title}
+          comment={item.node.comments}
+          fixed={item.node.image.src.childImageSharp.fixed}
+          color={item.node.image.color}
+        />
+      </PersonContainer>
     )
   )
   return (
@@ -37,8 +41,10 @@ const PeopleList = () => {
               edges {
                 node {
                   name
+                  title
                   comments
                   image {
+                    color
                     src {
                       childImageSharp {
                         fixed(width: 150, height: 150) {
@@ -61,6 +67,12 @@ const PeopleList = () => {
 export default PeopleList
 
 const Grid = Styled.div`
-display:flex;
-flex-wrap: wrap;
+    display:flex;
+    flex-wrap: wrap;
+`
+const PersonContainer = Styled.div`
+    max-width:200px;
+    flex:1;
+    padding-bottom:55px;
+    padding-right:40px;
 `
