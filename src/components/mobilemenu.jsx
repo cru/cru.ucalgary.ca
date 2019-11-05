@@ -61,10 +61,10 @@ MobileMenu.propTypes = {
 export default MobileMenu
 
 const MobileLink = Styled.div`
-  outline: 4px solid ${props => props.theme.brandPrimColor};
+  outline: 2px solid ${props => props.theme.brandPrimColor};
   margin: 28px;
-  padding: 2px;
-  padding-left:20px;
+  padding: 1px;
+  padding-left:25px;
   color: white;
   h5{
     line-height:0px;
@@ -75,15 +75,15 @@ const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
   overflow:hidden;
-  height: ${props => (props.navbarpage ? '420px' : '0px')};
+  height: ${props => (props.navbarpage ? '100vh' : '0px')};
   width:100vw;
-  -moz-transition: height 0.5s ease;
-  -webkit-transition: height 0.5s ease;
-  -o-transition: height 0.5s ease;
-  transition: height 0.5s ease;
+  -moz-transition: height 0.3s linear;
+  -webkit-transition: height 0.3s linear;
+  -o-transition: height 0.3s linear;
+  transition: height 0.3s linear;
   position: fixed;
   top: 0; 
-  z-index:1;
+  z-index:10;
   @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
     display:none;
   }

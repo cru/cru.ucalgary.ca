@@ -47,7 +47,7 @@ const PeopleList = () => {
                     color
                     src {
                       childImageSharp {
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 160, height: 160) {
                           ...GatsbyImageSharpFixed
                         }
                       }
@@ -71,8 +71,7 @@ const Grid = Styled.div`
     flex-wrap: wrap;
 `
 const PersonContainer = Styled.div`
-    max-width:200px;
-    flex:1;
-    padding-bottom:55px;
-    padding-right:40px;
+    max-width:250px;
+    margin-bottom:55px;
+    margin-right:40px;
 `

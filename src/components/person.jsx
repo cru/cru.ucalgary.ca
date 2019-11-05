@@ -41,8 +41,11 @@ const Overlay = Styled.span`
   position:absolute;
   top:0;
   background-color:transparent;
-  height:150px;
-  width:150px;
+  height:166px;
+  width:166px;
+  margin-left:10px;
+  margin-top:5px;
+
   text-align:center;
   color: transparent;
   -o-transition:.5s;
