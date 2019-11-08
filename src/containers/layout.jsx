@@ -16,8 +16,10 @@ const Layout = ({ title, children }) => {
       <SEO title={title} />
       <ThemeProvider theme={theme}>
         <MaxWidth>
-          {children}
-          <Footer />
+          <main>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </MaxWidth>
       </ThemeProvider>
     </>
