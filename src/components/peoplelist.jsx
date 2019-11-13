@@ -4,6 +4,9 @@ import { Trail, animated } from 'react-spring/renderprops'
 import Styled from 'styled-components'
 import Person from './person'
 
+// Use this tool to collect RGB from people
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+
 const getPeopleList = data => {
   const everyone = []
   data.allPeopleJson.edges.forEach(item =>
