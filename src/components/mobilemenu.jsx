@@ -77,10 +77,6 @@ const MobilePage = Styled.div`
   overflow:hidden;
   height: ${props => (props.navbarpage ? '100vh' : '0px')};
   width:100vw;
-  -moz-transition: height 0.3s linear;
-  -webkit-transition: height 0.3s linear;
-  -o-transition: height 0.3s linear;
-  transition: height 0.3s linear;
   position: fixed;
   top: 0; 
   z-index:10;
