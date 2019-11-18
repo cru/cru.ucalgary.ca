@@ -15,23 +15,23 @@ const ServiceList = ({ style }) => {
       <Container>
         <Item>
           <ServiceContainer
-            title="Custom Software"
-            description="The CRU houses project management and software development staff to support the custom development of software to support the delivery and execution of novel research workflows."
-            image={CodeIcon}
-          />
-        </Item>
-        <Item>
-          <ServiceContainer
             title="Electronic Data Capture"
-            description="Consequat id aliqua duis pariatur voluptate minim velit Lorem sit. Dolore minim laborum cillum ipsum qui sunt esse aliqua aute sunt. "
+            description="The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management"
             image={IpadHealthIcon}
           />
         </Item>
         <Item>
           <ServiceContainer
             title="Methods and Analytics"
-            description="The CRU supports project management and analysis needs of the University of Calgary Biostatistics Centre and the Alberta SPOR support Unit."
+            description="The CRU provides statistical support for clinical trials (study design, randomization, and statistical analysis) as well as observational studies (administrative data requests, cohort extractions, statistical analysis)."
             image={BarChartIcon}
+          />
+        </Item>
+        <Item>
+          <ServiceContainer
+            title="Custom Software"
+            description="The CRU Software Development Team helps you with creative solutions to support the setup and delivery of novel research workflows."
+            image={CodeIcon}
           />
         </Item>
       </Container>

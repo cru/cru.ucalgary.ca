@@ -31,7 +31,7 @@ const Content = Styled.div`
     p{
       text-align:left;
       font-family: futura-pt, sans-serif;
-      font-size: 21px;
+      font-size: 19px;
       margin: 0 auto;
       padding-left:0px;
     }
