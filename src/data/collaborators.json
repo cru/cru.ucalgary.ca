@@ -10,11 +10,6 @@
     "url": "https://www.ucalgary.ca/"
   },
   {
-    "name": "Ward of the 21st Century",
-    "fileName": "w21c.png",
-    "url": "https://www.w21c.org/"
-  },
-  {
     "name": "Alberta Health Services",
     "fileName": "ahs.png",
     "url": "https://www.albertahealthservices.ca/"
@@ -25,8 +20,13 @@
     "url": "https://www.ucalgary.ca/"
   },
   {
-    "name": "Ward of the 21st Century",
-    "fileName": "w21c.png",
-    "url": "https://www.w21c.org/"
+    "name": "Alberta Health Services",
+    "fileName": "ahs.png",
+    "url": "https://www.albertahealthservices.ca/"
+  },
+  {
+    "name": "University of Calgary",
+    "fileName": "uc-horz-rgb.png",
+    "url": "https://www.ucalgary.ca/"
   }
 ]
