@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Alberta Health Services",
+    "href": "https://www.albertahealthservices.ca/",
+    "image": {
+      "src": "../images/partners/ahs.png"
+    }
+  },
+  {
+    "name": "University of British Columbia",
+    "href": "https://www.ubc.ca/",
+    "image": {
+      "src": "../images/partners/ubc.png"
+    }
+  },
+  {
+    "name": "University of Alberta",
+    "href": "https://www.ualberta.ca/index.html",
+    "image": {
+      "src": "../images/partners/uofa.png"
+    }
+  },
+  {
+    "name": "Royal Roads University",
+    "href": "http://www.royalroads.ca/",
+    "image": {
+      "src": "../images/partners/rru.png"
+    }
+  },
+  {
+    "name": "NoNo inc",
+    "href": "https://nonoinc.ca/",
+    "image": {
+      "src": "../images/partners/nono.png"
+    }
+  },
+  {
+    "name": "W21c",
+    "href": "https://www.w21c.org/",
+    "image": {
+      "src": "../images/partners/w21c.png"
+    }
+  },
+
+  {
+    "name": "Montreal Heart Institute",
+    "href": "https://www.icm-mhi.org/en/montreal-heart-institute",
+    "image": {
+      "src": "../images/partners/mhi.png"
+    }
+  },
+  {
+    "name": "Hotchkiss brain institute",
+    "href": "https://hbi.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/hbi.png"
+    }
+  },
+  {
+    "name": "Erapermed",
+    "href": "http://www.erapermed.eu/",
+    "image": {
+      "src": "../images/partners/erapermed.png"
+    }
+  },
+
+  {
+    "name": "Health Canada",
+    "href": "https://www.canada.ca/en/health-canada.html",
+    "image": {
+      "src": "../images/partners/healthcanada.png"
+    }
+  },
+  {
+    "name": "Redcap",
+    "href": "https://www.project-redcap.org/",
+    "image": {
+      "src": "../images/partners/redcap.png"
+    }
+  },
+  {
+    "name": "DFnet",
+    "href": "https://www.dfnetresearch.com/",
+    "image": {
+      "src": "../images/partners/dfnet.png"
+    }
+  }
+]

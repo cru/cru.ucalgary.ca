@@ -43,6 +43,14 @@ const NavBar = ({ page, group }) => {
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
+            page="/partners"
+            text="Partners"
+            group={page === 'partners' && 'partners'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarLinks
             page="/publications"
             text="Publications"
             group={page === 'publications' && 'publications'}
@@ -57,7 +65,6 @@ const NavBar = ({ page, group }) => {
             selectedPage={page === 'downloads' && 'Downloads'}
           />
         </LinkContainer>
-
         <RightAlign>
           <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
             <img src={uofcImg} style={{ height: '28px' }} alt="UofC" />
