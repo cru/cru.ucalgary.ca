@@ -33,7 +33,7 @@ const PartnerList = () => {
     <>
       <StaticQuery
         query={graphql`
-          query partnerQuery {
+          query partnersQuery {
             allPartnersJson {
               edges {
                 node {

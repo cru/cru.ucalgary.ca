@@ -57,6 +57,13 @@
     }
   },
   {
+    "name": "LIBIN CARDIOVASCULAR INSTITUTE OF ALBERTA",
+    "href": "https://libin.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/lci.png"
+    }
+  },
+  {
     "name": "Erapermed",
     "href": "http://www.erapermed.eu/",
     "image": {
@@ -69,6 +76,13 @@
     "href": "https://www.canada.ca/en/health-canada.html",
     "image": {
       "src": "../images/partners/healthcanada.png"
+    }
+  },
+  {
+    "name": "Cohesic",
+    "href": "https://cohesic.com/",
+    "image": {
+      "src": "../images/partners/cohesic.png"
     }
   },
   {

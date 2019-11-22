@@ -28,6 +28,8 @@ const Container = Styled.div`
   border-radius: ${props => props.theme.borderRadius};
   height:80px;
   align-items: center;
+  transition: all ${props => props.theme.boxShadowTrans};
+
 
   :hover{
     box-shadow: ${props => props.theme.boxShadow};

@@ -6,7 +6,7 @@ import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
 import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
-import uofcImg from '../images/collaborators/uc-horz-rgb.png'
+import uofcImg from '../images/partners/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 
 const NavBar = ({ page, group }) => {
