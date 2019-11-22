@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { Trail, animated } from 'react-spring/renderprops'
 import Styled from 'styled-components'
-import Partner from './Partner'
+import Partner from './partner'
 
 const getPartnersList = data => {
   const everyone = []
