@@ -10,8 +10,8 @@ import 'slick-carousel/slick/slick-theme.css'
 
 const sliderSettings = {
   autoplay: true,
-  autoplaySpeed: 2500,
-  speed: 3000,
+  autoplaySpeed: 2000,
+  speed: 2500,
   pauseOnFocus: true,
   dots: false,
   infinite: true,
@@ -85,11 +85,13 @@ const ParterBanner = () => {
         render={data => (
           <>
             <Header>
-              <h4>
+              <h4>Partners</h4>
+
+              <div style={{ marginTop: '-30px' }}>
                 <Link to="/partners">
-                  <span>Partners</span>
+                  <span>see all</span>
                 </Link>
-              </h4>
+              </div>
             </Header>
             <Row>
               <RipContainerLeft />
@@ -112,9 +114,11 @@ export default ParterBanner
 const Header = Styled.div`
   align-content:center;
   text-align: center;
+  margin-bottom:30px;
   span {
     text-decoration:none;
     color: ${props => props.theme.fontPrimColor};
+    margin-top:-20px;
   }
 `
 const RipContainerLeft = Styled.div`
