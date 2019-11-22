@@ -4,18 +4,17 @@ import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
 import EmailFAB from '../components/emailfab'
 import CruFragment from '../components/crufragment'
-import PeopleList from '../components/peoplelist'
+import PartnerList from '../components/partnerlist'
 
-const PeoplePage = () => {
+const PartnersPage = () => {
   return (
-    <Layout title="People">
-      <NavBar page="people" />
+    <Layout title="Partners">
+      <NavBar page="partners" />
       <div style={{ height: 100 }} />
       <Padding>
-        <h1>People</h1>
+        <h1>Partners</h1>
         <div style={{ height: 55 }} />
-
-        <PeopleList />
+        <PartnerList />
       </Padding>
 
       <div style={{ height: '100px' }} />
@@ -26,4 +25,4 @@ const PeoplePage = () => {
   )
 }
 
-export default PeoplePage
+export default PartnersPage

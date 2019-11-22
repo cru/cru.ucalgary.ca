@@ -6,7 +6,7 @@ import CRUDescription from '../components/cruDescription'
 import CruFragment from '../components/crufragment'
 import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
-import CollabBanner from '../components/collabbanner'
+import ParterBanner from '../components/partnerbanner'
 import ServiceList from '../components/serviceList'
 
 const IndexPage = () => {
@@ -21,7 +21,7 @@ const IndexPage = () => {
       <div style={{ height: '100px' }} />
       <CruFragment />
       <div style={{ height: '100px' }} />
-      <CollabBanner />
+      <ParterBanner />
       <div style={{ height: '60px' }} />
       <EmailFAB />
     </Layout>
