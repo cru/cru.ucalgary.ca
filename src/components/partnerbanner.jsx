@@ -4,7 +4,6 @@ import Styled from 'styled-components'
 import Slider from 'react-slick'
 import RipRight from '../images/svg-backgrounds/collab-crop-rightside.svg'
 import RipLeft from '../images/svg-backgrounds/collab-crop-leftside.svg'
-import Button from '../components/button'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -86,11 +85,11 @@ const ParterBanner = () => {
         render={data => (
           <>
             <Header>
-              <Link to="/partners">
-                <h5>
-                  <span>See all Partners</span>
-                </h5>
-              </Link>
+              <h5>
+                <span>
+                  <Link to="/partners">See all Partners</Link>
+                </span>
+              </h5>
             </Header>
             <Row>
               <RipContainerLeft />
@@ -120,7 +119,7 @@ const Header = Styled.div`
 const RipContainerLeft = Styled.div`
   background-image:url(${RipLeft});
   background-repeat: no-repeat;
-  margin-right:-15px;
+  margin-right:-17px;
   height:100px;
   width:150px;
   z-index:1;
@@ -132,7 +131,7 @@ const RipContainerLeft = Styled.div`
 const RipContainerRight = Styled.div`
   background-image:url(${RipRight});
   background-repeat: no-repeat;
-  margin-left:-17px;
+  margin-left:-16px;
   height:100px;
   width:150px;
   z-index:1;
@@ -163,6 +162,7 @@ const Banner = Styled.div`
 const ImgContainer = Styled.div`
   height: 90px;
   display:inline-block;
+  outline: none;
 
   img{
     width:140px;
