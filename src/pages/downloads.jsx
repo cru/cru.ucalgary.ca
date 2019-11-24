@@ -9,7 +9,7 @@ const DownloadsPage = () => (
   <Layout title="Downloads">
     <NavBar page="downloads" group="resources" />
     <div style={{ minHeight: '100vh' }}>
-      <div style={{ height: 100 }} />
+      <div style={{ height: 60 }} />
       <Padding>
         <h1>Downloads</h1>
         <div style={{ height: 55 }} />
@@ -26,7 +26,7 @@ const DownloadsPage = () => (
 
         <h5>DFexplore 5.1.4</h5>
         <DownloadTable>
-          <tr style={{ backgroundColor: '#d8d8d8' }}>
+          <tr style={{ backgroundColor: '#c9e5ff' }}>
             <td>Windows 8.1/10</td>
             <td>
               <a href="./downloads/dfexplore_5.1.4/DFexplore5.1.4.msi" download>
@@ -42,7 +42,7 @@ const DownloadsPage = () => (
               </a>
             </td>
           </tr>
-          <tr style={{ backgroundColor: '#d8d8d8' }}>
+          <tr style={{ backgroundColor: '#c9e5ff' }}>
             <td>CRU User Guide</td>
             <td>coming soon</td>
           </tr>
@@ -55,7 +55,7 @@ const DownloadsPage = () => (
 
         <h5>iDataFax 2016</h5>
         <DownloadTable>
-          <tr style={{ backgroundColor: '#d8d8d8' }}>
+          <tr style={{ backgroundColor: '#c9e5ff' }}>
             <td>Windows 7/8/10</td>
             <td>
               <a
@@ -77,7 +77,7 @@ const DownloadsPage = () => (
               </a>
             </td>
           </tr>
-          <tr style={{ backgroundColor: '#d8d8d8' }}>
+          <tr style={{ backgroundColor: '#c9e5ff' }}>
             <td>CRU User Guide</td>
             <td>
               <a

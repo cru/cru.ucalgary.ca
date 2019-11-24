@@ -11,7 +11,7 @@ const PublicationsPage = () => (
   <Layout title="Publications">
     <NavBar page="publications" />
     <Padding>
-      <div style={{ height: 100 }} />
+      <div style={{ height: 60 }} />
       <h1>Publications</h1>
       <div style={{ height: 50 }} />
     </Padding>

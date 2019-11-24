@@ -25,13 +25,16 @@ export default CRUDescription
 
 const Title = Styled.h1`
     text-align:left;
-    max-width:500px;
+    max-width:390px;
     font-size:70px;
     background-color:white;
+    line-height:70px;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       font-size: 60px;
-      max-width:400px;
+      line-height:60px;
+      max-width:350px;
+
   }
 `
 
@@ -42,10 +45,12 @@ const Body = Styled.h4`
     font-family: futura-pt, sans-serif;
     font-size: 24px;
     font-weight: 500;
+    margin-top:-20px;
 
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
       font-size: 24px;
       max-width:400px;
+
   }
 `

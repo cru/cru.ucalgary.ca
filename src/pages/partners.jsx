@@ -10,7 +10,7 @@ const PartnersPage = () => {
   return (
     <Layout title="Partners">
       <NavBar page="partners" />
-      <div style={{ height: 100 }} />
+      <div style={{ height: 60 }} />
       <Padding>
         <h1>Partners</h1>
         <div style={{ height: 55 }} />

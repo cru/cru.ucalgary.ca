@@ -10,7 +10,7 @@ const PeoplePage = () => {
   return (
     <Layout title="People">
       <NavBar page="people" />
-      <div style={{ height: 100 }} />
+      <div style={{ height: 60 }} />
       <Padding>
         <h1>People</h1>
         <div style={{ height: 55 }} />
