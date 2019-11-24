@@ -26,7 +26,7 @@ const DownloadsPage = () => (
 
         <h5>DFexplore 5.1.4</h5>
         <DownloadTable>
-          <tr style={{ backgroundColor: '#c9e5ff' }}>
+          <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>Windows 8.1/10</td>
             <td>
               <a href="./downloads/dfexplore_5.1.4/DFexplore5.1.4.msi" download>
@@ -42,7 +42,7 @@ const DownloadsPage = () => (
               </a>
             </td>
           </tr>
-          <tr style={{ backgroundColor: '#c9e5ff' }}>
+          <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>CRU User Guide</td>
             <td>coming soon</td>
           </tr>
@@ -55,7 +55,7 @@ const DownloadsPage = () => (
 
         <h5>iDataFax 2016</h5>
         <DownloadTable>
-          <tr style={{ backgroundColor: '#c9e5ff' }}>
+          <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>Windows 7/8/10</td>
             <td>
               <a
@@ -77,7 +77,7 @@ const DownloadsPage = () => (
               </a>
             </td>
           </tr>
-          <tr style={{ backgroundColor: '#c9e5ff' }}>
+          <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>CRU User Guide</td>
             <td>
               <a
