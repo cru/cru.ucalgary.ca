@@ -46,7 +46,7 @@ const sliderSettings = {
 const getPartnersList = data => {
   const partners = []
 
-  data.allPartnersJson.edges.forEach(item =>
+  data.allPartnerslogosJson.edges.forEach(item =>
     partners.push(
       <ImgContainer key={item.node.name}>
         <img
@@ -66,7 +66,7 @@ const ParterBanner = () => {
       <StaticQuery
         query={graphql`
           query partnersBannerQuery {
-            allPartnersJson {
+            allPartnerslogosJson {
               edges {
                 node {
                   image {
@@ -91,7 +91,9 @@ const ParterBanner = () => {
                   <Link to="/partners">
                     See all Partners
                     <span> </span>
-                    <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />
+                    <ArrowRight
+                      style={{ height: 17, marginBottom: -2.4, marginLeft: -2 }}
+                    />
                   </Link>
                 </span>
               </h5>
