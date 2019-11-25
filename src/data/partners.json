@@ -114,6 +114,13 @@
       "src": "../images/partners/chi3.png"
     }
   },
+  {
+    "name": "Centre for Health Informatics (CCCR)",
+    "href": "https://www.ucalgary.ca/cccr/",
+    "image": {
+      "src": "../images/partners/cccr.png"
+    }
+  },
 
   {
     "name": "W21c",

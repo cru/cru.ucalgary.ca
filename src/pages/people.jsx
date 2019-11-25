@@ -14,7 +14,6 @@ const PeoplePage = () => {
       <Padding>
         <h1>People</h1>
         <div style={{ height: 55 }} />
-
         <PeopleList />
       </Padding>
 
