@@ -46,7 +46,7 @@ const sliderSettings = {
 const getPartnersList = data => {
   const partners = []
 
-  data.allPartnerslogosJson.edges.forEach(item =>
+  data.allPartnersJson.edges.forEach(item =>
     partners.push(
       <ImgContainer key={item.node.name}>
         <img
@@ -66,7 +66,7 @@ const ParterBanner = () => {
       <StaticQuery
         query={graphql`
           query partnersBannerQuery {
-            allPartnerslogosJson {
+            allPartnersJson {
               edges {
                 node {
                   image {
@@ -91,9 +91,7 @@ const ParterBanner = () => {
                   <Link to="/partners">
                     See all Partners
                     <span> </span>
-                    <ArrowRight
-                      style={{ height: 17, marginBottom: -2.4, marginLeft: -2 }}
-                    />
+                    <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />
                   </Link>
                 </span>
               </h5>
@@ -126,9 +124,9 @@ const Header = Styled.div`
 const RipContainerLeft = Styled.div`
   background-image:url(${RipLeft});
   background-repeat: no-repeat;
-  margin-right:-17px;
+  margin-right:-16px;
   height:100px;
-  width:150px;
+  width:250px;
   z-index:1;
   @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
       display:none;
@@ -140,7 +138,7 @@ const RipContainerRight = Styled.div`
   background-repeat: no-repeat;
   margin-left:-16px;
   height:100px;
-  width:150px;
+  width:250px;
   z-index:1;
   @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
       display:none;

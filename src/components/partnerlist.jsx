@@ -4,9 +4,9 @@ import { Trail, animated } from 'react-spring/renderprops'
 import Styled from 'styled-components'
 import Partner from './partner'
 
-const getPartnersLogosList = data => {
+const getPartnersList = data => {
   const everyone = []
-  data.allPartnerslogosJson.edges.forEach(item =>
+  data.allPartnersJson.edges.forEach(item =>
     everyone.push(
       <PersonContainer>
         <Partner
@@ -28,28 +28,13 @@ const getPartnersLogosList = data => {
   )
 }
 
-const getPartnersLinks = data => {
-  const everyone = []
-
-  data.allPartnerslinksJson.edges.forEach(item =>
-    everyone.push(
-      <>
-        <PartnerLink href={item.node.href}>{item.node.name}</PartnerLink>
-        <br />
-        <div style={{ height: 13 }} />
-      </>
-    )
-  )
-  return everyone
-}
-
 const PartnerList = () => {
   return (
     <>
       <StaticQuery
         query={graphql`
-          query partnersLogosQuery {
-            allPartnerslogosJson {
+          query partnersGridQuery {
+            allPartnersJson {
               edges {
                 node {
                   href
@@ -65,24 +50,12 @@ const PartnerList = () => {
                 }
               }
             }
-            allPartnerslinksJson {
-              edges {
-                node {
-                  name
-                  href
-                }
-              }
-            }
           }
         `}
         render={data => (
           <>
             {/* Visual grid of partners  */}
-            <Grid>{getPartnersLogosList(data)}</Grid>
-
-            <div style={{ height: 60 }} />
-            {/* Partners listed out  */}
-            {getPartnersLinks(data)}
+            <Grid>{getPartnersList(data)}</Grid>
           </>
         )}
       />
@@ -100,11 +73,4 @@ const PersonContainer = Styled.div`
     max-width:250px;
     margin-bottom:50px;
     margin-right:25px;
-`
-
-const PartnerLink = Styled.a`
-  text-decoration:none;
-  :hover{
-    text-decoration:underline;
-  }
 `
