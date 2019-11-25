@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Styled from 'styled-components'
 import Slider from 'react-slick'
+import { ArrowRight } from 'react-feather'
 import RipRight from '../images/svg-backgrounds/collab-crop-rightside.svg'
 import RipLeft from '../images/svg-backgrounds/collab-crop-leftside.svg'
 
@@ -87,7 +88,11 @@ const ParterBanner = () => {
             <Header>
               <h5>
                 <span>
-                  <Link to="/partners">See all Partners</Link>
+                  <Link to="/partners">
+                    See all Partners
+                    <span> </span>
+                    <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />
+                  </Link>
                 </span>
               </h5>
             </Header>
