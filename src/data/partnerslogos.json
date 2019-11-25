@@ -7,6 +7,55 @@
     }
   },
   {
+    "name": "Hotchkiss brain institute",
+    "href": "https://hbi.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/hbi.png"
+    }
+  },
+  {
+    "name": "LIBIN CARDIOVASCULAR INSTITUTE OF ALBERTA",
+    "href": "https://libin.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/lci.png"
+    }
+  },
+  {
+    "name": "Arnie charbonneau cancer institute",
+    "href": "https://charbonneau.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/cancerinstitute.png"
+    }
+  },
+  {
+    "name": "ALBERTA CHILDREN'S HOSPITAL RESEARCH INSTITUTE",
+    "href": "https://research4kids.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/alberta_chr.png"
+    }
+  },
+  {
+    "name": "O'brien intitute for public health",
+    "href": "https://obrieniph.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/publichealth.png"
+    }
+  },
+  {
+    "name": "Mccaig institute for bone and joint health",
+    "href": "https://mccaig.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/mccaig.png"
+    }
+  },
+  {
+    "name": "Snyder",
+    "href": "https://snyder.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/snyder.png"
+    }
+  },
+  {
     "name": "University of British Columbia",
     "href": "https://www.ubc.ca/",
     "image": {
@@ -76,20 +125,7 @@
       "src": "../images/partners/mhi.png"
     }
   },
-  {
-    "name": "Hotchkiss brain institute",
-    "href": "https://hbi.ucalgary.ca/",
-    "image": {
-      "src": "../images/partners/hbi.png"
-    }
-  },
-  {
-    "name": "LIBIN CARDIOVASCULAR INSTITUTE OF ALBERTA",
-    "href": "https://libin.ucalgary.ca/",
-    "image": {
-      "src": "../images/partners/lci.png"
-    }
-  },
+
   {
     "name": "Erapermed",
     "href": "http://www.erapermed.eu/",
