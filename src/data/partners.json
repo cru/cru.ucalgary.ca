@@ -69,15 +69,6 @@
       "src": "../images/partners/albertaspor.png"
     }
   },
-
-  {
-    "name": "O'brien intitute for public health",
-    "href": "https://obrieniph.ucalgary.ca/",
-    "image": {
-      "src": "../images/partners/publichealth.png"
-    }
-  },
-
   {
     "name": "Mccaig institute for bone and joint health",
     "href": "https://mccaig.ucalgary.ca/",
@@ -157,13 +148,6 @@
     "href": "https://canue.ca/",
     "image": {
       "src": "../images/partners/canuez.png"
-    }
-  },
-  {
-    "name": "Schulich School of Engineering",
-    "href": "https://schulich.ucalgary.ca/",
-    "image": {
-      "src": "../images/partners/ssoe.png"
     }
   },
   {
