@@ -28,6 +28,19 @@ const getPartnersList = data => {
   )
 }
 
+const getThirdPartyPartnersList = data => {
+  const everyone = []
+  data.allThirdpartypartnersJson.edges.forEach(item =>
+    everyone.push(
+      <>
+        <PartnerLink href={item.node.href}>{item.node.name}</PartnerLink>
+        <br />
+      </>
+    )
+  )
+  return everyone
+}
+
 const PartnerList = () => {
   return (
     <>
@@ -50,12 +63,23 @@ const PartnerList = () => {
                 }
               }
             }
+            allThirdpartypartnersJson {
+              edges {
+                node {
+                  name
+                  href
+                }
+              }
+            }
           }
         `}
         render={data => (
           <>
             {/* Visual grid of partners  */}
             <Grid>{getPartnersList(data)}</Grid>
+            <div style={{ height: 50 }} />
+            <h4>Third Party Partners</h4>
+            {getThirdPartyPartnersList(data)}
           </>
         )}
       />
@@ -73,4 +97,10 @@ const PersonContainer = Styled.div`
     max-width:250px;
     margin-bottom:50px;
     margin-right:25px;
+`
+
+const PartnerLink = Styled.a`
+  text-decoration:none;
+  :hover {text-decoration:underline;}
+  }
 `

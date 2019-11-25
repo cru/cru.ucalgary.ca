@@ -101,27 +101,20 @@
   },
 
   {
+    "name": "Centre for Health Informatics (CHI)",
+    "href": "http://www.cihr-irsc.gc.ca/e/193.html",
+    "image": {
+      "src": "../images/partners/cihrcad.png"
+    }
+  },
+
+  {
     "name": "Arnie charbonneau cancer institute",
     "href": "https://charbonneau.ucalgary.ca/",
     "image": {
       "src": "../images/partners/cancerinstitute.png"
     }
   },
-  {
-    "name": "Centre for Health Informatics (CHI)",
-    "href": "https://cumming.ucalgary.ca/centres/centre-health-informatics",
-    "image": {
-      "src": "../images/partners/chi3.png"
-    }
-  },
-  {
-    "name": "Centre for Health Informatics (CCCR)",
-    "href": "https://www.ucalgary.ca/cccr/",
-    "image": {
-      "src": "../images/partners/cccr.png"
-    }
-  },
-
   {
     "name": "W21c",
     "href": "https://www.w21c.org/",
