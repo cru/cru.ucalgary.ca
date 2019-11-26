@@ -56,6 +56,13 @@
     }
   },
   {
+    "name": "O'brien institute for public health",
+    "href": "https://obrieniph.ucalgary.ca/",
+    "image": {
+      "src": "../images/partners/publichealth.png"
+    }
+  },
+  {
     "name": "Health Canada",
     "href": "https://www.canada.ca/en/health-canada.html",
     "image": {

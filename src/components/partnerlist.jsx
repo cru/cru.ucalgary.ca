@@ -85,7 +85,7 @@ const PartnerList = () => {
             {/* Visual grid of partners  */}
             <Grid>{getPartnersList(data)}</Grid>
             <div style={{ height: 50 }} />
-            <h4>Other Partners</h4>
+            <h4>Other Collaborators</h4>
             {getThirdPartyPartnersList(data)}
           </>
         )}
