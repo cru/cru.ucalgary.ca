@@ -33,8 +33,15 @@ const getThirdPartyPartnersList = data => {
   data.allThirdpartypartnersJson.edges.forEach(item =>
     everyone.push(
       <>
-        <PartnerLink href={item.node.href}>{item.node.name}</PartnerLink>
+        <PartnerLink
+          rel="noopener noreferrer"
+          target="_blank"
+          href={item.node.href}
+        >
+          {item.node.name}
+        </PartnerLink>
         <br />
+        <div style={{ height: 10 }} />
       </>
     )
   )
@@ -78,7 +85,7 @@ const PartnerList = () => {
             {/* Visual grid of partners  */}
             <Grid>{getPartnersList(data)}</Grid>
             <div style={{ height: 50 }} />
-            <h4>Third Party Partners</h4>
+            <h4>Other Partners</h4>
             {getThirdPartyPartnersList(data)}
           </>
         )}
