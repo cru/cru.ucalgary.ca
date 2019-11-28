@@ -30,7 +30,7 @@ const NavBar = ({ page, group }) => {
           <LinkSpacing />
         </MenuContainerOpposite>
         <ImgButton to="/">
-          <img src={cruImg} style={{ height: '28px' }} alt="CRU" />
+          <img src={cruImg} style={{ height: '36px' }} alt="CRU" />
         </ImgButton>
         <LinkSpacing />
         <LinkContainer>
