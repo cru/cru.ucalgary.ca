@@ -2,9 +2,9 @@ import React from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 import ServiceContainer from './serviceContainer'
-import IpadHealthIcon from '../images/icons/icon-ipad-health.svg'
-import CodeIcon from '../images/icons/icon-code.svg'
-import BarChartIcon from '../images/icons/icon-bar-chart.svg'
+import IpadHealthIcon from '../images/icons/Asset6.svg'
+import CodeIcon from '../images/icons/Asset8.svg'
+import BarChartIcon from '../images/icons/Asset7.svg'
 
 const ServiceList = ({ style }) => {
   return (

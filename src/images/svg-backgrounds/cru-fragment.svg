@@ -3,12 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 84 42.5" style="enable-background:new 0 0 84 42.5;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F38280;}
-	.st1{fill:#BAD8EF;}
+	.st0{opacity:0.1;fill:#FFFFFF;stroke:#202020;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M47.2,20.2c0.9,0.5,1.7,0.8,2.5,1.3c3.5-2.2,7.1-4.5,10.5-6.8c-0.1-1-0.1-1.9-0.1-2.9
-	C55.8,14.6,51.5,17.3,47.2,20.2z"/>
-<polyline class="st1" points="60.3,24.4 70.8,17.6 73.2,19 60.4,27.3 "/>
-<polyline class="st1" points="11.8,24.4 22.3,17.6 24.7,19 11.9,27.3 "/>
-<polyline class="st1" points="27.1,24.4 37.6,17.6 40.1,19 27.2,27.3 "/>
+<path class="st0" d="M4.4,20.1c24.4,0,48.9,0,73.3,0"/>
 </svg>
