@@ -90,20 +90,18 @@
       "src": "../images/partners/mccaig.png"
     }
   },
-
-  {
-    "name": "University of British Columbia",
-    "href": "https://www.ubc.ca/",
-    "image": {
-      "src": "../images/partners/ubc.png"
-    }
-  },
-
   {
     "name": "University of Alberta",
     "href": "https://www.ualberta.ca/index.html",
     "image": {
       "src": "../images/partners/uofa.png"
+    }
+  },
+  {
+    "name": "University of British Columbia",
+    "href": "https://www.ubc.ca/",
+    "image": {
+      "src": "../images/partners/ubc.png"
     }
   },
   {
