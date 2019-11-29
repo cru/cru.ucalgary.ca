@@ -28,6 +28,13 @@
     }
   },
   {
+    "name": "CEP",
+    "href": "https://brainandmentalhealthclinics.ca/programs/epilepsy/",
+    "image": {
+      "src": "../images/partners/cep.png"
+    }
+  },
+  {
     "name": "Approach",
     "href": "https://www.approach.org/index.html",
     "image": {
