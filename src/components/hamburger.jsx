@@ -38,7 +38,7 @@ const Container = Styled.button`
 `
 
 const Contents = Styled.span`
-    border-radius:1px;
+    border-radius:2px;
     height:4px;
     width:23px;
     margin-left:-11px;
@@ -55,7 +55,7 @@ const Contents = Styled.span`
     user-select: none;
 
     :before {
-      border-radius:1px;
+      border-radius:2px;
       height:4px;
       width:23px;
       background-color: ${props => props.theme.fontPrimColor};;
@@ -67,7 +67,7 @@ const Contents = Styled.span`
     }
 
     :after {
-      border-radius:1px;
+      border-radius:2px;
       height:4px;
       width:23px;
       background-color: ${props => props.theme.fontPrimColor};;

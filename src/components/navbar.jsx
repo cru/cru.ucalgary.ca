@@ -16,7 +16,7 @@ const NavBar = ({ page, group }) => {
     <>
       <Bar navbarpage={navbarpage}>
         <MenuContainer>
-          <LinkSpacing />
+          <div style={{ width: '20px' }} />
           <Hamburger
             onClick={
               navbarpage
@@ -128,9 +128,7 @@ const LinkSpacing = Styled.div`
   width:25px;
   height:10px;
   @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
-    width:20px;
     display:none;
-
   }
 
 `
@@ -138,14 +136,14 @@ const MenuContainer = Styled.div`
   display:flex;
     @media only screen and (min-width: ${props =>
       props.theme.tabletBreakPoint}){
-    display:none;
+      display:none;
   }
 `
 const MenuContainerOpposite = Styled.div`
   display:flex;
     @media only screen and (max-width: ${props =>
       props.theme.tabletBreakPoint}){
-    display:none;
+      display:none;
   }
 `
 
