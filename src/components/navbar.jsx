@@ -16,7 +16,7 @@ const NavBar = ({ page, group }) => {
     <>
       <Bar navbarpage={navbarpage}>
         <MenuContainer>
-          <div style={{ width: '20px' }} />
+          <MobileSpacing />
           <Hamburger
             onClick={
               navbarpage
@@ -70,6 +70,7 @@ const NavBar = ({ page, group }) => {
             <img src={uofcImg} style={{ height: '28px' }} alt="UofC" />
           </ImgButton>
         </RightAlign>
+        <MobileSpacing />
         <LinkSpacing />
       </Bar>
       <MobileMenu navbarpage={navbarpage} />
@@ -152,6 +153,14 @@ const LinkContainer = Styled.div`
     display:none;
   }
 `
+const MobileSpacing = Styled.div`
+      @media only screen and (max-width: ${props =>
+        props.theme.tabletBreakPoint}){
+        width:20px;
+  }
+
+`
+
 const RightAlign = Styled.div`
     margin-left: auto;
 `
