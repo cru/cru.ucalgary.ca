@@ -32,14 +32,14 @@ const NavBar = ({ page, group }) => {
         <ImgButton to="/">
           <img src={cruImg} style={{ height: '36px' }} alt="CRU" />
         </ImgButton>
-        <LinkSpacing />
+        {/* <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
             page="/people"
             text="People"
             group={page === 'people' && 'people'}
           />
-        </LinkContainer>
+        </LinkContainer> */}
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
@@ -129,7 +129,10 @@ const LinkSpacing = Styled.div`
   height:10px;
   @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
     width:20px;
+    display:none;
+
   }
+
 `
 const MenuContainer = Styled.div`
   display:flex;
