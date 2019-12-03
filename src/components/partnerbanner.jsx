@@ -89,7 +89,7 @@ const ParterBanner = () => {
               <h5>
                 <span>
                   <Link to="/partners">
-                    See all Partners
+                    See All Partners
                     <span> </span>
                     <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />
                   </Link>
