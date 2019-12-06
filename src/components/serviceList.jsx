@@ -16,7 +16,7 @@ const ServiceList = ({ style }) => {
         <Item>
           <ServiceContainer
             title="Electronic Data Capture"
-            description="The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management"
+            description="The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management."
             image={IpadHealthIcon}
           />
         </Item>
