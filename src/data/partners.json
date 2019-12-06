@@ -98,10 +98,10 @@
     }
   },
   {
-    "name": "University of British Columbia",
-    "href": "https://www.ubc.ca/",
+    "name": "Diamind Solutions",
+    "href": "https://www.diamindsolutions.ca",
     "image": {
-      "src": "../images/partners/ubc.png"
+      "src": "../images/partners/diamind.png"
     }
   },
   {
@@ -111,15 +111,21 @@
       "src": "../images/partners/rru.png"
     }
   },
-
   {
-    "name": "Centre for Health Informatics (CHI)",
-    "href": "http://www.cihr-irsc.gc.ca/e/193.html",
+    "name": "University of British Columbia",
+    "href": "https://www.ubc.ca/",
     "image": {
-      "src": "../images/partners/cihrcad.png"
+      "src": "../images/partners/ubc.png"
     }
   },
 
+  {
+    "name": "W21c",
+    "href": "https://www.w21c.org/",
+    "image": {
+      "src": "../images/partners/w21c.png"
+    }
+  },
   {
     "name": "Arnie charbonneau cancer institute",
     "href": "https://charbonneau.ucalgary.ca/",
@@ -128,10 +134,17 @@
     }
   },
   {
-    "name": "W21c",
-    "href": "https://www.w21c.org/",
+    "name": "Centre for Health Informatics (CHI)",
+    "href": "http://www.cihr-irsc.gc.ca/e/193.html",
     "image": {
-      "src": "../images/partners/w21c.png"
+      "src": "../images/partners/cihrcad.png"
+    }
+  },
+  {
+    "name": "Cegedim",
+    "href": "https://www.cegedim.com/Pages/default.aspx",
+    "image": {
+      "src": "../images/partners/cegedim.png"
     }
   },
   {
@@ -142,10 +155,10 @@
     }
   },
   {
-    "name": "Cegedim",
-    "href": "https://www.cegedim.com/Pages/default.aspx",
+    "name": "OHDSI",
+    "href": "https://www.ohdsi.org/",
     "image": {
-      "src": "../images/partners/cegedim.png"
+      "src": "../images/partners/ohdsi.png"
     }
   },
   {
@@ -163,13 +176,6 @@
     }
   },
   {
-    "name": "Atlassian",
-    "href": "https://www.atlassian.com/?&aceid=&adposition=1t1&adgroup=57486553603&campaign=1502142204&creative=301840619740&device=c&keyword=atlassian&matchtype=e&network=g&placement=&ds_kids=p35620778899&ds_e=GOOGLE&ds_eid=700000001530700&ds_e1=GOOGLE&utm_medium=paid-search&gclid=CjwKCAiAlO7uBRANEiwA_vXQ-6dmEHOkn1JmEJafmlaIpyerDHR4-SIhynyGWLZ_XyShP1ZlMsNQURoCs88QAvD_BwE&gclsrc=aw.ds",
-    "image": {
-      "src": "../images/partners/atlassian.png"
-    }
-  },
-  {
     "name": "DFnet",
     "href": "https://www.dfnetresearch.com/",
     "image": {
@@ -177,17 +183,17 @@
     }
   },
   {
+    "name": "Atlassian",
+    "href": "https://www.atlassian.com/?&aceid=&adposition=1t1&adgroup=57486553603&campaign=1502142204&creative=301840619740&device=c&keyword=atlassian&matchtype=e&network=g&placement=&ds_kids=p35620778899&ds_e=GOOGLE&ds_eid=700000001530700&ds_e1=GOOGLE&utm_medium=paid-search&gclid=CjwKCAiAlO7uBRANEiwA_vXQ-6dmEHOkn1JmEJafmlaIpyerDHR4-SIhynyGWLZ_XyShP1ZlMsNQURoCs88QAvD_BwE&gclsrc=aw.ds",
+    "image": {
+      "src": "../images/partners/atlassian.png"
+    }
+  },
+  {
     "name": "Redcap",
     "href": "https://www.project-redcap.org/",
     "image": {
       "src": "../images/partners/redcap.png"
-    }
-  },
-  {
-    "name": "OHDSI",
-    "href": "https://www.ohdsi.org/",
-    "image": {
-      "src": "../images/partners/ohdsi.png"
     }
   }
 ]
