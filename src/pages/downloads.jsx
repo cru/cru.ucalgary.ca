@@ -48,7 +48,14 @@ const DownloadsPage = () => (
           </tr>
           <tr style={{ backgroundColor: 'white' }}>
             <td>DFnet User Guide</td>
-            <td>coming soon</td>
+            <td>
+              <a
+                href="./downloads/dfexplore_5.1.4/DFnet_user_guide_5.1.4.pdf"
+                download
+              >
+                DFnet_user_guide_5.1.4.pdf
+              </a>
+            </td>
           </tr>
         </DownloadTable>
         <div style={{ height: 25 }} />
