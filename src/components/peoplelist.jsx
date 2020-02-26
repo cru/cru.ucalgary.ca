@@ -50,8 +50,8 @@ const PeopleList = () => {
                     color
                     src {
                       childImageSharp {
-                        fixed(width: 160, height: 160) {
-                          ...GatsbyImageSharpFixed
+                        fixed(width: 160, height: 160, quality: 100) {
+                          ...GatsbyImageSharpFixed_withWebp
                         }
                       }
                     }

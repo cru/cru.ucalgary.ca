@@ -32,14 +32,14 @@ const NavBar = ({ page, group }) => {
         <ImgButton to="/">
           <img src={cruImg} style={{ height: '36px' }} alt="CRU" />
         </ImgButton>
-        {/* <LinkSpacing />
+        <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
             page="/people"
             text="People"
             group={page === 'people' && 'people'}
           />
-        </LinkContainer> */}
+        </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks

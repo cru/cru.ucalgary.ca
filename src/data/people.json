@@ -1,10 +1,19 @@
 [
   {
-    "name": "Jared Rooprai",
-    "title": "Software Developer",
+    "name": "Sam Wiebe",
+    "title": "King",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/jared.png",
+      "src": "../images/people/Wiebe_Sam.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
+    }
+  },
+  {
+    "name": "Lori Campbell",
+    "title": "Director",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Campbell_Lori.jpg",
       "color": "rgba(243, 191, 36, 0.6)"
     }
   },
@@ -13,7 +22,7 @@
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/Lee_Brandon.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
@@ -22,143 +31,125 @@
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
+      "src": "../images/people/Hul_Dominic.jpg",
       "color": "rgba(63, 191, 255, 0.6)"
     }
   },
   {
-    "name": "Jared Rooprai",
+    "name": "Lynne Hardie",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/jared.png",
+      "src": "../images/people/Hardie_Lynne.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
-    "name": "Brandon Lee",
+    "name": "Lennard Kuijten",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/Kuijten_Lennard.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
-    "name": "Dominic Hul",
+    "name": "Marc Eveleigh",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
+      "src": "../images/people/Eveleigh_Marc.jpg",
       "color": "rgba(63, 191, 255, 0.6)"
     }
   },
   {
-    "name": "Jared Rooprai",
+    "name": "Courtney Chapman",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/jared.png",
+      "src": "../images/people/Chapman_Courtney.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
-    "name": "Brandon Lee",
+    "name": "Pieter Boone",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/Boone_Pieter.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
-    "name": "Dominic Hul",
+    "name": "Caitlin Lambe",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
-      "color": "rgba(63, 191, 255, 0.6)"
-    }
-  },
-  {
-    "name": "Jared Rooprai",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/jared.png",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Brandon Lee",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/Lambe_Caitlin.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
-    "name": "Dominic Hul",
+    "name": "Cord Lethebe",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
-      "color": "rgba(63, 191, 255, 0.6)"
-    }
-  },
-  {
-    "name": "Jared Rooprai",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/jared.png",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Brandon Lee",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/Lethebe_Cord.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
-    "name": "Dominic Hul",
+    "name": "Ingrid McKibbin",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
-      "color": "rgba(63, 191, 255, 0.6)"
-    }
-  },
-  {
-    "name": "Jared Rooprai",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/jared.png",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Brandon Lee",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/brandon.png",
+      "src": "../images/people/McKibbin_Ingrid.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
-    "name": "Dominic Hul",
+    "name": "Kristina Reeder",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/dom.png",
-      "color": "rgba(63, 191, 255, 0.6)"
+      "src": "../images/people/Reeder_Kristina.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Barry Roblin",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Roblin_Barry.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Frances Taylor",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Taylor_Frances.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Ashley Ure",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Ure_Ashley.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Tracy Wang",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Wang_Tracy.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   }
 ]
