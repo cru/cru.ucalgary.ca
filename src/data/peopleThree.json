@@ -1,11 +1,11 @@
 [
   {
-    "name": "Sam Wiebe",
-    "title": "King",
+    "name": "Pieter Boone",
+    "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/Wiebe_Sam.jpg",
-      "color": "rgba(243, 191, 36, 0.6)"
+      "src": "../images/people/Boone_Pieter.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
@@ -18,38 +18,20 @@
     }
   },
   {
-    "name": "Brandon Lee",
+    "name": "Courtney Chapman",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/Lee_Brandon.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Dominic Hul",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/Hul_Dominic.jpg",
-      "color": "rgba(63, 191, 255, 0.6)"
-    }
-  },
-  {
-    "name": "Lynne Hardie",
-    "title": "Software Developer",
-    "comments": "love apples",
-    "image": {
-      "src": "../images/people/Hardie_Lynne.jpg",
+      "src": "../images/people/Chapman_Courtney.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
-    "name": "Lennard Kuijten",
+    "name": "Dan Craciun",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/Kuijten_Lennard.jpg",
+      "src": "../images/people/avatar_placeholder.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
@@ -63,20 +45,47 @@
     }
   },
   {
-    "name": "Courtney Chapman",
+    "name": "Lynne Hardie",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/Chapman_Courtney.jpg",
+      "src": "../images/people/Hardie_Lynne.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
-    "name": "Pieter Boone",
+    "name": "Dominic Hul",
     "title": "Software Developer",
     "comments": "love apples",
     "image": {
-      "src": "../images/people/Boone_Pieter.jpg",
+      "src": "../images/people/Hul_Dominic.jpg",
+      "color": "rgba(63, 191, 255, 0.6)"
+    }
+  },
+  {
+    "name": "Deepthi Thomas Kannanayakal",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/avatar_placeholder.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Yair Knijn",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/avatar_placeholder.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Lennard Kuijten",
+    "title": "Sr Database Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Kuijten_Lennard.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
@@ -86,6 +95,15 @@
     "comments": "love apples",
     "image": {
       "src": "../images/people/Lambe_Caitlin.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Brandon Lee",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Lee_Brandon.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
@@ -136,7 +154,7 @@
   },
   {
     "name": "Ashley Ure",
-    "title": "Software Developer",
+    "title": "Manager",
     "comments": "love apples",
     "image": {
       "src": "../images/people/Ure_Ashley.jpg",
@@ -145,10 +163,28 @@
   },
   {
     "name": "Tracy Wang",
-    "title": "Software Developer",
+    "title": "Program Manager",
     "comments": "love apples",
     "image": {
       "src": "../images/people/Wang_Tracy.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Sam Wiebe",
+    "title": "King",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/Wiebe_Sam.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
+    }
+  },
+  {
+    "name": "Qiao Zhang",
+    "title": "Software Developer",
+    "comments": "love apples",
+    "image": {
+      "src": "../images/people/avatar_placeholder.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   }

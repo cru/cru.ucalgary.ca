@@ -8,7 +8,7 @@ const getPartnersList = data => {
   const everyone = []
   data.allPartnersJson.edges.forEach(item =>
     everyone.push(
-      <PersonContainer>
+      <PersonContainer key={item.node.href}>
         <Partner
           href={item.node.href}
           fixed={item.node.image.src.childImageSharp.fixed}
@@ -61,8 +61,8 @@ const PartnerList = () => {
                   image {
                     src {
                       childImageSharp {
-                        fixed(width: 140) {
-                          ...GatsbyImageSharpFixed
+                        fixed(width: 140, quality: 100) {
+                          ...GatsbyImageSharpFixed_withWebp
                         }
                       }
                     }
