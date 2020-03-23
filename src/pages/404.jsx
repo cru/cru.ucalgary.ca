@@ -1,13 +1,11 @@
 import React from 'react'
 import Layout from '../containers/layout'
-import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 
 const NotFoundPage = () => {
   return (
     <Layout title="404 Page Not Found">
-      <NavBar />
       <Padding>
         <div style={{ height: '45vh' }}>
           <div
