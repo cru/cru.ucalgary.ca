@@ -32,9 +32,9 @@ const ImgButton = ({ to, href, icon, children }) => {
 }
 
 ImgButton.propTypes = {
-  to: PropTypes.node.isRequired,
-  href: PropTypes.node.isRequired,
-  icon: PropTypes.node.isRequired,
+  to: PropTypes.string,
+  href: PropTypes.string,
+  icon: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

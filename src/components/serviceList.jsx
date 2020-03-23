@@ -6,9 +6,9 @@ import IpadHealthIcon from '../images/icons/Asset6.svg'
 import CodeIcon from '../images/icons/Asset8.svg'
 import BarChartIcon from '../images/icons/Asset7.svg'
 
-const ServiceList = ({ style }) => {
+const ServiceList = () => {
   return (
-    <div style={style}>
+    <div>
       <Header>
         <h4>We can assist you with</h4>
       </Header>
@@ -37,10 +37,6 @@ const ServiceList = ({ style }) => {
       </Container>
     </div>
   )
-}
-
-ServiceList.propTypes = {
-  style: PropTypes.node.isRequired,
 }
 
 export default ServiceList

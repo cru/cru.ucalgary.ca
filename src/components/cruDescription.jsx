@@ -22,7 +22,7 @@ const CRUDescription = ({ style }) => {
 }
 
 CRUDescription.propTypes = {
-  style: PropTypes.node.isRequired,
+  style: PropTypes.object.isRequired,
 }
 
 export default CRUDescription

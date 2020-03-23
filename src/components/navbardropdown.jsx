@@ -10,7 +10,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
       <NavBarLinks
         page={`/${pageName.toLowerCase()}`}
         text={pageName}
-        group={selectedPage === pageName && selectedPage}
+        group={selectedPage === pageName ? selectedPage : ''}
         style={{ fontSize: '19.5px' }}
       />
       <div style={{ height: 9 }} />
@@ -32,10 +32,10 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
 }
 
 NavBarDropDown.propTypes = {
-  group: PropTypes.node.isRequired,
-  selectedPage: PropTypes.node.isRequired,
-  text: PropTypes.node.isRequired,
-  page: PropTypes.node.isRequired,
+  group: PropTypes.bool.isRequired,
+  selectedPage: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  page: PropTypes.array.isRequired,
 }
 
 export default NavBarDropDown

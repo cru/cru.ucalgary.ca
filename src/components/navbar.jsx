@@ -45,7 +45,7 @@ const NavBar = ({ page, group }) => {
           <NavBarLinks
             page="/partners"
             text="Partners"
-            group={page === 'partners' && 'partners'}
+            group={page === 'partners' ? 'partners' : ''}
           />
         </LinkContainer>
         <LinkSpacing />
@@ -53,7 +53,7 @@ const NavBar = ({ page, group }) => {
           <NavBarLinks
             page="/publications"
             text="Publications"
-            group={page === 'publications' && 'publications'}
+            group={page === 'publications' ? 'publications' : ''}
           />
         </LinkContainer>
         <LinkSpacing />
@@ -62,7 +62,7 @@ const NavBar = ({ page, group }) => {
             text="Resources"
             page={['Downloads']}
             group={group === 'resources'}
-            selectedPage={page === 'downloads' && 'Downloads'}
+            selectedPage={page === 'downloads' ? 'Downloads' : ''}
           />
         </LinkContainer>
         <RightAlign>
@@ -79,8 +79,8 @@ const NavBar = ({ page, group }) => {
 }
 
 NavBar.propTypes = {
-  page: PropTypes.node.isRequired,
-  group: PropTypes.node.isRequired,
+  page: PropTypes.string,
+  group: PropTypes.string,
 }
 export default NavBar
 

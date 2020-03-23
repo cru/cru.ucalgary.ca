@@ -31,7 +31,7 @@ const Layout = ({ title, page, group, children }) => {
 }
 
 Layout.propTypes = {
-  title: PropTypes.node.isRequired,
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

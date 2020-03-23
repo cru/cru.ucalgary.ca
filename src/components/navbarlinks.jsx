@@ -16,10 +16,10 @@ const NavBarLinks = ({ page, group, text, style }) => {
 }
 
 NavBarLinks.propTypes = {
-  page: PropTypes.node.isRequired,
-  group: PropTypes.node.isRequired,
-  text: PropTypes.node.isRequired,
-  style: PropTypes.node.isRequired,
+  page: PropTypes.string.isRequired,
+  group: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  style: PropTypes.object,
 }
 
 export default NavBarLinks

@@ -17,9 +17,9 @@ const TextArea = ({ placeholder, name, onChange }) => {
 }
 
 TextArea.propTypes = {
-  placeholder: PropTypes.node.isRequired,
-  name: PropTypes.node.isRequired,
-  onChange: PropTypes.node.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.node,
 }
 export default TextArea
 
