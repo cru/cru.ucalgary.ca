@@ -10,9 +10,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Spacing />
-      <CRUDescription style={{ marginBottom: '-680px' }} />
+      <CRUDescription />
       <CRUHexPattern />
-      <div style={{ height: '90px' }} />
+      <div style={{ height: '50px' }} />
       <ServiceList />
       <div style={{ height: '180px' }} />
       <div style={{ height: '10px' }} />
