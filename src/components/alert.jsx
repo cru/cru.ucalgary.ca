@@ -21,9 +21,9 @@ const Alert = () => {
     <Fragment>
       <AlertHeader onClick={openModal}>
         <AlertTriangle
-          size={32}
+          size={40}
         />
-        <h3 >COVID-19 Message</h3>
+        <span style={{textAlign: 'center'}}><h4 >COVID-19 UPDATE</h4>Click here for more info</span>
       </AlertHeader>
       <ReactModal
         style={{
@@ -79,21 +79,13 @@ const AlertHeader = Styled.div`
     width: 50%;
     color: #EF6C00;
     cursor: pointer;
-    transition: all ${props => props.theme.boxShadowTrans};
-    border-radius: ${props => props.theme.borderRadius};
+    box-shadow: ${props => props.theme.boxShadow};
 
-    :hover {
-      box-shadow: ${props => props.theme.boxShadow};
-    }
-    :active {
-      box-shadow: none;
-    }
-
-    h3{
+    h4{
       margin: 0;
       margin-left: 1rem;
+      color: #EF6C00;
     }
-
 `
 const AlertMessage = Styled.div`
   p{
