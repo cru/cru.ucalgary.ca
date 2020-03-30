@@ -2,15 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const Button = ({ style, onClick, children, id, type, form }) => {
+const Button = ({ style, onClick, children, type }) => {
   return (
     <>
       <DefaultButton
         style={style}
         onClick={onClick}
-        id={id}
         type={type}
-        form={form}
       >
         {children}
       </DefaultButton>
@@ -19,12 +17,10 @@ const Button = ({ style, onClick, children, id, type, form }) => {
 }
 
 Button.propTypes = {
-  style: PropTypes.node.isRequired,
-  onClick: PropTypes.node.isRequired,
+  style: PropTypes.object.isRequired,
+  onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
-  id: PropTypes.node.isRequired,
-  type: PropTypes.node.isRequired,
-  form: PropTypes.node.isRequired,
+  type: PropTypes.string,
 }
 
 export default Button

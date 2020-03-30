@@ -2,14 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
-const Input = ({ placeholder, name, type, style, value, onChange }) => {
+const Input = ({ placeholder, name, type, value, onChange }) => {
   return (
     <>
       <Field
         placeholder={placeholder}
         name={name}
         type={type}
-        style={style}
         value={value}
         onChange={onChange}
         required
@@ -19,12 +18,11 @@ const Input = ({ placeholder, name, type, style, value, onChange }) => {
 }
 
 Input.propTypes = {
-  placeholder: PropTypes.node.isRequired,
-  name: PropTypes.node.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   type: PropTypes.node.isRequired,
-  style: PropTypes.node.isRequired,
-  value: PropTypes.node.isRequired,
-  onChange: PropTypes.node.isRequired,
+  value: PropTypes.node,
+  onChange: PropTypes.func,
 }
 
 export default Input

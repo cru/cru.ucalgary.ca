@@ -9,9 +9,9 @@ import Person from './person'
 
 const getPeopleList = data => {
   const everyone = []
-  data.allPeopleJson.edges.forEach(item =>
+  data.allPeopleOneJson.edges.forEach(item =>
     everyone.push(
-      <PersonContainer>
+      <PersonContainer key={item.node.name}>
         <Person
           name={item.node.name}
           title={item.node.title}
@@ -40,7 +40,7 @@ const PeopleList = () => {
       <StaticQuery
         query={graphql`
           query peopleQuery {
-            allPeopleJson {
+            allPeopleOneJson {
               edges {
                 node {
                   name
@@ -50,8 +50,8 @@ const PeopleList = () => {
                     color
                     src {
                       childImageSharp {
-                        fixed(width: 160, height: 160) {
-                          ...GatsbyImageSharpFixed
+                        fixed(width: 160, height: 160, quality: 100) {
+                          ...GatsbyImageSharpFixed_withWebp
                         }
                       }
                     }
@@ -74,7 +74,7 @@ const Grid = Styled.div`
     flex-wrap: wrap;
 `
 const PersonContainer = Styled.div`
-    max-width:250px;
+    max-width:160px;
     margin-bottom:55px;
     margin-right:40px;
 `

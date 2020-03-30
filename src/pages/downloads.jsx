@@ -1,13 +1,11 @@
 import React from 'react'
 import Styled from 'styled-components'
 import Layout from '../containers/layout'
-import NavBar from '../components/navbar'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 
 const DownloadsPage = () => (
-  <Layout title="Downloads">
-    <NavBar page="downloads" group="resources" />
+  <Layout title="Downloads" page="downloads" group="resources" >
     <div style={{ minHeight: '100vh' }}>
       <div style={{ height: 60 }} />
       <Padding>

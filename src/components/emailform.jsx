@@ -59,7 +59,7 @@ const EmailForm = ({ style }) => {
 }
 
 EmailForm.propTypes = {
-  style: PropTypes.node.isRequired,
+  style: PropTypes.object.isRequired,
 }
 
 export default EmailForm

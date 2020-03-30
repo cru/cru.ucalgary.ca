@@ -1,11 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 import Padding from '../containers/padding'
 
-const CRUDescription = ({ style }) => {
+const CRUDescription = () => {
   return (
-    <div style={style}>
+    <div style={{display: 'inline-block', verticalAlign: 'top'}}>
       <Padding>
         <Title>Better Data Better Research</Title>
         <Body>
@@ -19,10 +18,6 @@ const CRUDescription = ({ style }) => {
       </Padding>
     </div>
   )
-}
-
-CRUDescription.propTypes = {
-  style: PropTypes.node.isRequired,
 }
 
 export default CRUDescription
