@@ -60,31 +60,31 @@ const Alert = () => {
             </tr>
             <tr>
               <td>General Inquiry</td>
-              <td>cru@ucalgary.ca (CRU Service/ Helpdesk)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
             </tr>
             <tr>
               <td>REDCap Projects - Self Serve</td>
-              <td>cru@ucalgary.ca (CRU Service/ Helpdesk)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
             </tr>
             <tr>
               <td>REDCap Projects - CRU Supported</td>
-              <td>cru@ucalgary.ca (CRU Service/ Helpdesk)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
             </tr>
             <tr>
               <td>Clinical Trials</td>
-              <td>ashley.ure@ucalgary.ca (Manager, Project Services)</td>
+              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
             </tr>
             <tr>
               <td>Custom Projects</td>
-              <td>ashley.ure@ucalgary.ca (Manager, Project Services)</td>
+              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
             </tr>
             <tr>
               <td>Methods and Analytics</td>
-              <td>ashley.ure@ucalgary.ca (Manager, Project Services)</td>
+              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
             </tr>
             <tr>
               <td>Project Management Services</td>
-              <td>ashley.ure@ucalgary.ca (Manager, Project Services)</td>
+              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
             </tr>
           </table>
           <br/>
