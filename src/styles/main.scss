@@ -80,6 +80,28 @@ label {
   border-radius: 3px;
 }
 
+table,
+th,
+td {
+    border: 1px solid #424242;
+    border-collapse: collapse;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+th {
+  padding: 1.3rem;
+  text-align: center;
+}
+
+td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
 // Futura PT Heavy
 // font-family: futura-pt, sans-serif;
 // font-weight: 700;
