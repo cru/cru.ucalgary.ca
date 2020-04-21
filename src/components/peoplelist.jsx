@@ -9,7 +9,7 @@ import Person from './person'
 
 const getPeopleList = data => {
   const everyone = []
-  data.allPeopleFourJson.edges.forEach(item =>
+  data.allPeopleJson.edges.forEach(item =>
     everyone.push(
       <PersonContainer key={item.node.name}>
         <Person
@@ -40,7 +40,7 @@ const PeopleList = () => {
       <StaticQuery
         query={graphql`
           query peopleQuery {
-            allPeopleFourJson {
+            allPeopleJson {
               edges {
                 node {
                   name
