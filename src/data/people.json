@@ -1,7 +1,7 @@
 [
   {
     "name": "Sam Wiebe",
-    "title": "King",
+    "title": "Chair",
     "comments": "",
     "image": {
       "src": "../images/people/Wiebe_Sam.jpg",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Lori Campbell",
-    "title": "Director",
+    "title": "Director of Operations",
     "comments": "",
     "image": {
       "src": "../images/people/Campbell_Lori.jpg",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Ashley Ure",
-    "title": "Manager",
+    "title": "Manager Project Services",
     "comments": "",
     "image": {
       "src": "../images/people/Ure_Ashley.jpg",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Tracy Wang",
-    "title": "Program Manager",
+    "title": "Program Manager Health Platforms",
     "comments": "",
     "image": {
       "src": "../images/people/Wang_Tracy.jpg",
@@ -36,17 +36,8 @@
     }
   },
   {
-    "name": "Lennard Kuijten",
-    "title": "Sr Database Developer",
-    "comments": "IT and software development team lead",
-    "image": {
-      "src": "../images/people/Kuijten_Lennard.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
     "name": "Cord Lethebe",
-    "title": "Software Developer",
+    "title": "Lead Methods & Analytics",
     "comments": "",
     "image": {
       "src": "../images/people/Lethebe_Cord.jpg",
@@ -54,17 +45,17 @@
     }
   },
   {
-    "name": "Barry Roblin",
-    "title": "Software Developer",
-    "comments": "",
+    "name": "Lennard Kuijten",
+    "title": "Lead Tech & Solutions",
+    "comments": "IT and software development team lead",
     "image": {
-      "src": "../images/people/Roblin_Barry.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
+      "src": "../images/people/Kuijten_Lennard.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
     "name": "Courtney Chapman",
-    "title": "Software Developer",
+    "title": "Admin",
     "comments": "",
     "image": {
       "src": "../images/people/Chapman_Courtney.jpg",
@@ -72,8 +63,26 @@
     }
   },
   {
+    "name": "Barry Roblin",
+    "title": "Support",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Roblin_Barry.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Caitlin Lambe",
+    "title": "Project Services Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Lambe_Caitlin.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
+    }
+  },
+  {
     "name": "Ingrid McKibbin",
-    "title": "Software Developer",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/McKibbin_Ingrid.jpg",
@@ -82,7 +91,7 @@
   },
   {
     "name": "Kristina Reeder",
-    "title": "Software Developer",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/Reeder_Kristina.jpg",
@@ -91,7 +100,7 @@
   },
   {
     "name": "Frances Taylor",
-    "title": "Software Developer",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/Taylor_Frances.jpg",
@@ -100,7 +109,7 @@
   },
   {
     "name": "Qiao Zhang",
-    "title": "Software Developer",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/avatar_placeholder.jpg",
@@ -109,7 +118,7 @@
   },
   {
     "name": "Pieter Boone",
-    "title": "Software Developer",
+    "title": "Tech Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/Boone_Pieter.jpg",
@@ -117,35 +126,17 @@
     }
   },
   {
-    "name": "Brandon Lee",
-    "title": "Software Developer",
-    "comments": "Web developer for custom applications",
-    "image": {
-      "src": "../images/people/Lee_Brandon.jpg",
-      "color": "rgba(243, 191, 36, 0.6)"
-    }
-  },
-  {
-    "name": "Dominic Hul",
-    "title": "Software Developer",
+    "name": "Dan Craciun",
+    "title": "Tech Team Member",
     "comments": "",
     "image": {
-      "src": "../images/people/Hul_Dominic.jpg",
-      "color": "rgba(63, 191, 255, 0.6)"
-    }
-  },
-  {
-    "name": "Deepthi Thomas Kannanayakal",
-    "title": "Software Developer",
-    "comments": "",
-    "image": {
-      "src": "../images/people/avatar_placeholder.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
+      "src": "../images/people/Craciun_Dan.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
     "name": "Marc Eveleigh",
-    "title": "Software Developer",
+    "title": "Tech Team Member",
     "comments": "REDCap project management and implementation and REDCap Cloud specialist",
     "image": {
       "src": "../images/people/Eveleigh_Marc.jpg",
@@ -153,17 +144,8 @@
     }
   },
   {
-    "name": "Yair Knijn",
-    "title": "Software Developer",
-    "comments": "",
-    "image": {
-      "src": "../images/people/avatar_placeholder.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
-    }
-  },
-  {
     "name": "Lynne Hardie",
-    "title": "Software Developer",
+    "title": "Tech Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/Hardie_Lynne.jpg",
@@ -171,21 +153,48 @@
     }
   },
   {
-    "name": "Caitlin Lambe",
-    "title": "Software Developer",
+    "name": "Dominic Hul",
+    "title": "Tech Team Member",
     "comments": "",
     "image": {
-      "src": "../images/people/Lambe_Caitlin.jpg",
+      "src": "../images/people/Hul_Dominic.jpg",
+      "color": "rgba(63, 191, 255, 0.6)"
+    }
+  },
+  {
+    "name": "Brandon Lee",
+    "title": "Tech Team Member",
+    "comments": "Web developer for custom applications",
+    "image": {
+      "src": "../images/people/Lee_Brandon.jpg",
       "color": "rgba(243, 191, 36, 0.6)"
     }
   },
   {
-    "name": "Dan Craciun",
-    "title": "Software Developer",
+    "name": "Deepthi Kannanayakal",
+    "title": "Tech Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Kannanayakal_Deepthi.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Yair Knijn",
+    "title": "Tech Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Knijn_Yair.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Tannistha Nandi",
+    "title": "Tech Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/avatar_placeholder.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   }
 ]
