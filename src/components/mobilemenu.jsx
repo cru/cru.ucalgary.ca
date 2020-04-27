@@ -8,6 +8,20 @@ const MobileMenu = ({ navbarpage }) => {
   return (
     <MobilePage navbarpage={navbarpage}>
       <div style={{ height: '70px' }} />
+      <Link to="/people">
+        <MobileLink>
+          <h5 style={{ color: 'white' }}>
+            People
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
       <Link to="/partners">
         <MobileLink>
           <h5 style={{ color: 'white' }}>
