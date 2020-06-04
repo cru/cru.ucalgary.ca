@@ -27,7 +27,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>Windows 8.1/10</td>
             <td>
-              <a href="/downloads/dfexplore_5.1.4/DFexplore5.1.4.msi" download>
+              <a href="/downloads/dfexplore_5_1_4/DFexplore5_1_4.msi" download>
                 DFexplore5.1.4.msi
               </a>
             </td>
@@ -35,7 +35,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: 'white' }}>
             <td>macOS 10.12 (Sierra) and newer</td>
             <td>
-              <a href="/downloads/dfexplore_5.1.4/DFexplore5.1.4.pkg" download>
+              <a href="/downloads/dfexplore_5_1_4/DFexplore5_1_4.pkg" download>
                 DFexplore5.1.4.pkg
               </a>
             </td>
@@ -48,7 +48,7 @@ const DownloadsPage = () => (
             <td>DFnet User Guide</td>
             <td>
               <a
-                href="/downloads/dfexplore_5.1.4/DFnet_user_guide_5.1.4.pdf"
+                href="/downloads/dfexplore_5_1_4/DFnet_user_guide_5_1_4.pdf"
                 download
               >
                 DFnet_user_guide_5.1.4.pdf
@@ -64,7 +64,7 @@ const DownloadsPage = () => (
             <td>Windows 7/8/10</td>
             <td>
               <a
-                href="/downloads/datafax_2016.0.0/iDataFax2016.0.0.msi"
+                href="/downloads/datafax_2016_0_0/iDataFax2016_0_0.msi"
                 download
               >
                 iDataFax2016.msi
@@ -75,7 +75,7 @@ const DownloadsPage = () => (
             <td>OS X 10.8 (Mountain Lion) and newer</td>
             <td>
               <a
-                href="/downloads/datafax_2016.0.0/iDataFax2016.0.0.pkg"
+                href="/downloads/datafax_2016_0_0/iDataFax2016_0_0.pkg"
                 download
               >
                 iDataFax2016.pkg
@@ -86,7 +86,7 @@ const DownloadsPage = () => (
             <td>CRU User Guide</td>
             <td>
               <a
-                href="/downloads/datafax_2016.0.0/cru_user_guide_2016.0.0.pdf"
+                href="/downloads/datafax_2016_0_0/cru_user_guide_2016_0_0.pdf"
                 download
               >
                 cru_user_guide_2016.pdf
@@ -97,7 +97,7 @@ const DownloadsPage = () => (
             <td>DFnet User Guide</td>
             <td>
               <a
-                href="/downloads/datafax_2016.0.0/dfnet_user_guide_2016.0.0.pdf"
+                href="/downloads/datafax_2016_0_0/dfnet_user_guide_2016_0_0.pdf"
                 download
               >
                 dfnet_user_guide_2016.pdf
