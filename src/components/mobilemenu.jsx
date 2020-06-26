@@ -50,6 +50,20 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
+      <Link to="/machine-learning">
+        <MobileLink>
+          <h5 style={{ color: 'white' }}>
+            Machine Learning
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
       <Link to="/downloads">
         <MobileLink>
           <h5 style={{ color: 'white' }}>

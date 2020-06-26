@@ -19,12 +19,6 @@ body {
 }
 
 // All text color
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 a {
   color: $fontPrimColor;
@@ -80,6 +74,10 @@ label {
   border-radius: 3px;
 }
 
+.text-muted {
+  color: $fontMutedColor;
+}
+
 table,
 th,
 td {
@@ -101,53 +99,3 @@ td {
     padding: 0.5rem;
     text-align: left;
 }
-
-// Futura PT Heavy
-// font-family: futura-pt, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Heavy Oblique
-// font-family: futura-pt, sans-serif;
-// font-weight: 700;
-// font-style: italic;
-
-// Futura PT Book
-// font-family: futura-pt, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Futura PT Book Oblique
-// font-family: futura-pt, sans-serif;
-// font-weight: 400;
-// font-style: italic;
-
-// Futura PT Bold
-// font-family: futura-pt-bold, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Bold Oblique
-// font-family: futura-pt-bold, sans-serif;
-// font-weight: 700;
-// font-style: italic;
-
-// Futura PT Cond Book
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Futura PT Cond Book Oblique
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 400;
-// font-style: italic;
-
-// Futura PT Cond Bold
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Cond Bold Oblique
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 700;
-// font-style: italic;
