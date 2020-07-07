@@ -57,34 +57,42 @@ const Alert = () => {
             <tr>
               <th>PROJECT TYPE</th>
               <th>CONTACT FOR SERVICES</th>
+              <th>SUBJECT LINE</th>
             </tr>
             <tr>
               <td>General Inquiry</td>
               <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>General Inquiry</td>
             </tr>
             <tr>
               <td>REDCap Projects - Self Serve</td>
               <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>REDCap Projects - Self Serve</td>
             </tr>
             <tr>
               <td>REDCap Projects - CRU Supported</td>
               <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>REDCap Projects - CRU Supported</td>
             </tr>
             <tr>
               <td>Clinical Trials</td>
-              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>Clinical Trials - Intake Meeting Request</td>
             </tr>
             <tr>
               <td>Custom Projects</td>
-              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>Custom Projects - Intake Meeting Request</td>
             </tr>
             <tr>
               <td>Methods and Analytics</td>
-              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>Methods and Analytics - Intake Meeting Request</td>
             </tr>
             <tr>
               <td>Project Management Services</td>
-              <td><a href='mailto:ashley.ure@ucalgary.ca'>ashley.ure@ucalgary.ca</a> (Manager, Project Services)</td>
+              <td><a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/ Helpdesk)</td>
+              <td>Project Management Services - Intake Meeting Request</td>
             </tr>
           </table>
           <br/>
@@ -129,5 +137,9 @@ const AlertMessage = Styled.div`
   p{
     font-family: futura-pt, sans-serif;
     font-size: 19px;
+  }
+
+  table{
+    width: 95%;
   }
 `
