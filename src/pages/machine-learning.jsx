@@ -11,6 +11,7 @@ const MachineLearningPage = () => (
       <Padding>
         <h1 style={{ marginBottom: 0 }}>Machine Learning in Medicine</h1>
         <h5 className='text-muted' style={{ marginTop: 0 }}>The Clinical Research Unit provides a blue print for using machine learning in medicine</h5>
+        <i>Method & Analytics Team - by Zara Aminolroaya, under supervision of Cord Lethebe</i>
         <div style={{ height: 55 }} />
         <p>
           Machine learning and statistical learning are nearly related in many aspects but considering different perspectives on the same problem:

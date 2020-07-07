@@ -3,7 +3,6 @@
   "private": true,
   "description": "A simple homepage website for the CRU (clinical research unit)",
   "version": "0.1.0",
-  "author": "Jared Rooprai <hello@jaredrooprai.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
