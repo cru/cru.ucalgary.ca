@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 import ScrollTrigger from 'react-scroll-trigger'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Mail } from 'react-feather'
 import EmailForm from './emailform'
 
 const EmailFAB = () => {
@@ -26,14 +27,10 @@ const EmailFAB = () => {
 
       <ButtonContainer toggle={toggle}>
         <FabButton toggle={toggle}>
-          <FontAwesomeIcon
-            style={{ display: toggle ? 'block' : 'none' }}
-            icon="envelope"
-          />
+          <Mail size={22} className='mr-2' style={{ display: toggle ? 'block' : 'none' }} />
           <Text style={{ display: toggle ? 'block' : 'none' }}>
-            <span>&nbsp;</span>
             Email CRU
-          </Text>
+            </Text>
           <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
         </FabButton>
       </ButtonContainer>
@@ -78,7 +75,6 @@ const ScrollButtonContainer = Styled.div`
      z-index:4;
 `
 const ScrollButton = Styled.div`
-    width:150px;
     float:right;
     height:56px;
     width:130px;
@@ -91,7 +87,7 @@ const ScrollButton = Styled.div`
 
     :hover {
         box-shadow:  ${props =>
-          props.toggle ? props.theme.boxShadow : 'none'};
+    props.toggle ? props.theme.boxShadow : 'none'};
         background-color: transparent;
     }
     :active {
@@ -123,13 +119,13 @@ const FabButton = Styled.div`
     width: ${props => (props.toggle ? '130px' : '100%')};
     border-radius: ${props => (props.toggle ? '50px' : '0%')};
     background-color:  ${props =>
-      props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
+    props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
     box-shadow:${props =>
-      props.toggle ? props.theme.boxShadowAccent : 'none'};
+    props.toggle ? props.theme.boxShadowAccent : 'none'};
 
 `
 
-const Text = Styled.p`
+const Text = Styled.span`
     font-size:18px;
     font-family: futura-pt, sans-serif;
     font-weight:500;
