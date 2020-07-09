@@ -9,17 +9,9 @@ Modal.setAppElement('body')
 const Alert = () => {
   const [showModal, setShowModal] = useState(false)
 
-  const openModal = () => {
-    setShowModal(true)
-  }
-
-  const closeModal = () => {
-    setShowModal(false)
-  }
-
   return (
     <Fragment>
-      <AlertHeader onClick={openModal}>
+      <AlertHeader onClick={() => setShowModal(true)}>
         <AlertTriangle
           size={40}
         />
@@ -39,11 +31,11 @@ const Alert = () => {
         shouldCloseOnEsc={true}
         shouldReturnFocusAfterClose={true}
         closeTimeoutMS={200}
-        onRequestClose={closeModal}
+        onRequestClose={() => setShowModal(false)}
       >
         <XCircle
           size={32}
-          onClick={closeModal}
+          onClick={() => setShowModal(false)}
           style={{ cursor: 'pointer', float: 'right' }}
         />
         <h2 style={{ display: 'inline' }}>COVID-19 Message</h2>
