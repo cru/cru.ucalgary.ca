@@ -8,15 +8,6 @@ import PublicationQuery from './publicationquery'
 const PublicationsList = () => {
   const [activeList, setActiveList] = useState('all')
 
-  const icon = () => {
-    return (
-      <>
-        <span> </span>
-        <Filter style={{ marginBottom: '-3px' }} size={15} color="grey" />
-      </>
-    )
-  }
-
   const filterSelected = () => {
     return '4px solid rgb(232, 56, 56, 0.6)'
   }
@@ -44,7 +35,7 @@ const PublicationsList = () => {
             onClick={() => setActiveList('machineLearning')}
           >
             Machine Learning
-            {icon()}
+            <Filter className='ml-2' size={15} color="grey" />
           </Button>
           <Button
             style={{
@@ -55,7 +46,7 @@ const PublicationsList = () => {
             onClick={() => setActiveList('depression')}
           >
             Depression
-            {icon()}
+            <Filter className='ml-2' size={15} color="grey" />
           </Button>
           <br />
           <br />

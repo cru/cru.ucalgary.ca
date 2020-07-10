@@ -8,8 +8,8 @@ import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
-import 'bootstrap/dist/css/bootstrap.css';
 import '../helpers/fontawesomeimports'
+import '../styles/bootstrap.css';
 import '../styles/main.scss'
 import '../styles/modal.css'
 
