@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { ChevronDown, ChevronRight } from 'react-feather'
+import { Collapse } from 'reactstrap'
 
 import Layout from '../containers/layout'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
-import { Collapse } from 'reactstrap'
+import Intro from '../components/MachineLearning/intro'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -41,7 +42,7 @@ const MachineLearningPage = () => {
                 Intro - Machine Learning vs. Statistics
                 </h4>
               <Collapse isOpen={showOne}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <Intro/>
               </Collapse>
             </div>
             <div>
