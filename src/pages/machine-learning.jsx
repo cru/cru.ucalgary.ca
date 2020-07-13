@@ -6,6 +6,7 @@ import Layout from '../containers/layout'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 import Intro from '../components/MachineLearning/intro'
+import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsupervised'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -37,64 +38,64 @@ const MachineLearningPage = () => {
             </p>
           <div className='mt-5'>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="one" onClick={() => toggleOne(!showOne)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="one" onClick={() => toggleOne(!showOne)}>
                 {showOne ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Intro - Machine Learning vs. Statistics
-                </h4>
+                </h3>
               <Collapse isOpen={showOne}>
                 <Intro/>
               </Collapse>
             </div>
             <div>
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="two" onClick={() => toggleTwo(!showTwo)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="two" onClick={() => toggleTwo(!showTwo)}>
                 {showTwo ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Supervised Learning vs. Unsupervised Learning
-                </h4>
+                </h3>
               <Collapse isOpen={showTwo}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <SupervisedUnsupervised/>
               </Collapse>
             </div>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="three" onClick={() => toggleThree(!showThree)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="three" onClick={() => toggleThree(!showThree)}>
                 {showThree ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Research Purpose
-                </h4>
+                </h3>
               <Collapse isOpen={showThree}>
                 <p>HELLO LOOK AT MEEEEEE</p>
               </Collapse>
             </div>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="four" onClick={() => toggleFour(!showFour)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="four" onClick={() => toggleFour(!showFour)}>
                 {showFour ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 ML Algorithms
-                </h4>
+                </h3>
               <Collapse isOpen={showFour}>
                 <p>HELLO LOOK AT MEEEEEE</p>
               </Collapse>
             </div>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="five" onClick={() => toggleFive(!showFive)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="five" onClick={() => toggleFive(!showFive)}>
                 {showFive ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Tools
-                </h4>
+                </h3>
               <Collapse isOpen={showFive}>
                 <p>HELLO LOOK AT MEEEEEE</p>
               </Collapse>
             </div>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="six" onClick={() => toggleSix(!showSix)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="six" onClick={() => toggleSix(!showSix)}>
                 {showSix ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Health Data Types
-                </h4>
+                </h3>
               <Collapse isOpen={showSix}>
                 <p>HELLO LOOK AT MEEEEEE</p>
               </Collapse>
             </div>
             <div >
-              <h4 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="seven" onClick={() => toggleSeven(!showSeven)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="seven" onClick={() => toggleSeven(!showSeven)}>
                 {showSeven ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Interpretability vs. Accuracy
-                </h4>
+                </h3>
               <Collapse isOpen={showSeven}>
                 <p>HELLO LOOK AT MEEEEEE</p>
               </Collapse>

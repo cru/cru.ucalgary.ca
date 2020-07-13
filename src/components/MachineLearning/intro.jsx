@@ -40,7 +40,7 @@ const Intro = () => {
           </tr>
         </Table>
         <div>
-          <h5>Formulation</h5>
+          <h5 className='text-muted'>Formulation</h5>
           <p>
             Even when the end goal for both machine learning and statistical modeling is same, the formulation of two are significantly different.
         </p>
@@ -103,11 +103,11 @@ const Intro = () => {
           </tr>
         </Table>
         <div>
-          <h5>Big vs. Small Data</h5>
+          <h5 className='text-muted'>Big vs. Small Data</h5>
           <p>
             Machine learning models need more data than statistical models to perform well. Again, caveats apply: inference from statistical models can be problematic on very small datasets (N ≲ 30), and sometimes machine learning models can make good predictions on little data. But in general, the accuracy of the most powerful predictive models, such as neural networks and random forests, continues with additional thousands or millions of observations. In contrast, statistical models often allow inference and make decent predictions on dozens or hundreds of observations and improve little with the addition of more observations.
         </p>
-          <h5>Many vs. Few Variables</h5>
+          <h5 className='text-muted'>Many vs. Few Variables</h5>
           <p>
             Machine learning models all have mechanisms to sort out which variables contain information relevant to the outcome and which variables would just add noise to the predictions. Statistical models generally don’t have these mechanisms built in. In the extreme, when there are more predictor variables than observations (for example, when using many genes’ status as predictors), statistical models fail completely, while machine learning models proceed unphased. In fact, the lasso is a conventional regression model with some added machinery to automatically choose which variables help make better predictions and which should be ignored. For this reason, the lasso offers a nice combination of the predictive power of machine learning with the interpretability of statistics.
         </p>
@@ -121,12 +121,11 @@ export default Intro
 
 
 const Content = Styled.div`
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 `
 
 const Table = Styled.table`
     width: 100%;
-    margin-top: 2rem;
     margin-bottom: 2rem;
 `
