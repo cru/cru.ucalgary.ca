@@ -7,6 +7,7 @@ import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 import Intro from '../components/MachineLearning/intro'
 import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsupervised'
+import Research from '../components/MachineLearning/research'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -61,7 +62,7 @@ const MachineLearningPage = () => {
                 Research Purpose
                 </h3>
               <Collapse isOpen={showThree}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <Research/>
               </Collapse>
             </div>
             <div >
