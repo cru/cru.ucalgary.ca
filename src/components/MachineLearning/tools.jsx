@@ -37,8 +37,3 @@ const Content = Styled.div`
     padding-left: 2rem;
     padding-bottom: 2rem;
 `
-
-const Table = Styled.table`
-    width: 100%;
-    margin-bottom: 2rem;
-`

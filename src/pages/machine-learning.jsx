@@ -10,6 +10,8 @@ import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsu
 import Research from '../components/MachineLearning/research'
 import Algorithms from '../components/MachineLearning/algorithms'
 import Tools from '../components/MachineLearning/tools'
+import HealthDataType from '../components/MachineLearning/healthDataType'
+import InterpretabilityVsAccuracy from '../components/MachineLearning/interpretabilityVsAccuracy'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -91,7 +93,7 @@ const MachineLearningPage = () => {
                 Health Data Types
                 </h3>
               <Collapse isOpen={showSix}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <HealthDataType/>
               </Collapse>
             </div>
             <div >
@@ -100,7 +102,7 @@ const MachineLearningPage = () => {
                 Interpretability vs. Accuracy
                 </h3>
               <Collapse isOpen={showSeven}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <InterpretabilityVsAccuracy/>
               </Collapse>
             </div>
           </div>
