@@ -9,6 +9,7 @@ import Intro from '../components/MachineLearning/intro'
 import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsupervised'
 import Research from '../components/MachineLearning/research'
 import Algorithms from '../components/MachineLearning/algorithms'
+import Tools from '../components/MachineLearning/tools'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -81,7 +82,7 @@ const MachineLearningPage = () => {
                 Tools
                 </h3>
               <Collapse isOpen={showFive}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <Tools/>
               </Collapse>
             </div>
             <div >
