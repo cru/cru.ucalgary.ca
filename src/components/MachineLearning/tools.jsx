@@ -6,14 +6,14 @@ const Tools = () => {
   return (
     <Fragment>
       <Content>
-        <p>Some machine learning and data mining tools that require minimal experience include:</p>
+        <p style={{ marginTop: 0 }}>Some machine learning and data mining tools that require minimal experience include:</p>
         <ul>
           <li><a rel="noopener noreferrer" target="_blank" href="https://orange.biolab.si/">Orange</a></li>
           <li><a rel="noopener noreferrer" target="_blank" href="https://www.cs.waikato.ac.nz/ml/weka/">WEKA</a></li>
           <li><a rel="noopener noreferrer" target="_blank" href="https://www.knime.com/">KNIME</a></li>
           <li><a rel="noopener noreferrer" target="_blank" href="https://rapidminer.com/">RapidMiner</a></li>
         </ul>
-        <br/>
+        <br />
         <p>For more powerful tools, some data mining and programming experience is required. These include:</p>
         <ul>
           <li><a rel="noopener noreferrer" target="_blank" href="https://scikit-learn.org/stable/">scikit-learn</a></li>
