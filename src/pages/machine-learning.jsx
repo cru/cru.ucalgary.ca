@@ -8,6 +8,7 @@ import CruFragment from '../components/crufragment'
 import Intro from '../components/MachineLearning/intro'
 import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsupervised'
 import Research from '../components/MachineLearning/research'
+import Algorithms from '../components/MachineLearning/algorithms'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -71,7 +72,7 @@ const MachineLearningPage = () => {
                 ML Algorithms
                 </h3>
               <Collapse isOpen={showFour}>
-                <p>HELLO LOOK AT MEEEEEE</p>
+                <Algorithms/>
               </Collapse>
             </div>
             <div >

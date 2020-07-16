@@ -4102,6 +4102,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  cursor: pointer;
 }
 
 .nav-tabs .nav-link {
