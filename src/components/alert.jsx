@@ -23,7 +23,7 @@ const Alert = () => {
           content: {
             maxWidth: 1100,
             maxHeight: 650,
-            width: '70%',
+            width: '80%',
             margin: 'auto',
           },
         }}
@@ -114,7 +114,8 @@ const AlertHeader = Styled.div`
     margin: auto;
     margin-top: 1rem;
     padding: 1rem;
-    width: 50%;
+    width: 80%;
+    max-width: 600px;
     color: #EF6C00;
     cursor: pointer;
     box-shadow: ${props => props.theme.boxShadow};
