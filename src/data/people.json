@@ -126,11 +126,11 @@
     }
   },
   {
-    "name": "Marc Eveleigh",
+    "name": "Phil Ewart",
     "title": "Tech Team Member",
-    "comments": "REDCap project management and implementation and REDCap Cloud specialist",
+    "comments": "",
     "image": {
-      "src": "../images/people/Eveleigh_Marc.jpg",
+      "src": "../images/people/avatar_placeholder.jpg",
       "color": "rgba(63, 191, 255, 0.6)"
     }
   },
