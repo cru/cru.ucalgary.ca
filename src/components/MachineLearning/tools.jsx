@@ -14,7 +14,7 @@ const Tools = () => {
           <li><a rel="noopener noreferrer" target="_blank" href="https://rapidminer.com/">RapidMiner</a></li>
         </ul>
         <br />
-        <p>For more powerful tools, some data mining and programming experience is required. These include:</p>
+        <p>For working with more powerful tools as below, some data mining and programming experience is required:</p>
         <ul>
           <li><a rel="noopener noreferrer" target="_blank" href="https://scikit-learn.org/stable/">scikit-learn</a></li>
           <li><a rel="noopener noreferrer" target="_blank" href="https://www.tensorflow.org/">TensorFlow</a></li>

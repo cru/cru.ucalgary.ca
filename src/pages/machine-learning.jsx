@@ -6,12 +6,11 @@ import Layout from '../containers/layout'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 import Intro from '../components/MachineLearning/intro'
-import SupervisedUnsupervised from '../components/MachineLearning/supervisedUnsupervised'
-import Research from '../components/MachineLearning/research'
+import StepByStep from '../components/MachineLearning/stepByStep'
 import Algorithms from '../components/MachineLearning/algorithms'
 import Tools from '../components/MachineLearning/tools'
-import HealthDataType from '../components/MachineLearning/healthDataType'
-import InterpretabilityVsAccuracy from '../components/MachineLearning/interpretabilityVsAccuracy'
+import InMedicine from '../components/MachineLearning/inMedicine'
+import Summary from '../components/MachineLearning/summary'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -20,7 +19,6 @@ const MachineLearningPage = () => {
   const [showFour, toggleFour] = useState(false)
   const [showFive, toggleFive] = useState(false)
   const [showSix, toggleSix] = useState(false)
-  const [showSeven, toggleSeven] = useState(false)
 
 
   return (
@@ -33,14 +31,8 @@ const MachineLearningPage = () => {
           <i>Method & Analytics Team - by Zara Aminolroaya, under supervision of Cord Lethebe</i>
           <div style={{ height: 55 }} />
           <p>
-            Machine learning and statistical learning are nearly related in many aspects but considering different perspectives on the same problem:
-            </p>
-          <p>
-            <b>Statistics: </b>Statistics is defined as the study of collection, analysis, interpretation, presentation and organization of data.
-            </p>
-          <p>
-            <b>Machine Learning: </b>Machine learning gives computers the ability to learn with being programmed in an explicit manner.
-            </p>
+            The applications of machine learning (ML) to address medical field problems and the healthcare industry are increasing day by day. The Clinical Research Unit has provided the following article, which explains the difference between machine learning and statistics, steps to use machine learning, and different applications of machine learning in the medical field.
+          </p>
           <div className='mt-5'>
             <div >
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="one" onClick={() => toggleOne(!showOne)}>
@@ -48,61 +40,52 @@ const MachineLearningPage = () => {
                 Intro - Machine Learning vs. Statistics
                 </h3>
               <Collapse isOpen={showOne}>
-                <Intro/>
+                <Intro />
               </Collapse>
             </div>
             <div>
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="two" onClick={() => toggleTwo(!showTwo)}>
                 {showTwo ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Supervised Learning vs. Unsupervised Learning
+                Machine Learning Step by Step
                 </h3>
               <Collapse isOpen={showTwo}>
-                <SupervisedUnsupervised/>
+                <StepByStep />
               </Collapse>
             </div>
             <div >
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="three" onClick={() => toggleThree(!showThree)}>
                 {showThree ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Research Purpose
+                ML Algorithms
                 </h3>
               <Collapse isOpen={showThree}>
-                <Research/>
+                <Algorithms />
               </Collapse>
             </div>
             <div >
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="four" onClick={() => toggleFour(!showFour)}>
                 {showFour ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                ML Algorithms
+                Tools
                 </h3>
               <Collapse isOpen={showFour}>
-                <Algorithms/>
+                <Tools />
               </Collapse>
             </div>
             <div >
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="five" onClick={() => toggleFive(!showFive)}>
                 {showFive ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Tools
+                Machine Learning in Medicine
                 </h3>
               <Collapse isOpen={showFive}>
-                <Tools/>
+                <InMedicine />
               </Collapse>
             </div>
             <div >
               <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="six" onClick={() => toggleSix(!showSix)}>
                 {showSix ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Health Data Types
+                Summary
                 </h3>
               <Collapse isOpen={showSix}>
-                <HealthDataType/>
-              </Collapse>
-            </div>
-            <div >
-              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="seven" onClick={() => toggleSeven(!showSeven)}>
-                {showSeven ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Interpretability vs. Accuracy
-                </h3>
-              <Collapse isOpen={showSeven}>
-                <InterpretabilityVsAccuracy/>
+                <Summary />
               </Collapse>
             </div>
           </div>

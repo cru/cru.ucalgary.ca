@@ -6,6 +6,18 @@ const Intro = () => {
   return (
     <Fragment>
       <Content>
+        <p>
+          Machine learning is making healthcare smarter, but old-school statistics still has its place in healthcare analytics. There are different criteria for choosing between machine learning or statistical analytics, such as the analytics goal, the size of data, the number of variables, etc.
+        </p>
+        <p>
+          Machine learning and statistical learning are nearly related in many aspects and are more or less the same, but they consider different perspectives on the same problem:
+          Statistics: Statistics is defined as the study of collection, analysis, interpretation, presentation, and organization of data.
+          <br />
+          Machine Learning: Machine learning gives computers the ability to learn without being explicitly programmed.
+        </p>
+        <p>
+          The following is a comparison of these two techniques based on the purpose of data analysis.
+        </p>
         <Table>
           <tr>
             <th>Machine Learning</th>
@@ -39,10 +51,13 @@ const Intro = () => {
             </td>
           </tr>
         </Table>
+        <p>
+          Statistical models are often easier to interpret, and they are suitable for the description of the biological relationships when the features have mainly an additive effect. Machine learning is suitable for prediction and decision making about new data. ML is promising in the areas that are not traditional “tabular data”, such as images.
+        </p>
         <div>
           <h5 className='text-muted'>Formulation</h5>
           <p>
-            Even when the end goal for both machine learning and statistical modeling is same, the formulation of two are significantly different.
+            The formulation of machine learning and statistical modeling is different even with the same end goal.
         </p>
           <p>
             In a statistical model, we basically try to estimate the function f in:<br />
@@ -56,64 +71,102 @@ const Intro = () => {
             It will try to find pockets of X in n dimensions (where n is the number of attributes), where occurrence of Y is significantly different.
         </p>
         </div>
-        <Table>
-          <tr>
-            <th>Machine Learning</th>
-            <th>Statistics</th>
-          </tr>
-          <tr>
-            <td>Learning</td>
-            <td>Estimation</td>
-          </tr>
-          <tr>
-            <td>Hypothesis</td>
-            <td>Classifier</td>
-          </tr>
-          <tr>
-            <td>Example/ instance</td>
-            <td>Data point</td>
-          </tr>
-          <tr>
-            <td>Supervised Learning</td>
-            <td>Regression</td>
-          </tr>
-          <tr>
-            <td>Supervised Learning</td>
-            <td>Classification</td>
-          </tr>
-          <tr>
-            <td>Feature</td>
-            <td>Covariate</td>
-          </tr>
-          <tr>
-            <td>Label</td>
-            <td>Response</td>
-          </tr>
-          <tr>
-            <td>Graph/ network</td>
-            <td>Model</td>
-          </tr>
-          <tr>
-            <td>Weights</td>
-            <td>Parameters</td>
-          </tr>
-          <tr>
-            <td>Generalization</td>
-            <td>Test set performance</td>
-          </tr>
-        </Table>
+        <div>
+          <h5 className='text-muted'>Language</h5>
+          <p>
+            A major difference between statistics and machine learning is their languages. Some terms can have similar meaning in statistics and machine learning but with different languages:
+        </p>
+          <Table>
+            <tr>
+              <th>Machine Learning</th>
+              <th>Statistics</th>
+            </tr>
+            <tr>
+              <td>Sample/ instance</td>
+              <td>Subject/ observation</td>
+            </tr>
+            <tr>
+              <td>Target</td>
+              <td>Outcome Variable</td>
+            </tr>
+            <tr>
+              <td>Learning</td>
+              <td>Estimation</td>
+            </tr>
+            <tr>
+              <td>Example/ instance</td>
+              <td>Data point</td>
+            </tr>
+            <tr>
+              <td>Supervised Learning</td>
+              <td>Regression</td>
+            </tr>
+            <tr>
+              <td>Softmax</td>
+              <td>Multinomial Regression</td>
+            </tr>
+            <tr>
+              <td>Supervised Learning</td>
+              <td>Classification</td>
+            </tr>
+            <tr>
+              <td>Feature</td>
+              <td>Covariates</td>
+            </tr>
+            <tr>
+              <td>Label</td>
+              <td>Response</td>
+            </tr>
+            <tr>
+              <td>Graph/ network</td>
+              <td>Model</td>
+            </tr>
+            <tr>
+              <td>Weights</td>
+              <td>Parameters</td>
+            </tr>
+            <tr>
+              <td>Generalization</td>
+              <td>Test set performance</td>
+            </tr>
+            <tr>
+              <td>Loss</td>
+              <td>Log-liklihood</td>
+            </tr>
+            <tr>
+              <td>Noise</td>
+              <td>Measurement error</td>
+            </tr>
+            <tr>
+              <td>One-hot encoding</td>
+              <td>Dummy coding</td>
+            </tr>
+            <tr>
+              <td>Precision</td>
+              <td>Positive predictive value</td>
+            </tr>
+            <tr>
+              <td>Confusion Matrix</td>
+              <td>Contingency table</td>
+            </tr>
+            <tr>
+              <td>Groundtruth</td>
+              <td>Gold standard</td>
+            </tr>
+          </Table>
+        </div>
         <div>
           <h5 className='text-muted'>Big vs. Small Data</h5>
           <p>
-            Machine learning models need more data than statistical models to perform well. Again, caveats apply: inference from statistical models can be problematic on very small datasets (N ≲ 30), and sometimes machine learning models can make good predictions on little data. But in general, the accuracy of the most powerful predictive models, such as neural networks and random forests, continues with additional thousands or millions of observations. In contrast, statistical models often allow inference and make decent predictions on dozens or hundreds of observations and improve little with the addition of more observations.
+            For better performance, machine learning models need more data than statistical models. Powerful predictive models, such as neural networks and random forests, usually use datasets in the scales of thousands and millions for suitable performance. In contrast, statistical models often can infer and make predictions on hundreds of observations
         </p>
           <h5 className='text-muted'>Many vs. Few Variables</h5>
           <p>
-            Machine learning models all have mechanisms to sort out which variables contain information relevant to the outcome and which variables would just add noise to the predictions. Statistical models generally don’t have these mechanisms built in. In the extreme, when there are more predictor variables than observations (for example, when using many genes’ status as predictors), statistical models fail completely, while machine learning models proceed unphased. In fact, the lasso is a conventional regression model with some added machinery to automatically choose which variables help make better predictions and which should be ignored. For this reason, the lasso offers a nice combination of the predictive power of machine learning with the interpretability of statistics.
+            Machine learning models select between variables based on their relevance to the outcome, but statistical models are generally not like ML models. In fact, when there are more predictor variables than observations (for example, when using many genes’ status as predictors), statistical models fail completely, while machine learning models proceed unphased.
         </p>
         </div>
       </Content>
-      <CruFragment/>
+      <CruFragment />
     </Fragment>
   )
 }
