@@ -8,8 +8,8 @@ const Summary = () => {
   return (
     <Fragment>
       <Content>
-        <div>
-          <p>
+        <div >
+          <p style={{ marginTop: 0 }}>
             In the medicine field, it is common to use statistical analytics and machine learning to solve problems based on a problem target and data features. This article looks at different concepts of machine learning and refers to different areas in ML. Finally, the article explains the use of machine learning techniques based on the research purposes in the medicine field.
           </p>
         </div>

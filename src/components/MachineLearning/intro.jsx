@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <Fragment>
       <Content>
-        <p>
+        <p style={{ marginTop: 0 }}>
           Machine learning is making healthcare smarter, but old-school statistics still has its place in healthcare analytics. There are different criteria for choosing between machine learning or statistical analytics, such as the analytics goal, the size of data, the number of variables, etc.
         </p>
         <p>

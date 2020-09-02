@@ -13,7 +13,7 @@ const StepByStep = () => {
     <Fragment>
       <Content>
         <div>
-          <p>
+          <p style={{ marginTop: 0 }}>
             When using machine learning for addressing a problem, it is important to become familiar with different areas in ML. Each area includes different topics:
         </p>
           <Img src={machine_learning1} />

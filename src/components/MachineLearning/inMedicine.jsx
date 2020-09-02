@@ -11,8 +11,8 @@ const InMedicine = () => {
   return (
     <Fragment>
       <Content>
-        <div>
-          <h4>Research Purpose</h4>
+        <div >
+          <h4 style={{ marginTop: 0 }}>Research Purpose</h4>
           <p>
           There are different research purposes in the medicine field, and machine learning proposes different techniques to solve problems in each area:
           </p>
