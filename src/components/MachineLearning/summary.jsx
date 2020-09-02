@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Styled from 'styled-components'
 
 import CruFragment from '../crufragment'
-import intVsAcc from '../../images/int_vs_acc.png'
 
 
 const Summary = () => {

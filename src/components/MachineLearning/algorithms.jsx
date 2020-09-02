@@ -264,11 +264,11 @@ const Content = Styled.div`
     padding-bottom: 2rem;
 `
 const Img = Styled.img`
-    width: 100%;
+    display: block;
+    width: 80%;
     height: auto;
-    max-width: 425px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 `
