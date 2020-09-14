@@ -11,6 +11,7 @@ import Algorithms from '../components/MachineLearning/algorithms'
 import Tools from '../components/MachineLearning/tools'
 import InMedicine from '../components/MachineLearning/inMedicine'
 import Summary from '../components/MachineLearning/summary'
+import InterpretabilityVsAccuracy from '../components/MachineLearning/int_vs_acc'
 
 const MachineLearningPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -19,6 +20,7 @@ const MachineLearningPage = () => {
   const [showFour, toggleFour] = useState(false)
   const [showFive, toggleFive] = useState(false)
   const [showSix, toggleSix] = useState(false)
+  const [showSeven, toggleSeven] = useState(false)
 
 
   return (
@@ -71,20 +73,29 @@ const MachineLearningPage = () => {
               </Collapse>
             </div>
             <div >
-              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="five" onClick={() => toggleFive(!showFive)}>
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="four" onClick={() => toggleFive(!showFive)}>
                 {showFive ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
-                Machine Learning in Medicine
+                Interpretability Vs. Accuracy
                 </h3>
               <Collapse isOpen={showFive}>
+                <InterpretabilityVsAccuracy />
+              </Collapse>
+            </div>
+            <div >
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="five" onClick={() => toggleSix(!showSix)}>
+                {showSix ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
+                Machine Learning in Medicine
+                </h3>
+              <Collapse isOpen={showSix}>
                 <InMedicine />
               </Collapse>
             </div>
             <div >
-              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="six" onClick={() => toggleSix(!showSix)}>
-                {showSix ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
+              <h3 style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }} id="six" onClick={() => toggleSeven(!showSeven)}>
+                {showSeven ? <ChevronDown size={24} className="mr-2" /> : <ChevronRight size={24} className="mr-2" />}
                 Summary
                 </h3>
-              <Collapse isOpen={showSix}>
+              <Collapse isOpen={showSeven}>
                 <Summary />
               </Collapse>
             </div>

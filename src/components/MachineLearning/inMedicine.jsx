@@ -1,15 +1,22 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Styled from 'styled-components'
 
 import CruFragment from '../crufragment'
 import machine_learning6 from '../../images/machine_learning6.png'
 import machine_learning7 from '../../images/machine_learning7.png'
 import machine_learning8 from '../../images/machine_learning8.png'
+import ImageModal from './imageModal'
 
 
 const InMedicine = () => {
+  const [showModal, toggleModal] = useState({
+    visible: false,
+    source: null
+  })
+
   return (
     <Fragment>
+      <ImageModal visible={showModal.visible} source={showModal.source} closeModal={() => {toggleModal({visible: false, source: null})}}/>
       <Content>
         <div >
           <h4 style={{ marginTop: 0 }}>Research Purpose</h4>
@@ -20,7 +27,7 @@ const InMedicine = () => {
           <p>
           Medical diagnosis is the process of determining which disease or condition explains a person's symptoms and signs. Machine learning is being used to diagnose cancer, pneumonia, and other diseases, and with enough reliable datasets, it is often more accurate and faster at diagnosis than real doctors. Diagnostic problems can be solved by classification methods. For example, the below image shows the high algorithm performance on detecting the lung cancer 
           </p>
-          <Img src={machine_learning6}/>
+          <Img src={machine_learning6} onClick={() => toggleModal({visible: true, source: machine_learning6})}/>
           <h5 className='text-muted'>Prediction</h5>
           <p>
           Predictive analytics is the process of learning from historical data in order to make predictions about the future (or any unknown). For health care, predictive analytics will enable the best decisions to be made. Prediction problems can be solved by classification or regression methods.
@@ -37,7 +44,7 @@ const InMedicine = () => {
           <p>
           Clustering can be used for finding similar groups of different elements and it is the process of analyzing, examining relationships in, and organizing theoretically the current knowledge in a field of study in order to add to an existing knowledge base and generate further questions for research. Clustering methods can be used for finding similar groups. For example, the below image shows the heatmap analysis of microarray data showing hierarchical clustering of differentially expressed genes.
           </p>
-          <Img src={machine_learning7}/>
+          <Img src={machine_learning7} onClick={() => toggleModal({visible: true, source: machine_learning7})}/>
         </div>
         <div>
         <h4>Health Data Types</h4>
@@ -47,7 +54,7 @@ const InMedicine = () => {
         <p>
         In the following, there is an organization of data types relating to different health and wellness sources.
         </p>
-        <Img src={machine_learning8}/>
+        <Img src={machine_learning8} onClick={() => toggleModal({visible: true, source: machine_learning8})}/>
         </div>
       </Content>
       <CruFragment />
@@ -70,4 +77,5 @@ const Img = Styled.img`
     margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 `

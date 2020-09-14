@@ -1,26 +1,32 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Styled from 'styled-components'
 import CruFragment from '../crufragment'
 import machine_learning1 from '../../images/machine_learning1.jpg'
 import machine_learning2 from '../../images/machine_learning2.jpg'
 import machine_learning3 from '../../images/machine_learning3.png'
 import machine_learning4 from '../../images/machine_learning4.png'
-import machine_learning5 from '../../images/machine_learning5.png'
+import ImageModal from './imageModal'
 
 
 const StepByStep = () => {
+  const [showModal, toggleModal] = useState({
+    visible: false,
+    source: null
+  })
+
   return (
     <Fragment>
+      <ImageModal visible={showModal.visible} source={showModal.source} closeModal={() => {toggleModal({visible: false, source: null})}}/>
       <Content>
         <div>
           <p style={{ marginTop: 0 }}>
             When using machine learning for addressing a problem, it is important to become familiar with different areas in ML. Each area includes different topics:
         </p>
-          <Img src={machine_learning1} />
+          <Img src={machine_learning1} onClick={() => toggleModal({visible: true, source: machine_learning1})}/>
           <p>
             Now, let's look at one of the road maps to apply machine learning for addressing a specific problem. Choosing a suitable machine learning algorithm for the problem depends on different factors, such as the nature of the data, computational time, etc.
         </p>
-          <Img src={machine_learning2} />
+          <Img src={machine_learning2} onClick={() => toggleModal({visible: true, source: machine_learning2})}/>
           <p>
             The following sections discuss important concepts relating to different steps for choosing machine learning algorithms.
         </p>
@@ -76,7 +82,7 @@ const StepByStep = () => {
           <p>
             The following image shows the difference between classification and regression:
          </p>
-          <Img src={machine_learning3} />
+          <Img src={machine_learning3}/>
         </div>
         <div>
           <h5>Unsupervised Learning</h5>
@@ -97,21 +103,11 @@ const StepByStep = () => {
           <p>
             The below image shows the difference between hierarchical and non-hierarchical clusterings.
           </p>
-          <Img src={machine_learning4} />
+          <Img src={machine_learning4}/>
           <h6 className='text-muted'>Dimensional Reduction</h6>
           <p>
             Some variables (features) are redundant or irrelevant according to the prediction. With the dimension reduction, the true relationship between features and the outcome can be identified.
           </p>
-        </div>
-        <div>
-          <h4 >Interpretability vs. Accuracy</h4>
-          <p>
-            There is a tradeoff between the predictive accuracy of a model and how easy the model is to interpret. For example, linear regression is a simple model with a few parameters which is easy to interpret. However, it may not have sufficient predictive power for particular use cases. On the other hand, models like neural networks with millions of parameters will often highly perform for prediction. However, these complex models do not always make business sense and it would be hard to explain to clients how models made decisions.
-        </p>
-          <p>
-            It is important to deliver a project to a business client and build confidence in the algorithmic approaches. There are different ways to increase the understandability of machine learning results for a client user. One of them is to explain how different inputs affect the model's performance.
-        </p>
-          <Img src={machine_learning5} />
         </div>
       </Content>
       <CruFragment />
@@ -133,4 +129,5 @@ const Img = Styled.img`
     margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer
 `

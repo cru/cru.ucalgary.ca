@@ -7,13 +7,15 @@ const Intro = () => {
     <Fragment>
       <Content>
         <p style={{ marginTop: 0 }}>
-          Machine learning is making healthcare smarter, but old-school statistics still has its place in healthcare analytics. There are different criteria for choosing between machine learning or statistical analytics, such as the analytics goal, the size of data, the number of variables, etc.
+          Machine learning is making healthcare smarter, but old-school statistics still has its place in healthcare analytics. There are different criteria for choosing between machine learning or statistical analytics, such as the analytics goal, the size of data, the number of variables, etcetera.
         </p>
         <p>
           Machine learning and statistical learning are nearly related in many aspects and are more or less the same, but they consider different perspectives on the same problem:
-          Statistics: Statistics is defined as the study of collection, analysis, interpretation, presentation, and organization of data.
           <br />
-          Machine Learning: Machine learning gives computers the ability to learn without being explicitly programmed.
+          <br />
+          <b>Statistics:</b> Statistics is defined as the study of collection, analysis, interpretation, presentation, and organization of data.
+          <br />
+          <b>Machine Learning:</b> Machine learning gives computers the ability to learn without being explicitly programmed.
         </p>
         <p>
           The following is a comparison of these two techniques based on the purpose of data analysis.
@@ -24,7 +26,7 @@ const Intro = () => {
             <th>Statistical Modeling</th>
           </tr>
           <tr>
-            <td>
+            <td style={{verticalAlign: 'top'}}>
               <ul>
                 <li>Emphasize prediction</li>
                 <li>Emphasize results via prediction performance</li>
@@ -37,7 +39,7 @@ const Intro = () => {
                 <li>Used when Dataset is big</li>
               </ul>
             </td>
-            <td>
+            <td style={{verticalAlign: 'top'}}>
               <ul>
                 <li>Emphasize superpopulation inference/explanation</li>
                 <li>Focus on a-priori hypothesis</li>
@@ -61,11 +63,11 @@ const Intro = () => {
         </p>
           <p>
             In a statistical model, we basically try to estimate the function f in:<br />
-          Dependent Variable ( Y )  = f(Independent Variable) + error function
-        </p>
+            <span style={{ fontFamily: 'monospace', marginLeft: '2rem' }}>Dependent Variable ( Y )  = f(Independent Variable) + error function</span>
+          </p>
           <p>
-            Machine Learning takes away the deterministic function “f” out of the equation. It simply becomes <br />
-            {'Output(Y)  ----- >  Input (X)'}
+            Machine Learning takes away the deterministic function “f” out of the equation. It simply becomes: <br />
+            <span style={{ fontFamily: 'monospace', marginLeft: '2rem' }}>{'Output(Y)  ----- >  Input (X)'}</span>
           </p>
           <p>
             It will try to find pockets of X in n dimensions (where n is the number of attributes), where occurrence of Y is significantly different.
