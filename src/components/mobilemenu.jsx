@@ -10,7 +10,7 @@ const MobileMenu = ({ navbarpage }) => {
       <div style={{ height: '70px' }} />
       <Link to="/people">
         <MobileLink>
-          <h5 style={{ color: 'white' }}>
+          <h5 >
             People
             <ArrowRight
               style={{
@@ -24,7 +24,7 @@ const MobileMenu = ({ navbarpage }) => {
       </Link>
       <Link to="/partners">
         <MobileLink>
-          <h5 style={{ color: 'white' }}>
+          <h5 >
             Partners
             <ArrowRight
               style={{
@@ -38,8 +38,22 @@ const MobileMenu = ({ navbarpage }) => {
       </Link>
       <Link to="/publications">
         <MobileLink>
-          <h5 style={{ color: 'white' }}>
+          <h5 >
             Publications
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
+      <Link to="/machine-learning">
+        <MobileLink>
+          <h5 >
+            Machine Learning
             <ArrowRight
               style={{
                 float: 'right',
@@ -52,7 +66,7 @@ const MobileMenu = ({ navbarpage }) => {
       </Link>
       <Link to="/downloads">
         <MobileLink>
-          <h5 style={{ color: 'white' }}>
+          <h5 >
             Downloads
             <ArrowRight
               style={{
@@ -82,6 +96,8 @@ const MobileLink = Styled.div`
   color: white;
   h5{
     line-height:0px;
+    color: white;
+    margin-bottom: 2rem;
   }
 `
 

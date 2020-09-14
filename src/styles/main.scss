@@ -19,12 +19,6 @@ body {
 }
 
 // All text color
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 a {
   color: $fontPrimColor;
@@ -48,13 +42,20 @@ h2 {
   font-size: 35px;
 }
 h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 h4 {
   font-size: 25px;
+  margin-bottom: 1rem;
 }
 h5 {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
+h6 {
   font-size: 20px;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 label {
@@ -80,6 +81,10 @@ label {
   border-radius: 3px;
 }
 
+.text-muted {
+  color: $fontMutedColor;
+}
+
 table,
 th,
 td {
@@ -95,59 +100,12 @@ table {
 th {
   padding: 1.3rem;
   text-align: center;
+  font-family: futura-pt-bold, sans-serif;
+  font-style: normal;
+  color: rgb(63, 63, 63);
 }
 
 td {
     padding: 0.5rem;
     text-align: left;
 }
-
-// Futura PT Heavy
-// font-family: futura-pt, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Heavy Oblique
-// font-family: futura-pt, sans-serif;
-// font-weight: 700;
-// font-style: italic;
-
-// Futura PT Book
-// font-family: futura-pt, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Futura PT Book Oblique
-// font-family: futura-pt, sans-serif;
-// font-weight: 400;
-// font-style: italic;
-
-// Futura PT Bold
-// font-family: futura-pt-bold, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Bold Oblique
-// font-family: futura-pt-bold, sans-serif;
-// font-weight: 700;
-// font-style: italic;
-
-// Futura PT Cond Book
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 400;
-// font-style: normal;
-
-// Futura PT Cond Book Oblique
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 400;
-// font-style: italic;
-
-// Futura PT Cond Bold
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 700;
-// font-style: normal;
-
-// Futura PT Cond Bold Oblique
-// font-family: futura-pt-condensed, sans-serif;
-// font-weight: 700;
-// font-style: italic;

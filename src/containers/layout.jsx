@@ -9,6 +9,7 @@ import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
 import '../helpers/fontawesomeimports'
+import '../styles/bootstrap.css';
 import '../styles/main.scss'
 import '../styles/modal.css'
 

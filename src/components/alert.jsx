@@ -9,17 +9,9 @@ Modal.setAppElement('body')
 const Alert = () => {
   const [showModal, setShowModal] = useState(false)
 
-  const openModal = () => {
-    setShowModal(true)
-  }
-
-  const closeModal = () => {
-    setShowModal(false)
-  }
-
   return (
     <Fragment>
-      <AlertHeader onClick={openModal}>
+      <AlertHeader onClick={() => setShowModal(true)}>
         <AlertTriangle
           size={40}
         />
@@ -31,7 +23,7 @@ const Alert = () => {
           content: {
             maxWidth: 1100,
             maxHeight: 650,
-            width: '70%',
+            width: '80%',
             margin: 'auto',
           },
         }}
@@ -39,11 +31,11 @@ const Alert = () => {
         shouldCloseOnEsc={true}
         shouldReturnFocusAfterClose={true}
         closeTimeoutMS={200}
-        onRequestClose={closeModal}
+        onRequestClose={() => setShowModal(false)}
       >
         <XCircle
           size={32}
-          onClick={closeModal}
+          onClick={() => setShowModal(false)}
           style={{ cursor: 'pointer', float: 'right' }}
         />
         <h2 style={{ display: 'inline' }}>COVID-19 Message</h2>
@@ -122,7 +114,8 @@ const AlertHeader = Styled.div`
     margin: auto;
     margin-top: 1rem;
     padding: 1rem;
-    width: 50%;
+    width: 80%;
+    max-width: 600px;
     color: #EF6C00;
     cursor: pointer;
     box-shadow: ${props => props.theme.boxShadow};

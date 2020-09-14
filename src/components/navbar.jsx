@@ -37,7 +37,7 @@ const NavBar = ({ page, group }) => {
           <NavBarLinks
             page="/people"
             text="People"
-            group={page === 'people' ? 'people' : ''}
+            group={page === 'people'}
           />
         </LinkContainer>
         <LinkSpacing />
@@ -45,7 +45,7 @@ const NavBar = ({ page, group }) => {
           <NavBarLinks
             page="/partners"
             text="Partners"
-            group={page === 'partners' ? 'partners' : ''}
+            group={page === 'partners'}
           />
         </LinkContainer>
         <LinkSpacing />
@@ -53,16 +53,16 @@ const NavBar = ({ page, group }) => {
           <NavBarLinks
             page="/publications"
             text="Publications"
-            group={page === 'publications' ? 'publications' : ''}
+            group={page === 'publications'}
           />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarDropDown
             text="Resources"
-            page={['Downloads']}
+            page={['machine-learning', 'downloads']}
             group={group === 'resources'}
-            selectedPage={page === 'downloads' ? 'Downloads' : ''}
+            selectedPage={['machine-learning', 'downloads'].find(el => el === page)}
           />
         </LinkContainer>
         <RightAlign>

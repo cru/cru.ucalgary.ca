@@ -8,8 +8,12 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
   const pages = page.map(pageName => (
     <li key={pageName.toString()}>
       <NavBarLinks
-        page={`/${pageName.toLowerCase()}`}
-        text={pageName}
+        page={`/${pageName}`}
+        text={`${pageName.toLowerCase()
+          .replace(/-/g, ' ')
+          .split(' ')
+          .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+          .join(' ')}`}
         group={selectedPage === pageName ? selectedPage : ''}
         style={{ fontSize: '19.5px' }}
       />
