@@ -44,7 +44,7 @@ const InMedicine = () => {
           <p>
           Clustering can be used for finding similar groups of different elements and it is the process of analyzing, examining relationships in, and organizing theoretically the current knowledge in a field of study in order to add to an existing knowledge base and generate further questions for research. Clustering methods can be used for finding similar groups. For example, the below image shows the heatmap analysis of microarray data showing hierarchical clustering of differentially expressed genes.
           </p>
-          <Img src={machine_learning7} onClick={() => toggleModal({visible: true, source: machine_learning7})}/>
+          <Img src={machine_learning7}/>
         </div>
         <div>
         <h4>Health Data Types</h4>
