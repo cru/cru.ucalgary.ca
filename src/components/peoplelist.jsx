@@ -24,6 +24,7 @@ const getPeopleList = data => {
   )
   return (
     <Trail
+      native
       items={everyone}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
