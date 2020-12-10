@@ -80,6 +80,63 @@ const Footer = () => {
           </Content>
         </Column>
 
+        {/* ***************** Policies  ***************** */}
+        <Column>
+          <Content>
+            <Title>Policies</Title>
+            <a
+              href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                UofC Privacy and Security Office
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://cumming.ucalgary.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                UofC Information Security Classification Standard
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://www.ucalgary.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                UofC Information Security Classification Standard Appendix
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://www.albertahealthservices.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                UofC Asset Management Policy
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+            <a
+              href="https://www.albertahealthservices.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkStyle>
+                UofC Policies
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+          </Content>
+        </Column>
+
         {/* ***************** Address  ***************** */}
         <Column>
           <Content>
@@ -123,7 +180,7 @@ const Footer = () => {
           <span> </span>
           by CRU
         </p>
-        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
+        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2021</p>
       </Greeting>
     </>
   )
@@ -140,7 +197,7 @@ const Container = Styled.div`
 
 
     @media only screen and (max-width: ${props =>
-      props.theme.mobileBreakPoint}){
+    props.theme.mobileBreakPoint}){
         display: block;
         padding-bottom:75px;
       }
@@ -153,7 +210,7 @@ const Column = Styled.div`
     padding-bottom:15px;
     margin-left:-30px;
     @media only screen and (max-width: ${props =>
-      props.theme.mobileBreakPoint}){
+    props.theme.mobileBreakPoint}){
     margin-left:-10px;
 
   }

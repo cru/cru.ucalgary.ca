@@ -60,9 +60,9 @@ const NavBar = ({ page, group }) => {
         <LinkContainer>
           <NavBarDropDown
             text="Resources"
-            page={['machine-learning', 'downloads']}
+            page={['data-lifecycle-management', 'machine-learning', 'downloads']}
             group={group === 'resources'}
-            selectedPage={['machine-learning', 'downloads'].find(el => el === page)}
+            selectedPage={['data-lifecycle-management', 'machine-learning', 'downloads'].find(el => el === page)}
           />
         </LinkContainer>
         <RightAlign>
