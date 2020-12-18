@@ -1,15 +1,27 @@
 import React from 'react'
 import Styled from 'styled-components'
+import moment from 'moment'
+
 import Layout from '../containers/layout'
 import CRUHexPattern from '../components/cruHexPattern'
 import CRUDescription from '../components/cruDescription'
 import ParterBanner from '../components/partnerbanner'
 import ServiceList from '../components/serviceList'
+import Message from '../components/message'
+import CruFragment from '../components/crufragment'
 
 const IndexPage = () => {
+  const startDate = moment('2020-12-17')
+  const endDate = moment('2021-01-04')
+
+
   return (
     <Layout>
       <Spacing />
+      {moment().isBetween(startDate, endDate, 'days') &&
+        <Message />
+      }
+      <CruFragment />
       <CRUDescription />
       <CRUHexPattern />
       <div style={{ height: '50px' }} />
