@@ -12,10 +12,11 @@ const Alert = () => {
   return (
     <Fragment>
       <AlertHeader onClick={() => setShowModal(true)}>
-        <AlertTriangle
-          size={40}
-        />
-        <span style={{textAlign: 'center'}}><h4 >COVID-19 UPDATE</h4>Click here for more info</span>
+        <AlertTriangle size={32} />
+        <div style={{ textAlign: 'center' }}>
+          <h5 >COVID-19 UPDATE</h5>
+          <small >Click here for more info</small>
+        </div>
       </AlertHeader>
       <ReactModal
         style={{
@@ -44,7 +45,7 @@ const Alert = () => {
           <p>We are OPEN for business and adjusting to the current conditions of COVID-19.</p>
           <p>Amidst all of the uncertainties, we want to communicate how the CRU can support your needs during this time, and manage expectations accordingly.</p>
           <p><u>We continue to offer support services in the areas outlined below, as well as other areas. Please reach out to the suggested contact so we can provide the necessary support.</u></p>
-          <br/>
+          <br />
           <table>
             <tr>
               <th>PROJECT TYPE</th>
@@ -87,16 +88,16 @@ const Alert = () => {
               <td>Project Management Services - Intake Meeting Request</td>
             </tr>
           </table>
-          <br/>
+          <br />
           <p>In line with public health recommendations to socially isolate, our team is working remotely and will hold all meetings via teleconference or ZOOM.</p>
           <p>Our entire team remains committed to serving your projects. We are priority managing and pivoting daily based on need, and we appreciate your patience in advance.</p>
           <p>If you have any questions or concerns on current projects, please reach out to your Project Manager directly. As mentioned above, if you have new project requests, please reach out to the appropriate contacts and we will align you with the appropriate team to support your needs.</p>
           <p>We are in this together.</p>
           <p>Lori</p>
           <i>
-            Lori Campbell<br/>
-            Director of Operations, Clinical Research Unit<br/>
-            Cumming School of Medicine, University of Calgary<br/>
+            Lori Campbell<br />
+            Director of Operations, Clinical Research Unit<br />
+            Cumming School of Medicine, University of Calgary<br />
           </i>
         </AlertMessage>
       </ReactModal>
@@ -112,15 +113,11 @@ const AlertHeader = Styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 1rem;
-    padding: 1rem;
-    width: 80%;
-    max-width: 600px;
+    padding: 0.5rem;    
     color: #EF6C00;
     cursor: pointer;
-    box-shadow: ${props => props.theme.boxShadow};
 
-    h4{
+    h5 {
       margin: 0;
       margin-left: 1rem;
       color: #EF6C00;

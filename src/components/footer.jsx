@@ -123,7 +123,7 @@ const Footer = () => {
           <span> </span>
           by CRU
         </p>
-        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2019</p>
+        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2021</p>
       </Greeting>
     </>
   )

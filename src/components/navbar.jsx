@@ -8,12 +8,16 @@ import ImgButton from './imgbutton'
 import Hamburger from './hamburger'
 import uofcImg from '../images/partners/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
+import Alert from './alert'
 
 const NavBar = ({ page, group }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
     <>
+      <Bar>
+        <Alert />
+      </Bar>
       <Bar navbarpage={navbarpage}>
         <MenuContainer>
           <MobileSpacing />
@@ -136,14 +140,14 @@ const LinkSpacing = Styled.div`
 const MenuContainer = Styled.div`
   display:flex;
     @media only screen and (min-width: ${props =>
-      props.theme.tabletBreakPoint}){
+    props.theme.tabletBreakPoint}){
       display:none;
   }
 `
 const MenuContainerOpposite = Styled.div`
   display:flex;
     @media only screen and (max-width: ${props =>
-      props.theme.tabletBreakPoint}){
+    props.theme.tabletBreakPoint}){
       display:none;
   }
 `
@@ -155,7 +159,7 @@ const LinkContainer = Styled.div`
 `
 const MobileSpacing = Styled.div`
       @media only screen and (max-width: ${props =>
-        props.theme.tabletBreakPoint}){
+    props.theme.tabletBreakPoint}){
         width:20px;
   }
 
