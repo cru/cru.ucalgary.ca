@@ -10,9 +10,11 @@ const DataLifecycleManagementPage = () => {
       <Padding>
         <h1>Data Lifecycle Management</h1>
         <div style={{ height: 55 }} />
-        {/* PUT PAGE CONTENT HERE */}
+        {/* **************************
+              PUT PAGE CONTENT HERE 
+            **************************
+        */}
       </Padding>
-
       <div style={{ height: '100px' }} />
       <CruFragment />
       <div style={{ height: '100px' }} />

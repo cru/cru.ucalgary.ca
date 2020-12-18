@@ -81,11 +81,16 @@ const Footer = () => {
         </Column>
 
         {/* ***************** Policies  ***************** */}
-        <Column>
+        {/* 
+        TODO: 
+        
+         - UPDATE HREF LINKS 
+        */}
+        {/* <Column>
           <Content>
             <Title>Policies</Title>
             <a
-              href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
+              href="https://www.ucalgary.ca/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,7 +100,7 @@ const Footer = () => {
               </LinkStyle>
             </a>
             <a
-              href="https://cumming.ucalgary.ca/"
+              href="https://www.ucalgary.ca/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,7 +120,7 @@ const Footer = () => {
               </LinkStyle>
             </a>
             <a
-              href="https://www.albertahealthservices.ca/"
+              href="https://www.ucalgary.ca/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -125,7 +130,7 @@ const Footer = () => {
               </LinkStyle>
             </a>
             <a
-              href="https://www.albertahealthservices.ca/"
+              href="https://www.ucalgary.ca/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -135,7 +140,7 @@ const Footer = () => {
               </LinkStyle>
             </a>
           </Content>
-        </Column>
+        </Column> */}
 
         {/* ***************** Address  ***************** */}
         <Column>
