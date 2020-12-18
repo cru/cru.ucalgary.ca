@@ -5,11 +5,15 @@ import CRUHexPattern from '../components/cruHexPattern'
 import CRUDescription from '../components/cruDescription'
 import ParterBanner from '../components/partnerbanner'
 import ServiceList from '../components/serviceList'
+import Message from '../components/message'
+import CruFragment from '../components/crufragment'
 
 const IndexPage = () => {
   return (
     <Layout>
       <Spacing />
+      <Message/>
+      <CruFragment />
       <CRUDescription />
       <CRUHexPattern />
       <div style={{ height: '50px' }} />

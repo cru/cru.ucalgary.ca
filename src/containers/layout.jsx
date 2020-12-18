@@ -22,7 +22,6 @@ const Layout = ({ title, page, group, children }) => {
       <ThemeProvider theme={theme}>
         <MaxWidth>
           <NavBar page={page} group={group}/>
-          <Alert/>
           <main>{children}</main>
           <EmailFAB />
           <footer>

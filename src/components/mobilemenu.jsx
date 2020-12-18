@@ -7,7 +7,7 @@ import Styled from 'styled-components'
 const MobileMenu = ({ navbarpage }) => {
   return (
     <MobilePage navbarpage={navbarpage}>
-      <div style={{ height: '70px' }} />
+      <div style={{ height: '140px' }} />
       <Link to="/people">
         <MobileLink>
           <h5 >
@@ -104,7 +104,7 @@ const MobileLink = Styled.div`
 const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
-  overflow:hidden;
+  overflow: hidden;
   height: ${props => (props.navbarpage ? '100vh' : '0px')};
   width:100vw;
   position: fixed;
