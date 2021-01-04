@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Styled from 'styled-components'
 import moment from 'moment'
 
@@ -12,14 +12,19 @@ import CruFragment from '../components/crufragment'
 import { Fragment } from 'react'
 
 const IndexPage = () => {
-  const startDate = moment('2020-12-17')
-  const endDate = moment('2021-01-04')
+  const [showMessage, setShowMessage] = useState(false)
 
+  useEffect(() => {
+    const startDate = moment('2020-12-17')
+    const endDate = moment('2021-01-04')
+
+    setShowMessage(moment().isBetween(startDate, endDate, 'days'))
+  }, [])
 
   return (
     <Layout>
       <Spacing />
-      {moment().isBetween(startDate, endDate, 'days') &&
+      {showMessage &&
         <Fragment>
           <Message />
           <CruFragment />
