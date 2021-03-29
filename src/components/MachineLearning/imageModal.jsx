@@ -6,22 +6,35 @@ import { XCircle } from 'react-feather'
 
 Modal.setAppElement('body')
 
-const ImageModal = (props) => {
-    return (
-        <Fragment>
-            <ReactModal
-                style={{ overlay: { backgroundColor: 'rgba(33, 33, 33, 0.85)' }, content: { maxWidth: 1500, width: '80%', margin: 'auto', backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none' } }}
-                isOpen={props.visible}
-                shouldCloseOnEsc={true}
-                shouldReturnFocusAfterClose={true}
-                closeTimeoutMS={200}
-                onRequestClose={props.closeModal}>
-
-                <XCircle size={40} onClick={props.closeModal} style={{ cursor: 'pointer', color: '#ffffff', float: 'right' }} />
-                <Img alt="image" src={props.source} />
-            </ReactModal>
-        </Fragment>
-    )
+const ImageModal = props => {
+  return (
+    <Fragment>
+      <ReactModal
+        style={{
+          overlay: { backgroundColor: 'rgba(33, 33, 33, 0.85)' },
+          content: {
+            maxWidth: 1500,
+            width: '80%',
+            margin: 'auto',
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            border: 'none',
+          },
+        }}
+        isOpen={props.visible}
+        shouldCloseOnEsc={true}
+        shouldReturnFocusAfterClose={true}
+        closeTimeoutMS={200}
+        onRequestClose={props.closeModal}
+      >
+        <XCircle
+          size={40}
+          onClick={props.closeModal}
+          style={{ cursor: 'pointer', color: '#ffffff', float: 'right' }}
+        />
+        <Img alt='image' src={props.source} />
+      </ReactModal>
+    </Fragment>
+  )
 }
 
 export default ImageModal

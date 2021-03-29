@@ -22,56 +22,48 @@ const NavBar = ({ page, group }) => {
         <MenuContainer>
           <MobileSpacing />
           <Hamburger
-            onClick={
-              navbarpage
-                ? () => setNavbarpage(false)
-                : () => setNavbarpage(true)
-            }
+            onClick={navbarpage ? () => setNavbarpage(false) : () => setNavbarpage(true)}
             toggle={navbarpage}
           />
         </MenuContainer>
         <MenuContainerOpposite>
           <LinkSpacing />
         </MenuContainerOpposite>
-        <ImgButton to="/">
-          <img src={cruImg} style={{ height: '36px' }} alt="CRU" />
+        <ImgButton to='/'>
+          <img src={cruImg} style={{ height: '36px' }} alt='CRU' />
         </ImgButton>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks
-            page="/people"
-            text="People"
-            group={page === 'people'}
-          />
+          <NavBarLinks page='/people' text='People' group={page === 'people'} />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarLinks page='/partners' text='Partners' group={page === 'partners'} />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
-            page="/partners"
-            text="Partners"
-            group={page === 'partners'}
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
-          <NavBarLinks
-            page="/publications"
-            text="Publications"
+            page='/publications'
+            text='Publications'
             group={page === 'publications'}
           />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarDropDown
-            text="Resources"
+            text='Resources'
             page={['data-lifecycle-management', 'machine-learning', 'downloads']}
             group={group === 'resources'}
-            selectedPage={['data-lifecycle-management', 'machine-learning', 'downloads'].find(el => el === page)}
+            selectedPage={[
+              'data-lifecycle-management',
+              'machine-learning',
+              'downloads',
+            ].find(el => el === page)}
           />
         </LinkContainer>
         <RightAlign>
-          <ImgButton icon="external-link-alt" href="https://www.ucalgary.ca/">
-            <img src={uofcImg} style={{ height: '28px' }} alt="UofC" />
+          <ImgButton icon='external-link-alt' href='https://www.ucalgary.ca/'>
+            <img src={uofcImg} style={{ height: '28px' }} alt='UofC' />
           </ImgButton>
         </RightAlign>
         <MobileSpacing />
@@ -97,8 +89,7 @@ const Bar = Styled.div`
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.navBarPrimary};
-  outline: 1px solid ${props =>
-    props.navbarpage ? 'white' : props.theme.navBarAccent};
+  outline: 1px solid ${props => (props.navbarpage ? 'white' : props.theme.navBarAccent)};
   width: 100%;
   height: 76px;
   margin: 0;
@@ -139,15 +130,13 @@ const LinkSpacing = Styled.div`
 `
 const MenuContainer = Styled.div`
   display:flex;
-    @media only screen and (min-width: ${props =>
-    props.theme.tabletBreakPoint}){
+    @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
       display:none;
   }
 `
 const MenuContainerOpposite = Styled.div`
   display:flex;
-    @media only screen and (max-width: ${props =>
-    props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
       display:none;
   }
 `
@@ -158,8 +147,7 @@ const LinkContainer = Styled.div`
   }
 `
 const MobileSpacing = Styled.div`
-      @media only screen and (max-width: ${props =>
-    props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
         width:20px;
   }
 

@@ -6,7 +6,7 @@ import PeopleList from '../components/peoplelist'
 
 const PeoplePage = () => {
   return (
-    <Layout title="People" page="people">
+    <Layout title='People' page='people'>
       <div style={{ height: 60 }} />
       <Padding>
         <h1>People</h1>

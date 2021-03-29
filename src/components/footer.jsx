@@ -9,7 +9,7 @@ const Footer = () => {
     return (
       <>
         &nbsp;&nbsp;
-        <FontAwesomeIcon className="linkStyleIcon" icon={name} />
+        <FontAwesomeIcon className='linkStyleIcon' icon={name} />
       </>
     )
   }
@@ -21,13 +21,13 @@ const Footer = () => {
         <Column>
           <Content>
             <Title>Explore</Title>
-            <Link style={{ textDecoration: 'none' }} to="/partners">
+            <Link style={{ textDecoration: 'none' }} to='/partners'>
               <LinkStyle>Partners</LinkStyle>
             </Link>
-            <Link style={{ textDecoration: 'none' }} to="/publications">
+            <Link style={{ textDecoration: 'none' }} to='/publications'>
               <LinkStyle>Publications</LinkStyle>
             </Link>
-            <Link style={{ textDecoration: 'none' }} to="/downloads">
+            <Link style={{ textDecoration: 'none' }} to='/downloads'>
               <LinkStyle>Downloads</LinkStyle>
             </Link>
           </Content>
@@ -38,9 +38,9 @@ const Footer = () => {
           <Content>
             <Title>Discover</Title>
             <a
-              href="https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
                 Careers
@@ -48,29 +48,25 @@ const Footer = () => {
               </LinkStyle>
             </a>
             <a
-              href="https://cumming.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://cumming.ucalgary.ca/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
                 Cumming School of Medicine
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
-            <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href='https://www.ucalgary.ca/' target='_blank' rel='noopener noreferrer'>
               <LinkStyle>
                 University of Calgary
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
             <a
-              href="https://www.albertahealthservices.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.albertahealthservices.ca/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
                 Alberta Health Services
@@ -157,16 +153,13 @@ const Footer = () => {
             <Address>
               Phone
               <span> </span>
-              <a style={{ textDecoration: 'none' }} href="tel:14032103845">
+              <a style={{ textDecoration: 'none' }} href='tel:14032103845'>
                 1 403 210 3845
               </a>
               <br />
               Email
               <span> </span>
-              <a
-                style={{ textDecoration: 'none' }}
-                href="mailto:cru@ucalgary.ca"
-              >
+              <a style={{ textDecoration: 'none' }} href='mailto:cru@ucalgary.ca'>
                 cru@ucalgary.ca
               </a>
             </Address>
@@ -179,7 +172,7 @@ const Footer = () => {
         <p>
           Made with
           <span> </span>
-          <span role="img" aria-label="Hand Waving">
+          <span role='img' aria-label='Hand Waving'>
             ❤️
           </span>
           <span> </span>
@@ -201,8 +194,7 @@ const Container = Styled.div`
     padding-bottom:40px;
 
 
-    @media only screen and (max-width: ${props =>
-    props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
         display: block;
         padding-bottom:75px;
       }
@@ -214,8 +206,7 @@ const Column = Styled.div`
     padding-top:30px;
     padding-bottom:15px;
     margin-left:-30px;
-    @media only screen and (max-width: ${props =>
-    props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
     margin-left:-10px;
 
   }

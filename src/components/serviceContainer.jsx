@@ -8,7 +8,7 @@ const ServiceContainer = ({ title, description, image }) => {
       <div>
         <Content>
           <div style={{ height: '35px' }} />
-          <img style={{ height: '40px' }} src={image} alt="" />
+          <img style={{ height: '40px' }} src={image} alt='' />
           <h4>{title}</h4>
           <p>{description}</p>
         </Content>
@@ -40,8 +40,7 @@ const Content = Styled.div`
       margin: 0 auto;
       padding-top:20px;
     }
-    @media only screen and (max-width: ${props =>
-      props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
       max-width:auto
     }
 

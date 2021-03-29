@@ -6,7 +6,7 @@ import PublicationsList from '../components/publicationslist'
 import CruFragment from '../components/crufragment'
 
 const PublicationsPage = () => (
-  <Layout title="Publications" page="publications">
+  <Layout title='Publications' page='publications'>
     <Padding>
       <div style={{ height: 60 }} />
       <h1>Publications</h1>

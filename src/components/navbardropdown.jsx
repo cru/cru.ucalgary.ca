@@ -9,10 +9,11 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
     <li key={pageName.toString()}>
       <NavBarLinks
         page={`/${pageName}`}
-        text={`${pageName.toLowerCase()
+        text={`${pageName
+          .toLowerCase()
           .replace(/-/g, ' ')
           .split(' ')
-          .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+          .map(s => s.charAt(0).toUpperCase() + s.substring(1))
           .join(' ')}`}
         group={selectedPage === pageName ? selectedPage : ''}
         style={{ fontSize: '19.5px' }}
@@ -25,9 +26,9 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
     <Container>
       <LinkText className={group && 'selected'}>
         {text}
-        <FontAwesomeIcon style={{ fontSize: '14px' }} icon="caret-down" />
+        <FontAwesomeIcon style={{ fontSize: '14px' }} icon='caret-down' />
       </LinkText>
-      <Menu className="navbardropdown-menu">
+      <Menu className='navbardropdown-menu'>
         <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
       </Menu>
     </Container>

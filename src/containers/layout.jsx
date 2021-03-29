@@ -9,7 +9,7 @@ import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
 import '../helpers/fontawesomeimports'
-import '../styles/bootstrap.css';
+import '../styles/bootstrap.css'
 import '../styles/main.scss'
 import '../styles/modal.css'
 
@@ -21,7 +21,7 @@ const Layout = ({ title, page, group, children }) => {
       <SEO title={title} />
       <ThemeProvider theme={theme}>
         <MaxWidth>
-          <NavBar page={page} group={group}/>
+          <NavBar page={page} group={group} />
           <main>{children}</main>
           <EmailFAB />
           <footer>

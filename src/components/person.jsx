@@ -8,7 +8,7 @@ const Person = ({ name, title, fixed, comment, color }) => {
     <Container>
       <Img fixed={fixed} />
       <h5>{name}</h5>
-      <br/>
+      <br />
       <p>{title}</p>
       {/* <Overlay color={color}>
         <div style={{ height: 15 }} />

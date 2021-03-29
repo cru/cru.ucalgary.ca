@@ -6,7 +6,7 @@ import Styled from 'styled-components'
 const Partner = ({ href, fixed }) => {
   return (
     <Container>
-      <a href={href} rel="noopener noreferrer" target="_blank">
+      <a href={href} rel='noopener noreferrer' target='_blank'>
         <Img fixed={fixed} />
         {/* <h5>{name}</h5> */}
       </a>

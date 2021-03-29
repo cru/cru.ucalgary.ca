@@ -8,9 +8,9 @@ const MobileMenu = ({ navbarpage }) => {
   return (
     <MobilePage navbarpage={navbarpage}>
       <div style={{ height: '140px' }} />
-      <Link to="/people">
+      <Link to='/people'>
         <MobileLink>
-          <h5 >
+          <h5>
             People
             <ArrowRight
               style={{
@@ -22,9 +22,9 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to="/partners">
+      <Link to='/partners'>
         <MobileLink>
-          <h5 >
+          <h5>
             Partners
             <ArrowRight
               style={{
@@ -36,9 +36,9 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to="/publications">
+      <Link to='/publications'>
         <MobileLink>
-          <h5 >
+          <h5>
             Publications
             <ArrowRight
               style={{
@@ -50,9 +50,9 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to="/data-lifecycle-mangement">
+      <Link to='/data-lifecycle-mangement'>
         <MobileLink>
-          <h5 >
+          <h5>
             Data Lifecycle Management
             <ArrowRight
               style={{
@@ -64,9 +64,9 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to="/machine-learning">
+      <Link to='/machine-learning'>
         <MobileLink>
-          <h5 >
+          <h5>
             Machine Learning
             <ArrowRight
               style={{
@@ -78,9 +78,9 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to="/downloads">
+      <Link to='/downloads'>
         <MobileLink>
-          <h5 >
+          <h5>
             Downloads
             <ArrowRight
               style={{

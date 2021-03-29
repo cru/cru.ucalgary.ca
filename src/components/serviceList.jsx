@@ -15,22 +15,22 @@ const ServiceList = () => {
       <Container>
         <Item>
           <ServiceContainer
-            title="Electronic Data Capture"
-            description="The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management."
+            title='Electronic Data Capture'
+            description='The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management.'
             image={IpadHealthIcon}
           />
         </Item>
         <Item>
           <ServiceContainer
-            title="Methods and Analytics"
-            description="The CRU provides statistical support for clinical trials (study design, randomization, and statistical analysis) as well as observational studies (administrative data requests, cohort extractions, statistical analysis)."
+            title='Methods and Analytics'
+            description='The CRU provides statistical support for clinical trials (study design, randomization, and statistical analysis) as well as observational studies (administrative data requests, cohort extractions, statistical analysis).'
             image={BarChartIcon}
           />
         </Item>
         <Item>
           <ServiceContainer
-            title="Custom Software"
-            description="The CRU Software Development Team helps you with creative solutions to support the setup and delivery of novel research workflows."
+            title='Custom Software'
+            description='The CRU Software Development Team helps you with creative solutions to support the setup and delivery of novel research workflows.'
             image={CodeIcon}
           />
         </Item>
@@ -49,8 +49,7 @@ const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
-    @media only screen and (max-width: ${props =>
-      props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
       padding-left: ${props => props.theme.pageMobilePadding};
       padding-right: ${props => props.theme.pageMobilePadding};
       }
@@ -60,22 +59,19 @@ const Item = Styled.div`
     padding-top:40px;
     :first-child{
       padding-right:100px;
-      @media only screen and (max-width: ${props =>
-        props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
         padding-right:0px;
       }
     }
     :nth-child(2n){
       padding-right:100px;
-      @media only screen and (max-width: ${props =>
-        props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
         padding-right:0px;
       }
 
     }
 
-    @media only screen and (max-width: ${props =>
-      props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
         margin: 0 auto;
       }
 

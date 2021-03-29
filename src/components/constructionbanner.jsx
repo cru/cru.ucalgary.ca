@@ -6,11 +6,11 @@ const ConstructionBanner = () => {
     <>
       <Banner>
         <p>
-          <span role="img" aria-label="Construction warning">
+          <span role='img' aria-label='Construction warning'>
             🚧 👷🏽‍&nbsp;
           </span>
           This page is currently under construction&nbsp;&nbsp;&nbsp;&nbsp;
-          <span role="img" aria-label="Construction warning">
+          <span role='img' aria-label='Construction warning'>
             🚧
           </span>
         </p>

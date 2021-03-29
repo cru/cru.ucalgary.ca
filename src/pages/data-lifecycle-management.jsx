@@ -5,7 +5,7 @@ import CruFragment from '../components/crufragment'
 
 const DataLifecycleManagementPage = () => {
   return (
-    <Layout title="Data Lifecycle Management" page="data-lifecycle-management">
+    <Layout title='Data Lifecycle Management' page='data-lifecycle-management'>
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Data Lifecycle Management</h1>
