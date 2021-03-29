@@ -50,8 +50,13 @@ const MachineLearningPage = () => {
           </p>
           <div className='mt-5'>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='one'
                 onClick={() => toggleOne(!showOne)}
               >
@@ -61,14 +66,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Intro - Machine Learning vs. Statistics
-              </h3>
+              </h5>
               <Collapse isOpen={showOne}>
                 <Intro />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='two'
                 onClick={() => toggleTwo(!showTwo)}
               >
@@ -78,14 +88,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Machine Learning Step by Step
-              </h3>
+              </h5>
               <Collapse isOpen={showTwo}>
                 <StepByStep />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='three'
                 onClick={() => toggleThree(!showThree)}
               >
@@ -95,14 +110,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 ML Algorithms
-              </h3>
+              </h5>
               <Collapse isOpen={showThree}>
                 <Algorithms />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='four'
                 onClick={() => toggleFour(!showFour)}
               >
@@ -112,14 +132,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Tools
-              </h3>
+              </h5>
               <Collapse isOpen={showFour}>
                 <Tools />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='four'
                 onClick={() => toggleFive(!showFive)}
               >
@@ -129,14 +154,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Interpretability Vs. Accuracy
-              </h3>
+              </h5>
               <Collapse isOpen={showFive}>
                 <InterpretabilityVsAccuracy />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='five'
                 onClick={() => toggleSix(!showSix)}
               >
@@ -146,14 +176,19 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Machine Learning in Medicine
-              </h3>
+              </h5>
               <Collapse isOpen={showSix}>
                 <InMedicine />
               </Collapse>
             </div>
             <div>
-              <h3
-                style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+              <h5
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: 0,
+                }}
                 id='six'
                 onClick={() => toggleSeven(!showSeven)}
               >
@@ -163,7 +198,7 @@ const MachineLearningPage = () => {
                   <ChevronRight size={24} className='mr-2' />
                 )}
                 Summary
-              </h3>
+              </h5>
               <Collapse isOpen={showSeven}>
                 <Summary />
               </Collapse>

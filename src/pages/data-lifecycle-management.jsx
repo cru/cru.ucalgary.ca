@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { ChevronDown, ChevronRight } from 'react-feather'
 import { Collapse } from 'reactstrap'
+import Styled from 'styled-components'
 
 import Layout from '../containers/layout'
 import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
+import PublicationLink from '../components/publicationlink'
 
 const DataLifecycleManagementPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -88,8 +90,13 @@ const DataLifecycleManagementPage = () => {
         <div>
           <h3>Data Lifecycle Management through Stages</h3>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='one'
               onClick={() => toggleOne(!showOne)}
             >
@@ -99,7 +106,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               1) Project Intake
-            </h3>
+            </h5>
             <Collapse isOpen={showOne}>
               <p style={{ marginTop: 0 }}>
                 The CRU hosts a variety of leading EDC platforms, such as REDCap, REDCap
@@ -172,11 +179,17 @@ const DataLifecycleManagementPage = () => {
                   </li>
                 </ul>
               </div>
+              <CruFragment />
             </Collapse>
           </div>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='two'
               onClick={() => toggleTwo(!showTwo)}
             >
@@ -186,7 +199,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               2) Data Setup & Collection
-            </h3>
+            </h5>
             <Collapse isOpen={showTwo}>
               <p style={{ marginTop: 0 }}>
                 Once a data collection platform has been agreed upon and the intake
@@ -209,11 +222,17 @@ const DataLifecycleManagementPage = () => {
                 security features are systematically used to ensure suitable data
                 accessibility and data security.
               </p>
+              <CruFragment />
             </Collapse>
           </div>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='three'
               onClick={() => toggleThree(!showThree)}
             >
@@ -223,7 +242,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               3) Data Storing & Handling
-            </h3>
+            </h5>
             <Collapse isOpen={showThree}>
               <p style={{ marginTop: 0 }}>
                 The CRU uses a variety of data storage services, including perimeter
@@ -287,11 +306,17 @@ const DataLifecycleManagementPage = () => {
                 team members, in a manner that always prioritizes security and data
                 protection.
               </p>
+              <CruFragment />
             </Collapse>
           </div>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='four'
               onClick={() => toggleFour(!showFour)}
             >
@@ -301,7 +326,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               4) Data Analysis
-            </h3>
+            </h5>
             <Collapse isOpen={showFour}>
               If requested, the CRU can provide the following additional support for
               clinical trials and observational studies:
@@ -337,11 +362,17 @@ const DataLifecycleManagementPage = () => {
                   fulfilled.
                 </li>
               </ul>
+              <CruFragment />
             </Collapse>
           </div>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='five'
               onClick={() => toggleFive(!showFive)}
             >
@@ -351,7 +382,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               5) Data Backup & Archive
-            </h3>
+            </h5>
             <Collapse isOpen={showFive}>
               <p style={{ marginTop: 0 }}>
                 We apply industry standard data backups and redundancy. Data backups can
@@ -374,11 +405,17 @@ const DataLifecycleManagementPage = () => {
                 ensure the data archival plan is appropriate in terms of file formats,
                 indexing, timely retrieval, and re-usability.
               </p>
+              <CruFragment />
             </Collapse>
           </div>
           <div>
-            <h3
-              style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
+            <h5
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
               id='six'
               onClick={() => toggleSix(!showSix)}
             >
@@ -388,7 +425,7 @@ const DataLifecycleManagementPage = () => {
                 <ChevronRight size={24} className='mr-2' />
               )}
               6) Project Close-out & Data Purging
-            </h3>
+            </h5>
             <Collapse isOpen={showSix}>
               <p style={{ marginTop: 0 }}>
                 Project close-out procedures will be performed prior to database locking
@@ -411,8 +448,56 @@ const DataLifecycleManagementPage = () => {
                 policies and regulations to ensure all data is properly removed, and all
                 traces of the client’s data are completely deleted from our servers.
               </p>
+              <CruFragment />
             </Collapse>
           </div>
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <ul>
+            <li>
+              <PublicationLink
+                title='UofC Privacy Policy'
+                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
+                style={{ padding: 0 }}
+              />
+            </li>
+            <li>
+              <PublicationLink
+                title='Acceptable Use of Electronic Resources and Information Policy'
+                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
+                style={{ padding: 0 }}
+              />
+            </li>
+            <li>
+              <PublicationLink
+                title='Information Asset Management Policy'
+                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
+                style={{ padding: 0 }}
+              />
+            </li>
+            <li>
+              <PublicationLink
+                title='Health Information Management Policy'
+                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
+                style={{ padding: 0 }}
+              />
+            </li>
+            <li>
+              <PublicationLink
+                title='Storage of Inactive Clinical Research Records Policy'
+                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
+                style={{ padding: 0 }}
+              />
+            </li>
+            <li>
+              <PublicationLink
+                title='UofC Operating Standards, Guidelines & Forms'
+                url='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
+                style={{ padding: 0 }}
+              />
+            </li>
+          </ul>
         </div>
       </Padding>
       <div style={{ height: '100px' }} />
@@ -421,5 +506,24 @@ const DataLifecycleManagementPage = () => {
     </Layout>
   )
 }
+
+const LinkStyle = Styled.p`
+  font-family: 'Roboto';
+  color: ${props => props.theme.fontSecColor};
+  text-decoration:none;
+  cursor:pointer;
+  :hover {
+    color: ${props => props.theme.brandPrimColor};
+  }
+
+  .linkStyleIcon{
+    font-size:11px;
+    color:grey;
+  }
+  .contactStyleIcon{
+    color:grey;
+    font-size:7px;
+  }
+`
 
 export default DataLifecycleManagementPage

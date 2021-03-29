@@ -77,66 +77,71 @@ const Footer = () => {
         </Column>
 
         {/* ***************** Policies  ***************** */}
-        {/* 
-        TODO: 
-        
-         - UPDATE HREF LINKS 
-        */}
-        {/* <Column>
+        <Column>
           <Content>
             <Title>Policies</Title>
             <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
-                UofC Privacy and Security Office
+                UofC Privacy Policy
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
             <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
-                UofC Information Security Classification Standard
+                Acceptable Use of Electronic Resources and Information Policy
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
             <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
-                UofC Information Security Classification Standard Appendix
+                Information Asset Management Policy
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
             <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
-                UofC Asset Management Policy
+                Health Information Management Policy
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
             <a
-              href="https://www.ucalgary.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <LinkStyle>
-                UofC Policies
+                Storage of Inactive Clinical Research Records Policy
+                {externalLinkIcon('external-link-alt')}
+              </LinkStyle>
+            </a>
+            <a
+              href='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <LinkStyle>
+                UofC Operating Standards, Guidelines & Forms
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
           </Content>
-        </Column> */}
+        </Column>
 
         {/* ***************** Address  ***************** */}
         <Column>

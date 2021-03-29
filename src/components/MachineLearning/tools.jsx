@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Styled from 'styled-components'
 import CruFragment from '../crufragment'
+import PublicationLink from '../publicationlink'
 
 const Tools = () => {
   return (
@@ -10,28 +11,32 @@ const Tools = () => {
         include:
         <ul>
           <li>
-            <a rel='noopener noreferrer' target='_blank' href='https://orange.biolab.si/'>
-              Orange
-            </a>
+            <PublicationLink
+              title='Orange'
+              url='https://orange.biolab.si/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://www.cs.waikato.ac.nz/ml/weka/'
-            >
-              WEKA
-            </a>
+            <PublicationLink
+              title='WEKA'
+              url='https://www.cs.waikato.ac.nz/ml/weka/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a rel='noopener noreferrer' target='_blank' href='https://www.knime.com/'>
-              KNIME
-            </a>
+            <PublicationLink
+              title='KNIME'
+              url='https://www.knime.com/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a rel='noopener noreferrer' target='_blank' href='https://rapidminer.com/'>
-              RapidMiner
-            </a>
+            <PublicationLink
+              title='RapidMiner'
+              url='https://rapidminer.com/'
+              style={{ padding: 0 }}
+            />
           </li>
         </ul>
         <br />
@@ -39,68 +44,60 @@ const Tools = () => {
         experience is required:
         <ul>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://scikit-learn.org/stable/'
-            >
-              scikit-learn
-            </a>
+            <PublicationLink
+              title='scikit-learn'
+              url='https://scikit-learn.org/stable/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://www.tensorflow.org/'
-            >
-              TensorFlow
-            </a>
+            <PublicationLink
+              title='TensorFlow'
+              url='https://www.tensorflow.org/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a rel='noopener noreferrer' target='_blank' href='https://pytorch.org/'>
-              PyTorch
-            </a>
+            <PublicationLink
+              title='PyTorch'
+              url='https://pytorch.org/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a rel='noopener noreferrer' target='_blank' href='https://keras.io/'>
-              Keras
-            </a>
+            <PublicationLink
+              title='Keras'
+              url='https://keras.io/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://mahout.apache.org/'
-            >
-              Apache Mahout
-            </a>
+            <PublicationLink
+              title='Apache Mahout'
+              url='https://mahout.apache.org/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='http://accord-framework.net/'
-            >
-              Accord.NET
-            </a>
+            <PublicationLink
+              title='Accord.NET'
+              url='http://accord-framework.net/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://www.shogun-toolbox.org/'
-            >
-              Shogun
-            </a>
+            <PublicationLink
+              title='Shogun'
+              url='https://www.shogun-toolbox.org/'
+              style={{ padding: 0 }}
+            />
           </li>
           <li>
-            <a
-              rel='noopener noreferrer'
-              target='_blank'
-              href='https://colab.research.google.com/notebooks/intro.ipynb'
-            >
-              Colab
-            </a>
+            <PublicationLink
+              title='Colab'
+              url='https://colab.research.google.com/notebooks/intro.ipynb'
+              style={{ padding: 0 }}
+            />
           </li>
         </ul>
       </Content>
