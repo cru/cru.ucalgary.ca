@@ -6,10 +6,8 @@ const Tools = () => {
   return (
     <Fragment>
       <Content>
-        <p style={{ marginTop: 0 }}>
-          Some machine learning and data mining tools that require minimal experience
-          include:
-        </p>
+        Some machine learning and data mining tools that require minimal experience
+        include:
         <ul>
           <li>
             <a rel='noopener noreferrer' target='_blank' href='https://orange.biolab.si/'>
@@ -37,10 +35,8 @@ const Tools = () => {
           </li>
         </ul>
         <br />
-        <p>
-          For working with more powerful tools as below, some data mining and programming
-          experience is required:
-        </p>
+        For working with more powerful tools as below, some data mining and programming
+        experience is required:
         <ul>
           <li>
             <a
