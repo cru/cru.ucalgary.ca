@@ -8,11 +8,8 @@ const CRUDescription = () => {
       <Padding>
         <Title>Better Data Better Research</Title>
         <Body>
-          The
-          <span> </span>
-          <b>Clinical Research Unit</b>
-          <span> </span>
-          (CRU) is a core research support centre of the Cumming School of Medicine (CSM).
+          The <b>Clinical Research Unit</b> (CRU) is a core research support centre of the
+          Cumming School of Medicine (CSM).
         </Body>
       </Padding>
     </div>

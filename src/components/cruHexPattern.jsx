@@ -24,7 +24,7 @@ const CRUHexPattern = () => {
 export default CRUHexPattern
 
 const HexPattern = Styled.div`
-    content:url(${hexagonPattern});
+    content: url(${hexagonPattern});
     object-fit: cover;   
 
     @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){

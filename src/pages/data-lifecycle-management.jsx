@@ -13,6 +13,8 @@ import DataStorage from '../components/dlm/dataStorage'
 import DataAnalysis from '../components/dlm/dataAnalysis'
 import DataBackup from '../components/dlm/dataBackup'
 import Closeout from '../components/dlm/closeout'
+import dlm from '../images/dlm.jpg'
+import wordCloud from '../images/word-cloud.jpg'
 
 const DataLifecycleManagementPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -28,13 +30,17 @@ const DataLifecycleManagementPage = () => {
       <Padding>
         <h1>Data Lifecycle Management</h1>
         <div style={{ height: 55 }} />
-        <p>
-          The Clinical Research Unit (CRU) utilizes a standardized and repeatable
-          policy-driven approach to manage your research data through its lifecycle within
-          our organization. The Data Lifecycle Management (DLM) strategy summarizes the
-          specific data management practices that ensure appropriate handling of data at
-          all stages of the project.
-        </p>
+        <FadeBackground>
+          <TextOverlay>
+            <h6>
+              The Clinical Research Unit (CRU) utilizes a standardized and repeatable
+              policy-driven approach to manage your research data through its lifecycle
+              within our organization. The Data Lifecycle Management (DLM) strategy
+              summarizes the specific data management practices that ensure appropriate
+              handling of data at all stages of the project.
+            </h6>
+          </TextOverlay>
+        </FadeBackground>
         <p>
           Our approach ensures a secure, semi-automated, and client-friendly data
           management infrastructure. We can service your needs along the full continuum of
@@ -95,6 +101,7 @@ const DataLifecycleManagementPage = () => {
         </div>
         <div>
           <h3>Data Lifecycle Management through Stages</h3>
+          <Img src={dlm} />
           <div>
             <h5
               style={{
@@ -282,5 +289,32 @@ const DataLifecycleManagementPage = () => {
     </Layout>
   )
 }
+
+const Img = Styled.img`
+    display: block;
+    object-fit: contain;  
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+`
+
+const FadeBackground = Styled.div`
+    background-image: url('${wordCloud}');
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+`
+
+const TextOverlay = Styled.div`
+    width: 50%;
+    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+      width: 60%;
+    }
+    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+      width: 100%;
+    }
+`
 
 export default DataLifecycleManagementPage
