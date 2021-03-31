@@ -294,7 +294,7 @@ const Img = Styled.img`
     display: block;
     object-fit: contain;  
     width: 60%;
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
