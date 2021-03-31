@@ -293,10 +293,12 @@ const DataLifecycleManagementPage = () => {
 const Img = Styled.img`
     display: block;
     object-fit: contain;  
-    width: 85%;
+    width: 60%;
+    max-width: 350px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 50px;
 `
 
 const FadeBackground = Styled.div`
