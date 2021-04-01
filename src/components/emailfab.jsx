@@ -12,10 +12,7 @@ const EmailFAB = () => {
   return (
     <>
       <div style={{ height: '200px' }} />
-      <ScrollTrigger
-        onEnter={() => setToggle(false)}
-        onExit={() => setToggle(true)}
-      >
+      <ScrollTrigger onEnter={() => setToggle(false)} onExit={() => setToggle(true)}>
         <div
           style={{
             backgroundColor: 'transparent',
@@ -27,19 +24,21 @@ const EmailFAB = () => {
 
       <ButtonContainer toggle={toggle}>
         <FabButton toggle={toggle}>
-          <Mail size={22} className='mr-2' style={{ display: toggle ? 'block' : 'none' }} />
-          <Text style={{ display: toggle ? 'block' : 'none' }}>
-            Email CRU
-            </Text>
+          <Mail
+            size={22}
+            className='mr-2'
+            style={{ display: toggle ? 'block' : 'none' }}
+          />
+          <Text style={{ display: toggle ? 'block' : 'none' }}>Email CRU</Text>
           <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
         </FabButton>
       </ButtonContainer>
 
-      <div id="target" />
+      <div id='target' />
       <PlaceHolderContainer style={{ display: toggle ? 'block' : 'none' }} />
       {toggle && (
         <ScrollButtonContainer>
-          <Link to="target" smooth="true" offset={-50} duration={400}>
+          <Link to='target' smooth='true' offset={-50} duration={400}>
             <ScrollButton toggle={toggle} />
           </Link>
         </ScrollButtonContainer>
@@ -86,8 +85,7 @@ const ScrollButton = Styled.div`
     background-color:  transparent;
 
     :hover {
-        box-shadow:  ${props =>
-    props.toggle ? props.theme.boxShadow : 'none'};
+        box-shadow:  ${props => (props.toggle ? props.theme.boxShadow : 'none')};
         background-color: transparent;
     }
     :active {
@@ -119,9 +117,8 @@ const FabButton = Styled.div`
     width: ${props => (props.toggle ? '130px' : '100%')};
     border-radius: ${props => (props.toggle ? '50px' : '0%')};
     background-color:  ${props =>
-    props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
-    box-shadow:${props =>
-    props.toggle ? props.theme.boxShadowAccent : 'none'};
+      props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
+    box-shadow:${props => (props.toggle ? props.theme.boxShadowAccent : 'none')};
 
 `
 

@@ -5,11 +5,7 @@ import Styled from 'styled-components'
 const Button = ({ style, onClick, children, type }) => {
   return (
     <>
-      <DefaultButton
-        style={style}
-        onClick={onClick}
-        type={type}
-      >
+      <DefaultButton style={style} onClick={onClick} type={type}>
         {children}
       </DefaultButton>
     </>

@@ -9,10 +9,11 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
     <li key={pageName.toString()}>
       <NavBarLinks
         page={`/${pageName}`}
-        text={`${pageName.toLowerCase()
+        text={`${pageName
+          .toLowerCase()
           .replace(/-/g, ' ')
           .split(' ')
-          .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+          .map(s => s.charAt(0).toUpperCase() + s.substring(1))
           .join(' ')}`}
         group={selectedPage === pageName ? selectedPage : ''}
         style={{ fontSize: '19.5px' }}
@@ -25,10 +26,9 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
     <Container>
       <LinkText className={group && 'selected'}>
         {text}
-        <span> </span>
-        <FontAwesomeIcon style={{ fontSize: '14px' }} icon="caret-down" />
+        <FontAwesomeIcon style={{ fontSize: '14px' }} icon='caret-down' />
       </LinkText>
-      <Menu className="navbardropdown-menu">
+      <Menu className='navbardropdown-menu'>
         <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
       </Menu>
     </Container>
@@ -68,7 +68,7 @@ const Menu = Styled.div`
   position: absolute;
   z-index:99;
   padding-top:10px;
-  width:200px;
+  width:275px;
   background-color: ${props => props.theme.navBarPrimary};
   outline: 1.5px solid ${props => props.theme.navBarAccent}; 
   box-shadow: ${props => props.theme.boxShadow};

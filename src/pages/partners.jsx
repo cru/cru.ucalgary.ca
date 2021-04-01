@@ -6,7 +6,7 @@ import PartnerList from '../components/partnerlist'
 
 const PartnersPage = () => {
   return (
-    <Layout title="Partners" page="partners">
+    <Layout title='Partners' page='partners'>
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Partners</h1>

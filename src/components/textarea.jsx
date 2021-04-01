@@ -6,7 +6,7 @@ const TextArea = ({ placeholder, name, onChange }) => {
   return (
     <>
       <Field
-        rows="7"
+        rows='7'
         placeholder={placeholder}
         name={name}
         onChange={onChange}

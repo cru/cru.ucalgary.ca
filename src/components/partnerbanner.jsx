@@ -49,10 +49,7 @@ const getPartnersList = data => {
   data.allPartnersJson.edges.forEach(item =>
     partners.push(
       <ImgContainer key={item.node.name}>
-        <img
-          src={item.node.image.src.childImageSharp.fluid.src}
-          alt={item.node.name}
-        />
+        <img src={item.node.image.src.childImageSharp.fluid.src} alt={item.node.name} />
       </ImgContainer>
     )
   )
@@ -88,7 +85,7 @@ const ParterBanner = () => {
             <Header>
               <h5>
                 <span>
-                  <Link to="/partners">
+                  <Link to='/partners'>
                     See All Partners
                     <span> </span>
                     <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />

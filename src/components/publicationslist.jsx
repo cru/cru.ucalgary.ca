@@ -35,7 +35,7 @@ const PublicationsList = () => {
             onClick={() => setActiveList('machineLearning')}
           >
             Machine Learning
-            <Filter className='ml-2' size={15} color="grey" />
+            <Filter className='ml-2' size={15} color='grey' />
           </Button>
           <Button
             style={{
@@ -46,7 +46,7 @@ const PublicationsList = () => {
             onClick={() => setActiveList('depression')}
           >
             Depression
-            <Filter className='ml-2' size={15} color="grey" />
+            <Filter className='ml-2' size={15} color='grey' />
           </Button>
           <br />
           <br />

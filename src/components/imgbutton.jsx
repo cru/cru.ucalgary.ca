@@ -10,7 +10,7 @@ const ImgButton = ({ to, href, icon, children }) => {
       return (
         <>
           {children}
-          <FontAwesomeIcon className="icon" icon={icon} />
+          <FontAwesomeIcon className='icon' icon={icon} />
         </>
       )
     }
@@ -22,7 +22,7 @@ const ImgButton = ({ to, href, icon, children }) => {
       return <Link to={to}>{content()}</Link>
     }
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <a href={href} target='_blank' rel='noopener noreferrer'>
         {content()}
       </a>
     )

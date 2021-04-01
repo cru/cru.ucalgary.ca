@@ -24,12 +24,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <Spacing />
-      {showMessage &&
+      {showMessage && (
         <Fragment>
           <Message />
           <CruFragment />
         </Fragment>
-      }
+      )}
       <CRUDescription />
       <CRUHexPattern />
       <div style={{ height: '50px' }} />

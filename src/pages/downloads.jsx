@@ -5,7 +5,7 @@ import Padding from '../containers/padding'
 import CruFragment from '../components/crufragment'
 
 const DownloadsPage = () => (
-  <Layout title="Downloads" page="downloads" group="resources" >
+  <Layout title='Downloads' page='downloads' group='resources'>
     <div style={{ minHeight: '100vh' }}>
       <div style={{ height: 60 }} />
       <Padding>
@@ -14,9 +14,8 @@ const DownloadsPage = () => (
         <p style={{ maxWidth: 450 }}>
           <b>IMPORTANT</b>
           <span> </span>
-          You may need administrative privileges to download and install
-          software. If you are on a managed computer, please contact your local
-          IT administrator.
+          You may need administrative privileges to download and install software. If you
+          are on a managed computer, please contact your local IT administrator.
         </p>
         <div style={{ height: 10 }} />
 
@@ -27,7 +26,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>Windows 8.1/10</td>
             <td>
-              <a href="/dfexplore_5_1_4/DFexplore5_1_4.msi" download>
+              <a href='/dfexplore_5_1_4/DFexplore5_1_4.msi' download>
                 DFexplore5.1.4.msi
               </a>
             </td>
@@ -35,7 +34,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: 'white' }}>
             <td>macOS 10.12 (Sierra) and newer</td>
             <td>
-              <a href="/dfexplore_5_1_4/DFexplore5_1_4.pkg" download>
+              <a href='/dfexplore_5_1_4/DFexplore5_1_4.pkg' download>
                 DFexplore5.1.4.pkg
               </a>
             </td>
@@ -47,10 +46,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: 'white' }}>
             <td>DFnet User Guide</td>
             <td>
-              <a
-                href="/dfexplore_5_1_4/DFnet_user_guide_5_1_4.pdf"
-                download
-              >
+              <a href='/dfexplore_5_1_4/DFnet_user_guide_5_1_4.pdf' download>
                 DFnet_user_guide_5.1.4.pdf
               </a>
             </td>
@@ -63,10 +59,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>Windows 7/8/10</td>
             <td>
-              <a
-                href="/datafax_2016_0_0/iDataFax2016_0_0.msi"
-                download
-              >
+              <a href='/datafax_2016_0_0/iDataFax2016_0_0.msi' download>
                 iDataFax2016.msi
               </a>
             </td>
@@ -74,10 +67,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: 'white' }}>
             <td>OS X 10.8 (Mountain Lion) and newer</td>
             <td>
-              <a
-                href="/datafax_2016_0_0/iDataFax2016_0_0.pkg"
-                download
-              >
+              <a href='/datafax_2016_0_0/iDataFax2016_0_0.pkg' download>
                 iDataFax2016.pkg
               </a>
             </td>
@@ -85,10 +75,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: '#e3f2ff' }}>
             <td>CRU User Guide</td>
             <td>
-              <a
-                href="/datafax_2016_0_0/cru_user_guide_2016_0_0.pdf"
-                download
-              >
+              <a href='/datafax_2016_0_0/cru_user_guide_2016_0_0.pdf' download>
                 cru_user_guide_2016.pdf
               </a>
             </td>
@@ -96,10 +83,7 @@ const DownloadsPage = () => (
           <tr style={{ backgroundColor: 'white' }}>
             <td>DFnet User Guide</td>
             <td>
-              <a
-                href="/datafax_2016_0_0/dfnet_user_guide_2016_0_0.pdf"
-                download
-              >
+              <a href='/datafax_2016_0_0/dfnet_user_guide_2016_0_0.pdf' download>
                 dfnet_user_guide_2016.pdf
               </a>
             </td>

@@ -8,13 +8,13 @@ const PublicationLink = ({ url, title, authors, year, publisher, style }) => {
     <>
       <Container style={style}>
         <Information>
-          <Title href={url} target="_blank">
+          <Title href={url} target='_blank'>
             {title}
             &nbsp;&nbsp;
             <FontAwesomeIcon
               style={{ fontSize: 10 }}
-              className="linkStyleIcon"
-              icon="external-link-alt"
+              className='linkStyleIcon'
+              icon='external-link-alt'
             />
           </Title>
           <Authors>{authors}</Authors>

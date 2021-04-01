@@ -33,11 +33,7 @@ const getThirdPartyPartnersList = data => {
   data.allThirdpartypartnersJson.edges.forEach(item =>
     everyone.push(
       <>
-        <PartnerLink
-          rel="noopener noreferrer"
-          target="_blank"
-          href={item.node.href}
-        >
+        <PartnerLink rel='noopener noreferrer' target='_blank' href={item.node.href}>
           {item.node.name}
         </PartnerLink>
         <br />

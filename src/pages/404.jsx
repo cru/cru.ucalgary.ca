@@ -5,7 +5,7 @@ import CruFragment from '../components/crufragment'
 
 const NotFoundPage = () => {
   return (
-    <Layout title="404 Page Not Found">
+    <Layout title='404 Page Not Found'>
       <Padding>
         <div style={{ height: '45vh' }}>
           <div
@@ -19,13 +19,13 @@ const NotFoundPage = () => {
             <h1>404 Page Not Found</h1>
             <p>
               Ooops!
-                <br />
               <br />
-                The page you are looking for has been removed or relocated.
-                <span> </span>
-              <span role="img" aria-label="Sad Face">
+              <br />
+              The page you are looking for has been removed or relocated.
+              <span> </span>
+              <span role='img' aria-label='Sad Face'>
                 😢
-                </span>
+              </span>
             </p>
           </div>
         </div>

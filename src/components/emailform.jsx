@@ -10,27 +10,27 @@ const EmailForm = ({ style }) => {
   return (
     <>
       <Form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        action="/success"
+        name='contact'
+        method='post'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
+        action='/success'
         style={style}
       >
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
+        <input type='hidden' name='bot-field' />
+        <input type='hidden' name='form-name' value='contact' />
         <Space />
         <Row>
           <h4>Email CRU</h4>
-          <Input name="name" type="text" placeholder="name" />
+          <Input name='name' type='text' placeholder='name' />
         </Row>
         <Space />
         <Row>
-          <Input name="email" type="email" placeholder="email" />
+          <Input name='email' type='email' placeholder='email' />
         </Row>
         <Space />
         <Row>
-          <TextArea name="message" placeholder="message" />
+          <TextArea name='message' placeholder='message' />
         </Row>
         <Space />
 
@@ -42,7 +42,7 @@ const EmailForm = ({ style }) => {
           }}
         >
           <Button
-            type="submit"
+            type='submit'
             style={{
               fontSize: '15px',
             }}

@@ -7,7 +7,7 @@ import Padding from '../containers/padding'
 
 const SuccessPage = () => {
   return (
-    <Layout title="Success">
+    <Layout title='Success'>
       <div style={{ overflow: 'hidden' }}>
         <Padding>
           <div style={{ height: '45vh' }}>
@@ -36,13 +36,9 @@ const SuccessPage = () => {
                   {props => (
                     <div style={props}>
                       <div style={{ marginTop: '29px', paddingLeft: '10px' }}>
-                        <span
-                          role="img"
-                          aria-label="rocket"
-                          style={{ fontSize: '43px' }}
-                        >
+                        <span role='img' aria-label='rocket' style={{ fontSize: '43px' }}>
                           🚀
-                          </span>
+                        </span>
                       </div>
                     </div>
                   )}
@@ -50,11 +46,11 @@ const SuccessPage = () => {
               </div>
 
               <p>
-                Thank you for reaching out to us. We will get back to you as
-                soon as possible!
-                </p>
+                Thank you for reaching out to us. We will get back to you as soon as
+                possible!
+              </p>
               <br />
-              <Link to="/">back home</Link>
+              <Link to='/'>back home</Link>
             </div>
           </div>
         </Padding>
