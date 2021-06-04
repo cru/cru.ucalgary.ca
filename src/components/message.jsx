@@ -8,12 +8,12 @@ const Message = () => {
       <MessageBody>
         <p>Dear partners and researchers,</p>
         <p>
-          Please be advised that from June 14th - 25th (inclusive) the CRU will be
-          undertaking a team wide organizational initiative that will result in limited
-          availability to respond to non-urgent requests and emails during this time.
-          Urgent requests will continue to be addressed. If you have an URGENT request,
-          please indicate “URGENT” in the subject line of your request. Timelines for
-          response or resolution may be up to 8 business days, subject to team
+          Please be advised that from <b>June 14th - 25th</b> (inclusive) the CRU will be
+          undertaking a team wide organizational initiative that will result in{' '}
+          <b>limited availability</b> to respond to non-urgent requests and emails during
+          this time. Urgent requests will continue to be addressed. If you have an URGENT
+          request, please indicate “URGENT” in the subject line of your request. Timelines
+          for response or resolution may be up to 8 business days, subject to team
           availability.
         </p>
         <p>
