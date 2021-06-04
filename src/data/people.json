@@ -9,15 +9,6 @@
     }
   },
   {
-    "name": "Lori Campbell",
-    "title": "Director of Operations",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Campbell_Lori.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
     "name": "Tracy Wang",
     "title": "Program Manager Health Platforms",
     "comments": "",
@@ -41,15 +32,6 @@
     "comments": "IT and software development team lead",
     "image": {
       "src": "../images/people/Kuijten_Lennard.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Courtney Chapman",
-    "title": "Admin",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Chapman_Courtney.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
@@ -149,24 +131,6 @@
     "comments": "",
     "image": {
       "src": "../images/people/Kannanayakal_Deepthi.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Yair Knijn",
-    "title": "Tech Team Member",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Knijn_Yair.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Tannistha Nandi",
-    "title": "Tech Team Member",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Nandi_Tannistha.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   }
