@@ -4,21 +4,22 @@ import Styled from 'styled-components'
 const Message = () => {
   return (
     <Fragment>
-      <h4
-        style={{ textAlign: 'center' }}
-      >{`${'\u{1F384}'} Holiday Message ${'\u{1F384}'}`}</h4>
+      <h4 style={{ textAlign: 'center' }}>{`Availability Message`}</h4>
       <MessageBody>
         <p>Dear partners and researchers,</p>
         <p>
-          The University of Calgary and Clinical Research Unit are closed from December
-          23rd, 2020 to January 3rd, 2021 (inclusive). We will be regularly monitoring our
-          service desks and support email accounts for any urgent issues. We will aim to
-          resolve issues in 2-3 business days and appreciate your patience over the
-          holiday period.
+          Please be advised that from <b>June 14th - 25th</b> (inclusive) the CRU will be
+          undertaking a team wide organizational initiative that will result in{' '}
+          <b>limited availability</b> to respond to non-urgent requests and emails during
+          this time. Urgent requests will continue to be addressed. If you have an URGENT
+          request, please indicate “URGENT” in the subject line of your request. Timelines
+          for response or resolution may be up to 8 business days, subject to team
+          availability.
         </p>
         <p>
-          On behalf of the entire CRU team, we wish you and your loved ones a safe and
-          joyous holiday season.
+          If possible, please send any project and/or support requests as soon as possible
+          to allow us to minimize the effect of this period of limited availability. Thank
+          you in advance for your understanding.
         </p>
         <p>- The Clinical Research Unit</p>
       </MessageBody>

@@ -15,8 +15,8 @@ const IndexPage = () => {
   const [showMessage, setShowMessage] = useState(false)
 
   useEffect(() => {
-    const startDate = moment('2020-12-17')
-    const endDate = moment('2021-01-04')
+    const startDate = moment('2021-06-03')
+    const endDate = moment('2021-06-26')
 
     setShowMessage(moment().isBetween(startDate, endDate, 'days'))
   }, [])
