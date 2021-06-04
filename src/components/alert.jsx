@@ -137,11 +137,11 @@ const Alert = () => {
             with the appropriate team to support your needs.
           </p>
           <p>We are in this together.</p>
-          <p>Lori</p>
+          <p>Tracy</p>
           <i>
-            Lori Campbell
+            Tracy Wang
             <br />
-            Director of Operations, Clinical Research Unit
+            Manager, Clinical Research Unit
             <br />
             Cumming School of Medicine, University of Calgary
             <br />
