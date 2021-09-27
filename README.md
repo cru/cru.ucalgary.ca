@@ -2,6 +2,14 @@
   Clinical Research Unit
 </h1>
 
+# git LFS and Netlify Large Media
+
+- this project uses git-lfs for the dfexplore and idatafax downloads
+- git-lfs is configured to use Netlify Large Media for hosting the files
+- if you have issues cloning this repo, try the following:
+- 1) ensure you have git-lfs instaled
+- 2) clone the repo from cli: GIT_LFS_SKIP_SMUDGE=1 git clone [repo]
+
 # Install yarn
 
 - sudo apt remove cmdtest
@@ -19,11 +27,6 @@
 
 - yarn start
 - go to localhost:8000
-
-# git LFS and Netlify Large Media
-
-- this project uses git-lfs for the dfexplore and idatafax downloads
-- git-lfs is configured to use Netlify Large Media for hosting the files
 
 # Deployments
 
