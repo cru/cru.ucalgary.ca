@@ -73,11 +73,20 @@
   },
   {
     "name": "Lynne Hardie",
-    "title": "Business Analyst",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
       "src": "../images/people/Hardie_Lynne.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Rebecca Frampton",
+    "title": "Project Services Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/avatar_placeholder.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
     }
   },
   {
@@ -86,15 +95,6 @@
     "comments": "",
     "image": {
       "src": "../images/people/Boone_Pieter.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Dan Craciun",
-    "title": "Tech Team Member",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Craciun_Dan.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
@@ -132,6 +132,24 @@
     "image": {
       "src": "../images/people/Kannanayakal_Deepthi.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Kaele Tunyi Anembom",
+    "title": "System Administrator",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Tunyi_Anembom_Kaele.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Jessie Hart Szostakiwskyj",
+    "title": "Methods and Analytics Analyst",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Hart_Szostakiwskyj_Jessie.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   }
 ]
