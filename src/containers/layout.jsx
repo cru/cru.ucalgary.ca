@@ -13,8 +13,6 @@ import '../styles/bootstrap.css'
 import '../styles/main.scss'
 import '../styles/modal.css'
 
-// const theme = require('sass-extract-loader?{"plugins": ["sass-extract-js"]}!../styles/theme.scss')
-
 const theme = {
   //Nav Bar attributes
   navBarPrimary: 'white',
