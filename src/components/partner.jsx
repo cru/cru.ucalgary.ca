@@ -25,14 +25,14 @@ const Container = Styled.div`
   overflow:hidden;
   padding-left:15px;
   padding-right:15px;
-  border-radius: ${props => props.theme.borderRadius};
+  border-radius: ${(props) => props.theme.borderRadius};
   height:80px;
   align-items: center;
-  transition: all ${props => props.theme.boxShadowTrans};
+  transition: all ${(props) => props.theme.boxShadowTrans};
 
 
   :hover{
-    box-shadow: ${props => props.theme.boxShadow};
+    box-shadow: ${(props) => props.theme.boxShadow};
     cursor:pointer;
     outline: none !important;
     background-color:white;

@@ -25,12 +25,12 @@ const Container = Styled.button`
     border: none;
     background-color: transparent;
     cursor:pointer;
-    border-radius: ${props => props.theme.borderRadius};
+    border-radius: ${(props) => props.theme.borderRadius};
     padding:18px;
     padding-top:15px;
 
     :hover {
-        box-shadow: ${props => props.theme.boxShadow};
+        box-shadow: ${(props) => props.theme.boxShadow};
     }
     :active {
         box-shadow: none;
@@ -42,7 +42,7 @@ const Contents = Styled.span`
     height:4px;
     width:23px;
     margin-left:-11px;
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.toggle ? 'transparent' : props.theme.fontPrimColor};
     display: block;
     content: '';
@@ -58,26 +58,26 @@ const Contents = Styled.span`
       border-radius:2px;
       height:4px;
       width:23px;
-      background-color: ${props => props.theme.fontPrimColor};;
+      background-color: ${(props) => props.theme.fontPrimColor};;
       display: block;
       content: '';
       position:relative;
-      top: ${props => (props.toggle ? '0' : '-8px')};
-      transform: ${props => (props.toggle ? 'rotate(45deg)' : '')};
+      top: ${(props) => (props.toggle ? '0' : '-8px')};
+      transform: ${(props) => (props.toggle ? 'rotate(45deg)' : '')};
     }
 
     :after {
       border-radius:2px;
       height:4px;
       width:23px;
-      background-color: ${props => props.theme.fontPrimColor};;
+      background-color: ${(props) => props.theme.fontPrimColor};;
       display: block;
       content: '';
       position:relative;
       bottom:-4px;
-      margin-top: ${props => (props.toggle ? '-4px' : '')};
-      top: ${props => (props.toggle ? '0' : '')};
-      transform: ${props => (props.toggle ? 'rotate(-45deg)' : '')};
+      margin-top: ${(props) => (props.toggle ? '-4px' : '')};
+      top: ${(props) => (props.toggle ? '0' : '')};
+      transform: ${(props) => (props.toggle ? 'rotate(-45deg)' : '')};
 
     }
 

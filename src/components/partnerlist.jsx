@@ -4,9 +4,9 @@ import { Trail, animated } from 'react-spring/renderprops'
 import Styled from 'styled-components'
 import Partner from './partner'
 
-const getPartnersList = data => {
+const getPartnersList = (data) => {
   const everyone = []
-  data.allPartnersJson.edges.forEach(item =>
+  data.allPartnersJson.edges.forEach((item) =>
     everyone.push(
       <PersonContainer key={item.node.href}>
         <Partner
@@ -21,16 +21,16 @@ const getPartnersList = data => {
       items={everyone}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
-      keys={item => item.key}
+      keys={(item) => item.key}
     >
-      {item => props => <animated.div style={props}>{item}</animated.div>}
+      {(item) => (props) => <animated.div style={props}>{item}</animated.div>}
     </Trail>
   )
 }
 
-const getThirdPartyPartnersList = data => {
+const getThirdPartyPartnersList = (data) => {
   const everyone = []
-  data.allThirdpartypartnersJson.edges.forEach(item =>
+  data.allThirdpartypartnersJson.edges.forEach((item) =>
     everyone.push(
       <>
         <PartnerLink rel='noopener noreferrer' target='_blank' href={item.node.href}>
@@ -76,7 +76,7 @@ const PartnerList = () => {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             {/* Visual grid of partners  */}
             <Grid>{getPartnersList(data)}</Grid>

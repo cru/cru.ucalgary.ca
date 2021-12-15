@@ -70,7 +70,7 @@ const Form = Styled.form`
   justify-content: center;
   flex-direction: column; 
   width: 100%;
-  padding: ${props => props.theme.pageMobilePadding};
+  padding: ${(props) => props.theme.pageMobilePadding};
 `
 const Row = Styled.div`
   padding:13px;
@@ -78,7 +78,7 @@ const Row = Styled.div`
   margin-left:0px;
   width:97.5%;
   max-width:600px;
-  color: ${props => props.theme.fontPrimColor};
+  color: ${(props) => props.theme.fontPrimColor};
   font-size:15px;
 `
 const Space = Styled.div`

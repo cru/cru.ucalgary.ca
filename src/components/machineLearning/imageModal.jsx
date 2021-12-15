@@ -6,7 +6,7 @@ import { XCircle } from 'react-feather'
 
 Modal.setAppElement('body')
 
-const ImageModal = props => {
+const ImageModal = (props) => {
   return (
     <Fragment>
       <ReactModal

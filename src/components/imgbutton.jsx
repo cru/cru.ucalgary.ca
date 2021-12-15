@@ -44,8 +44,8 @@ const Container = Styled.div`
     display:flex;
     padding:8px;
     padding-bottom:3px;
-    transition: all ${props => props.theme.boxShadowTrans};
-    border-radius: ${props => props.theme.borderRadius};
+    transition: all ${(props) => props.theme.boxShadowTrans};
+    border-radius: ${(props) => props.theme.borderRadius};
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -53,7 +53,7 @@ const Container = Styled.div`
 
 
     :hover {
-      box-shadow: ${props => props.theme.boxShadow};
+      box-shadow: ${(props) => props.theme.boxShadow};
     }
     :active {
       box-shadow: none;
@@ -64,6 +64,6 @@ const Container = Styled.div`
       padding:2px;
       margin-left:3px;
       font-size:13px;
-      color: ${props => props.theme.imgButtonIcon};
+      color: ${(props) => props.theme.imgButtonIcon};
     }
 `

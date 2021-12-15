@@ -14,6 +14,6 @@ export default MaxWidth
 
 const Container = Styled.div`
     display:static;
-    max-width: ${props => props.theme.pageMaxWidth};
+    max-width: ${(props) => props.theme.pageMaxWidth};
     margin: 0 auto;
 `

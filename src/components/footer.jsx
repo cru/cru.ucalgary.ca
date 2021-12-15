@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import FooterCropBottom from '../images/svg-backgrounds/footer-crop-bottom.svg'
 
 const Footer = () => {
-  const externalLinkIcon = name => {
+  const externalLinkIcon = (name) => {
     return (
       <>
         &nbsp;&nbsp;
@@ -199,7 +199,7 @@ const Container = Styled.div`
     padding-bottom:40px;
 
 
-    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
         display: block;
         padding-bottom:75px;
       }
@@ -211,7 +211,7 @@ const Column = Styled.div`
     padding-top:30px;
     padding-bottom:15px;
     margin-left:-30px;
-    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
     margin-left:-10px;
 
   }
@@ -221,11 +221,11 @@ const Content = Styled.div`
   display: inline-block;
   margin: 0 auto;
   font-size:15px;
-  @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
         margin-left:10px;
         margin-bottom:-40px;
-        padding-left: ${props => props.theme.pageMobilePadding};
-        padding-right: ${props => props.theme.pageMobilePadding};
+        padding-left: ${(props) => props.theme.pageMobilePadding};
+        padding-right: ${(props) => props.theme.pageMobilePadding};
   }
 `
 const Strip = Styled.div`
@@ -239,11 +239,11 @@ const Strip = Styled.div`
 
 const LinkStyle = Styled.p`
   font-family: 'Roboto';
-  color: ${props => props.theme.fontSecColor};
+  color: ${(props) => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;
   :hover {
-    color: ${props => props.theme.brandPrimColor};
+    color: ${(props) => props.theme.brandPrimColor};
   }
 
   .linkStyleIcon{
@@ -272,9 +272,9 @@ const Address = Styled.p`
     line-height:22px;
     text-decoration:none;
     a{
-      color: ${props => props.theme.fontSecColor};
+      color: ${(props) => props.theme.fontSecColor};
       :hover{
-        color: ${props => props.theme.brandPrimColor};
+        color: ${(props) => props.theme.brandPrimColor};
       }
     }
 `

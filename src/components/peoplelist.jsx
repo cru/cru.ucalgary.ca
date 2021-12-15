@@ -7,9 +7,9 @@ import Person from './person'
 // Use this tool to collect RGB from people
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
 
-const getPeopleList = data => {
+const getPeopleList = (data) => {
   const everyone = []
-  data.allPeopleJson.edges.forEach(item =>
+  data.allPeopleJson.edges.forEach((item) =>
     everyone.push(
       <PersonContainer key={item.node.name}>
         <Person
@@ -28,9 +28,9 @@ const getPeopleList = data => {
       items={everyone}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
-      keys={item => item.key}
+      keys={(item) => item.key}
     >
-      {item => props => <animated.div style={props}>{item}</animated.div>}
+      {(item) => (props) => <animated.div style={props}>{item}</animated.div>}
     </Trail>
   )
 }
@@ -62,7 +62,7 @@ const PeopleList = () => {
             }
           }
         `}
-        render={data => <Grid>{getPeopleList(data)}</Grid>}
+        render={(data) => <Grid>{getPeopleList(data)}</Grid>}
       />
     </>
   )

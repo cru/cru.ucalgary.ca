@@ -11,7 +11,7 @@ const CRUHexPattern = () => {
         from={{ transform: 'translate3d(-50px,50px,50px)', opacity: 0 }}
         to={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
       >
-        {props => (
+        {(props) => (
           <div style={props}>
             <HexPattern />
           </div>
@@ -27,7 +27,7 @@ const HexPattern = Styled.div`
     content: url(${hexagonPattern});
     object-fit: cover;   
 
-    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
         content:url(${newAgeLogo});
         object-fit: contain;
         width: 80%;
