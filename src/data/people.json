@@ -36,12 +36,12 @@
     }
   },
   {
-    "name": "Barry Roblin",
-    "title": "Support",
+    "name": "Lynne Hardie",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
-      "src": "../images/people/Roblin_Barry.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
+      "src": "../images/people/Hardie_Lynne.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
@@ -72,12 +72,12 @@
     }
   },
   {
-    "name": "Lynne Hardie",
-    "title": "Project Services Team Member",
+    "name": "Barry Roblin",
+    "title": "Support",
     "comments": "",
     "image": {
-      "src": "../images/people/Hardie_Lynne.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
+      "src": "../images/people/Roblin_Barry.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
