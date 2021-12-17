@@ -1,30 +1,52 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import ReactModal from 'react-modal'
 import Modal from 'react-modal'
 import { AlertTriangle, XCircle } from 'react-feather'
+import moment from 'moment'
 
 Modal.setAppElement('body')
 
 const Alert = () => {
   const [showModal, setShowModal] = useState(false)
+  const [showSeasonalMessage, setShowSeasonalMessage] = useState(false)
+
+  useEffect(() => {
+    const startDate = moment('2021-12-15')
+    const endDate = moment('2022-01-04')
+
+    setShowSeasonalMessage(moment().isBetween(startDate, endDate, 'days'))
+  }, [])
 
   return (
     <Fragment>
       <AlertHeader onClick={() => setShowModal(true)}>
-        <AlertTriangle size={32} />
-        <div style={{ textAlign: 'center' }}>
-          <h5>COVID-19 UPDATE</h5>
-          <small>Click here for more info</small>
-        </div>
+        {showSeasonalMessage ? (
+          <Fragment>
+            <span style={{ fontSize: 32 }}>{'\u{1F384}'}</span>
+            <div style={{ textAlign: 'center' }}>
+              <h5>Seasonal Closure 2021</h5>
+              <small>Click here for more info</small>
+            </div>
+          </Fragment>
+        ) : (
+          <Fragment>
+            <AlertTriangle size={32} />
+            <div style={{ textAlign: 'center' }}>
+              <h5>COVID-19 NOTICE</h5>
+              <small>Click here for more info</small>
+            </div>
+          </Fragment>
+        )}
       </AlertHeader>
       <ReactModal
         style={{
           overlay: { backgroundColor: 'rgba(33, 33, 33, 0.85)' },
           content: {
-            maxWidth: 1100,
-            maxHeight: 650,
+            maxWidth: 1000,
+            maxHeight: 550,
             width: '80%',
+            height: 'auto',
             margin: 'auto',
           },
         }}
@@ -39,114 +61,59 @@ const Alert = () => {
           onClick={() => setShowModal(false)}
           style={{ cursor: 'pointer', float: 'right' }}
         />
-        <h2 style={{ display: 'inline' }}>COVID-19 Message</h2>
-        <AlertMessage>
-          <p>Dear Researcher,</p>
-          <p>
-            We are OPEN for business and adjusting to the current conditions of COVID-19.
-          </p>
-          <p>
-            Amidst all of the uncertainties, we want to communicate how the CRU can
-            support your needs during this time, and manage expectations accordingly.
-          </p>
-          <p>
-            <u>
-              We continue to offer support services in the areas outlined below, as well
-              as other areas. Please reach out to the suggested contact so we can provide
-              the necessary support.
-            </u>
-          </p>
-          <br />
-          <table>
-            <tr>
-              <th>PROJECT TYPE</th>
-              <th>CONTACT FOR SERVICES</th>
-              <th>SUBJECT LINE</th>
-            </tr>
-            <tr>
-              <td>General Inquiry</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>General Inquiry</td>
-            </tr>
-            <tr>
-              <td>REDCap Projects - Self Serve</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>REDCap Projects - Self Serve</td>
-            </tr>
-            <tr>
-              <td>REDCap Projects - CRU Supported</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>REDCap Projects - CRU Supported</td>
-            </tr>
-            <tr>
-              <td>Clinical Trials</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>Clinical Trials - Intake Meeting Request</td>
-            </tr>
-            <tr>
-              <td>Custom Projects</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>Custom Projects - Intake Meeting Request</td>
-            </tr>
-            <tr>
-              <td>Methods and Analytics</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>Methods and Analytics - Intake Meeting Request</td>
-            </tr>
-            <tr>
-              <td>Project Management Services</td>
-              <td>
-                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> (CRU Service/
-                Helpdesk)
-              </td>
-              <td>Project Management Services - Intake Meeting Request</td>
-            </tr>
-          </table>
-          <br />
-          <p>
-            In line with public health recommendations to socially isolate, our team is
-            working remotely and will hold all meetings via teleconference or ZOOM.
-          </p>
-          <p>
-            Our entire team remains committed to serving your projects. We are priority
-            managing and pivoting daily based on need, and we appreciate your patience in
-            advance.
-          </p>
-          <p>
-            If you have any questions or concerns on current projects, please reach out to
-            your Project Manager directly. As mentioned above, if you have new project
-            requests, please reach out to the appropriate contacts and we will align you
-            with the appropriate team to support your needs.
-          </p>
-          <p>We are in this together.</p>
-          <p>Tracy</p>
-          <i>
-            Tracy Wang
-            <br />
-            Manager, Clinical Research Unit
-            <br />
-            Cumming School of Medicine, University of Calgary
-            <br />
-          </i>
-        </AlertMessage>
+        {showSeasonalMessage ? (
+          <Fragment>
+            <h2 style={{ display: 'inline' }}>Seasonal Closure 2021</h2>
+            <AlertMessage>
+              <p>Dear researchers and collaborators,</p>
+              <p>
+                The University of Calgary and CRU will be closed December 23rd, 2021 to
+                January 2nd, 2022 (inclusive). After a year that has at times felt
+                isolating, we hope you also take some time to rest, recharge, and spend
+                time with loved ones. We look forward to continuing our work together in
+                the new year.{' '}
+              </p>
+              <p>
+                If you require <b>urgent</b> support during this time, please email us at
+                cru@ucalgary.ca with <b>"URGENT"</b> in the subject line. Our team will be
+                monitoring sporadically for time-sensitive requests and response times may
+                take up to 5 business days. Thank you in advance for your patience and
+                understanding.
+              </p>
+              <p>Happy holidays! </p>
+              <p>Tracy</p>
+              <i>
+                Tracy Wang
+                <br />
+                Director, Clinical Research Unit
+                <br />
+                Cumming School of Medicine, University of Calgary
+                <br />
+              </i>
+            </AlertMessage>
+          </Fragment>
+        ) : (
+          <Fragment>
+            <h2 style={{ display: 'inline' }}>COVID-19 Notice</h2>
+            <AlertMessage>
+              <p>
+                {' '}
+                The CRU is working remotely. If you are looking for support, please reach
+                out to your designated Project Manager directly, via our service desk, or
+                email at cru@ucalgary.ca. Thank you for your understanding.
+              </p>
+              <p>Tracy</p>
+              <i>
+                Tracy Wang
+                <br />
+                Director, Clinical Research Unit
+                <br />
+                Cumming School of Medicine, University of Calgary
+                <br />
+              </i>
+            </AlertMessage>
+          </Fragment>
+        )}
       </ReactModal>
     </Fragment>
   )

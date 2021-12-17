@@ -10,11 +10,20 @@
   },
   {
     "name": "Tracy Wang",
-    "title": "Program Manager Health Platforms",
+    "title": "Director, Strategy and Operations",
     "comments": "",
     "image": {
       "src": "../images/people/Wang_Tracy.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Lennard Kuijten",
+    "title": "Manager, Technical Solutions and Innovation",
+    "comments": "IT and software development team lead",
+    "image": {
+      "src": "../images/people/Kuijten_Lennard.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
@@ -24,15 +33,6 @@
     "image": {
       "src": "../images/people/Lethebe_Cord.jpg",
       "color": "rgba(243, 191, 36, 0.6)"
-    }
-  },
-  {
-    "name": "Lennard Kuijten",
-    "title": "Lead Tech & Solutions",
-    "comments": "IT and software development team lead",
-    "image": {
-      "src": "../images/people/Kuijten_Lennard.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
@@ -81,15 +81,6 @@
     }
   },
   {
-    "name": "Rebecca Frampton",
-    "title": "Project Services Team Member",
-    "comments": "",
-    "image": {
-      "src": "../images/people/avatar_placeholder.jpg",
-      "color": "rgba(243, 191, 36, 0.6)"
-    }
-  },
-  {
     "name": "Pieter Boone",
     "title": "Tech Team Member",
     "comments": "",
@@ -131,6 +122,15 @@
     "comments": "",
     "image": {
       "src": "../images/people/Kannanayakal_Deepthi.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Mandavi Kashyap",
+    "title": "Tech Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Kashyap_Mandavi.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
     }
   },
