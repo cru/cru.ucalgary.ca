@@ -25,10 +25,10 @@ const Banner = Styled.div`
     height:24px;
     bottom:0;
     position:fixed;
-    max-width: ${props => props.theme.pageMaxWidth};
+    max-width: ${(props) => props.theme.pageMaxWidth};
     background-color:white;
     text-align:center;
-    outline: 3px solid ${props => props.theme.brandSecondColor};
+    outline: 3px solid ${(props) => props.theme.brandSecondColor};
     margin:2px;
     p{
         padding-top:3px;

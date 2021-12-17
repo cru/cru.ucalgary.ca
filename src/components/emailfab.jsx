@@ -59,16 +59,16 @@ const ButtonContainer = Styled.div`
     pointer-events: none;
     bottom: 0;
     width:100%;
-    max-width: ${props => props.theme.pageMaxWidth};
-    position: ${props => (props.toggle ? 'fixed' : 'static')};
-    height: ${props => (props.toggle ? 'auto' : '600px')};
+    max-width: ${(props) => props.theme.pageMaxWidth};
+    position: ${(props) => (props.toggle ? 'fixed' : 'static')};
+    height: ${(props) => (props.toggle ? 'auto' : '600px')};
     z-index:3;
 
 `
 const ScrollButtonContainer = Styled.div`
      position:fixed;
      width:100%;
-     max-width: ${props => props.theme.pageMaxWidth};
+     max-width: ${(props) => props.theme.pageMaxWidth};
      bottom:0;
      height:auto;
      z-index:4;
@@ -80,12 +80,12 @@ const ScrollButton = Styled.div`
     margin-right:17px;
     margin-bottom:30px;
     pointer-events: auto;
-    cursor: ${props => (props.toggle ? 'pointer' : 'default')};
-    border-radius: ${props => (props.toggle ? '50px' : '0%')};
+    cursor: ${(props) => (props.toggle ? 'pointer' : 'default')};
+    border-radius: ${(props) => (props.toggle ? '50px' : '0%')};
     background-color:  transparent;
 
     :hover {
-        box-shadow:  ${props => (props.toggle ? props.theme.boxShadow : 'none')};
+        box-shadow:  ${(props) => (props.toggle ? props.theme.boxShadow : 'none')};
         background-color: transparent;
     }
     :active {
@@ -99,26 +99,26 @@ const FabButton = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.fontPrimColor};
+    color: ${(props) => props.theme.fontPrimColor};
     transition: all 0.3s linear;      
     overflow:hidden;
     pointer-events: auto;
     z-index:3;
 
-    -webkit-user-select: ${props => (props.toggle ? 'none' : 'auto')};
-    -moz-user-select: ${props => (props.toggle ? 'none' : 'auto')};
-    -ms-user-select: ${props => (props.toggle ? 'none' : 'auto')};
-    user-select: ${props => (props.toggle ? 'none' : 'auto')};
+    -webkit-user-select: ${(props) => (props.toggle ? 'none' : 'auto')};
+    -moz-user-select: ${(props) => (props.toggle ? 'none' : 'auto')};
+    -ms-user-select: ${(props) => (props.toggle ? 'none' : 'auto')};
+    user-select: ${(props) => (props.toggle ? 'none' : 'auto')};
 
-    cursor: ${props => (props.toggle ? 'pointer' : 'default')};
-    margin-bottom: ${props => (props.toggle ? '30px' : '0')};
-    margin-right: ${props => (props.toggle ? '17px' : '0')};
-    height: ${props => (props.toggle ? '56px' : '600px')};
-    width: ${props => (props.toggle ? '130px' : '100%')};
-    border-radius: ${props => (props.toggle ? '50px' : '0%')};
-    background-color:  ${props =>
+    cursor: ${(props) => (props.toggle ? 'pointer' : 'default')};
+    margin-bottom: ${(props) => (props.toggle ? '30px' : '0')};
+    margin-right: ${(props) => (props.toggle ? '17px' : '0')};
+    height: ${(props) => (props.toggle ? '56px' : '600px')};
+    width: ${(props) => (props.toggle ? '130px' : '100%')};
+    border-radius: ${(props) => (props.toggle ? '50px' : '0%')};
+    background-color:  ${(props) =>
       props.toggle ? props.theme.brandPrimColor : props.theme.brandPrimAccent};
-    box-shadow:${props => (props.toggle ? props.theme.boxShadowAccent : 'none')};
+    box-shadow:${(props) => (props.toggle ? props.theme.boxShadowAccent : 'none')};
 
 `
 
@@ -126,5 +126,5 @@ const Text = Styled.span`
     font-size:18px;
     font-family: futura-pt, sans-serif;
     font-weight:500;
-    color:  ${props => props.theme.fontPrimColor};
+    color:  ${(props) => props.theme.fontPrimColor};
 `

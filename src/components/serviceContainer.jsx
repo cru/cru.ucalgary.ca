@@ -40,7 +40,7 @@ const Content = Styled.div`
       margin: 0 auto;
       padding-top:20px;
     }
-    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
       max-width:auto
     }
 

@@ -311,10 +311,10 @@ const FadeBackground = Styled.div`
 
 const TextOverlay = Styled.div`
     width: 50%;
-    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
       width: 60%;
     }
-    @media only screen and (max-width: ${props => props.theme.mobileBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
       width: 100%;
     }
 `

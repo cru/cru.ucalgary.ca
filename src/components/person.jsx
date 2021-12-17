@@ -56,7 +56,7 @@ const Overlay = Styled.span`
   transition:.5s;
 
   :hover {
-    background-color:${props => props.color};
+    background-color:${(props) => props.color};
     color:white;
     font-weight:700;
   }

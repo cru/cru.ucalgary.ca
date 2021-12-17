@@ -49,9 +49,9 @@ const Container = Styled.div`
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
-    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
-      padding-left: ${props => props.theme.pageMobilePadding};
-      padding-right: ${props => props.theme.pageMobilePadding};
+    @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
+      padding-left: ${(props) => props.theme.pageMobilePadding};
+      padding-right: ${(props) => props.theme.pageMobilePadding};
       }
 
 `
@@ -59,19 +59,19 @@ const Item = Styled.div`
     padding-top:40px;
     :first-child{
       padding-right:100px;
-      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
         padding-right:0px;
       }
     }
     :nth-child(2n){
       padding-right:100px;
-      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
         padding-right:0px;
       }
 
     }
 
-    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
         margin: 0 auto;
       }
 

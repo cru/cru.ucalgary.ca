@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavBarLinks from './navbarlinks'
 
 const NavBarDropDown = ({ group, selectedPage, text, page }) => {
-  const pages = page.map(pageName => (
+  const pages = page.map((pageName) => (
     <li key={pageName.toString()}>
       <NavBarLinks
         page={`/${pageName}`}
@@ -13,7 +13,7 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
           .toLowerCase()
           .replace(/-/g, ' ')
           .split(' ')
-          .map(s => s.charAt(0).toUpperCase() + s.substring(1))
+          .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
           .join(' ')}`}
         group={selectedPage === pageName ? selectedPage : ''}
         style={{ fontSize: '19.5px' }}
@@ -69,9 +69,9 @@ const Menu = Styled.div`
   z-index:99;
   padding-top:10px;
   width:275px;
-  background-color: ${props => props.theme.navBarPrimary};
-  outline: 1.5px solid ${props => props.theme.navBarAccent}; 
-  box-shadow: ${props => props.theme.boxShadow};
+  background-color: ${(props) => props.theme.navBarPrimary};
+  outline: 1.5px solid ${(props) => props.theme.navBarAccent}; 
+  box-shadow: ${(props) => props.theme.boxShadow};
   li {
     list-style-type: none;
   }

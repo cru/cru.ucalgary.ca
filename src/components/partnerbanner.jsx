@@ -43,10 +43,10 @@ const sliderSettings = {
   ],
 }
 
-const getPartnersList = data => {
+const getPartnersList = (data) => {
   const partners = []
 
-  data.allPartnersJson.edges.forEach(item =>
+  data.allPartnersJson.edges.forEach((item) =>
     partners.push(
       <ImgContainer key={item.node.name}>
         <img src={item.node.image.src.childImageSharp.fluid.src} alt={item.node.name} />
@@ -80,7 +80,7 @@ const ParterBanner = () => {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             <Header>
               <h5>
@@ -125,7 +125,7 @@ const RipContainerLeft = Styled.div`
   height:100px;
   width:250px;
   z-index:1;
-  @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.desktopBreakPoint}){
       display:none;
     }
 `
@@ -137,7 +137,7 @@ const RipContainerRight = Styled.div`
   height:100px;
   width:250px;
   z-index:1;
-  @media only screen and (max-width: ${props => props.theme.desktopBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.desktopBreakPoint}){
       display:none;
   }
 `

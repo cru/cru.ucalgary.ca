@@ -29,8 +29,8 @@ const DefaultButton = Styled.button`
     border-radius:50px;
     cursor:pointer;
     outline:none;
-    transition: box-shadow ${props => props.theme.boxShadowTrans};
-    color:${props => props.theme.fontPrimColor};
+    transition: box-shadow ${(props) => props.theme.boxShadowTrans};
+    color:${(props) => props.theme.fontPrimColor};
 
     font-family: futura-pt, sans-serif;
     font-size:17px;

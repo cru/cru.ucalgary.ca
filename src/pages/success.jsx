@@ -33,7 +33,7 @@ const SuccessPage = () => {
                     opacity: 0,
                   }}
                 >
-                  {props => (
+                  {(props) => (
                     <div style={props}>
                       <div style={{ marginTop: '29px', paddingLeft: '10px' }}>
                         <span role='img' aria-label='rocket' style={{ fontSize: '43px' }}>

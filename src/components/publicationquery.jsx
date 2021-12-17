@@ -8,7 +8,7 @@ import PublicationLink from './publicationlink'
 const getPublicationsList = (data, group) => {
   const publicationsArray = []
   data.allPublicationsJson.edges.forEach(
-    item =>
+    (item) =>
       (item.node.group === group || group === 'all') &&
       publicationsArray.push(
         <PublicationLink
@@ -26,9 +26,9 @@ const getPublicationsList = (data, group) => {
       items={publicationsArray}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
-      keys={item => item.key}
+      keys={(item) => item.key}
     >
-      {item => props => <animated.div style={props}>{item}</animated.div>}
+      {(item) => (props) => <animated.div style={props}>{item}</animated.div>}
     </Trail>
   )
 }
@@ -53,7 +53,7 @@ const PublicationQuery = ({ group }) => {
             }
           }
         `}
-        render={data => <>{getPublicationsList(data, group)}</>}
+        render={(data) => <>{getPublicationsList(data, group)}</>}
       />
     </>
   )

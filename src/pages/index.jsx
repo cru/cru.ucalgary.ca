@@ -46,7 +46,7 @@ export default IndexPage
 
 const Spacing = Styled.div`
   height: 5vh;
-  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
     height: 3vh;
   }
 

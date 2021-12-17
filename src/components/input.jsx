@@ -38,8 +38,8 @@ const Field = Styled.input`
     background-color: white;
 
     :focus {
-        box-shadow: ${props => props.theme.boxShadowAccent};
-        border: 2px solid ${props => props.theme.fontPrimColor};
+        box-shadow: ${(props) => props.theme.boxShadowAccent};
+        border: 2px solid ${(props) => props.theme.fontPrimColor};
         outline: none;
     }
     ::placeholder{

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 import { Link } from 'gatsby'
 
-const removeDashes = x => x.replace(/-/g, ' ')
+const removeDashes = (x) => x.replace(/-/g, ' ')
 
 const NavBarLinks = ({ page, group, text, style }) => {
   return (

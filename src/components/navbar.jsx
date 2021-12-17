@@ -58,7 +58,7 @@ const NavBar = ({ page, group }) => {
               'data-lifecycle-management',
               'machine-learning',
               'downloads',
-            ].find(el => el === page)}
+            ].find((el) => el === page)}
           />
         </LinkContainer>
         <RightAlign>
@@ -88,8 +88,9 @@ const Bar = Styled.div`
   z-index:100;
   display: flex;
   align-items: center;
-  background-color: ${props => props.theme.navBarPrimary};
-  outline: 1px solid ${props => (props.navbarpage ? 'white' : props.theme.navBarAccent)};
+  background-color: ${(props) => props.theme.navBarPrimary};
+  outline: 1px solid ${(props) =>
+    props.navbarpage ? 'white' : props.theme.navBarAccent};
   width: 100%;
   height: 76px;
   margin: 0;
@@ -97,25 +98,25 @@ const Bar = Styled.div`
   top:0;
   position: -webkit-sticky;
   position: sticky;
-  transition: box-shadow ${props => props.theme.boxShadowTrans};
+  transition: box-shadow ${(props) => props.theme.boxShadowTrans};
 
   :hover {
     outline: 0;
-    box-shadow: ${props => (props.navbarpage ? '0' : props.theme.boxShadow)};
+    box-shadow: ${(props) => (props.navbarpage ? '0' : props.theme.boxShadow)};
   }
 
   .menu-button-times-icon {
-    color: ${props => props.theme.navBarTimesColor};
+    color: ${(props) => props.theme.navBarTimesColor};
   }
   
   .menu-button-bars-icon {
-    color: ${props => props.theme.navBarBarsColor};
+    color: ${(props) => props.theme.navBarBarsColor};
   }
 
-  @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
-      outline: 1px solid ${props => props.theme.navBarAccent};
+  @media only screen and (min-width: ${(props) => props.theme.tabletBreakPoint}){
+      outline: 1px solid ${(props) => props.theme.navBarAccent};
       :hover{
-        box-shadow: ${props => props.theme.boxShadow};
+        box-shadow: ${(props) => props.theme.boxShadow};
       }
     }
 `
@@ -123,31 +124,31 @@ const Bar = Styled.div`
 const LinkSpacing = Styled.div`
   width:25px;
   height:10px;
-  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
     display:none;
   }
 
 `
 const MenuContainer = Styled.div`
   display:flex;
-    @media only screen and (min-width: ${props => props.theme.tabletBreakPoint}){
+    @media only screen and (min-width: ${(props) => props.theme.tabletBreakPoint}){
       display:none;
   }
 `
 const MenuContainerOpposite = Styled.div`
   display:flex;
-    @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+    @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
       display:none;
   }
 `
 
 const LinkContainer = Styled.div`
-  @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+  @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
     display:none;
   }
 `
 const MobileSpacing = Styled.div`
-      @media only screen and (max-width: ${props => props.theme.tabletBreakPoint}){
+      @media only screen and (max-width: ${(props) => props.theme.tabletBreakPoint}){
         width:20px;
   }
 

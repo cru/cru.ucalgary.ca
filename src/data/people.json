@@ -10,11 +10,20 @@
   },
   {
     "name": "Tracy Wang",
-    "title": "Program Manager Health Platforms",
+    "title": "Director, Strategy and Operations",
     "comments": "",
     "image": {
       "src": "../images/people/Wang_Tracy.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Lennard Kuijten",
+    "title": "Manager, Technical Solutions and Innovation",
+    "comments": "IT and software development team lead",
+    "image": {
+      "src": "../images/people/Kuijten_Lennard.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
@@ -27,21 +36,12 @@
     }
   },
   {
-    "name": "Lennard Kuijten",
-    "title": "Lead Tech & Solutions",
-    "comments": "IT and software development team lead",
-    "image": {
-      "src": "../images/people/Kuijten_Lennard.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Barry Roblin",
-    "title": "Support",
+    "name": "Lynne Hardie",
+    "title": "Project Services Team Member",
     "comments": "",
     "image": {
-      "src": "../images/people/Roblin_Barry.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
+      "src": "../images/people/Hardie_Lynne.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   },
   {
@@ -72,12 +72,12 @@
     }
   },
   {
-    "name": "Lynne Hardie",
-    "title": "Business Analyst",
+    "name": "Barry Roblin",
+    "title": "Support",
     "comments": "",
     "image": {
-      "src": "../images/people/Hardie_Lynne.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
+      "src": "../images/people/Roblin_Barry.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
@@ -86,15 +86,6 @@
     "comments": "",
     "image": {
       "src": "../images/people/Boone_Pieter.jpg",
-      "color": "rgba(63, 191, 63, 0.6)"
-    }
-  },
-  {
-    "name": "Dan Craciun",
-    "title": "Tech Team Member",
-    "comments": "",
-    "image": {
-      "src": "../images/people/Craciun_Dan.jpg",
       "color": "rgba(63, 191, 63, 0.6)"
     }
   },
@@ -132,6 +123,33 @@
     "image": {
       "src": "../images/people/Kannanayakal_Deepthi.jpg",
       "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Mandavi Kashyap",
+    "title": "Tech Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/avatar_placeholder.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Kaele Tunyi Anembom",
+    "title": "System Administrator",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Tunyi_Anembom_Kaele.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
+    }
+  },
+  {
+    "name": "Jessie Hart Szostakiwskyj",
+    "title": "Methods and Analytics Analyst",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Hart_Szostakiwskyj_Jessie.jpg",
+      "color": "rgba(63, 191, 63, 0.6)"
     }
   }
 ]
