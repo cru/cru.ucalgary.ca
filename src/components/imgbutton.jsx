@@ -2,28 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import Styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const ImgButton = ({ to, href, icon, children }) => {
-  const content = () => {
-    if (icon) {
-      return (
-        <>
-          {children}
-          <FontAwesomeIcon className='icon' icon={icon} />
-        </>
-      )
-    }
-    return <>{children}</>
-  }
-
+const ImgButton = ({ to, href, children }) => {
   const links = () => {
     if (to) {
-      return <Link to={to}>{content()}</Link>
+      return <Link to={to}>{children}</Link>
     }
     return (
       <a href={href} target='_blank' rel='noopener noreferrer'>
-        {content()}
+        {children}
       </a>
     )
   }

@@ -4,9 +4,6 @@
   "description": "A simple homepage website for the CRU (clinical research unit)",
   "version": "1.0.0",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.6",
     "babel-plugin-styled-components": "^2.0.2",
     "bootstrap": "^5.1.3",
     "gatsby": "^4.4.0",

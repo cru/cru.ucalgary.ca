@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { ChevronDown, ChevronRight } from 'react-feather'
+import { ChevronDown, ChevronRight, ExternalLink } from 'react-feather'
 import { Collapse } from 'reactstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styled from 'styled-components'
 
 import Layout from '../../containers/layout'
@@ -249,12 +248,7 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  UofC Privacy Policy &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  UofC Privacy Policy <ExternalLink size={12} />
                 </p>
               </a>
             </li>
@@ -265,13 +259,8 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  Acceptable Use of Electronic Resources and Information Policy
-                  &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  Acceptable Use of Electronic Resources and Information Policy{' '}
+                  <ExternalLink size={12} />
                 </p>
               </a>
             </li>
@@ -282,12 +271,7 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  Information Asset Management Policy &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  Information Asset Management Policy <ExternalLink size={12} />
                 </p>
               </a>
             </li>
@@ -298,12 +282,7 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  Health Information Management Policy &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  Health Information Management Policy <ExternalLink size={12} />
                 </p>
               </a>
             </li>
@@ -314,12 +293,8 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  Storage of Inactive Clinical Research Records Policy &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  Storage of Inactive Clinical Research Records Policy{' '}
+                  <ExternalLink size={12} />
                 </p>
               </a>
             </li>
@@ -330,12 +305,7 @@ const DataLifecycleManagementPage = () => {
                 rel='noopener noreferrer'
               >
                 <p>
-                  UofC Operating Standards, Guidelines & Forms &nbsp;&nbsp;
-                  <FontAwesomeIcon
-                    style={{ fontSize: 10 }}
-                    className='linkStyleIcon'
-                    icon='external-link-alt'
-                  />
+                  UofC Operating Standards, Guidelines & Forms <ExternalLink size={12} />
                 </p>
               </a>
             </li>

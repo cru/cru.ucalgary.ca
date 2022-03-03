@@ -50,7 +50,21 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to='/data-lifecycle-mangement'>
+      <Link to='/newsroom/announcements'>
+        <MobileLink>
+          <h5>
+            Announcements
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
+      <Link to='/resources/data-lifecycle-management'>
         <MobileLink>
           <h5>
             Data Lifecycle Management
@@ -64,7 +78,7 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to='/machine-learning'>
+      <Link to='/resources/machine-learning'>
         <MobileLink>
           <h5>
             Machine Learning
@@ -78,10 +92,24 @@ const MobileMenu = ({ navbarpage }) => {
           </h5>
         </MobileLink>
       </Link>
-      <Link to='/downloads'>
+      <Link to='/resources/downloads'>
         <MobileLink>
           <h5>
             Downloads
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginTop: '-11px',
+                marginRight: '20px',
+              }}
+            />
+          </h5>
+        </MobileLink>
+      </Link>
+      <Link to='/about-us'>
+        <MobileLink>
+          <h5>
+            About Us
             <ArrowRight
               style={{
                 float: 'right',
@@ -118,7 +146,7 @@ const MobileLink = Styled.div`
 const MobilePage = Styled.div`
   margin: 0 auto;
   background-color: #212121;
-  overflow: hidden;
+  overflow: auto;
   height: ${(props) => (props.navbarpage ? '100vh' : '0px')};
   width:100vw;
   position: fixed;

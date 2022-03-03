@@ -1,19 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ExternalLink } from 'react-feather'
+import moment from 'moment'
+
 import FooterCropBottom from '../images/svg-backgrounds/footer-crop-bottom.svg'
 
 const Footer = () => {
-  const externalLinkIcon = (name) => {
-    return (
-      <>
-        &nbsp;&nbsp;
-        <FontAwesomeIcon className='linkStyleIcon' icon={name} />
-      </>
-    )
-  }
-
   return (
     <>
       <Container>
@@ -21,14 +14,32 @@ const Footer = () => {
         <Column>
           <Content>
             <Title>Explore</Title>
+            <Link style={{ textDecoration: 'none' }} to='/people'>
+              <LinkStyle>People</LinkStyle>
+            </Link>
             <Link style={{ textDecoration: 'none' }} to='/partners'>
               <LinkStyle>Partners</LinkStyle>
             </Link>
             <Link style={{ textDecoration: 'none' }} to='/publications'>
               <LinkStyle>Publications</LinkStyle>
             </Link>
-            <Link style={{ textDecoration: 'none' }} to='/downloads'>
+            <Link style={{ textDecoration: 'none' }} to='/newsroom/announcements'>
+              <LinkStyle>Announcements</LinkStyle>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none' }}
+              to='/resources/data-lifecycle-management'
+            >
+              <LinkStyle>Data Lifecycle Management</LinkStyle>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} to='/resources/machine-learning'>
+              <LinkStyle>Machine Learning</LinkStyle>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} to='/resources/downloads'>
               <LinkStyle>Downloads</LinkStyle>
+            </Link>
+            <Link style={{ textDecoration: 'none' }} to='/about-us'>
+              <LinkStyle>About Us</LinkStyle>
             </Link>
           </Content>
         </Column>
@@ -44,8 +55,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Careers
-                {externalLinkIcon('external-link-alt')}
+                Careers <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -55,8 +65,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Cumming School of Medicine
-                {externalLinkIcon('external-link-alt')}
+                Cumming School of Medicine <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -66,8 +75,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                University of Calgary
-                {externalLinkIcon('external-link-alt')}
+                University of Calgary <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -77,8 +85,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Alberta Health Services
-                {externalLinkIcon('external-link-alt')}
+                Alberta Health Services <ExternalLink size={12} />
               </LinkStyle>
             </a>
           </Content>
@@ -95,8 +102,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                UofC Privacy Policy
-                {externalLinkIcon('external-link-alt')}
+                UofC Privacy Policy <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -106,8 +112,8 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Acceptable Use of Electronic Resources and Information Policy
-                {externalLinkIcon('external-link-alt')}
+                Acceptable Use of Electronic Resources and Information Policy{' '}
+                <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -117,8 +123,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Information Asset Management Policy
-                {externalLinkIcon('external-link-alt')}
+                Information Asset Management Policy <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -128,8 +133,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Health Information Management Policy
-                {externalLinkIcon('external-link-alt')}
+                Health Information Management Policy <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -139,8 +143,8 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                Storage of Inactive Clinical Research Records Policy
-                {externalLinkIcon('external-link-alt')}
+                Storage of Inactive Clinical Research Records Policy{' '}
+                <ExternalLink size={12} />
               </LinkStyle>
             </a>
             <a
@@ -150,8 +154,7 @@ const Footer = () => {
               style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
-                UofC Operating Standards, Guidelines & Forms
-                {externalLinkIcon('external-link-alt')}
+                UofC Operating Standards, Guidelines & Forms <ExternalLink size={12} />
               </LinkStyle>
             </a>
           </Content>
@@ -188,16 +191,7 @@ const Footer = () => {
 
       <Strip />
       <Greeting>
-        <p>
-          Made with
-          <span> </span>
-          <span role='img' aria-label='Hand Waving'>
-            ❤️
-          </span>
-          <span> </span>
-          by CRU
-        </p>
-        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © 2021</p>
+        <p style={{ color: 'grey', fontSize: '12px' }}>CRU © {moment().year()}</p>
       </Greeting>
     </>
   )
@@ -260,10 +254,6 @@ const LinkStyle = Styled.p`
     color: ${(props) => props.theme.brandPrimColor};
   }
 
-  .linkStyleIcon{
-    font-size:11px;
-    color:grey;
-  }
   .contactStyleIcon{
     color:grey;
     font-size:7px;

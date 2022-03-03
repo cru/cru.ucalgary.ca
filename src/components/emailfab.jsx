@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Styled from 'styled-components'
 import ScrollTrigger from 'react-scroll-trigger'
 import { Link } from 'react-scroll'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Mail } from 'react-feather'
 import EmailForm from './emailform'
 

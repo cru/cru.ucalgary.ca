@@ -85,8 +85,16 @@ const NavBar = ({ activePage, activeGroup }) => {
             active={activeGroup === 'resources'}
           />
         </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarLinks
+            page='/about-us'
+            text='About Us'
+            active={activePage === 'about-us'}
+          />
+        </LinkContainer>
         <RightAlign>
-          <ImgButton icon='external-link-alt' href='https://www.ucalgary.ca/'>
+          <ImgButton href='https://www.ucalgary.ca/'>
             <img src={uofcImg} style={{ height: '28px' }} alt='UofC' />
           </ImgButton>
         </RightAlign>
