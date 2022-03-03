@@ -22,7 +22,7 @@ Person.propTypes = {
   comment: PropTypes.node.isRequired,
   title: PropTypes.node.isRequired,
   color: PropTypes.node.isRequired,
-  fixed: PropTypes.node.isRequired,
+  fixed: PropTypes.object.isRequired,
 }
 
 export default Person

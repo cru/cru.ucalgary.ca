@@ -75,10 +75,10 @@ const Alert = () => {
               </p>
               <p>
                 If you require <b>urgent</b> support during this time, please email us at
-                cru@ucalgary.ca with <b>"URGENT"</b> in the subject line. Our team will be
-                monitoring sporadically for time-sensitive requests and response times may
-                take up to 5 business days. Thank you in advance for your patience and
-                understanding.
+                <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a> with <b>"URGENT"</b>{' '}
+                in the subject line. Our team will be monitoring sporadically for
+                time-sensitive requests and response times may take up to 5 business days.
+                Thank you in advance for your patience and understanding.
               </p>
               <p>Happy holidays! </p>
               <p>Tracy</p>
@@ -100,7 +100,8 @@ const Alert = () => {
                 {' '}
                 The CRU is working remotely. If you are looking for support, please reach
                 out to your designated Project Manager directly, via our service desk, or
-                email at cru@ucalgary.ca. Thank you for your understanding.
+                email at <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a>. Thank you
+                for your understanding.
               </p>
               <p>Tracy</p>
               <i>

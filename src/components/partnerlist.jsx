@@ -8,12 +8,12 @@ const getPartnersList = (data) => {
   const everyone = []
   data.allPartnersJson.edges.forEach((item) =>
     everyone.push(
-      <PersonContainer key={item.node.href}>
+      <PartnerContainer key={item.node.href}>
         <Partner
           href={item.node.href}
           fixed={item.node.image.src.childImageSharp.fixed}
         />
-      </PersonContainer>
+      </PartnerContainer>
     )
   )
   return (
@@ -96,7 +96,7 @@ const Grid = Styled.div`
     display:flex;
     flex-wrap: wrap;
 `
-const PersonContainer = Styled.div`
+const PartnerContainer = Styled.div`
     max-width:250px;
     margin-bottom:50px;
     margin-right:25px;

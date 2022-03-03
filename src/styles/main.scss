@@ -7,6 +7,7 @@ html,
 body {
   font-family: 'Roboto';
   background-color: white;
+  color: $fontPrimColor;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,10 +19,17 @@ body {
   }
 }
 
-// All text color
-p,
 a {
-  color: $fontPrimColor;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 h1,
@@ -88,13 +96,13 @@ label {
 table,
 th,
 td {
-    border: 1px solid #424242;
-    border-collapse: collapse;
+  border: 1px solid #424242;
+  border-collapse: collapse;
 }
 
 table {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 th {
@@ -106,6 +114,6 @@ th {
 }
 
 td {
-    padding: 0.5rem;
-    text-align: left;
+  padding: 0.5rem;
+  text-align: left;
 }

@@ -10,7 +10,7 @@ import uofcImg from '../images/partners/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 import Alert from './alert'
 
-const NavBar = ({ page, group }) => {
+const NavBar = ({ activePage, activeGroup }) => {
   const [navbarpage, setNavbarpage] = useState(false)
 
   return (
@@ -34,31 +34,55 @@ const NavBar = ({ page, group }) => {
         </ImgButton>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks page='/people' text='People' group={page === 'people'} />
+          <NavBarLinks page='/people' text='People' active={activePage === 'people'} />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks page='/partners' text='Partners' group={page === 'partners'} />
+          <NavBarLinks
+            page='/partners'
+            text='Partners'
+            active={activePage === 'partners'}
+          />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
             page='/publications'
             text='Publications'
-            group={page === 'publications'}
+            active={activePage === 'publications'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarDropDown
+            text='Newsroom'
+            pages={[
+              { page: 'redcap-validation', text: 'REDCap Validation!' },
+              { page: 'announcements', text: 'Announcements' },
+            ]}
+            group='newsroom'
+            selectedPage={['redcap-validation', 'announcements'].find(
+              (el) => el === activePage
+            )}
+            active={activeGroup === 'newsroom'}
           />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarDropDown
             text='Resources'
-            page={['data-lifecycle-management', 'machine-learning', 'downloads']}
-            group={group === 'resources'}
+            pages={[
+              { page: 'data-lifecycle-management', text: 'Data Lifecycle Management' },
+              { page: 'machine-learning', text: 'Machine Learning' },
+              { page: 'downloads', text: 'Downloads' },
+            ]}
+            group='resources'
             selectedPage={[
               'data-lifecycle-management',
               'machine-learning',
               'downloads',
-            ].find((el) => el === page)}
+            ].find((el) => el === activePage)}
+            active={activeGroup === 'resources'}
           />
         </LinkContainer>
         <RightAlign>

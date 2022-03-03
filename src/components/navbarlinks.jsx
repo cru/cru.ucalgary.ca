@@ -5,10 +5,13 @@ import { Link } from 'gatsby'
 
 const removeDashes = (x) => x.replace(/-/g, ' ')
 
-const NavBarLinks = ({ page, group, text, style }) => {
+const NavBarLinks = ({ page, active, text, style }) => {
   return (
-    <Link to={page} style={{ textDecoration: 'none', pointerEvents: 'none' }}>
-      <LinkText className={(group && 'selected') || 'unSelected'} style={style}>
+    <Link
+      to={page}
+      style={{ color: 'rgb(32, 32, 32)', textDecoration: 'none', pointerEvents: 'none' }}
+    >
+      <LinkText className={(active && 'selected') || 'unSelected'} style={style}>
         {removeDashes(text)}
       </LinkText>
     </Link>
@@ -17,7 +20,7 @@ const NavBarLinks = ({ page, group, text, style }) => {
 
 NavBarLinks.propTypes = {
   page: PropTypes.string.isRequired,
-  group: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
   style: PropTypes.object,
 }

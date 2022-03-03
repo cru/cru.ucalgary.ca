@@ -52,7 +52,7 @@ const Layout = ({ title, page, group, children }) => {
       <SEO title={title} />
       <ThemeProvider theme={theme}>
         <MaxWidth>
-          <NavBar page={page} group={group} />
+          <NavBar activePage={page} activeGroup={group} />
           <main>{children}</main>
           <EmailFAB />
           <footer>
@@ -66,6 +66,8 @@ const Layout = ({ title, page, group, children }) => {
 
 Layout.propTypes = {
   title: PropTypes.string,
+  page: PropTypes.string,
+  group: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

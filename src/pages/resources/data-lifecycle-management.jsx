@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import { ChevronDown, ChevronRight } from 'react-feather'
 import { Collapse } from 'reactstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Styled from 'styled-components'
 
-import Layout from '../containers/layout'
-import Padding from '../containers/padding'
-import CruFragment from '../components/crufragment'
-import PublicationLink from '../components/publicationlink'
-import ProjectIntake from '../components/dlm/projectIntake'
-import DataCollection from '../components/dlm/dataCollection'
-import DataStorage from '../components/dlm/dataStorage'
-import DataAnalysis from '../components/dlm/dataAnalysis'
-import DataBackup from '../components/dlm/dataBackup'
-import Closeout from '../components/dlm/closeout'
-import dlm from '../images/dlm.jpg'
-import wordCloud from '../images/word-cloud.jpg'
+import Layout from '../../containers/layout'
+import Padding from '../../containers/padding'
+import CruFragment from '../../components/crufragment'
+import ProjectIntake from '../../components/dlm/projectIntake'
+import DataCollection from '../../components/dlm/dataCollection'
+import DataStorage from '../../components/dlm/dataStorage'
+import DataAnalysis from '../../components/dlm/dataAnalysis'
+import DataBackup from '../../components/dlm/dataBackup'
+import Closeout from '../../components/dlm/closeout'
+import dlm from '../../images/dlm.jpg'
+import wordCloud from '../../images/word-cloud.jpg'
 
 const DataLifecycleManagementPage = () => {
   const [showOne, toggleOne] = useState(false)
@@ -25,7 +25,11 @@ const DataLifecycleManagementPage = () => {
   const [showSix, toggleSix] = useState(false)
 
   return (
-    <Layout title='Data Lifecycle Management' page='data-lifecycle-management'>
+    <Layout
+      title='Data Lifecycle Management'
+      page='data-lifecycle-management'
+      group='resources'
+    >
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Data Lifecycle Management</h1>
@@ -239,46 +243,101 @@ const DataLifecycleManagementPage = () => {
           <h3>Policies</h3>
           <ul>
             <li>
-              <PublicationLink
-                title='UofC Privacy Policy'
-                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  UofC Privacy Policy &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
             <li>
-              <PublicationLink
-                title='Acceptable Use of Electronic Resources and Information Policy'
-                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  Acceptable Use of Electronic Resources and Information Policy
+                  &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
             <li>
-              <PublicationLink
-                title='Information Asset Management Policy'
-                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  Information Asset Management Policy &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
             <li>
-              <PublicationLink
-                title='Health Information Management Policy'
-                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  Health Information Management Policy &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
             <li>
-              <PublicationLink
-                title='Storage of Inactive Clinical Research Records Policy'
-                url='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  Storage of Inactive Clinical Research Records Policy &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
             <li>
-              <PublicationLink
-                title='UofC Operating Standards, Guidelines & Forms'
-                url='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
-                style={{ padding: 0 }}
-              />
+              <a
+                href='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <p>
+                  UofC Operating Standards, Guidelines & Forms &nbsp;&nbsp;
+                  <FontAwesomeIcon
+                    style={{ fontSize: 10 }}
+                    className='linkStyleIcon'
+                    icon='external-link-alt'
+                  />
+                </p>
+              </a>
             </li>
           </ul>
         </div>

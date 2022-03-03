@@ -41,6 +41,7 @@ const Footer = () => {
               href='https://careers.ucalgary.ca/jobs/search?utf8=%3F&q=cru&c_keywords=cru#results'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Careers
@@ -51,13 +52,19 @@ const Footer = () => {
               href='https://cumming.ucalgary.ca/'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Cumming School of Medicine
                 {externalLinkIcon('external-link-alt')}
               </LinkStyle>
             </a>
-            <a href='https://www.ucalgary.ca/' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://www.ucalgary.ca/'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
+            >
               <LinkStyle>
                 University of Calgary
                 {externalLinkIcon('external-link-alt')}
@@ -67,6 +74,7 @@ const Footer = () => {
               href='https://www.albertahealthservices.ca/'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Alberta Health Services
@@ -84,6 +92,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 UofC Privacy Policy
@@ -94,6 +103,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Acceptable Use of Electronic Resources and Information Policy
@@ -104,6 +114,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Information Asset Management Policy
@@ -114,6 +125,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Health Information Management Policy
@@ -124,6 +136,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 Storage of Inactive Clinical Research Records Policy
@@ -134,6 +147,7 @@ const Footer = () => {
               href='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ textDecoration: 'none' }}
             >
               <LinkStyle>
                 UofC Operating Standards, Guidelines & Forms

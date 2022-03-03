@@ -15,7 +15,7 @@ const Algorithms = () => {
         <Nav tabs>
           <NavItem>
             <NavLink
-              className={activeTab === '1' && 'active'}
+              className={activeTab === '1' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('1')
               }}
@@ -25,7 +25,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '2' && 'active'}
+              className={activeTab === '2' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('2')
               }}
@@ -35,7 +35,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '3' && 'active'}
+              className={activeTab === '3' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('3')
               }}
@@ -45,7 +45,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '4' && 'active'}
+              className={activeTab === '4' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('4')
               }}
@@ -55,7 +55,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '5' && 'active'}
+              className={activeTab === '5' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('5')
               }}
@@ -65,7 +65,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '6' && 'active'}
+              className={activeTab === '6' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('6')
               }}
@@ -75,7 +75,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '7' && 'active'}
+              className={activeTab === '7' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('7')
               }}
@@ -85,7 +85,7 @@ const Algorithms = () => {
           </NavItem>
           <NavItem>
             <NavLink
-              className={activeTab === '8' && 'active'}
+              className={activeTab === '8' ? 'active' : ''}
               onClick={() => {
                 setActiveTab('8')
               }}

@@ -31,7 +31,7 @@ PublicationLink.propTypes = {
   authors: PropTypes.node.isRequired,
   year: PropTypes.node.isRequired,
   publisher: PropTypes.node.isRequired,
-  style: PropTypes.node.isRequired,
+  style: PropTypes.object,
 }
 
 export default PublicationLink
