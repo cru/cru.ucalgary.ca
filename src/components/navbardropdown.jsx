@@ -1,21 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ChevronDown } from 'react-feather'
 import NavBarLinks from './navbarlinks'
 
-const NavBarDropDown = ({ group, selectedPage, text, page }) => {
-  const pages = page.map((pageName) => (
-    <li key={pageName.toString()}>
+const NavBarDropDown = ({ text, pages, group, selectedPage, active }) => {
+  const subPages = pages.map((subPage) => (
+    <li key={subPage.page.toString()}>
       <NavBarLinks
-        page={`/${pageName}`}
-        text={`${pageName
-          .toLowerCase()
-          .replace(/-/g, ' ')
-          .split(' ')
-          .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-          .join(' ')}`}
-        group={selectedPage === pageName ? selectedPage : ''}
+        page={`/${group}/${subPage.page}`}
+        text={subPage.text}
+        active={selectedPage === subPage.page}
         style={{ fontSize: '19.5px' }}
       />
       <div style={{ height: 9 }} />
@@ -24,22 +19,21 @@ const NavBarDropDown = ({ group, selectedPage, text, page }) => {
 
   return (
     <Container>
-      <LinkText className={group && 'selected'}>
-        {text}
-        <FontAwesomeIcon style={{ fontSize: '14px' }} icon='caret-down' />
+      <LinkText className={active && 'selected'}>
+        {text} <ChevronDown size={14} />
       </LinkText>
       <Menu className='navbardropdown-menu'>
-        <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{pages}</ul>
+        <ul style={{ paddingLeft: 22, paddingRight: 22 }}>{subPages}</ul>
       </Menu>
     </Container>
   )
 }
 
 NavBarDropDown.propTypes = {
-  group: PropTypes.bool.isRequired,
-  selectedPage: PropTypes.string.isRequired,
+  group: PropTypes.string.isRequired,
+  selectedPage: PropTypes.string,
   text: PropTypes.string.isRequired,
-  page: PropTypes.array.isRequired,
+  pages: PropTypes.array.isRequired,
 }
 
 export default NavBarDropDown
@@ -52,14 +46,14 @@ const Container = Styled.div`
   }
 `
 
-const LinkText = Styled.a`
+const LinkText = Styled.span`
   font-family: futura-pt, sans-serif;
   font-size: 20.5px;
   font-weight: 400;
   letter-spacing:0.2px;
   position: relative;
   display: inline-block;
-  cursor:default;
+  cursor: pointer;
 `
 
 const Menu = Styled.div`

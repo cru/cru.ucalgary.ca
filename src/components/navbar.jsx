@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
+import moment from 'moment'
+
 import MobileMenu from './mobilemenu'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
@@ -10,14 +12,24 @@ import uofcImg from '../images/partners/uc-horz-rgb.png'
 import cruImg from '../images/cru_logo.png'
 import Alert from './alert'
 
-const NavBar = ({ page, group }) => {
+const NavBar = ({ activePage, activeGroup }) => {
   const [navbarpage, setNavbarpage] = useState(false)
+  const [showAlert, setShowAlert] = useState(false)
+
+  useEffect(() => {
+    const startDate = moment('2022-01-01')
+    const endDate = moment('2023-01-01')
+
+    setShowAlert(moment().isBetween(startDate, endDate, 'days'))
+  }, [])
 
   return (
     <>
-      <Bar>
-        <Alert />
-      </Bar>
+      {showAlert && (
+        <Bar>
+          <Alert />
+        </Bar>
+      )}
       <Bar navbarpage={navbarpage}>
         <MenuContainer>
           <MobileSpacing />
@@ -34,35 +46,67 @@ const NavBar = ({ page, group }) => {
         </ImgButton>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks page='/people' text='People' group={page === 'people'} />
+          <NavBarLinks page='/people' text='People' active={activePage === 'people'} />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks page='/partners' text='Partners' group={page === 'partners'} />
+          <NavBarLinks
+            page='/partners'
+            text='Partners'
+            active={activePage === 'partners'}
+          />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarLinks
             page='/publications'
             text='Publications'
-            group={page === 'publications'}
+            active={activePage === 'publications'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarDropDown
+            text='Newsroom'
+            pages={[
+              { page: 'announcements', text: 'Announcements' },
+              { page: 'redcap-validation', text: 'REDCap Validation!' },
+            ]}
+            group='newsroom'
+            selectedPage={['announcements', 'redcap-validation'].find(
+              (el) => el === activePage
+            )}
+            active={activeGroup === 'newsroom'}
           />
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
           <NavBarDropDown
             text='Resources'
-            page={['data-lifecycle-management', 'machine-learning', 'downloads']}
-            group={group === 'resources'}
+            pages={[
+              { page: 'data-lifecycle-management', text: 'Data Lifecycle Management' },
+              { page: 'machine-learning', text: 'Machine Learning' },
+              { page: 'downloads', text: 'Downloads' },
+            ]}
+            group='resources'
             selectedPage={[
               'data-lifecycle-management',
               'machine-learning',
               'downloads',
-            ].find((el) => el === page)}
+            ].find((el) => el === activePage)}
+            active={activeGroup === 'resources'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarLinks
+            page='/about-us'
+            text='About Us'
+            active={activePage === 'about-us'}
           />
         </LinkContainer>
         <RightAlign>
-          <ImgButton icon='external-link-alt' href='https://www.ucalgary.ca/'>
+          <ImgButton href='https://www.ucalgary.ca/'>
             <img src={uofcImg} style={{ height: '28px' }} alt='UofC' />
           </ImgButton>
         </RightAlign>

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ExternalLink } from 'react-feather'
 
 const PublicationLink = ({ url, title, authors, year, publisher, style }) => {
   return (
@@ -11,11 +11,7 @@ const PublicationLink = ({ url, title, authors, year, publisher, style }) => {
           <Title href={url} target='_blank'>
             {title}
             &nbsp;&nbsp;
-            <FontAwesomeIcon
-              style={{ fontSize: 10 }}
-              className='linkStyleIcon'
-              icon='external-link-alt'
-            />
+            <ExternalLink size={12} />
           </Title>
           <Authors>{authors}</Authors>
           <Publisher>{publisher}</Publisher>
@@ -31,7 +27,7 @@ PublicationLink.propTypes = {
   authors: PropTypes.node.isRequired,
   year: PropTypes.node.isRequired,
   publisher: PropTypes.node.isRequired,
-  style: PropTypes.node.isRequired,
+  style: PropTypes.object,
 }
 
 export default PublicationLink

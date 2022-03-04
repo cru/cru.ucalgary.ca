@@ -15,7 +15,7 @@ const Partner = ({ href, fixed }) => {
 }
 Partner.propTypes = {
   href: PropTypes.node.isRequired,
-  fixed: PropTypes.node.isRequired,
+  fixed: PropTypes.object.isRequired,
 }
 
 export default Partner

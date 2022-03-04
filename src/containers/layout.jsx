@@ -8,7 +8,6 @@ import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
-import '../helpers/fontawesomeimports'
 import '../styles/bootstrap.css'
 import '../styles/main.scss'
 import '../styles/modal.css'
@@ -52,7 +51,7 @@ const Layout = ({ title, page, group, children }) => {
       <SEO title={title} />
       <ThemeProvider theme={theme}>
         <MaxWidth>
-          <NavBar page={page} group={group} />
+          <NavBar activePage={page} activeGroup={group} />
           <main>{children}</main>
           <EmailFAB />
           <footer>
@@ -66,6 +65,8 @@ const Layout = ({ title, page, group, children }) => {
 
 Layout.propTypes = {
   title: PropTypes.string,
+  page: PropTypes.string,
+  group: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

@@ -83,15 +83,11 @@ const ParterBanner = () => {
         render={(data) => (
           <>
             <Header>
-              <h5>
-                <span>
-                  <Link to='/partners'>
-                    See All Partners
-                    <span> </span>
-                    <ArrowRight style={{ height: 17, marginBottom: -2.4 }} />
-                  </Link>
-                </span>
-              </h5>
+              <Link to='/partners'>
+                <h5>
+                  See All Partners <ArrowRight size={16} />
+                </h5>
+              </Link>
             </Header>
             <Row>
               <RipContainerLeft />

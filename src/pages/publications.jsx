@@ -10,7 +10,7 @@ const PublicationsPage = () => (
     <Padding>
       <div style={{ height: 60 }} />
       <h1>Publications</h1>
-      <div style={{ height: 50 }} />
+      <div style={{ height: 55 }} />
     </Padding>
     <PublicationsList />
     <div style={{ height: '100px' }} />

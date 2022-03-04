@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 @import url('https://use.typekit.net/atr1btp.css');
 @import './theme.scss';
-@import 'node_modules/@fortawesome/fontawesome-svg-core/styles';
 
 html,
 body {
   font-family: 'Roboto';
   background-color: white;
+  color: $fontPrimColor;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,10 +18,21 @@ body {
   }
 }
 
-// All text color
-p,
 a {
   color: $fontPrimColor;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.external-link {
+  color: #1a0dab;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 h1,
@@ -53,8 +64,8 @@ h5 {
   margin-bottom: 0.5rem;
 }
 h6 {
-  font-size: 20px;
-  font-style: italic;
+  font-family: futura-pt, sans-serif;
+  font-size: 16px;
   margin-bottom: 0.5rem;
 }
 
@@ -88,13 +99,13 @@ label {
 table,
 th,
 td {
-    border: 1px solid #424242;
-    border-collapse: collapse;
+  border: 1px solid #424242;
+  border-collapse: collapse;
 }
 
 table {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 th {
@@ -106,6 +117,6 @@ th {
 }
 
 td {
-    padding: 0.5rem;
-    text-align: left;
+  padding: 0.5rem;
+  text-align: left;
 }
