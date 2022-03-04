@@ -1,6 +1,5 @@
 import React from 'react'
 import Styled from 'styled-components'
-import PropTypes from 'prop-types'
 import ServiceContainer from './serviceContainer'
 import IpadHealthIcon from '../images/icons/Asset6.svg'
 import CodeIcon from '../images/icons/Asset8.svg'
@@ -16,7 +15,7 @@ const ServiceList = () => {
         <Item>
           <ServiceContainer
             title='Electronic Data Capture'
-            description='The CRU provides you with choice and capacity building tools in the areas of: data capture (REDCap, REDCap Cloud, iDatafax), databases, and data management.'
+            description='The CRU provides you with high-quality and easy-to-use capacity building tools in the areas of: data capture (REDCap), databases, and data management.'
             image={IpadHealthIcon}
           />
         </Item>

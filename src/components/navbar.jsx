@@ -57,11 +57,11 @@ const NavBar = ({ activePage, activeGroup }) => {
           <NavBarDropDown
             text='Newsroom'
             pages={[
-              { page: 'redcap-validation', text: 'REDCap Validation!' },
               { page: 'announcements', text: 'Announcements' },
+              { page: 'redcap-validation', text: 'REDCap Validation!' },
             ]}
             group='newsroom'
-            selectedPage={['redcap-validation', 'announcements'].find(
+            selectedPage={['announcements', 'redcap-validation'].find(
               (el) => el === activePage
             )}
             active={activeGroup === 'newsroom'}
