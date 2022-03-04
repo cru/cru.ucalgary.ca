@@ -175,15 +175,11 @@ const Footer = () => {
             <Address>
               Phone
               <span> </span>
-              <a style={{ textDecoration: 'none' }} href='tel:14032103845'>
-                1 403 210 3845
-              </a>
+              <a href='tel:14032103845'>1 403 210 3845</a>
               <br />
               Email
               <span> </span>
-              <a style={{ textDecoration: 'none' }} href='mailto:cru@ucalgary.ca'>
-                cru@ucalgary.ca
-              </a>
+              <a href='mailto:cru@ucalgary.ca'>cru@ucalgary.ca</a>
             </Address>
           </Content>
         </Column>

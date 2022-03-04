@@ -14,7 +14,7 @@ const AboutUsPage = () => {
         <div style={{ height: 55 }} />
         <Clock size={72} color='#e97175' />
         <h3 style={{ marginBottom: 0 }}>Coming Soon!</h3>
-        <h6 style={{ marginTop: 0 }}>
+        <h6 className='text-muted' style={{ marginTop: 0 }}>
           Stay tuned. We will be updating this page with more information.
         </h6>
       </Padding>

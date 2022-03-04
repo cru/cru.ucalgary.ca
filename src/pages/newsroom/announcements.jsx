@@ -1,4 +1,5 @@
 import React from 'react'
+import Styled from 'styled-components'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
@@ -12,14 +13,36 @@ const AnnouncementsPage = () => {
       <Padding>
         <h1>Announcements</h1>
         <div style={{ height: 55 }} />
-        <h6 className='text-muted' style={{ marginTop: 0 }}>
-          March 2022
-        </h6>
-        <ul>
-          <li>
-            <Link to='/newsroom/redcap-validation'>REDCap Validation!</Link>
-          </li>
-        </ul>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
+            March 2022
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/redcap-validation'>REDCap Validation!</Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
+            January 2022
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/covid-19'>COVID-19 Notice</Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
+            December 2021
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/seasonal-closure-2021'>Seasonal Closure 2021</Link>
+            </li>
+          </ul>
+        </Group>
         <div style={{ height: 200 }} />
       </Padding>
       <CruFragment />
@@ -29,3 +52,7 @@ const AnnouncementsPage = () => {
 }
 
 export default AnnouncementsPage
+
+const Group = Styled.div`
+    padding-bottom: 16px;
+`

@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
+import moment from 'moment'
+
 import MobileMenu from './mobilemenu'
 import NavBarLinks from './navbarlinks'
 import NavBarDropDown from './navbardropdown'
@@ -12,12 +14,22 @@ import Alert from './alert'
 
 const NavBar = ({ activePage, activeGroup }) => {
   const [navbarpage, setNavbarpage] = useState(false)
+  const [showAlert, setShowAlert] = useState(false)
+
+  useEffect(() => {
+    const startDate = moment('2022-01-01')
+    const endDate = moment('2023-01-01')
+
+    setShowAlert(moment().isBetween(startDate, endDate, 'days'))
+  }, [])
 
   return (
     <>
-      <Bar>
-        <Alert />
-      </Bar>
+      {showAlert && (
+        <Bar>
+          <Alert />
+        </Bar>
+      )}
       <Bar navbarpage={navbarpage}>
         <MenuContainer>
           <MobileSpacing />

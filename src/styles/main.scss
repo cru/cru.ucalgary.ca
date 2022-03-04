@@ -19,12 +19,16 @@ body {
 }
 
 a {
-  color: #1a0dab;
+  color: $fontPrimColor;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.external-link {
+  color: #1a0dab;
 }
 
 li:not(:last-child) {
@@ -61,8 +65,7 @@ h5 {
 }
 h6 {
   font-family: futura-pt, sans-serif;
-  font-size: 18px;
-  font-style: italic;
+  font-size: 16px;
   margin-bottom: 0.5rem;
 }
 
