@@ -6,7 +6,7 @@ import { Info } from 'react-feather'
 const Alert = () => {
   return (
     <Fragment>
-      <AlertHeader onClick={() => navigate('/newsroom/announcements')}>
+      <AlertHeader onClick={() => navigate('/newsroom/redcap-validation')}>
         <Fragment>
           <Info color='#8dc7fd' size={32} />
           <div style={{ textAlign: 'center' }}>
