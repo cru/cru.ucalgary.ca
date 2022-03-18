@@ -52,8 +52,11 @@ const RedcapValidationPage = () => {
           >
             service desk
           </a>{' '}
-          or by emailing us at <a href='mailto:cru@ucalgary.ca' className='external-link'>cru@ucalgary.ca</a>. We
-          look forward to continuing our collaborations.
+          or by emailing us at{' '}
+          <a href='mailto:cru@ucalgary.ca' className='external-link'>
+            cru@ucalgary.ca
+          </a>
+          . We look forward to continuing our collaborations.
         </p>
         <div className='mt-5'>
           <h3>Frequently Asked Questions (FAQs)</h3>
@@ -224,7 +227,9 @@ const RedcapValidationPage = () => {
                 <li>
                   If you no longer use your REDCap project and would like to close it,
                   please contact us at{' '}
-                  <a href='mailto:cru@ucalgary.ca' className='external-link'>cru@ucalgary.ca</a>
+                  <a href='mailto:cru@ucalgary.ca' className='external-link'>
+                    cru@ucalgary.ca
+                  </a>
                 </li>
               </ul>
             </Collapse>
@@ -252,7 +257,10 @@ const RedcapValidationPage = () => {
                 <li>
                   If you are running a clinical trial, yes – you can start a new project
                   on REDCap 10. Please contact us at{' '}
-                  <a href='mailto:cru@ucalgary.ca' className='external-link'>cru@ucalgary.ca</a> or via our{' '}
+                  <a href='mailto:cru@ucalgary.ca' className='external-link'>
+                    cru@ucalgary.ca
+                  </a>{' '}
+                  or via our{' '}
                   <a
                     href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
                     target='_blank'
@@ -398,6 +406,21 @@ const RedcapValidationPage = () => {
               </ul>
             </Collapse>
           </div>
+        </div>
+        <div className='mt-5'>
+          <i>
+            REDCap validation was supported in part by the{' '}
+            <a
+              href='https://absporu.ca/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='external-link'
+            >
+              Alberta SPOR SUPPORT Unit
+            </a>
+            , which is committed to building capacity in patient-oriented research by
+            sharing expertise with students and new researchers.
+          </i>
         </div>
         <div style={{ height: 200 }} />
       </Padding>
