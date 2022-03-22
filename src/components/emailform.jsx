@@ -1,7 +1,8 @@
 import React from 'react'
-
+import Recaptcha from 'react-recaptcha'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
+
 import Input from './input'
 import TextArea from './textarea'
 import Button from './button'
@@ -14,6 +15,7 @@ const EmailForm = ({ style }) => {
         method='post'
         data-netlify='true'
         data-netlify-honeypot='bot-field'
+        data-netlify-recaptcha='true'
         action='/success'
         style={style}
       >
@@ -32,6 +34,7 @@ const EmailForm = ({ style }) => {
         <Row>
           <TextArea name='message' placeholder='message' />
         </Row>
+        <Recaptcha sitekey='6Ldh7CQaAAAAAGVMPllaGuTw5WOjrmY9puMSkrmy' />
         <Space />
 
         <Row
