@@ -39,6 +39,7 @@ const EmailForm = ({ style }) => {
         data-netlify-recaptcha='true'
         action='/success'
         style={style}
+        onSubmit={handleSubmit}
       >
         <input type='hidden' name='bot-field' />
         <input type='hidden' name='form-name' value='contact' />
@@ -69,7 +70,7 @@ const EmailForm = ({ style }) => {
           }}
         >
           <Button
-            onClick={handleSubmit}
+            type='submit'
             style={{
               fontSize: '15px',
             }}
