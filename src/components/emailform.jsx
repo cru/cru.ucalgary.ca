@@ -23,7 +23,7 @@ const EmailForm = ({ style }) => {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString(),
       })
-        .then(() => navigate((to = '/success')))
+        .then(() => navigate('/success'))
         .catch((error) => alert(error))
     }
   }
