@@ -16,7 +16,6 @@ module.exports = {
         head: true,
       },
     },
-    `gatsby-plugin-recaptcha`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

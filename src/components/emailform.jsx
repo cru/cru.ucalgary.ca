@@ -1,5 +1,5 @@
 import React from 'react'
-import Recaptcha from 'react-recaptcha'
+import ReCAPTCHA from 'react-google-recaptcha'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
 
@@ -34,7 +34,7 @@ const EmailForm = ({ style }) => {
         <Row>
           <TextArea name='message' placeholder='message' />
         </Row>
-        <Recaptcha sitekey='6Ldh7CQaAAAAAGVMPllaGuTw5WOjrmY9puMSkrmy' />
+        <ReCAPTCHA sitekey='6Ldh7CQaAAAAAGVMPllaGuTw5WOjrmY9puMSkrmy' />
         <Space />
 
         <Row
