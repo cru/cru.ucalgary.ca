@@ -1,21 +1,45 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 import PropTypes from 'prop-types'
 import Styled from 'styled-components'
+
 import Input from './input'
 import TextArea from './textarea'
 import Button from './button'
+import { navigate } from 'gatsby'
 
 const EmailForm = ({ style }) => {
+  const [recaptcha, setRecaptcha] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    if (recaptcha) {
+      const form = document.getElementById('contact-form')
+      const formData = new FormData(form)
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => navigate('/success'))
+        .catch((error) => alert(error))
+    }
+  }
+
   return (
     <>
       <Form
+        id='contact-form'
         name='contact'
         method='post'
         data-netlify='true'
         data-netlify-honeypot='bot-field'
+        data-netlify-recaptcha='true'
         action='/success'
         style={style}
+        onSubmit={handleSubmit}
       >
         <input type='hidden' name='bot-field' />
         <input type='hidden' name='form-name' value='contact' />
@@ -32,6 +56,10 @@ const EmailForm = ({ style }) => {
         <Row>
           <TextArea name='message' placeholder='message' />
         </Row>
+        <ReCAPTCHA
+          sitekey='6Ldh7CQaAAAAAGVMPllaGuTw5WOjrmY9puMSkrmy'
+          onChange={() => setRecaptcha(true)}
+        />
         <Space />
 
         <Row
