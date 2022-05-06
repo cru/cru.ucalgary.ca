@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
+
 import SEO from '../components/seo'
 import MaxWidth from './maxwidth'
 import Footer from '../components/footer'

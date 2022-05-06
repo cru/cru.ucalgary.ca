@@ -4,6 +4,7 @@ import { Trail, animated } from '@react-spring/web'
 import Styled from 'styled-components'
 
 import Partner from './partner'
+import { ExternalLink } from 'react-feather'
 
 const getPartnersList = (data) => {
   const everyone = []
@@ -35,8 +36,13 @@ const getThirdPartyPartnersList = (data) => {
   data.allThirdpartypartnersJson.edges.forEach((item) =>
     everyone.push(
       <>
-        <PartnerLink rel='noopener noreferrer' target='_blank' href={item.node.href}>
-          {item.node.name}
+        <PartnerLink
+          rel='noopener noreferrer'
+          target='_blank'
+          href={item.node.href}
+          className='external-link'
+        >
+          {item.node.name} <ExternalLink size={12} />
         </PartnerLink>
         <br />
         <div style={{ height: 10 }} />
@@ -86,7 +92,7 @@ const PartnerList = () => {
             {/* Visual grid of partners  */}
             <Grid>{getPartnersList(data)}</Grid>
             <div style={{ height: 50 }} />
-            <h4>Other Collaborators</h4>
+            <h3>Other Collaborators</h3>
             {getThirdPartyPartnersList(data)}
           </>
         )}

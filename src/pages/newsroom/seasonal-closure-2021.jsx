@@ -19,7 +19,7 @@ const SeasonalClosurePage = () => {
           look forward to continuing our work together in the new year.{' '}
         </p>
         <p>
-          If you require <b>urgent</b> support during this time, please email us at
+          If you require <b>urgent</b> support during this time, please email us at{' '}
           <a href='mailto:cru@ucalgary.ca' className='external-link'>
             cru@ucalgary.ca
           </a>{' '}

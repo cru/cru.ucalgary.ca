@@ -35,13 +35,13 @@ const DataLifecycleManagementPage = () => {
         <div style={{ height: 55 }} />
         <FadeBackground>
           <TextOverlay>
-            <h6>
+            <h5>
               The Clinical Research Unit (CRU) utilizes a standardized and repeatable
               policy-driven approach to manage your research data through its lifecycle
               within our organization. The Data Lifecycle Management (DLM) strategy
               summarizes the specific data management practices that ensure appropriate
               handling of data at all stages of the project.
-            </h6>
+            </h5>
           </TextOverlay>
         </FadeBackground>
         <p>
@@ -246,6 +246,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/university-policies-procedures/privacy-policy'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   UofC Privacy Policy <ExternalLink size={12} />
@@ -257,6 +258,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/university-policies-procedures/acceptable-use-electronic-resources-and-information-policy'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   Acceptable Use of Electronic Resources and Information Policy{' '}
@@ -269,6 +271,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/university-policies-procedures/information-asset-management-policy'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   Information Asset Management Policy <ExternalLink size={12} />
@@ -280,6 +283,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/university-policies-procedures/health-information-management-policy'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   Health Information Management Policy <ExternalLink size={12} />
@@ -291,6 +295,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/university-policies-procedures/storage-inactive-clinical-research-records-policy'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   Storage of Inactive Clinical Research Records Policy{' '}
@@ -303,6 +308,7 @@ const DataLifecycleManagementPage = () => {
                 href='https://www.ucalgary.ca/legal-services/access-information-privacy/operating-standards-guidelines-forms'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='external-link'
               >
                 <p>
                   UofC Operating Standards, Guidelines & Forms <ExternalLink size={12} />
