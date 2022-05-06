@@ -1,7 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Trail, animated } from 'react-spring/renderprops'
+import { Trail, animated } from '@react-spring/web'
 import Styled from 'styled-components'
+
 import Person from './person'
 
 // Use this tool to collect RGB from people

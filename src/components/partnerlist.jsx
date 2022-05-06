@@ -1,7 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Trail, animated } from 'react-spring/renderprops'
+import { Trail, animated } from '@react-spring/web'
 import Styled from 'styled-components'
+
 import Partner from './partner'
 
 const getPartnersList = (data) => {
@@ -18,6 +19,7 @@ const getPartnersList = (data) => {
   )
   return (
     <Trail
+      native
       items={everyone}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}
