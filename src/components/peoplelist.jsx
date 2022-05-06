@@ -17,7 +17,7 @@ const getPeopleList = (data) => {
           name={item.node.name}
           title={item.node.title}
           comment={item.node.comments}
-          fixed={item.node.image.src.childImageSharp.fixed}
+          image={item.node.image.src.childImageSharp.gatsbyImageData}
           color={item.node.image.color}
         />
       </PersonContainer>
@@ -52,9 +52,13 @@ const PeopleList = () => {
                     color
                     src {
                       childImageSharp {
-                        fixed(width: 160, height: 160, quality: 100) {
-                          ...GatsbyImageSharpFixed_withWebp
-                        }
+                        gatsbyImageData(
+                          layout: FIXED
+                          width: 160
+                          height: 160
+                          formats: [AUTO, WEBP, AVIF]
+                          placeholder: BLURRED
+                        )
                       }
                     }
                   }

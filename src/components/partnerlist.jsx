@@ -12,7 +12,7 @@ const getPartnersList = (data) => {
       <PartnerContainer key={item.node.href}>
         <Partner
           href={item.node.href}
-          fixed={item.node.image.src.childImageSharp.fixed}
+          image={item.node.image.src.childImageSharp.gatsbyImageData}
         />
       </PartnerContainer>
     )
@@ -59,9 +59,12 @@ const PartnerList = () => {
                   image {
                     src {
                       childImageSharp {
-                        fixed(width: 140, quality: 100) {
-                          ...GatsbyImageSharpFixed_withWebp
-                        }
+                        gatsbyImageData(
+                          layout: FIXED
+                          width: 140
+                          formats: [AUTO, WEBP, AVIF]
+                          placeholder: BLURRED
+                        )
                       }
                     }
                   }
