@@ -116,19 +116,12 @@ const NavBar = ({ activePage, activeGroup }) => {
                 page: 'methods-analytics-services',
                 text: 'Methods and Analytics Services',
               },
-              { page: 'maintenance-fees', text: 'Platform Maintenance Fees' },
-              {
-                page: 'development-fees',
-                text: 'CRU Development and Setup Support Fees',
-              },
             ]}
             group='services-and-pricing'
             selectedPage={[
               'edc-services',
               'custom-platforms',
               'methods-analytics-services',
-              'maintenance-fees',
-              'development-fees',
             ].find((el) => el === activePage)}
             active={activeGroup === 'services-and-pricing'}
           />

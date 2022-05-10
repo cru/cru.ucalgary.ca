@@ -29,7 +29,7 @@ a:hover {
 }
 
 .external-link {
-  color: #1a0dab;
+  color: #8dc7fd;
 }
 
 li:not(:last-child) {
@@ -69,6 +69,12 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+hr {
+  background-color: #8dc7fd;
+  height: 1px;
+  border: 0;
+}
+
 label {
   font-family: futura-pt, sans-serif;
   font-weight: 600;
@@ -92,8 +98,47 @@ label {
   border-radius: 3px;
 }
 
+.primary {
+  color: $brandPrimColor !important
+}
+
+.primary-background {
+  background-color: $brandPrimColor !important;
+}
+
+.secondary {
+  color: $brandSecondColor !important
+}
+
+.secondary-background {
+  background-color: $brandSecondColor !important;
+}
+
 .text-muted {
   color: $fontMutedColor;
+}
+
+.floating {
+  box-shadow: $boxShadow;
+}
+
+.fee-banner {
+  background-color: #8dc7fd;
+  margin-left: auto;
+  margin-right: auto;
+  height: 225px;
+  padding: 1.5rem;
+  border-radius: $borderRadius;
+  text-align: center;
+}
+
+.section-float {
+  background: linear-gradient(to right, #fafafa 49.9%, #f4f4f4 50%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
 }
 
 table,

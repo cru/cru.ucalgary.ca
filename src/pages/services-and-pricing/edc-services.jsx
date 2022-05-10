@@ -1,9 +1,11 @@
 import React from 'react'
+import { Row, Col } from 'reactstrap'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
-import { Link } from 'gatsby'
+import RegularREDCapFees from '../../components/fees/regularRedcapFees'
+import ValidatedREDCapFees from '../../components/fees/validatedRedcapFees'
 
 const EDCServicesPage = () => {
   return (
@@ -19,7 +21,7 @@ const EDCServicesPage = () => {
           builds, setup and configuration, and implementation of advanced features.
         </p>
         <p>
-          <h4>
+          <h3>
             Interested in{' '}
             <a
               href='#'
@@ -30,7 +32,7 @@ const EDCServicesPage = () => {
               starting a REDCap project
             </a>{' '}
             with us? We support two project types:
-          </h4>
+          </h3>
           <ol>
             <li>
               <u>Self-service projects:</u> Research teams experienced in REDCap can
@@ -47,18 +49,103 @@ const EDCServicesPage = () => {
             </li>
           </ol>
         </p>
-        <h4>Pricing</h4>
+        <h3>Pricing</h3>
         <p>
-          All REDCap projects pay{' '}
-          <Link to='/services-and-pricing/maintenance-fees'>
-            platform maintenance fees
-          </Link>{' '}
-          to help us cost recover the overhead to maintain our REDCap system.{' '}
-          <Link to='/services-and-pricing/development-fees'>
-            CRU development and setup support fees
-          </Link>{' '}
-          for supported projects are determined on a project-by-project basis.
+          All REDCap projects pay <b>platform maintenance fees</b> to help us cost recover
+          the overhead to maintain our REDCap system.{' '}
+          <b>CRU development and setup support fees</b> for supported projects are
+          determined on a project-by-project basis.
         </p>
+        <h4>Platform maintenance fees</h4>
+        <div className='fee-banner secondary-background'>
+          <h2 style={{ color: '#fff' }}>Regular REDCap</h2>
+          <Row>
+            <Col sm={{ size: 10, offset: 1 }}>
+              <div className='section-float' style={{ marginTop: '75px' }}>
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Basic</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $300<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+                <hr className='secondary-background' />
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Plus</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $650<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+                <hr className='secondary-background' />
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Premium</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+          </Row>
+        </div>
+        <div style={{ marginTop: '250px' }}>
+          <RegularREDCapFees />
+        </div>
+
+        <div className='fee-banner' style={{ marginTop: '150px' }}>
+          <h2 style={{ color: '#fff' }}>Validated REDCap</h2>
+          <Row>
+            <Col sm={{ size: 10, offset: 1 }}>
+              <div className='section-float' style={{ marginTop: '75px' }}>
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Basic</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+                <hr />
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Plus</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $1,500<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+                <hr />
+                <Row className='text-center'>
+                  <Col sm='6'>
+                    <h3>Premium</h3>
+                  </Col>
+                  <Col sm='6'>
+                    <h3>
+                      $2,000<small style={{ fontSize: '18px' }}>/year</small>
+                    </h3>
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+          </Row>
+        </div>
+        <div style={{ marginTop: '250px' }}>
+          <ValidatedREDCapFees />
+        </div>
       </Padding>
 
       <div style={{ height: '100px' }} />

@@ -9,9 +9,9 @@ import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
-import '../styles/bootstrap.css'
-import '../styles/main.scss'
+import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/modal.css'
+import '../styles/main.scss'
 
 const theme = {
   //Nav Bar attributes
@@ -35,7 +35,7 @@ const theme = {
   boxShadowAccent: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
   boxShadowTrans: '0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
   borderRadius: '5px',
-  pageMaxWidth: '1200px',
+  pageMaxWidth: '1400px',
   pageMobilePadding: '25px',
   pageDesktopPadding: '140px',
 
