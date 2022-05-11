@@ -86,10 +86,10 @@ const EDCServicesPage = () => {
             <OverviewHeader>
               <Row className='text-center'>
                 <Col sm={{ size: 4, offset: 4 }}>
-                  <span style={{ color: '#fff', margin: 0 }}>Regular REDCap</span>
+                  <h6 style={{ margin: 0 }}>Regular REDCap</h6>
                 </Col>
                 <Col sm='4'>
-                  <span style={{ color: '#fff', margin: 0 }}>Validated REDCap</span>
+                  <h6 style={{ margin: 0 }}>Validated REDCap</h6>
                 </Col>
               </Row>
             </OverviewHeader>
@@ -100,12 +100,12 @@ const EDCServicesPage = () => {
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $300<small style={{ fontSize: '18px' }}>/year</small>
+                    $300<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                    $1,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
               </Row>
@@ -116,12 +116,12 @@ const EDCServicesPage = () => {
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $650<small style={{ fontSize: '18px' }}>/year</small>
+                    $650<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $1,500<small style={{ fontSize: '18px' }}>/year</small>
+                    $1,500<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
               </Row>
@@ -132,12 +132,12 @@ const EDCServicesPage = () => {
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                    $1,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
                 <Col sm='4'>
                   <span>
-                    $2,000<small style={{ fontSize: '18px' }}>/year</small>
+                    $2,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
               </Row>
@@ -192,10 +192,6 @@ const Divider = Styled.hr`
   props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
 `
 const OverviewHeader = Styled.div`
-  background: linear-gradient(to right, #fff 33.3%, ${(props) =>
-    props.theme.brandSecondColor} 33.3%, ${(props) =>
-  props.theme.brandSecondColor} 66.6%, ${(props) => props.theme.brandPrimColor} 66.6%);
-  border-radius: ${(props) => props.theme.borderRadius} ${(props) =>
-  props.theme.borderRadius} 0 0;
+  background: linear-gradient(to right, #fff 33.3%, #fafafa 33.3%);
   padding: 8px;
 `
