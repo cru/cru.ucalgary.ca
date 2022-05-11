@@ -68,7 +68,7 @@ const EDCServicesPage = () => {
         </p>
         <h5 className='mt-3'>Platform maintenance fees</h5>
         <Row>
-          <Col sm='6'>
+          <Col md='6'>
             <p>
               The CRU provides two options for REDCap projects: Regular and Validated.
             </p>
@@ -82,28 +82,28 @@ const EDCServicesPage = () => {
               validation or regulatory approvals.
             </p>
           </Col>
-          <Col sm='6'>
+          <Col md='6'>
             <OverviewHeader>
               <Row className='text-center'>
-                <Col sm={{ size: 4, offset: 4 }}>
+                <Col xs={{ size: 4, offset: 4 }}>
                   <h6 style={{ margin: 0 }}>Regular REDCap</h6>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <h6 style={{ margin: 0 }}>Validated REDCap</h6>
                 </Col>
               </Row>
             </OverviewHeader>
             <div className='section-triple'>
               <Row className='text-center'>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>Basic</span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $300<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $1,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
@@ -111,15 +111,15 @@ const EDCServicesPage = () => {
               </Row>
               <Divider />
               <Row className='text-center'>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>Plus</span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $650<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $1,500<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
@@ -127,15 +127,15 @@ const EDCServicesPage = () => {
               </Row>
               <Divider />
               <Row className='text-center'>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>Premium</span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $1,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>
                 </Col>
-                <Col sm='4'>
+                <Col xs='4'>
                   <span>
                     $2,000<small style={{ fontSize: '12px' }}>/year</small>
                   </span>

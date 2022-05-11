@@ -42,7 +42,7 @@ const theme = {
   // Media Queries
   mobileBreakPoint: '600px',
   navbarBreakPoint: '650px',
-  tabletBreakPoint: '900px',
+  tabletBreakPoint: '1147px',
   desktopBreakPoint: 'pageMaxWidth',
 }
 

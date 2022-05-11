@@ -10,114 +10,155 @@ const MobileMenu = ({ navbarpage }) => {
       <div style={{ height: '140px' }} />
       <Link to='/people'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             People
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/partners'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             Partners
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/publications'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             Publications
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/newsroom/announcements'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             Announcements
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/resources/data-lifecycle-management'>
         <MobileLink>
-          <h5>
-            Data Lifecycle Management
+          <h6 style={{ marginBottom: 0 }}>
+            Data Lifecycle
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/resources/machine-learning'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             Machine Learning
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/resources/downloads'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             Downloads
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
         </MobileLink>
       </Link>
       <Link to='/about-us'>
         <MobileLink>
-          <h5>
+          <h6 style={{ marginBottom: 0 }}>
             About Us
             <ArrowRight
               style={{
                 float: 'right',
-                marginTop: '-11px',
+
                 marginRight: '20px',
               }}
             />
-          </h5>
+          </h6>
+        </MobileLink>
+      </Link>
+      <Link to='/services-and-pricing/edc-services'>
+        <MobileLink>
+          <h6 style={{ marginBottom: 0 }}>
+            EDC Services
+            <ArrowRight
+              style={{
+                float: 'right',
+
+                marginRight: '20px',
+              }}
+            />
+          </h6>
+        </MobileLink>
+      </Link>
+      <Link to='/services-and-pricing/custom-platforms'>
+        <MobileLink>
+          <h6 style={{ marginBottom: 0 }}>
+            Custom Platforms
+            <ArrowRight
+              style={{
+                float: 'right',
+
+                marginRight: '20px',
+              }}
+            />
+          </h6>
+        </MobileLink>
+      </Link>
+      <Link to='/services-and-pricing/methods-analytics-services'>
+        <MobileLink>
+          <h6 style={{ marginBottom: 0 }}>
+            Methods/Analytics
+            <ArrowRight
+              style={{
+                float: 'right',
+                marginRight: '20px',
+              }}
+            />
+          </h6>
         </MobileLink>
       </Link>
     </MobilePage>
@@ -136,10 +177,8 @@ const MobileLink = Styled.div`
   padding: 1px;
   padding-left:25px;
   color: white;
-  h5{
-    line-height:0px;
+  h6{
     color: white;
-    margin-bottom: 2rem;
   }
 `
 

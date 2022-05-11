@@ -11,7 +11,7 @@ const Alert = () => {
           <Info color='#8dc7fd' size={32} />
           <div style={{ textAlign: 'center' }}>
             <h5>CRU Hosts a Validated REDCap!</h5>
-            <small>Click here for more info</small>
+            <small className='text-muted'>Click here for more info</small>
           </div>
         </Fragment>
       </AlertHeader>
