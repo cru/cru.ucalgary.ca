@@ -38,6 +38,24 @@ const Footer = () => {
             <Link style={{ textDecoration: 'none' }} to='/resources/downloads'>
               <LinkStyle>Downloads</LinkStyle>
             </Link>
+            <Link
+              style={{ textDecoration: 'none' }}
+              to='/services-and-pricing/edc-services'
+            >
+              <LinkStyle>Electronic Data Capture Services</LinkStyle>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none' }}
+              to='/services-and-pricing/custom-platforms'
+            >
+              <LinkStyle>Custom Research Platforms</LinkStyle>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none' }}
+              to='/services-and-pricing/methods-analytics-services'
+            >
+              <LinkStyle>Methods and Analytics Services</LinkStyle>
+            </Link>
             <Link style={{ textDecoration: 'none' }} to='/about-us'>
               <LinkStyle>About Us</LinkStyle>
             </Link>
@@ -242,7 +260,6 @@ const Strip = Styled.div`
 `
 
 const LinkStyle = Styled.p`
-  font-family: 'Roboto';
   color: ${(props) => props.theme.fontSecColor};
   text-decoration:none;
   cursor:pointer;
@@ -265,7 +282,6 @@ const Title = Styled.p`
 `
 
 const Address = Styled.p`
-    font-family: 'Roboto';
     font-size:14px;
     font-weight:400;
     color:grey;

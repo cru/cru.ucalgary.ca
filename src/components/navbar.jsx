@@ -99,14 +99,6 @@ const NavBar = ({ activePage, activeGroup }) => {
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
-          <NavBarLinks
-            page='/about-us'
-            text='About Us'
-            active={activePage === 'about-us'}
-          />
-        </LinkContainer>
-        <LinkSpacing />
-        <LinkContainer>
           <NavBarDropDown
             text='Services and Pricing'
             pages={[
@@ -124,6 +116,14 @@ const NavBar = ({ activePage, activeGroup }) => {
               'methods-analytics-services',
             ].find((el) => el === activePage)}
             active={activeGroup === 'services-and-pricing'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
+          <NavBarLinks
+            page='/about-us'
+            text='About Us'
+            active={activePage === 'about-us'}
           />
         </LinkContainer>
         <RightAlign>

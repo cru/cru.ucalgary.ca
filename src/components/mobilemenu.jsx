@@ -106,20 +106,6 @@ const MobileMenu = ({ navbarpage }) => {
           </h6>
         </MobileLink>
       </Link>
-      <Link to='/about-us'>
-        <MobileLink>
-          <h6 style={{ marginBottom: 0 }}>
-            About Us
-            <ArrowRight
-              style={{
-                float: 'right',
-
-                marginRight: '20px',
-              }}
-            />
-          </h6>
-        </MobileLink>
-      </Link>
       <Link to='/services-and-pricing/edc-services'>
         <MobileLink>
           <h6 style={{ marginBottom: 0 }}>
@@ -155,6 +141,20 @@ const MobileMenu = ({ navbarpage }) => {
             <ArrowRight
               style={{
                 float: 'right',
+                marginRight: '20px',
+              }}
+            />
+          </h6>
+        </MobileLink>
+      </Link>
+      <Link to='/about-us'>
+        <MobileLink>
+          <h6 style={{ marginBottom: 0 }}>
+            About Us
+            <ArrowRight
+              style={{
+                float: 'right',
+
                 marginRight: '20px',
               }}
             />
