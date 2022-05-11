@@ -9,7 +9,7 @@ const RegularREDCapFees = () => {
 
   return (
     <Fragment>
-      <div className='fee-banner secondary-background'>
+      <div className='fee-hero secondary-background'>
         <h2 style={{ color: '#fff' }}>Regular REDCap</h2>
         <Row>
           <Col sm={{ size: 10, offset: 1 }}>
@@ -50,7 +50,7 @@ const RegularREDCapFees = () => {
           </Col>
         </Row>
       </div>
-      <Table style={{ marginTop: '250px' }}>
+      <Table style={{ marginTop: '200px' }}>
         <tr>
           <th>Service</th>
           <th>

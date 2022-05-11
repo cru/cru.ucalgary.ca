@@ -9,7 +9,7 @@ const ValidatedREDCapFees = () => {
 
   return (
     <Fragment>
-      <div className='fee-banner'>
+      <div className='fee-hero'>
         <h2 style={{ color: '#fff' }}>Validated REDCap</h2>
         <Row>
           <Col sm={{ size: 10, offset: 1 }}>
@@ -50,7 +50,7 @@ const ValidatedREDCapFees = () => {
           </Col>
         </Row>
       </div>
-      <Table style={{ marginTop: '250px' }}>
+      <Table style={{ marginTop: '200px' }}>
         <tr>
           <th>Service</th>
           <th>
