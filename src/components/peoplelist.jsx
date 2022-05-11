@@ -53,6 +53,7 @@ const PeopleList = () => {
                     src {
                       childImageSharp {
                         gatsbyImageData(
+                          quality: 100
                           layout: FIXED
                           width: 160
                           height: 160

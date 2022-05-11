@@ -66,6 +66,7 @@ const PartnerList = () => {
                     src {
                       childImageSharp {
                         gatsbyImageData(
+                          quality: 100
                           layout: FIXED
                           width: 140
                           formats: [AUTO, WEBP, AVIF]
