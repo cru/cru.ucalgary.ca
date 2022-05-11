@@ -53,7 +53,7 @@ const DataLifecycleManagementPage = () => {
           practices from the academic domain and beyond.
         </p>
         <div>
-          <h3>Platforms and Services Offered by the CRU:</h3>
+          <h3 className='mt-5'>Platforms and Services Offered by the CRU:</h3>
           <p>
             We offer a suite of client-friendly services, backed by a team dedicated to
             support the setup and delivery of health research projects of any type.
@@ -103,7 +103,7 @@ const DataLifecycleManagementPage = () => {
           </div>
         </div>
         <div>
-          <h3>Data Lifecycle Management through Stages</h3>
+          <h3 className='mt-5'>Data Lifecycle Management through Stages</h3>
           <Img src={dlm} />
           <div>
             <h5
@@ -239,7 +239,7 @@ const DataLifecycleManagementPage = () => {
           </div>
         </div>
         <div>
-          <h3>Policies</h3>
+          <h3 className='mt-5'>Policies</h3>
           <ul>
             <li>
               <a

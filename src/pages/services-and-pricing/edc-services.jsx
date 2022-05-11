@@ -1,6 +1,7 @@
-import React from 'react'
-import { Row, Col } from 'reactstrap'
+import React, { useState } from 'react'
+import { Row, Col, ButtonGroup, Button, TabContent, TabPane } from 'reactstrap'
 import Styled from 'styled-components'
+import { ChevronsDown } from 'react-feather'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
@@ -9,6 +10,8 @@ import RegularREDCapFees from '../../components/fees/regularRedcapFees'
 import ValidatedREDCapFees from '../../components/fees/validatedRedcapFees'
 
 const EDCServicesPage = () => {
+  const [activeTab, setActiveTab] = useState('regular')
+
   return (
     <Layout title='Electronic Data Capture Services' page='edc-services'>
       <div style={{ height: 60 }} />
@@ -22,7 +25,7 @@ const EDCServicesPage = () => {
           builds, setup and configuration, and implementation of advanced features.
         </p>
         <p>
-          <h3>
+          <h3 className='mt-5'>
             Interested in{' '}
             <a
               href='#'
@@ -50,164 +53,128 @@ const EDCServicesPage = () => {
             </li>
           </ol>
         </p>
-        <h3>Pricing</h3>
+        <h3 className='mt-5'>Pricing</h3>
         <p>
-          All REDCap projects pay <b>platform maintenance fees</b> to help us cost recover
-          the overhead to maintain our REDCap system.{' '}
-          <b>CRU development and setup support fees</b> for supported projects are
-          determined on a project-by-project basis.
+          All REDCap projects pay platform maintenance fees to help us cost recover the
+          overhead to maintain our REDCap system. CRU development and setup support fees
+          for supported projects are determined on a project-by-project basis.
         </p>
-        <h4>Platform maintenance fees</h4>
-        <OverviewHeader>
-          <Row className='text-center'>
-            <Col sm={{ size: 4, offset: 4 }}>
-              <h3 style={{ color: '#fff', margin: 0 }}>Regular REDCap</h3>
-            </Col>
-            <Col sm='4'>
-              <h3 style={{ color: '#fff', margin: 0 }}>Validated REDCap</h3>
-            </Col>
-          </Row>
-        </OverviewHeader>
+        <h5 className='mt-3'>CRU Development and Setup Support Fees</h5>
+        <p>
+          Fees for CRU support are determined on a project-by-project basis. CRU support
+          includes services such as database setup, development, and custom add-ons.
+          Please complete our intake survey [hyperlink to come] and our team will reach
+          out to set up a consultation.
+        </p>
+        <h5 className='mt-3'>Platform maintenance fees</h5>
+        <Row>
+          <Col sm='6'>
+            <p>
+              The CRU provides two options for REDCap projects: Regular and Validated.
+            </p>
+            <p>
+              The Validated REDCap instance meets Health Canada/ICH GCP requirements to
+              run phase 3 and regulatory clinical trials. A Validated REDCap project comes
+              with validation documents.
+            </p>
+            <p>
+              A Regular REDCap project is suitable for projects which do not require
+              validation or regulatory approvals.
+            </p>
+          </Col>
+          <Col sm='6'>
+            <OverviewHeader>
+              <Row className='text-center'>
+                <Col sm={{ size: 4, offset: 4 }}>
+                  <span style={{ color: '#fff', margin: 0 }}>Regular REDCap</span>
+                </Col>
+                <Col sm='4'>
+                  <span style={{ color: '#fff', margin: 0 }}>Validated REDCap</span>
+                </Col>
+              </Row>
+            </OverviewHeader>
+            <div className='section-triple'>
+              <Row className='text-center'>
+                <Col sm='4'>
+                  <span>Basic</span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $300<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+              </Row>
+              <Divider />
+              <Row className='text-center'>
+                <Col sm='4'>
+                  <span>Plus</span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $650<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $1,500<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+              </Row>
+              <Divider />
+              <Row className='text-center'>
+                <Col sm='4'>
+                  <span>Premium</span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+                <Col sm='4'>
+                  <span>
+                    $2,000<small style={{ fontSize: '18px' }}>/year</small>
+                  </span>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
 
-        <div className='section-triple'>
-          <Row className='text-center'>
-            <Col sm='4'>
-              <h3>Basic</h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $300<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $1,000<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-          </Row>
-          <Divider />
-          <Row className='text-center'>
-            <Col sm='4'>
-              <h3>Plus</h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $650<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $1,500<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-          </Row>
-          <Divider />
-          <Row className='text-center'>
-            <Col sm='4'>
-              <h3>Premium</h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $1,000<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-            <Col sm='4'>
-              <h3>
-                $2,000<small style={{ fontSize: '18px' }}>/year</small>
-              </h3>
-            </Col>
-          </Row>
+        <div className='text-center mt-5'>
+          <h3>See below for the full breakdown of service plans</h3>
+          <br />
+          <ChevronsDown size={48} />
+          <br />
+          <br />
+          <br />
+          <ButtonGroup>
+            <Button
+              color={activeTab === 'regular' ? 'secondary' : 'light'}
+              onClick={() => setActiveTab('regular')}
+            >
+              Regular
+            </Button>
+            <Button
+              color={activeTab === 'validated' ? 'secondary' : 'light'}
+              onClick={() => setActiveTab('validated')}
+            >
+              Validated
+            </Button>
+          </ButtonGroup>
         </div>
-
-        <div className='fee-banner secondary-background' style={{ marginTop: '75px' }}>
-          <h2 style={{ color: '#fff' }}>Regular REDCap</h2>
-          <Row>
-            <Col sm={{ size: 10, offset: 1 }}>
-              <div className='section-double floating' style={{ marginTop: '75px' }}>
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Basic</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $300<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-                <hr className='secondary-background' />
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Plus</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $650<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-                <hr className='secondary-background' />
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Premium</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $1,000<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-        </div>
-        <div style={{ marginTop: '250px' }}>
-          <RegularREDCapFees />
-        </div>
-
-        <div className='fee-banner' style={{ marginTop: '150px' }}>
-          <h2 style={{ color: '#fff' }}>Validated REDCap</h2>
-          <Row>
-            <Col sm={{ size: 10, offset: 1 }}>
-              <div className='section-double floating' style={{ marginTop: '75px' }}>
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Basic</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $1,000<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-                <hr />
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Plus</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $1,500<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-                <hr />
-                <Row className='text-center'>
-                  <Col sm='6'>
-                    <h3>Premium</h3>
-                  </Col>
-                  <Col sm='6'>
-                    <h3>
-                      $2,000<small style={{ fontSize: '18px' }}>/year</small>
-                    </h3>
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-        </div>
-        <div style={{ marginTop: '250px' }}>
-          <ValidatedREDCapFees />
-        </div>
+        <TabContent activeTab={activeTab} style={{ marginTop: '25px' }}>
+          <TabPane tabId='regular'>
+            <RegularREDCapFees />
+          </TabPane>
+          <TabPane tabId='validated'>
+            <ValidatedREDCapFees />
+          </TabPane>
+        </TabContent>
       </Padding>
 
       <div style={{ height: '100px' }} />
@@ -230,5 +197,5 @@ const OverviewHeader = Styled.div`
   props.theme.brandSecondColor} 66.6%, ${(props) => props.theme.brandPrimColor} 66.6%);
   border-radius: ${(props) => props.theme.borderRadius} ${(props) =>
   props.theme.borderRadius} 0 0;
-  padding: 16px;
+  padding: 8px;
 `
