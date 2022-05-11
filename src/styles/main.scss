@@ -98,6 +98,11 @@ label {
   border-radius: 3px;
 }
 
+.popover {
+  font-family: inherit;
+  max-width: 400px;
+}
+
 .primary {
   color: $brandPrimColor !important
 }

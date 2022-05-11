@@ -1,9 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Styled from 'styled-components'
 import { Check, X } from 'react-feather'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Popover, PopoverBody } from 'reactstrap'
 
 const ValidatedREDCapFees = () => {
+  const [showStandardHint, setShowStandardHint] = useState(false)
+  const [showAdvancedHint, setShowAdvancedHint] = useState(false)
+
   return (
     <Fragment>
       <div className='fee-banner'>
@@ -85,7 +88,25 @@ const ValidatedREDCapFees = () => {
           </td>
         </tr>
         <tr>
-          <td>Standard support</td>
+          <td
+            id='valstandardSupport'
+            onMouseEnter={() => setShowStandardHint(true)}
+            onMouseLeave={() => setShowStandardHint(false)}
+          >
+            Standard support
+          </td>
+          <td>
+            <Check color='#47a67c' />
+          </td>
+          <td>
+            <Check color='#47a67c' />
+          </td>
+          <td>
+            <Check color='#47a67c' />
+          </td>
+        </tr>
+        <tr>
+          <td>Daily backups</td>
           <td>
             <Check color='#47a67c' />
           </td>
@@ -134,7 +155,13 @@ const ValidatedREDCapFees = () => {
         </tr>
 
         <tr>
-          <td>Advanced support</td>
+          <td
+            id='valadvancedSupport'
+            onMouseEnter={() => setShowAdvancedHint(true)}
+            onMouseLeave={() => setShowAdvancedHint(false)}
+          >
+            Advanced support
+          </td>
           <td>
             Up to <b>3</b> <SubText>hours/year</SubText>
           </td>
@@ -182,6 +209,30 @@ const ValidatedREDCapFees = () => {
           </td>
         </tr>
       </Table>
+      <Popover target='valstandardSupport' isOpen={showStandardHint}>
+        <PopoverBody>
+          <ul>
+            <li>Account creation/re-activation</li>
+            <li>Password resets</li>
+            <li>Permission changes</li>
+            <li>API tokens</li>
+          </ul>
+        </PopoverBody>
+      </Popover>
+      <Popover target='valadvancedSupport' isOpen={showAdvancedHint}>
+        <PopoverBody>
+          <ul>
+            <li>Consultation on how to implement a specific feature or module</li>
+            <li>
+              Consultation on overall project setup and design (e.g., instruments, arms)
+            </li>
+            <li>Writing custom branching logic for a specific project</li>
+            <li>Exploring REDCap’s capabilities to meet a specific workflow need</li>
+            <li>Letters of support for grant applications</li>
+            <li>And much more! Contact us for more information.</li>
+          </ul>
+        </PopoverBody>
+      </Popover>
     </Fragment>
   )
 }
