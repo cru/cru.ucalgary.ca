@@ -55,8 +55,8 @@ const PeopleList = () => {
                         gatsbyImageData(
                           quality: 100
                           layout: FIXED
-                          width: 160
-                          height: 160
+                          width: 180
+                          height: 180
                           formats: [AUTO, WEBP, AVIF]
                           placeholder: BLURRED
                         )
@@ -81,7 +81,7 @@ const Grid = Styled.div`
     flex-wrap: wrap;
 `
 const PersonContainer = Styled.div`
-    max-width:160px;
+    max-width:180px;
     margin-bottom:55px;
     margin-right:40px;
 `
