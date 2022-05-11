@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
+import Styled from 'styled-components'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
@@ -57,11 +58,72 @@ const EDCServicesPage = () => {
           determined on a project-by-project basis.
         </p>
         <h4>Platform maintenance fees</h4>
-        <div className='fee-banner secondary-background'>
+        <OverviewHeader>
+          <Row className='text-center'>
+            <Col sm={{ size: 4, offset: 4 }}>
+              <h3 style={{ color: '#fff', margin: 0 }}>Regular REDCap</h3>
+            </Col>
+            <Col sm='4'>
+              <h3 style={{ color: '#fff', margin: 0 }}>Validated REDCap</h3>
+            </Col>
+          </Row>
+        </OverviewHeader>
+
+        <div className='section-triple'>
+          <Row className='text-center'>
+            <Col sm='4'>
+              <h3>Basic</h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $300<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $1,000<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+          </Row>
+          <Divider />
+          <Row className='text-center'>
+            <Col sm='4'>
+              <h3>Plus</h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $650<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $1,500<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+          </Row>
+          <Divider />
+          <Row className='text-center'>
+            <Col sm='4'>
+              <h3>Premium</h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $1,000<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+            <Col sm='4'>
+              <h3>
+                $2,000<small style={{ fontSize: '18px' }}>/year</small>
+              </h3>
+            </Col>
+          </Row>
+        </div>
+
+        <div className='fee-banner secondary-background' style={{ marginTop: '75px' }}>
           <h2 style={{ color: '#fff' }}>Regular REDCap</h2>
           <Row>
             <Col sm={{ size: 10, offset: 1 }}>
-              <div className='section-float' style={{ marginTop: '75px' }}>
+              <div className='section-double floating' style={{ marginTop: '75px' }}>
                 <Row className='text-center'>
                   <Col sm='6'>
                     <h3>Basic</h3>
@@ -106,7 +168,7 @@ const EDCServicesPage = () => {
           <h2 style={{ color: '#fff' }}>Validated REDCap</h2>
           <Row>
             <Col sm={{ size: 10, offset: 1 }}>
-              <div className='section-float' style={{ marginTop: '75px' }}>
+              <div className='section-double floating' style={{ marginTop: '75px' }}>
                 <Row className='text-center'>
                   <Col sm='6'>
                     <h3>Basic</h3>
@@ -156,3 +218,17 @@ const EDCServicesPage = () => {
 }
 
 export default EDCServicesPage
+
+const Divider = Styled.hr`
+  background: linear-gradient(to right, rgb(32, 32, 32) 32.3%, ${(props) =>
+    props.theme.brandSecondColor} 32.3%, ${(props) =>
+  props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
+`
+const OverviewHeader = Styled.div`
+  background: linear-gradient(to right, #fff 33.3%, ${(props) =>
+    props.theme.brandSecondColor} 33.3%, ${(props) =>
+  props.theme.brandSecondColor} 66.6%, ${(props) => props.theme.brandPrimColor} 66.6%);
+  border-radius: ${(props) => props.theme.borderRadius} ${(props) =>
+  props.theme.borderRadius} 0 0;
+  padding: 16px;
+`

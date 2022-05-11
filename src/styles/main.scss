@@ -132,13 +132,38 @@ label {
   text-align: center;
 }
 
-.section-float {
-  background: linear-gradient(to right, #fafafa 49.9%, #f4f4f4 50%);
+.section-double {
+  background: linear-gradient(to right, #fafafa 50%, #f4f4f4 50%);
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem;
+  padding: 32px;
   border-radius: $borderRadius;
-  box-shadow: $boxShadow;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0
+  }
+}
+
+.section-triple {
+  background: linear-gradient(to right, #fafafa 33.3%, #f4f4f4 33.3%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  border-radius: $borderRadius;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0
+  }
 }
 
 table,

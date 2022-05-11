@@ -65,7 +65,7 @@ const ValidatedREDCapFees = () => {
           <Check color='#47a67c' />
         </td>
       </tr>
-      <tr>
+      <tr className='primary'>
         <td>Validation documents</td>
         <td>
           <Check color='#47a67c' />
@@ -124,12 +124,18 @@ const ValidatedREDCapFees = () => {
         <td>Loyalty discount</td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
       </tr>
     </Table>

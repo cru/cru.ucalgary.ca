@@ -111,12 +111,18 @@ const RegularREDCapFees = () => {
         <td>Loyalty discount</td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
         <td>
           <b>15%</b>
+          <br />
+          <SubText className='text-muted'>3+ REDCap projects</SubText>
         </td>
       </tr>
     </Table>
