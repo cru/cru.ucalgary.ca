@@ -50,7 +50,7 @@ const RegularREDCapFees = () => {
           </Col>
         </Row>
       </div>
-      <Table style={{ marginTop: '200px' }}>
+      <Table style={{ marginTop: '225px' }}>
         <tr>
           <th>Service</th>
           <th>
