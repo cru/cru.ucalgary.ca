@@ -4,8 +4,15 @@ import { Check, X } from 'react-feather'
 import { Row, Col, Popover, PopoverBody } from 'reactstrap'
 
 const ValidatedREDCapFees = () => {
+  const [showDocumentsHint, setShowDocumentsHint] = useState(false)
   const [showStandardHint, setShowStandardHint] = useState(false)
+  const [showBackupHint, setShowBackupHint] = useState(false)
+  const [showMaintenanceHint, setShowMaintenanceHint] = useState(false)
+  const [showUpdatesHint, setShowUpdatesHint] = useState(false)
+  const [showManagerHint, setShowManagerHint] = useState(false)
   const [showAdvancedHint, setShowAdvancedHint] = useState(false)
+  const [showResponseHint, setShowResponseHint] = useState(false)
+  const [showDiscountHint, setShowDiscountHint] = useState(false)
 
   return (
     <Fragment>
@@ -77,7 +84,13 @@ const ValidatedREDCapFees = () => {
             </th>
           </tr>
           <tr className='primary'>
-            <td>Validation documents</td>
+            <td
+              id='valdocuments'
+              onMouseEnter={() => setShowDocumentsHint(true)}
+              onMouseLeave={() => setShowDocumentsHint(false)}
+            >
+              Validation documents
+            </td>
             <td>
               <Check color='#47a67c' />
             </td>
@@ -107,19 +120,13 @@ const ValidatedREDCapFees = () => {
             </td>
           </tr>
           <tr>
-            <td>Daily backups</td>
-            <td>
-              <Check color='#47a67c' />
+            <td
+              id='valbackups'
+              onMouseEnter={() => setShowBackupHint(true)}
+              onMouseLeave={() => setShowBackupHint(false)}
+            >
+              Daily backups
             </td>
-            <td>
-              <Check color='#47a67c' />
-            </td>
-            <td>
-              <Check color='#47a67c' />
-            </td>
-          </tr>
-          <tr>
-            <td>System maintenance</td>
             <td>
               <Check color='#47a67c' />
             </td>
@@ -131,7 +138,13 @@ const ValidatedREDCapFees = () => {
             </td>
           </tr>
           <tr>
-            <td>Regular platform updates</td>
+            <td
+              id='valmaintenance'
+              onMouseEnter={() => setShowMaintenanceHint(true)}
+              onMouseLeave={() => setShowMaintenanceHint(false)}
+            >
+              System maintenance
+            </td>
             <td>
               <Check color='#47a67c' />
             </td>
@@ -143,7 +156,31 @@ const ValidatedREDCapFees = () => {
             </td>
           </tr>
           <tr>
-            <td>Dedicated CRU project manager</td>
+            <td
+              id='valupdates'
+              onMouseEnter={() => setShowUpdatesHint(true)}
+              onMouseLeave={() => setShowUpdatesHint(false)}
+            >
+              Regular platform updates
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+          </tr>
+          <tr>
+            <td
+              id='valmanager'
+              onMouseEnter={() => setShowManagerHint(true)}
+              onMouseLeave={() => setShowManagerHint(false)}
+            >
+              Dedicated CRU project manager
+            </td>
             <td>
               <X />
             </td>
@@ -174,7 +211,13 @@ const ValidatedREDCapFees = () => {
             </td>
           </tr>
           <tr>
-            <td>Response times</td>
+            <td
+              id='valresponse'
+              onMouseEnter={() => setShowResponseHint(true)}
+              onMouseLeave={() => setShowResponseHint(false)}
+            >
+              Response times
+            </td>
             <td>
               Basic
               <br />
@@ -192,7 +235,13 @@ const ValidatedREDCapFees = () => {
             </td>
           </tr>
           <tr className='primary'>
-            <td>Loyalty discount</td>
+            <td
+              id='valdiscount'
+              onMouseEnter={() => setShowDiscountHint(true)}
+              onMouseLeave={() => setShowDiscountHint(false)}
+            >
+              Loyalty discount
+            </td>
             <td>
               <b>15%</b>
               <br />
@@ -212,18 +261,56 @@ const ValidatedREDCapFees = () => {
         </Table>
       </FeeContainer>
 
+      <Popover target='valdocuments' isOpen={showDocumentsHint}>
+        <PopoverBody>
+          A <b>customized set of validation documents</b> will be provided to meet audit
+          requirements for EDC in regulatory trials. Documents include a data management
+          plan (DMP), REDCap system validation report, project sign-off certificate, and
+          validation certificate.
+        </PopoverBody>
+      </Popover>
       <Popover target='valstandardSupport' isOpen={showStandardHint}>
         <PopoverBody>
+          Standard support services include:
           <ul>
             <li>Account creation/re-activation</li>
             <li>Password resets</li>
-            <li>Permission changes</li>
-            <li>API tokens</li>
+            <li>Project permission changes</li>
+            <li>Issuing of API tokens</li>
           </ul>
+        </PopoverBody>
+      </Popover>
+      <Popover target='valbackups' isOpen={showBackupHint}>
+        <PopoverBody>
+          REDCap data is backed up daily to <b>minimize data loss</b> in the unlikely case
+          of system interruptions.
+        </PopoverBody>
+      </Popover>
+      <Popover target='valmaintenance' isOpen={showMaintenanceHint}>
+        <PopoverBody>
+          Ongoing system maintenance includes infrastructure design, monitoring, patching,
+          and security reviews.
+          <br />
+          The CRU also supports supplementary services, like <b>Twilio</b> to make voice
+          calls and send SMS text messages for surveys and Alerts and Notifications.
+        </PopoverBody>
+      </Popover>
+      <Popover target='valupdates' isOpen={showUpdatesHint}>
+        <PopoverBody>
+          Platform updates ensure newer modern REDCap features are available to UCalgary
+          researchers.
+        </PopoverBody>
+      </Popover>
+      <Popover target='valmanager' isOpen={showManagerHint}>
+        <PopoverBody>
+          Your project needs will be serviced by a dedicated point of contact who better
+          understands your project and how it functions.
         </PopoverBody>
       </Popover>
       <Popover target='valadvancedSupport' isOpen={showAdvancedHint}>
         <PopoverBody>
+          “Advanced support” encapsulates all specialized support requests. Examples
+          include:
           <ul>
             <li>Consultation on how to implement a specific feature or module</li>
             <li>
@@ -231,9 +318,25 @@ const ValidatedREDCapFees = () => {
             </li>
             <li>Writing custom branching logic for a specific project</li>
             <li>Exploring REDCap’s capabilities to meet a specific workflow need</li>
+            <li>Configuring and setting up an eConsent module</li>
             <li>Letters of support for grant applications</li>
             <li>And much more! Contact us for more information.</li>
           </ul>
+        </PopoverBody>
+      </Popover>
+      <Popover target='valresponse' isOpen={showResponseHint}>
+        <PopoverBody>
+          Service level indicates time for a CRU team member to acknowledge your request
+          and action it with the relevant team member. <br />
+          Support requests from Premium tier projects will take priority for resolution,
+          followed by Intermediate then Basic. We do our best to resolve all requests in a
+          timely manner.
+        </PopoverBody>
+      </Popover>
+      <Popover target='valdiscount' isOpen={showDiscountHint}>
+        <PopoverBody>
+          For researchers with 3 or more REDCap projects, a 15% discount is applied to
+          your total platform maintenance fees!
         </PopoverBody>
       </Popover>
     </Fragment>

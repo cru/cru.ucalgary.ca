@@ -53,6 +53,19 @@ const EDCServicesPage = () => {
             </li>
           </ol>
         </p>
+        <p>
+          Large research groups or institutes can enter into a partnership model with the
+          CRU for more cost-effective and holistic support services.{' '}
+          <a
+            href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='external-link'
+          >
+            Contact us
+          </a>{' '}
+          to discuss further!
+        </p>
         <h3 className='mt-5'>Pricing</h3>
         <p>
           All REDCap projects pay platform maintenance fees to help us cost recover the
@@ -69,17 +82,26 @@ const EDCServicesPage = () => {
         <h5 className='mt-3'>Platform maintenance fees</h5>
         <Row>
           <Col md='6'>
+            <p>The CRU supports two types of REDCap projects: Regular and Validated.</p>
             <p>
-              The CRU provides two options for REDCap projects: Regular and Validated.
+              Validated REDCap projects include regulatory trials, like clinical trials.
+              The CRU’s validated REDCap instance meets Health Canada/ICH GCP requirements
+              to run phase 3 clinical trials. Validated REDCap projects are provided with
+              a customized set of validation documents to meet audit requirements.
             </p>
             <p>
-              The Validated REDCap instance meets Health Canada/ICH GCP requirements to
-              run phase 3 and regulatory clinical trials. A Validated REDCap project comes
-              with validation documents.
-            </p>
-            <p>
-              A Regular REDCap project is suitable for projects which do not require
-              validation or regulatory approvals.
+              A Regular REDCap project is suitable for just about all other electronic
+              data capture needs (like eConsent) and study types. Not sure if REDCap will
+              meet your needs?{' '}
+              <a
+                href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='external-link'
+              >
+                Contact us
+              </a>
+              , we’d love to help!
             </p>
           </Col>
           <Col md='6'>
