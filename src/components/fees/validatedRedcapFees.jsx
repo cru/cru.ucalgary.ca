@@ -83,13 +83,13 @@ const ValidatedREDCapFees = () => {
               </span>
             </th>
           </tr>
-          <tr className='primary'>
+          <tr className='primary' style={{ backgroundColor: '#f4f4f4' }}>
             <td
               id='valdocuments'
               onMouseEnter={() => setShowDocumentsHint(true)}
               onMouseLeave={() => setShowDocumentsHint(false)}
             >
-              Validation documents
+              <b>Validation documents</b>
             </td>
             <td>
               <Check color='#47a67c' />

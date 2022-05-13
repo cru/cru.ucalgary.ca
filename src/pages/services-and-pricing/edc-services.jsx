@@ -54,8 +54,8 @@ const EDCServicesPage = () => {
           </ol>
         </p>
         <p>
-          Large research groups or institutes can enter into a partnership model with the
-          CRU for more cost-effective and holistic support services.{' '}
+          <b>Large research groups or institutes</b> can enter into a partnership model
+          with the CRU for more cost-effective and holistic support services.{' '}
           <a
             href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
             target='_blank'
@@ -79,20 +79,24 @@ const EDCServicesPage = () => {
           Please complete our intake survey [hyperlink to come] and our team will reach
           out to set up a consultation.
         </p>
-        <h5 className='mt-3'>Platform maintenance fees</h5>
+        <h5 className='mt-3'>Platform Maintenance Fees</h5>
         <Row>
           <Col md='6'>
-            <p>The CRU supports two types of REDCap projects: Regular and Validated.</p>
             <p>
-              Validated REDCap projects include regulatory trials, like clinical trials.
-              The CRU’s validated REDCap instance meets Health Canada/ICH GCP requirements
-              to run phase 3 clinical trials. Validated REDCap projects are provided with
-              a customized set of validation documents to meet audit requirements.
+              The CRU supports two types of REDCap projects: <b>Regular</b> and{' '}
+              <b>Validated</b>.
             </p>
             <p>
-              A Regular REDCap project is suitable for just about all other electronic
-              data capture needs (like eConsent) and study types. Not sure if REDCap will
-              meet your needs?{' '}
+              <b>Validated REDCap projects</b> include regulatory trials, like clinical
+              trials. The CRU’s validated REDCap instance meets Health Canada/ICH GCP
+              requirements to run phase 3 clinical trials. Validated REDCap projects are
+              provided with a customized set of validation documents to meet audit
+              requirements.
+            </p>
+            <p>
+              A <b>Regular REDCap project</b> is suitable for just about all other
+              electronic data capture needs (like eConsent) and study types. Not sure if
+              REDCap will meet your needs?{' '}
               <a
                 href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
                 target='_blank'
@@ -108,10 +112,10 @@ const EDCServicesPage = () => {
             <OverviewHeader>
               <Row className='text-center'>
                 <Col xs={{ size: 4, offset: 4 }}>
-                  <h6 style={{ margin: 0 }}>Regular REDCap</h6>
+                  <h6 style={{ margin: 0, color: '#fff' }}>Regular REDCap</h6>
                 </Col>
                 <Col xs='4'>
-                  <h6 style={{ margin: 0 }}>Validated REDCap</h6>
+                  <h6 style={{ margin: 0, color: '#fff' }}>Validated REDCap</h6>
                 </Col>
               </Row>
             </OverviewHeader>
@@ -214,6 +218,8 @@ const Divider = Styled.hr`
   props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
 `
 const OverviewHeader = Styled.div`
-  background: linear-gradient(to right, #fff 33.3%, #fafafa 33.3%);
+  background: linear-gradient(to right, #fff 33.3%, ${(props) =>
+    props.theme.brandSecondColor} 32.3%, ${(props) =>
+  props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
   padding: 8px;
 `
