@@ -1,6 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
-import { Spring } from 'react-spring/renderprops'
+import { Spring, animated } from '@react-spring/web'
+
 import hexagonPattern from '../images/svg-backgrounds/cru-hex.png'
 import newAgeLogo from '../images/svg-backgrounds/new_age_logo.png'
 
@@ -8,13 +9,14 @@ const CRUHexPattern = () => {
   return (
     <div style={{ display: 'inline-block' }}>
       <Spring
+        native
         from={{ transform: 'translate3d(-50px,50px,50px)', opacity: 0 }}
         to={{ transform: 'translate3d(0,0,0)', opacity: 1 }}
       >
         {(props) => (
-          <div style={props}>
+          <animated.div style={props}>
             <HexPattern />
-          </div>
+          </animated.div>
         )}
       </Spring>
     </div>

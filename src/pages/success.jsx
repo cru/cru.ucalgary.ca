@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Spring } from 'react-spring/renderprops'
+import { Spring, animated } from '@react-spring/web'
+
 import CruFragment from '../components/crufragment'
 import Layout from '../containers/layout'
 import Padding from '../containers/padding'
@@ -23,6 +24,7 @@ const SuccessPage = () => {
                 <h1>Sent!</h1>
 
                 <Spring
+                  native
                   config={{ duration: 10000 }}
                   from={{
                     transform: 'translate3d(-20px,20px,0px)',
@@ -34,13 +36,13 @@ const SuccessPage = () => {
                   }}
                 >
                   {(props) => (
-                    <div style={props}>
+                    <animated.div style={props}>
                       <div style={{ marginTop: '29px', paddingLeft: '10px' }}>
                         <span role='img' aria-label='rocket' style={{ fontSize: '43px' }}>
                           🚀
                         </span>
                       </div>
-                    </div>
+                    </animated.div>
                   )}
                 </Spring>
               </div>

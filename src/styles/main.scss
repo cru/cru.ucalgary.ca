@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 @import url('https://use.typekit.net/atr1btp.css');
 @import './theme.scss';
 
 html,
 body {
-  font-family: 'Roboto';
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
   color: $fontPrimColor;
+  font-size: 18px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,7 +29,7 @@ a:hover {
 }
 
 .external-link {
-  color: #1a0dab;
+  color: #8dc7fd;
 }
 
 li:not(:last-child) {
@@ -64,9 +65,14 @@ h5 {
   margin-bottom: 0.5rem;
 }
 h6 {
-  font-family: futura-pt, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 0.5rem;
+}
+
+hr {
+  background-color: #8dc7fd;
+  height: 1px;
+  border: 0;
 }
 
 label {
@@ -92,8 +98,77 @@ label {
   border-radius: 3px;
 }
 
+.popover {
+  font-family: inherit;
+  max-width: 400px;
+}
+
+.primary {
+  color: $brandPrimColor !important
+}
+
+.primary-background {
+  background-color: $brandPrimColor !important;
+}
+
+.secondary {
+  color: $brandSecondColor !important
+}
+
+.secondary-background {
+  background-color: $brandSecondColor !important;
+}
+
 .text-muted {
   color: $fontMutedColor;
+}
+
+.floating {
+  box-shadow: $boxShadow;
+}
+
+.fee-hero {
+  background-color: #8dc7fd;
+  margin-left: auto;
+  margin-right: auto;
+  height: 225px;
+  padding: 1.5rem;
+  border-radius: $borderRadius;
+  text-align: center;
+}
+
+.section-double {
+  background: linear-gradient(to right, #fafafa 50%, #f4f4f4 50%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  border-radius: $borderRadius;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0
+  }
+}
+
+.section-triple {
+  background: linear-gradient(to right, #fafafa 33.3%, #f4f4f4 33.3%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  border-radius: $borderRadius;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0
+  }
 }
 
 table,

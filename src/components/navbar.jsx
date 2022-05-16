@@ -99,6 +99,27 @@ const NavBar = ({ activePage, activeGroup }) => {
         </LinkContainer>
         <LinkSpacing />
         <LinkContainer>
+          <NavBarDropDown
+            text='Services and Pricing'
+            pages={[
+              { page: 'edc-services', text: 'Electronic Data Capture Services' },
+              { page: 'custom-platforms', text: 'Custom Research Platforms' },
+              {
+                page: 'methods-analytics-services',
+                text: 'Methods and Analytics Services',
+              },
+            ]}
+            group='services-and-pricing'
+            selectedPage={[
+              'edc-services',
+              'custom-platforms',
+              'methods-analytics-services',
+            ].find((el) => el === activePage)}
+            active={activeGroup === 'services-and-pricing'}
+          />
+        </LinkContainer>
+        <LinkSpacing />
+        <LinkContainer>
           <NavBarLinks
             page='/about-us'
             text='About Us'

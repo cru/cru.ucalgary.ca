@@ -1,7 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Trail, animated } from 'react-spring/renderprops'
+import { Trail, animated } from '@react-spring/web'
 import Styled from 'styled-components'
+
 import Person from './person'
 
 // Use this tool to collect RGB from people
@@ -16,7 +17,7 @@ const getPeopleList = (data) => {
           name={item.node.name}
           title={item.node.title}
           comment={item.node.comments}
-          fixed={item.node.image.src.childImageSharp.fixed}
+          image={item.node.image.src.childImageSharp.gatsbyImageData}
           color={item.node.image.color}
         />
       </PersonContainer>
@@ -51,9 +52,14 @@ const PeopleList = () => {
                     color
                     src {
                       childImageSharp {
-                        fixed(width: 160, height: 160, quality: 100) {
-                          ...GatsbyImageSharpFixed_withWebp
-                        }
+                        gatsbyImageData(
+                          quality: 100
+                          layout: FIXED
+                          width: 180
+                          height: 180
+                          formats: [AUTO, WEBP, AVIF]
+                          placeholder: BLURRED
+                        )
                       }
                     }
                   }
@@ -75,7 +81,7 @@ const Grid = Styled.div`
     flex-wrap: wrap;
 `
 const PersonContainer = Styled.div`
-    max-width:160px;
+    max-width:180px;
     margin-bottom:55px;
     margin-right:40px;
 `

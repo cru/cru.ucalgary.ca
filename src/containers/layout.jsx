@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
+
 import SEO from '../components/seo'
 import MaxWidth from './maxwidth'
 import Footer from '../components/footer'
@@ -8,9 +9,9 @@ import EmailFAB from '../components/emailfab'
 import NavBar from '../components/navbar'
 import Alert from '../components/alert'
 
-import '../styles/bootstrap.css'
-import '../styles/main.scss'
+import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/modal.css'
+import '../styles/main.scss'
 
 const theme = {
   //Nav Bar attributes
@@ -34,14 +35,14 @@ const theme = {
   boxShadowAccent: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
   boxShadowTrans: '0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
   borderRadius: '5px',
-  pageMaxWidth: '1200px',
+  pageMaxWidth: '1400px',
   pageMobilePadding: '25px',
   pageDesktopPadding: '140px',
 
   // Media Queries
   mobileBreakPoint: '600px',
   navbarBreakPoint: '650px',
-  tabletBreakPoint: '900px',
+  tabletBreakPoint: '1147px',
   desktopBreakPoint: 'pageMaxWidth',
 }
 

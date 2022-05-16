@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Styled from 'styled-components'
 
-const Person = ({ name, title, fixed, comment, color }) => {
+const Person = ({ name, title, image, comment, color }) => {
   return (
     <Container>
-      <Img fixed={fixed} />
+      <GatsbyImage image={image} />
       <h5>{name}</h5>
       <br />
       <p>{title}</p>

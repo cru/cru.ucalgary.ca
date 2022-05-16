@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Styled from 'styled-components'
 import moment from 'moment'
 
@@ -9,7 +9,6 @@ import ParterBanner from '../components/partnerbanner'
 import ServiceList from '../components/serviceList'
 import Message from '../components/message'
 import CruFragment from '../components/crufragment'
-import { Fragment } from 'react'
 
 const IndexPage = () => {
   const [showMessage, setShowMessage] = useState(false)

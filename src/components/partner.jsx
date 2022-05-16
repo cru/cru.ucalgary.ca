@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Styled from 'styled-components'
 
-const Partner = ({ href, fixed }) => {
+const Partner = ({ href, image }) => {
   return (
     <Container>
       <a href={href} rel='noopener noreferrer' target='_blank'>
-        <Img fixed={fixed} />
+        <GatsbyImage image={image} />
         {/* <h5>{name}</h5> */}
       </a>
     </Container>

@@ -2,7 +2,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import { Trail, animated } from 'react-spring/renderprops'
+import { Trail, animated } from '@react-spring/web'
+
 import PublicationLink from './publicationlink'
 
 const getPublicationsList = (data, group) => {
@@ -23,6 +24,7 @@ const getPublicationsList = (data, group) => {
   )
   return (
     <Trail
+      native
       items={publicationsArray}
       from={{ transform: 'translate3d(0,-50px,0)', opacity: 0 }}
       to={{ transform: 'translate3d(0,0px,0)', opacity: 1 }}

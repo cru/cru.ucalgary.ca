@@ -1,10 +1,10 @@
 import React from 'react'
 import Styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
-import { Link } from 'gatsby'
 
 const AnnouncementsPage = () => {
   return (
