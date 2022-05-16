@@ -28,7 +28,7 @@ const EDCServicesPage = () => {
           <h3 className='mt-5'>
             Interested in{' '}
             <a
-              href='#'
+              href='https://redcap.cru.ucalgary.ca/surveys/?s=7L49EPE94D'
               target='_blank'
               rel='noopener noreferrer'
               className='external-link'
@@ -76,8 +76,16 @@ const EDCServicesPage = () => {
         <p>
           Fees for CRU support are determined on a project-by-project basis. CRU support
           includes services such as database setup, development, and custom add-ons.
-          Please complete our intake survey [hyperlink to come] and our team will reach
-          out to set up a consultation.
+          Please complete our{' '}
+          <a
+            href='https://redcap.cru.ucalgary.ca/surveys/?s=7L49EPE94D'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='external-link'
+          >
+            intake survey
+          </a>{' '}
+          and our team will reach out to set up a consultation.
         </p>
         <h5 className='mt-3'>Platform Maintenance Fees</h5>
         <Row>
