@@ -73,6 +73,7 @@ const EDCServicesPage = () => {
           for supported projects are determined on a project-by-project basis.
         </p>
         <h5 className='mt-3'>CRU Development and Setup Support Fees</h5>
+
         <p>
           Fees for CRU support are determined on a project-by-project basis. CRU support
           includes services such as database setup, development, and custom add-ons.
