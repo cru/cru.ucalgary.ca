@@ -126,6 +126,15 @@
     }
   },
   {
+    "name": "Ray Jiang",
+    "title": "Tech Team Member",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Jiang_Ray.jpg",
+      "color": "rgba(63, 191, 255, 0.6)"
+    }
+  },
+  {
     "name": "Kaele Tunyi Anembom",
     "title": "System Administrator",
     "comments": "",
