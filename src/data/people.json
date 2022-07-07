@@ -108,12 +108,12 @@
     }
   },
   {
-    "name": "Brandon Lee",
+    "name": "Ray Jiang",
     "title": "Tech Team Member",
-    "comments": "Web developer for custom applications",
+    "comments": "",
     "image": {
-      "src": "../images/people/Lee_Brandon.jpg",
-      "color": "rgba(243, 191, 36, 0.6)"
+      "src": "../images/people/Jiang_Ray.jpg",
+      "color": "rgba(63, 191, 255, 0.6)"
     }
   },
   {
@@ -126,12 +126,12 @@
     }
   },
   {
-    "name": "Ray Jiang",
+    "name": "Brandon Lee",
     "title": "Tech Team Member",
-    "comments": "",
+    "comments": "Web developer for custom applications",
     "image": {
-      "src": "../images/people/Jiang_Ray.jpg",
-      "color": "rgba(63, 191, 255, 0.6)"
+      "src": "../images/people/Lee_Brandon.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
     }
   },
   {
