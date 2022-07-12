@@ -28,11 +28,20 @@
   },
   {
     "name": "Cord Lethebe",
-    "title": "Lead Methods & Analytics",
+    "title": "Lead, Methods & Analytics",
     "comments": "",
     "image": {
       "src": "../images/people/Lethebe_Cord.jpg",
       "color": "rgba(243, 191, 36, 0.6)"
+    }
+  },
+  {
+    "name": "Mandavi Kashyap",
+    "title": "Lead, Electronic Data Capture",
+    "comments": "",
+    "image": {
+      "src": "../images/people/Kashyap_Mandavi.jpg",
+      "color": "rgba(55, 22, 63, 0.6)"
     }
   },
   {
@@ -99,12 +108,12 @@
     }
   },
   {
-    "name": "Brandon Lee",
+    "name": "Ray Jiang",
     "title": "Tech Team Member",
-    "comments": "Web developer for custom applications",
+    "comments": "",
     "image": {
-      "src": "../images/people/Lee_Brandon.jpg",
-      "color": "rgba(243, 191, 36, 0.6)"
+      "src": "../images/people/Jiang_Ray.jpg",
+      "color": "rgba(63, 191, 255, 0.6)"
     }
   },
   {
@@ -117,12 +126,12 @@
     }
   },
   {
-    "name": "Mandavi Kashyap",
+    "name": "Brandon Lee",
     "title": "Tech Team Member",
-    "comments": "",
+    "comments": "Web developer for custom applications",
     "image": {
-      "src": "../images/people/avatar_placeholder.jpg",
-      "color": "rgba(55, 22, 63, 0.6)"
+      "src": "../images/people/Lee_Brandon.jpg",
+      "color": "rgba(243, 191, 36, 0.6)"
     }
   },
   {
