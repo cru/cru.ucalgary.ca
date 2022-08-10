@@ -1,15 +1,16 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import Styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const ServiceContainer = ({ title, description, image }) => {
+const ServiceContainer = ({ title, description, image, page }) => {
   return (
     <>
       <div>
         <Content>
           <div style={{ height: '35px' }} />
           <img style={{ height: '40px' }} src={image} alt='' />
-          <h4>{title}</h4>
+          <Link to={page}><h4>{title}</h4></Link>
           <p>{description}</p>
         </Content>
       </div>
