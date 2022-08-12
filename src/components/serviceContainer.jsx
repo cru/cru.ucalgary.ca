@@ -10,7 +10,9 @@ const ServiceContainer = ({ title, description, image, page }) => {
         <Content>
           <div style={{ height: '35px' }} />
           <img style={{ height: '40px' }} src={image} alt='' />
-          <Link to={page}><h4>{title}</h4></Link>
+          <Link to={page}>
+            <h4>{title}</h4>
+          </Link>
           <p>{description}</p>
         </Content>
       </div>
