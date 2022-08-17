@@ -17,6 +17,7 @@ const ServiceList = () => {
             title='Electronic Data Capture'
             description='The CRU provides you with high-quality and easy-to-use capacity building tools in the areas of: data capture (REDCap), databases, and data management.'
             image={IpadHealthIcon}
+            page='/services-and-pricing/edc-services'
           />
         </Item>
         <Item>
@@ -24,6 +25,7 @@ const ServiceList = () => {
             title='Methods and Analytics'
             description='The CRU provides statistical support for clinical trials (study design, randomization, and statistical analysis) as well as observational studies (administrative data requests, cohort extractions, statistical analysis).'
             image={BarChartIcon}
+            page='/services-and-pricing/methods-analytics-services'
           />
         </Item>
         <Item>
@@ -31,6 +33,7 @@ const ServiceList = () => {
             title='Custom Software'
             description='The CRU Software Development Team helps you with creative solutions to support the setup and delivery of novel research workflows.'
             image={CodeIcon}
+            page='/services-and-pricing/custom-platforms'
           />
         </Item>
       </Container>
