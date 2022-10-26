@@ -3,21 +3,21 @@ import Styled from 'styled-components'
 import { Check, X } from 'react-feather'
 import { Row, Col, Popover, PopoverBody } from 'reactstrap'
 
-const ValidatedREDCapFees = () => {
-  const [showDocumentsHint, setShowDocumentsHint] = useState(false)
+const RegularFees = () => {
   const [showStandardHint, setShowStandardHint] = useState(false)
   const [showBackupHint, setShowBackupHint] = useState(false)
   const [showMaintenanceHint, setShowMaintenanceHint] = useState(false)
   const [showUpdatesHint, setShowUpdatesHint] = useState(false)
   const [showManagerHint, setShowManagerHint] = useState(false)
   const [showAdvancedHint, setShowAdvancedHint] = useState(false)
+  const [showAdditionalHint, setShowAdditionalHint] = useState(false)
   const [showResponseHint, setShowResponseHint] = useState(false)
   const [showDiscountHint, setShowDiscountHint] = useState(false)
 
   return (
     <Fragment>
-      <div className='fee-hero'>
-        <h2 style={{ color: '#fff' }}>Validated REDCap</h2>
+      <div className='fee-hero secondary-background'>
+        <h2 style={{ color: '#fff' }}>Regular Project</h2>
         <Row>
           <Col sm={{ size: 10, offset: 1 }}>
             <div className='section-double floating' style={{ marginTop: '75px' }}>
@@ -27,29 +27,29 @@ const ValidatedREDCapFees = () => {
                 </Col>
                 <Col sm='6'>
                   <h3>
-                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
+                    $300<small style={{ fontSize: '18px' }}>/year</small>
                   </h3>
                 </Col>
               </Row>
-              <hr />
+              <hr className='secondary-background' />
               <Row className='text-center'>
                 <Col sm='6'>
                   <h3>Plus</h3>
                 </Col>
                 <Col sm='6'>
                   <h3>
-                    $1,500<small style={{ fontSize: '18px' }}>/year</small>
+                    $650<small style={{ fontSize: '18px' }}>/year</small>
                   </h3>
                 </Col>
               </Row>
-              <hr />
+              <hr className='secondary-background' />
               <Row className='text-center'>
                 <Col sm='6'>
                   <h3>Premium</h3>
                 </Col>
                 <Col sm='6'>
                   <h3>
-                    $2,000<small style={{ fontSize: '18px' }}>/year</small>
+                    $1,000<small style={{ fontSize: '18px' }}>/year</small>
                   </h3>
                 </Col>
               </Row>
@@ -65,45 +65,27 @@ const ValidatedREDCapFees = () => {
               Basic
               <br />
               <span className='text-muted'>
-                $1,000<SubText>/year</SubText>
+                $300<SubText>/year</SubText>
               </span>
             </th>
             <th>
               Plus
               <br />
               <span className='text-muted'>
-                $1,500<SubText>/year</SubText>
+                $650<SubText>/year</SubText>
               </span>
             </th>
             <th>
               Premium
               <br />
               <span className='text-muted'>
-                $2,000<SubText>/year</SubText>
+                $1,000<SubText>/year</SubText>
               </span>
             </th>
           </tr>
-          <tr className='primary' style={{ backgroundColor: '#f4f4f4' }}>
-            <td
-              id='valdocuments'
-              onMouseEnter={() => setShowDocumentsHint(true)}
-              onMouseLeave={() => setShowDocumentsHint(false)}
-            >
-              <b>Validation documents</b>
-            </td>
-            <td>
-              <Check color='#47a67c' />
-            </td>
-            <td>
-              <Check color='#47a67c' />
-            </td>
-            <td>
-              <Check color='#47a67c' />
-            </td>
-          </tr>
           <tr>
             <td
-              id='valstandardSupport'
+              id='regstandardSupport'
               onMouseEnter={() => setShowStandardHint(true)}
               onMouseLeave={() => setShowStandardHint(false)}
             >
@@ -121,7 +103,7 @@ const ValidatedREDCapFees = () => {
           </tr>
           <tr>
             <td
-              id='valbackups'
+              id='regbackups'
               onMouseEnter={() => setShowBackupHint(true)}
               onMouseLeave={() => setShowBackupHint(false)}
             >
@@ -139,7 +121,7 @@ const ValidatedREDCapFees = () => {
           </tr>
           <tr>
             <td
-              id='valmaintenance'
+              id='regmaintenance'
               onMouseEnter={() => setShowMaintenanceHint(true)}
               onMouseLeave={() => setShowMaintenanceHint(false)}
             >
@@ -157,7 +139,7 @@ const ValidatedREDCapFees = () => {
           </tr>
           <tr>
             <td
-              id='valupdates'
+              id='regupdates'
               onMouseEnter={() => setShowUpdatesHint(true)}
               onMouseLeave={() => setShowUpdatesHint(false)}
             >
@@ -175,7 +157,7 @@ const ValidatedREDCapFees = () => {
           </tr>
           <tr>
             <td
-              id='valmanager'
+              id='regmanager'
               onMouseEnter={() => setShowManagerHint(true)}
               onMouseLeave={() => setShowManagerHint(false)}
             >
@@ -191,28 +173,45 @@ const ValidatedREDCapFees = () => {
               <Check color='#47a67c' />
             </td>
           </tr>
-
           <tr>
             <td
-              id='valadvancedSupport'
+              id='regadvancedSupport'
               onMouseEnter={() => setShowAdvancedHint(true)}
               onMouseLeave={() => setShowAdvancedHint(false)}
             >
               Advanced support
             </td>
             <td>
-              Up to <b>3</b> <SubText>hours/year</SubText>
+              Up to <b>2</b> <SubText>hours/year</SubText>
             </td>
             <td>
               Up to <b>5</b> <SubText>hours/year</SubText>
             </td>
             <td>
-              Up to <b>7</b> <SubText>hours/year</SubText>
+              Up to <b>10</b> <SubText>hours/year</SubText>
             </td>
           </tr>
           <tr>
             <td
-              id='valresponse'
+              id='regadditionalSupport'
+              onMouseEnter={() => setShowAdditionalHint(true)}
+              onMouseLeave={() => setShowAdditionalHint(false)}
+            >
+              Additional support
+            </td>
+            <td>
+              $125 <SubText>/hour</SubText>
+            </td>
+            <td>
+              $125 <SubText>/hour</SubText>
+            </td>
+            <td>
+              $125 <SubText>/hour</SubText>
+            </td>
+          </tr>
+          <tr>
+            <td
+              id='regresponse'
               onMouseEnter={() => setShowResponseHint(true)}
               onMouseLeave={() => setShowResponseHint(false)}
             >
@@ -234,9 +233,9 @@ const ValidatedREDCapFees = () => {
               <SubText className='text-muted'>within 1 business day</SubText>
             </td>
           </tr>
-          <tr className='primary'>
+          <tr className='secondary'>
             <td
-              id='valdiscount'
+              id='regdiscount'
               onMouseEnter={() => setShowDiscountHint(true)}
               onMouseLeave={() => setShowDiscountHint(false)}
             >
@@ -260,16 +259,7 @@ const ValidatedREDCapFees = () => {
           </tr>
         </Table>
       </FeeContainer>
-
-      <Popover target='valdocuments' isOpen={showDocumentsHint}>
-        <PopoverBody>
-          A <b>customized set of validation documents</b> will be provided to meet audit
-          requirements for EDC in regulatory trials. Documents include a data management
-          plan (DMP), REDCap system validation report, project sign-off certificate, and
-          validation certificate.
-        </PopoverBody>
-      </Popover>
-      <Popover target='valstandardSupport' isOpen={showStandardHint}>
+      <Popover target='regstandardSupport' isOpen={showStandardHint}>
         <PopoverBody>
           Standard support services include:
           <ul>
@@ -280,13 +270,13 @@ const ValidatedREDCapFees = () => {
           </ul>
         </PopoverBody>
       </Popover>
-      <Popover target='valbackups' isOpen={showBackupHint}>
+      <Popover target='regbackups' isOpen={showBackupHint}>
         <PopoverBody>
           REDCap data is backed up daily to <b>minimize data loss</b> in the unlikely case
           of system interruptions.
         </PopoverBody>
       </Popover>
-      <Popover target='valmaintenance' isOpen={showMaintenanceHint}>
+      <Popover target='regmaintenance' isOpen={showMaintenanceHint}>
         <PopoverBody>
           Ongoing system maintenance includes infrastructure design, monitoring, patching,
           and security reviews.
@@ -295,19 +285,19 @@ const ValidatedREDCapFees = () => {
           calls and send SMS text messages for surveys and Alerts and Notifications.
         </PopoverBody>
       </Popover>
-      <Popover target='valupdates' isOpen={showUpdatesHint}>
+      <Popover target='regupdates' isOpen={showUpdatesHint}>
         <PopoverBody>
           Platform updates ensure newer modern REDCap features are available to UCalgary
           researchers.
         </PopoverBody>
       </Popover>
-      <Popover target='valmanager' isOpen={showManagerHint}>
+      <Popover target='regmanager' isOpen={showManagerHint}>
         <PopoverBody>
           Your project needs will be serviced by a dedicated point of contact who better
           understands your project and how it functions.
         </PopoverBody>
       </Popover>
-      <Popover target='valadvancedSupport' isOpen={showAdvancedHint}>
+      <Popover target='regadvancedSupport' isOpen={showAdvancedHint}>
         <PopoverBody>
           “Advanced support” encapsulates all specialized support requests. Examples
           include:
@@ -324,7 +314,13 @@ const ValidatedREDCapFees = () => {
           </ul>
         </PopoverBody>
       </Popover>
-      <Popover target='valresponse' isOpen={showResponseHint}>
+      <Popover target='regadditionalSupport' isOpen={showAdditionalHint}>
+        <PopoverBody>
+          Additional support beyond the included allocation is available on an hourly
+          basis.
+        </PopoverBody>
+      </Popover>
+      <Popover target='regresponse' isOpen={showResponseHint}>
         <PopoverBody>
           Service level indicates time for a CRU team member to acknowledge your request
           and action it with the relevant team member. <br />
@@ -333,7 +329,7 @@ const ValidatedREDCapFees = () => {
           timely manner.
         </PopoverBody>
       </Popover>
-      <Popover target='valdiscount' isOpen={showDiscountHint}>
+      <Popover target='regdiscount' isOpen={showDiscountHint}>
         <PopoverBody>
           For researchers with 3 or more REDCap projects, a 15% discount is applied to
           your total platform maintenance fees!
@@ -342,7 +338,7 @@ const ValidatedREDCapFees = () => {
     </Fragment>
   )
 }
-export default ValidatedREDCapFees
+export default RegularFees
 
 const Table = Styled.div`
   border: none;
@@ -361,7 +357,7 @@ const Table = Styled.div`
   }
 
   td+td {
-      border-left: 1px solid ${(props) => props.theme.brandPrimColor};
+      border-left: 1px solid ${(props) => props.theme.brandSecondColor};
   }
 `
 const SubText = Styled.small`

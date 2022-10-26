@@ -6,8 +6,8 @@ import { ChevronsDown } from 'react-feather'
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
-import RegularREDCapFees from '../../components/fees/regularRedcapFees'
-import ValidatedREDCapFees from '../../components/fees/validatedRedcapFees'
+import RegularFees from '../../components/fees/regularFees'
+// import ClinicalTrialFees from '../../components/fees/clinicalTrialFees'
 
 const EDCServicesPage = () => {
   const [activeTab, setActiveTab] = useState('regular')
@@ -93,14 +93,12 @@ const EDCServicesPage = () => {
           <Col md='6'>
             <p>
               The CRU supports two types of REDCap projects: <b>Regular</b> and{' '}
-              <b>Validated</b>.
+              <b>Clinical Trials</b>.
             </p>
             <p>
-              <b>Validated REDCap projects</b> include regulatory trials, like clinical
-              trials. The CRU’s validated REDCap instance meets Health Canada/ICH GCP
-              requirements to run phase 3 clinical trials. Validated REDCap projects are
-              provided with a customized set of validation documents to meet audit
-              requirements.
+              <b>Clinical Trials</b> can now be hosted on the CRU's REDCap. The CRU
+              provides a suite of tailored services to meet Health Canada requirements
+              (details to come).
             </p>
             <p>
               A <b>Regular REDCap project</b> is suitable for just about all other
@@ -116,15 +114,23 @@ const EDCServicesPage = () => {
               </a>
               , we’d love to help!
             </p>
+            <p>
+              <b>
+                <i>
+                  *The fee for archived projects is $200/year. No support hours are
+                  provided.
+                </i>
+              </b>
+            </p>
           </Col>
           <Col md='6'>
             <OverviewHeader>
               <Row className='text-center'>
                 <Col xs={{ size: 4, offset: 4 }}>
-                  <h6 style={{ margin: 0, color: '#fff' }}>Regular REDCap</h6>
+                  <h6 style={{ margin: 0, color: '#fff' }}>Regular Project</h6>
                 </Col>
                 <Col xs='4'>
-                  <h6 style={{ margin: 0, color: '#fff' }}>Validated REDCap</h6>
+                  <h6 style={{ margin: 0, color: '#fff' }}>Clinical Trial</h6>
                 </Col>
               </Row>
             </OverviewHeader>
@@ -139,9 +145,10 @@ const EDCServicesPage = () => {
                   </span>
                 </Col>
                 <Col xs='4'>
-                  <span>
+                  {/* <span>
                     $1,000<small style={{ fontSize: '12px' }}>/year</small>
-                  </span>
+                  </span> */}
+                  <small>Coming soon!</small>
                 </Col>
               </Row>
               <Divider />
@@ -155,9 +162,10 @@ const EDCServicesPage = () => {
                   </span>
                 </Col>
                 <Col xs='4'>
-                  <span>
+                  {/* <span>
                     $1,500<small style={{ fontSize: '12px' }}>/year</small>
-                  </span>
+                  </span> */}
+                  <small>Coming soon!</small>
                 </Col>
               </Row>
               <Divider />
@@ -171,9 +179,10 @@ const EDCServicesPage = () => {
                   </span>
                 </Col>
                 <Col xs='4'>
-                  <span>
+                  {/* <span>
                     $2,000<small style={{ fontSize: '12px' }}>/year</small>
-                  </span>
+                  </span> */}
+                  <small>Coming soon!</small>
                 </Col>
               </Row>
             </div>
@@ -187,7 +196,7 @@ const EDCServicesPage = () => {
           <br />
           <br />
           <br />
-          <ButtonGroup>
+          {/* <ButtonGroup>
             <Button
               color={activeTab === 'regular' ? 'secondary' : 'light'}
               onClick={() => setActiveTab('regular')}
@@ -195,20 +204,20 @@ const EDCServicesPage = () => {
               Regular
             </Button>
             <Button
-              color={activeTab === 'validated' ? 'secondary' : 'light'}
-              onClick={() => setActiveTab('validated')}
+              color={activeTab === 'clinical' ? 'secondary' : 'light'}
+              onClick={() => setActiveTab('clinical')}
             >
-              Validated
+              Clinical Trial
             </Button>
-          </ButtonGroup>
+          </ButtonGroup> */}
         </div>
         <TabContent activeTab={activeTab} style={{ marginTop: '25px' }}>
           <TabPane tabId='regular'>
-            <RegularREDCapFees />
+            <RegularFees />
           </TabPane>
-          <TabPane tabId='validated'>
-            <ValidatedREDCapFees />
-          </TabPane>
+          {/* <TabPane tabId='clinical'>
+            <ClinicalTrialFees />
+          </TabPane> */}
         </TabContent>
       </Padding>
 
