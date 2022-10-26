@@ -28,6 +28,14 @@
 
 # Deployments
 
+Our free Netlify plan no longer includes continuous deployment. Moving forward, deployments are manual via cli
+- install netlify-cli
+- from project root, run `netlify build --context deploy-preview`
+- from project root, run `netlify deploy`
+- this will deploy a preview site to a hashed URL
+- when ready for production, run `netlify build` + `netlify deploy --prod`
+
+***the below is now outdated***
 - Production is built and deployed off the master branch automatically
 - Once a commit is pushed to master this pipeline is trigger
 - Opening a pull-request on master will build and deploy a 'deploy preview' site - this site will be accessed by a hashed link that can be retreived from the Netlify dashboard
