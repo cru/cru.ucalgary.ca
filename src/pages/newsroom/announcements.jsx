@@ -15,6 +15,19 @@ const AnnouncementsPage = () => {
         <div style={{ height: 55 }} />
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
+            November 2022
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/seed-grant'>
+                The Clinical Research Fund SEED Grant Competition is now open! Up to
+                $25,000 in credits available for CRU support services.
+              </Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
             March 2022
           </h6>
           <ul>
