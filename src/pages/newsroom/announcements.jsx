@@ -15,6 +15,16 @@ const AnnouncementsPage = () => {
         <div style={{ height: 55 }} />
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
+            December 2022
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/seasonal-closure-2022'>Seasonal Closure 2022</Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
             November 2022
           </h6>
           <ul>
@@ -46,16 +56,7 @@ const AnnouncementsPage = () => {
             </li>
           </ul>
         </Group>
-        <Group>
-          <h6 className='text-muted' style={{ marginTop: 0 }}>
-            December 2021
-          </h6>
-          <ul>
-            <li>
-              <Link to='/newsroom/seasonal-closure-2021'>Seasonal Closure 2021</Link>
-            </li>
-          </ul>
-        </Group>
+
         <div style={{ height: 200 }} />
       </Padding>
       <CruFragment />
