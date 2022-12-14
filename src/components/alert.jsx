@@ -21,6 +21,12 @@ const Alert = () => {
   return (
     <AlertSlider>
       <Slider {...sliderSettings} style={{ width: '90%' }}>
+        <AlertHeader onClick={() => navigate('/newsroom/seasonal-closure-2022')}>
+          <div style={{ textAlign: 'center' }}>
+            <h6>Seasonal Closure: December 22nd 2022 - January 1st 2022</h6>
+            <small className='text-muted'>Click here for more info</small>
+          </div>
+        </AlertHeader>
         <AlertHeader onClick={() => navigate('/newsroom/seed-grant')}>
           <div style={{ textAlign: 'center' }}>
             <h6>
