@@ -21,6 +21,9 @@ const AnnouncementsPage = () => {
             <li>
               <Link to='/newsroom/seasonal-closure-2022'>Seasonal Closure 2022</Link>
             </li>
+            <li>
+              <Link to='/newsroom/redcap-decommission'>REDCap 6 & 7 Decommissioned</Link>
+            </li>
           </ul>
         </Group>
         <Group>
