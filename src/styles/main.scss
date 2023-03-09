@@ -32,6 +32,12 @@ a:hover {
   color: #8dc7fd;
 }
 
+.external-link-disabled {
+  color: #8dc7fd;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+
 li:not(:last-child) {
   margin-bottom: 10px;
 }
