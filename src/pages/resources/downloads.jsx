@@ -18,9 +18,6 @@ const DownloadsPage = () => (
           are on a managed computer, please contact your local IT administrator.
         </p>
         <div style={{ height: 10 }} />
-
-        <h3>DFdiscover</h3>
-
         <h5>DFexplore 5.1.4</h5>
         <DownloadTable>
           <tr style={{ backgroundColor: '#e3f2ff' }}>

@@ -82,12 +82,14 @@ const NavBar = ({ activePage, activeGroup }) => {
             pages={[
               { page: 'data-lifecycle-management', text: 'Data Lifecycle Management' },
               { page: 'machine-learning', text: 'Machine Learning' },
+              { page: 'gdpr', text: 'GDPR' },
               { page: 'downloads', text: 'Downloads' },
             ]}
             group='resources'
             selectedPage={[
               'data-lifecycle-management',
               'machine-learning',
+              'gdpr',
               'downloads',
             ].find((el) => el === activePage)}
             active={activeGroup === 'resources'}
