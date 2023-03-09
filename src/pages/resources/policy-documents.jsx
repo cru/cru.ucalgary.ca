@@ -4,12 +4,14 @@ import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
 
-const GdprPage = () => {
+const PolicyDocumentsPage = () => {
   return (
-    <Layout title='GDPR Policy' page='gdpr' group='resources'>
+    <Layout title='Policy Documents' page='policy-documents' group='resources'>
       <div style={{ height: 60 }} />
       <Padding>
-        <h1>Our GDPR Policy</h1>
+        <h1>Our Policy Documents</h1>
+        <div style={{ height: 55 }} />
+        <h2>GDPR</h2>
         <h5 className='text-muted' style={{ marginTop: 0 }}>
           For our complete statement, please download our{' '}
           <a href='/CRU_GDPR_Statement_v2.1.pdf' download className='external-link'>
@@ -17,8 +19,8 @@ const GdprPage = () => {
           </a>{' '}
           document
         </h5>
-        <div style={{ height: 55 }} />
-        <h3>GDPR Compliance</h3>
+        <div style={{ height: 25 }} />
+        <h4>GDPR Compliance</h4>
         <p>
           The CRU acts both as data controller and processor under GDPR guidelines but is
           only responsible for personal information access requests in its role as a
@@ -27,7 +29,7 @@ const GdprPage = () => {
           meets the legal and regulatory privacy and protection standards set out by the
           regions in which the CRU operates.
         </p>
-        <h3 className='mt-5'>Privacy and Security Measures</h3>
+        <h4 className='mt-5'>Privacy and Security Measures</h4>
         <p>
           The CRU employs a variety of privacy and security procedures to safeguard and
           secure the personal information we collect. These security measures ensure that
@@ -54,13 +56,13 @@ const GdprPage = () => {
             Two-Factor Authentication (2FA). Inactivity automatic access suspension.
           </li>
         </ul>
-        <h3 className='mt-5'>Data we Collect</h3>
+        <h4 className='mt-5'>Data we Collect</h4>
         <p>
           The CRU collects and processes the data provided by the study team as part of a
           research study, which may include your personal data and data concerning health.
           This data is being collected and processed with your consent.
         </p>
-        <h3 className='mt-5'>Why we Collect this Data</h3>
+        <h4 className='mt-5'>Why we Collect this Data</h4>
         <p>
           The CRU collects and processes this data for the purposes of delivering services
           in support of clinical research. We will only collect and process the data you
@@ -73,7 +75,7 @@ const GdprPage = () => {
           the data was collected, and to comply with regulatory auditing or monitoring
           requirements or as required by law.
         </p>
-        <h3 className='mt-5'>How Long we Keep this Data</h3>
+        <h4 className='mt-5'>How Long we Keep this Data</h4>
         <p>
           The CRU only saves data for as long as it is needed, and as required by
           regulation. When a study team informs us that the study is complete, we will
@@ -81,9 +83,9 @@ const GdprPage = () => {
           after one year, unless we are required by regulation or law to retain the data
           longer.
         </p>
-        <h3 className='mt-5'>
+        <h4 className='mt-5'>
           Actions, Corrections, Objections, and Deletions to Personal Data
-        </h3>
+        </h4>
         <p>
           You still have rights over what happens with your data being held by the CRU.
         </p>
@@ -139,7 +141,7 @@ const GdprPage = () => {
           your personal data, as permitted or required by law or regulation, and in
           accordance with these guidelines.
         </p>
-        <h3 className='mt-5'>How to Contact Us</h3>
+        <h4 className='mt-5'>How to Contact Us</h4>
         <p>
           If you would like to speak to us about how GDPR law impacts your personal data
           at the CRU, or have any requests for information about, corrections to, or
@@ -156,4 +158,4 @@ const GdprPage = () => {
   )
 }
 
-export default GdprPage
+export default PolicyDocumentsPage
