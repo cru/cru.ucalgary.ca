@@ -10,6 +10,9 @@ const SEEDGrantPage = () => {
       <div style={{ height: 60 }} />
       <Padding>
         <h1>The Clinical Research Fund SEED Grant Competition is now open!</h1>
+        <h5 className='text-muted' style={{ marginTop: 0 }}>
+          UPDATE: applications are now closed
+        </h5>
         <div style={{ height: 55 }} />
         <p>
           The Cumming School of Medicine (CSM) and Alberta Health Services (AHS) Clinical
@@ -18,7 +21,7 @@ const SEEDGrantPage = () => {
         <p className='text-center'>
           <h4>
             <a
-              className='external-link'
+              className='external-link-disabled'
               href='https://apply-clinicalresearchfund.smapply.io/?mkt_tok=MTYxLU9MTi05OTAAAAGH8lf7Vdz7ZANaZIU31whmKmQJJvOnBkTWXKcWVJd7sZCFYPqzaoi9_6hgTGJ_5d_cV8nAZ3O76-ful_5ewkB0'
             >
               Apply by December 15, 2022
@@ -89,7 +92,7 @@ const SEEDGrantPage = () => {
         <p>
           To apply applicants, need to submit an online application through the{' '}
           <a
-            className='external-link'
+            className='external-link-disabled'
             href='https://apply-clinicalresearchfund.smapply.io/?mkt_tok=MTYxLU9MTi05OTAAAAGH8lf7VXaj4gD7ESVjYf53P9Zi2iUk3nM5ABrgqnUSbGVUDVtf_Ql25yI9D6aszbWS5SMBx8Dlg3NG8YMM4TpQ'
           >
             online portal

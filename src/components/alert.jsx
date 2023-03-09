@@ -21,29 +21,8 @@ const Alert = () => {
   return (
     <AlertSlider>
       <Slider {...sliderSettings} style={{ width: '90%' }}>
-        <AlertHeader onClick={() => navigate('/newsroom/seasonal-closure-2022')}>
-          <div style={{ textAlign: 'center' }}>
-            <h6>Seasonal Closure: December 22nd 2022 - January 1st 2022</h6>
-            <small className='text-muted'>Click here for more info</small>
-          </div>
-        </AlertHeader>
-        <AlertHeader onClick={() => navigate('/newsroom/seed-grant')}>
-          <div style={{ textAlign: 'center' }}>
-            <h6>
-              Up to $25,000 in credits available for CRU support services through the{' '}
-              <a
-                className='external-link'
-                href='https://cumming.ucalgary.ca/research/cccr/how-we-help/clinical-research-fund?mkt_tok=MTYxLU9MTi05OTAAAAGH8lf7VZbFO3Mk4Xm6n2TkS84nRaOdeyBUFXTKg-4PGMM2PJyrJJveAN-d-Ox4oDt7NFC9xXkdWgAg_RsIGo7K'
-              >
-                Clinical Research Fund SEED Grant
-              </a>
-              .
-            </h6>
-            <small className='text-muted'>Click here for more info</small>
-          </div>
-        </AlertHeader>
         <AlertHeader onClick={() => navigate('/newsroom/redcap-validation')}>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', width: '100%' }}>
             <h6>CRU Hosts a Validated REDCap!</h6>
             <small className='text-muted'>Click here for more info</small>
           </div>
