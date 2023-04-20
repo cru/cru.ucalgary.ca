@@ -83,6 +83,7 @@ const NavBar = ({ activePage, activeGroup }) => {
               { page: 'data-lifecycle-management', text: 'Data Lifecycle Management' },
               { page: 'machine-learning', text: 'Machine Learning' },
               { page: 'policy-documents', text: 'Policy Documents' },
+              { page: 'project-validation-guide', text: 'Project Validation Guide' },
               { page: 'downloads', text: 'Downloads' },
             ]}
             group='resources'
@@ -90,6 +91,7 @@ const NavBar = ({ activePage, activeGroup }) => {
               'data-lifecycle-management',
               'machine-learning',
               'policy-documents',
+              'project-validation-guide',
               'downloads',
             ].find((el) => el === activePage)}
             active={activeGroup === 'resources'}
