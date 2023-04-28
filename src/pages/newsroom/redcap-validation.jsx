@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { ChevronDown, ChevronRight } from 'react-feather'
 import { Collapse } from 'reactstrap'
 
+import { Link } from 'gatsby'
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
-import { Link } from 'gatsby'
 
-const RedcapValidationPage = () => {
+function RedcapValidationPage() {
   const [showOne, toggleOne] = useState(false)
   const [showTwo, toggleTwo] = useState(false)
   const [showThree, toggleThree] = useState(false)
@@ -23,9 +23,16 @@ const RedcapValidationPage = () => {
       <Padding>
         <h1>Validated REDCap is now available at Cumming School of Medicine (CRU)!</h1>
         <div style={{ height: 55 }} />
+        <div className='alert alert-warning'>
+          Due to a critical security vulnerability notice received from Vanderbilt
+          University, the CRU has completed an emergency upgrade to REDCap 13.1.27 <br />
+          <br />
+          <b>REDCap 13.1.27 Validation Materials (Coming Soon)!</b>
+        </div>
+        <div style={{ height: 20 }} />
         <p>
           We are excited to announce that the CRU has completed the validation of its
-          REDCap 10.0.32 instance.{' '}
+          REDCap 12.4.31 instance.{' '}
           <b>
             This REDCap instance meets Health Canada/ICH GCP requirements to run phase 3
             and regulatory clinical trials.
