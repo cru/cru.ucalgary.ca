@@ -27,7 +27,8 @@ function RedcapValidationPage() {
           Due to a critical security vulnerability notice received from Vanderbilt
           University, the CRU has completed an emergency upgrade to REDCap 13.1.27 <br />
           <br />
-          The required additional validation materials are in progress and soon to be completed.
+          The required additional validation materials are in progress and soon to be
+          completed.
         </div>
         <div style={{ height: 20 }} />
         <p>
