@@ -4,6 +4,8 @@
   Clinical Research Unit
 </h1>
 
+### Note this app currently requires Node v16 or lower
+
 # git LFS and Netlify Large Media
 
 - this project uses git-lfs for the dfexplore and idatafax downloads
