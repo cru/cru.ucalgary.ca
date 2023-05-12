@@ -30,10 +30,10 @@ const ProjectValidationGuidePage = () => {
         <div style={{ height: 25 }} />
         <h4>Emergency Security Upgrade</h4>
         <p>
-          On April 20, 2023, the CRU successfully upgraded REDCap to v.13.1.26 to resolve
-          a critical security vulnerability communicated by the REDCap vendor. We thank
-          you for your understanding and patience, given the urgent and priority nature of
-          this emergency upgrade.
+          On April 20, 2023, the CRU successfully upgraded REDCap to resolve a critical
+          security vulnerability communicated by the REDCap vendor. We thank you for your
+          understanding and patience, given the urgent and priority nature of this
+          emergency upgrade.
         </p>
         <p>
           This{' '}

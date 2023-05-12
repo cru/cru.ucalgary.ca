@@ -25,9 +25,9 @@ function RedcapValidationPage() {
         <div style={{ height: 55 }} />
         <div className='alert alert-warning'>
           Due to a critical security vulnerability notice received from Vanderbilt
-          University, the CRU has completed an emergency upgrade to REDCap 13.1.27 <br />
+          University, the CRU has completed an emergency upgrade to REDCap 13.1.28 <br />
           <br />
-          <b>REDCap 13.1.27 Validation Materials (Coming Soon)!</b>
+          <b>REDCap 13.1.28 Validation Materials (Coming Soon)!</b>
         </div>
         <div style={{ height: 20 }} />
         <p>
