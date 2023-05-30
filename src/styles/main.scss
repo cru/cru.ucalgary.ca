@@ -201,3 +201,14 @@ td {
   padding: 0.5rem;
   text-align: left;
 }
+
+
+.slick-track {
+  display: flex !important;
+}
+.slick-track .slick-slide {
+  display: flex !important;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
