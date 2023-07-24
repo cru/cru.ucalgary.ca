@@ -4,15 +4,7 @@ import { Check, X } from 'react-feather'
 import { Row, Col, Popover, PopoverBody } from 'reactstrap'
 
 const ServicePlans = () => {
-  const [showStandardHint, setShowStandardHint] = useState(false)
-  const [showBackupHint, setShowBackupHint] = useState(false)
-  const [showMaintenanceHint, setShowMaintenanceHint] = useState(false)
-  const [showUpdatesHint, setShowUpdatesHint] = useState(false)
-  const [showManagerHint, setShowManagerHint] = useState(false)
-  const [showAdvancedHint, setShowAdvancedHint] = useState(false)
-  const [showAdditionalHint, setShowAdditionalHint] = useState(false)
-  const [showResponseHint, setShowResponseHint] = useState(false)
-  const [showDiscountHint, setShowDiscountHint] = useState(false)
+  const [showHint, setShowHint] = useState('')
 
   return (
     <Fragment>
@@ -20,7 +12,7 @@ const ServicePlans = () => {
         <h2 style={{ color: '#fff' }}>EDC Service Plans</h2>
         <Row>
           <Col sm={{ size: 10, offset: 1 }}>
-            <div className='section-double floating' style={{ marginTop: '75px' }}>
+            <div className='section-double floating' style={{ marginTop: '25px' }}>
               <Row className='text-center'>
                 <Col sm='6'>
                   <h3>Basic</h3>
@@ -103,9 +95,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regstandardSupport'
-              onMouseEnter={() => setShowStandardHint(true)}
-              onMouseLeave={() => setShowStandardHint(false)}
+              id='standardSupport'
+              onMouseEnter={() => setShowHint('standardSupport')}
+              onMouseLeave={() => setShowHint('')}
             >
               Standard support
             </td>
@@ -124,9 +116,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regbackups'
-              onMouseEnter={() => setShowBackupHint(true)}
-              onMouseLeave={() => setShowBackupHint(false)}
+              id='backups'
+              onMouseEnter={() => setShowHint('backups')}
+              onMouseLeave={() => setShowHint('')}
             >
               Daily backups
             </td>
@@ -145,9 +137,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regmaintenance'
-              onMouseEnter={() => setShowMaintenanceHint(true)}
-              onMouseLeave={() => setShowMaintenanceHint(false)}
+              id='maintenance'
+              onMouseEnter={() => setShowHint('maintenance')}
+              onMouseLeave={() => setShowHint('')}
             >
               System maintenance
             </td>
@@ -166,9 +158,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regupdates'
-              onMouseEnter={() => setShowUpdatesHint(true)}
-              onMouseLeave={() => setShowUpdatesHint(false)}
+              id='updates'
+              onMouseEnter={() => setShowHint('updates')}
+              onMouseLeave={() => setShowHint('')}
             >
               Regular platform updates
             </td>
@@ -187,9 +179,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regmanager'
-              onMouseEnter={() => setShowManagerHint(true)}
-              onMouseLeave={() => setShowManagerHint(false)}
+              id='manager'
+              onMouseEnter={() => setShowHint('manager')}
+              onMouseLeave={() => setShowHint('')}
             >
               Dedicated CRU project manager
             </td>
@@ -208,11 +200,32 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='ccaddon'
-              onMouseEnter={() => setShowManagerHint(true)}
-              onMouseLeave={() => setShowManagerHint(false)}
+              id='audit'
+              onMouseEnter={() => setShowHint('audit')}
+              onMouseLeave={() => setShowHint('')}
             >
-              Clinical Trial Add-On
+              Guarunteed response times for audit support
+            </td>
+            <td>
+              <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+          </tr>
+          <tr>
+            <td
+              id='transferGuidance'
+              onMouseEnter={() => setShowHint('transferGuidance')}
+              onMouseLeave={() => setShowHint('')}
+            >
+              Data transfer guidance
             </td>
             <td>
               <X />
@@ -230,19 +243,19 @@ const ServicePlans = () => {
           <tr>
             <td
               id='ccaddon'
-              onMouseEnter={() => setShowManagerHint(true)}
-              onMouseLeave={() => setShowManagerHint(false)}
+              onMouseEnter={() => setShowHint('ccaddon')}
+              onMouseLeave={() => setShowHint('')}
             >
-              Registry Add-On
+              Clinical Trial add-on
             </td>
             <td>
-              <X />
+            +$500 <SubText>/year</SubText>
             </td>
             <td>
-            <X />
+            +$500 <SubText>/year</SubText>
             </td>
             <td>
-            <X />
+            +$500 <SubText>/year</SubText>
             </td>
             <td>
               <Check color='#47a67c' />
@@ -250,9 +263,30 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regadvancedSupport'
-              onMouseEnter={() => setShowAdvancedHint(true)}
-              onMouseLeave={() => setShowAdvancedHint(false)}
+              id='registryaddon'
+              onMouseEnter={() => setShowHint('registryaddon')}
+              onMouseLeave={() => setShowHint('')}
+            >
+              Registry add-on
+            </td>
+            <td>
+            +$500 <SubText>/year</SubText>
+            </td>
+            <td>
+            +$500 <SubText>/year</SubText>
+            </td>
+            <td>
+            +$500 <SubText>/year</SubText>
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+          </tr>
+          <tr>
+            <td
+              id='advancedSupport'
+              onMouseEnter={() => setShowHint('advancedSupport')}
+              onMouseLeave={() => setShowHint('')}
             >
               Advanced support
             </td>
@@ -266,14 +300,14 @@ const ServicePlans = () => {
               Up to <b>10</b> <SubText>hours/year</SubText>
             </td>
             <td>
-              Up to <b>5</b> <SubText>hours/year</SubText>
+              Up to <b>10</b> <SubText>hours/year</SubText>
             </td>
           </tr>
           <tr>
             <td
-              id='regadditionalSupport'
-              onMouseEnter={() => setShowAdditionalHint(true)}
-              onMouseLeave={() => setShowAdditionalHint(false)}
+              id='additionalSupport'
+              onMouseEnter={() => setShowHint('additionalSupport')}
+              onMouseLeave={() => setShowHint('')}
             >
               Additional support
             </td>
@@ -292,9 +326,9 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
-              id='regresponse'
-              onMouseEnter={() => setShowResponseHint(true)}
-              onMouseLeave={() => setShowResponseHint(false)}
+              id='response'
+              onMouseEnter={() => setShowHint('response')}
+              onMouseLeave={() => setShowHint('')}
             >
               Response times
             </td>
@@ -321,9 +355,9 @@ const ServicePlans = () => {
           </tr>
           <tr className='secondary'>
             <td
-              id='regdiscount'
-              onMouseEnter={() => setShowDiscountHint(true)}
-              onMouseLeave={() => setShowDiscountHint(false)}
+              id='discount'
+              onMouseEnter={() => setShowHint('discount')}
+              onMouseLeave={() => setShowHint('')}
             >
               Loyalty discount
             </td>
@@ -350,8 +384,8 @@ const ServicePlans = () => {
           </tr>
         </Table>
       </FeeContainer>
-      <Popover target='regstandardSupport' isOpen={showStandardHint}>
-        <PopoverBody>
+      <Popover target='standardSupport' isOpen={showHint === 'standardSupport'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Standard support services include:
           <ul>
             <li>Account creation/re-activation</li>
@@ -361,14 +395,14 @@ const ServicePlans = () => {
           </ul>
         </PopoverBody>
       </Popover>
-      <Popover target='regbackups' isOpen={showBackupHint}>
-        <PopoverBody>
+      <Popover target='backups' isOpen={showHint === 'backups'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           REDCap data is backed up daily to <b>minimize data loss</b> in the unlikely case
           of system interruptions.
         </PopoverBody>
       </Popover>
-      <Popover target='regmaintenance' isOpen={showMaintenanceHint}>
-        <PopoverBody>
+      <Popover target='maintenance' isOpen={showHint === 'maintenance'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Ongoing system maintenance includes infrastructure design, monitoring, patching,
           and security reviews.
           <br />
@@ -376,22 +410,49 @@ const ServicePlans = () => {
           calls and send SMS text messages for surveys and Alerts and Notifications.
         </PopoverBody>
       </Popover>
-      <Popover target='regupdates' isOpen={showUpdatesHint}>
-        <PopoverBody>
+      <Popover target='updates' isOpen={showHint === 'updates'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Platform updates ensure newer modern REDCap features are available to UCalgary
           researchers.
         </PopoverBody>
       </Popover>
-      <Popover target='regmanager' isOpen={showManagerHint}>
-        <PopoverBody>
+      <Popover target='manager' isOpen={showHint === 'manager'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Your project needs will be serviced by a dedicated point of contact who better
           understands your project and how it functions.
         </PopoverBody>
       </Popover>
-      <Popover target='regadvancedSupport' isOpen={showAdvancedHint}>
-        <PopoverBody>
-          “Advanced support” encapsulates all specialized support requests. Examples
-          include:
+      <Popover target='ccaddon' isOpen={showHint === 'ccaddon'}>
+        <PopoverBody style={{fontSize: '14px'}}>
+        Clinical trials that do not require the same rigour as regulated trials, but benefit from enhanced support. <br/>Includes:
+        <ul>
+            <li>Reports describing the validation of REDCap and platform security measures </li>
+            <li>
+            Best practice guidance documents to empower the research team, including for project-level validation, project security, and maintaining data integrity
+            </li>
+            <li>Training support for REDCap, including a training course and user manual </li>
+            <li>Discounted access to our DataXplor tools!</li>
+            <li>And much more! Contact us for more information.</li>
+          </ul>
+        </PopoverBody>
+      </Popover>
+      <Popover target='registryaddon' isOpen={showHint === 'registryaddon'}>
+        <PopoverBody style={{fontSize: '14px'}}>
+        Registries often store identifiable health data over extended periods of time. The Registry Add-On provides enhanced privacy and security measures. <br/>Includes:
+        <ul>
+            <li>Reports describing the validation of REDCap and platform security measures </li>
+            <li>
+            Best practice guidance documents to empower the research team, including for project-level validation, project security, and maintaining data integrity
+            </li>
+            <li>Training support for REDCap, including a training course and user manual </li>
+            <li>Discounted access to our DataXplor tools!</li>
+            <li>And much more! Contact us for more information.</li>
+          </ul>
+        </PopoverBody>
+      </Popover>
+      <Popover target='advancedSupport' isOpen={showHint === 'advancedSupport'}>
+        <PopoverBody style={{fontSize: '14px'}}>
+          “Advanced support” encapsulates all specialized support requests. <br/>Includes:
           <ul>
             <li>Consultation on how to implement a specific feature or module</li>
             <li>
@@ -405,14 +466,14 @@ const ServicePlans = () => {
           </ul>
         </PopoverBody>
       </Popover>
-      <Popover target='regadditionalSupport' isOpen={showAdditionalHint}>
-        <PopoverBody>
+      <Popover target='additionalSupport' isOpen={showHint === 'additionalSupport'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Additional support beyond the included allocation is available on an hourly
           basis.
         </PopoverBody>
       </Popover>
-      <Popover target='regresponse' isOpen={showResponseHint}>
-        <PopoverBody>
+      <Popover target='response' isOpen={showHint === 'response'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           Service level indicates time for a CRU team member to acknowledge your request
           and action it with the relevant team member. <br />
           Support requests from Premium tier projects will take priority for resolution,
@@ -420,8 +481,8 @@ const ServicePlans = () => {
           timely manner.
         </PopoverBody>
       </Popover>
-      <Popover target='regdiscount' isOpen={showDiscountHint}>
-        <PopoverBody>
+      <Popover target='discount' isOpen={showHint === 'discount'}>
+        <PopoverBody style={{fontSize: '14px'}}>
           For researchers with 3 or more REDCap projects, a 15% discount is applied to
           your total platform maintenance fees!
         </PopoverBody>
@@ -434,13 +495,14 @@ export default ServicePlans
 const Table = Styled.div`
   border: none;
   border-collapse: collapse;
-  width: 800px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 
   th,
   td {
       width: 200px;
+      font-size: 14px;
       padding: 15px;
       text-align: center;
       border: none;
@@ -460,6 +522,6 @@ const FeeContainer = Styled.div`
   overflow-x: auto;
 
   @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
-    margin-top: 325px;
+    margin-top: 400px;
 }
 `

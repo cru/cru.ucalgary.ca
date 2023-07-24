@@ -45,7 +45,7 @@ const EmailForm = ({ style }) => {
         <input type='hidden' name='form-name' value='contact' />
         <Space />
         <Row>
-          <h4>Email CRU</h4>
+          <h4>Email Us</h4>
           <Input name='name' type='text' placeholder='name' />
         </Row>
         <Space />
