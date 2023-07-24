@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+  "name": "cru-website",
+  "build": {
+    "context": "..",
+    "dockerfile": "../Dockerfile.local"
+  },
+  "forwardPorts": [8000],
+  "mounts": [
+    "source=node_modules,target=${containerWorkspaceFolder}_cru_website/node_modules,type=volume"
+  ],
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dsznajder.es7-react-js-snippets",
+        "csstools.postcss",
+        "IronGeek.vscode-env",
+        "ecmel.vscode-html-css",
+        "wix.vscode-import-cost",
+        "esbenp.prettier-vscode",
+      ]
+    }
+  }
+}
