@@ -208,6 +208,48 @@ const ServicePlans = () => {
           </tr>
           <tr>
             <td
+              id='ccaddon'
+              onMouseEnter={() => setShowManagerHint(true)}
+              onMouseLeave={() => setShowManagerHint(false)}
+            >
+              Clinical Trial Add-On
+            </td>
+            <td>
+              <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+          </tr>
+          <tr>
+            <td
+              id='ccaddon'
+              onMouseEnter={() => setShowManagerHint(true)}
+              onMouseLeave={() => setShowManagerHint(false)}
+            >
+              Registry Add-On
+            </td>
+            <td>
+              <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+            <X />
+            </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
+          </tr>
+          <tr>
+            <td
               id='regadvancedSupport'
               onMouseEnter={() => setShowAdvancedHint(true)}
               onMouseLeave={() => setShowAdvancedHint(false)}
