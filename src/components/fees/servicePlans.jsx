@@ -3,7 +3,7 @@ import Styled from 'styled-components'
 import { Check, X } from 'react-feather'
 import { Row, Col, Popover, PopoverBody } from 'reactstrap'
 
-const RegularFees = () => {
+const ServicePlans = () => {
   const [showStandardHint, setShowStandardHint] = useState(false)
   const [showBackupHint, setShowBackupHint] = useState(false)
   const [showMaintenanceHint, setShowMaintenanceHint] = useState(false)
@@ -17,7 +17,7 @@ const RegularFees = () => {
   return (
     <Fragment>
       <div className='fee-hero secondary-background'>
-        <h2 style={{ color: '#fff' }}>Regular Project</h2>
+        <h2 style={{ color: '#fff' }}>EDC Service Plans</h2>
         <Row>
           <Col sm={{ size: 10, offset: 1 }}>
             <div className='section-double floating' style={{ marginTop: '75px' }}>
@@ -27,7 +27,7 @@ const RegularFees = () => {
                 </Col>
                 <Col sm='6'>
                   <h3>
-                    $300<small style={{ fontSize: '18px' }}>/year</small>
+                    $350<small style={{ fontSize: '18px' }}>/year</small>
                   </h3>
                 </Col>
               </Row>
@@ -53,6 +53,17 @@ const RegularFees = () => {
                   </h3>
                 </Col>
               </Row>
+              <hr className='secondary-background' />
+              <Row className='text-center'>
+                <Col sm='6'>
+                  <h3>CCTT</h3>
+                </Col>
+                <Col sm='6'>
+                  <h3>
+                    $2,200<small style={{ fontSize: '18px' }}>/year</small>
+                  </h3>
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>
@@ -65,7 +76,7 @@ const RegularFees = () => {
               Basic
               <br />
               <span className='text-muted'>
-                $300<SubText>/year</SubText>
+                $350<SubText>/year</SubText>
               </span>
             </th>
             <th>
@@ -82,6 +93,13 @@ const RegularFees = () => {
                 $1,000<SubText>/year</SubText>
               </span>
             </th>
+            <th>
+              CCTT
+              <br />
+              <span className='text-muted'>
+                $2,200<SubText>/year</SubText>
+              </span>
+            </th>
           </tr>
           <tr>
             <td
@@ -90,6 +108,9 @@ const RegularFees = () => {
               onMouseLeave={() => setShowStandardHint(false)}
             >
               Standard support
+            </td>
+            <td>
+              <Check color='#47a67c' />
             </td>
             <td>
               <Check color='#47a67c' />
@@ -118,6 +139,9 @@ const RegularFees = () => {
             <td>
               <Check color='#47a67c' />
             </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
           </tr>
           <tr>
             <td
@@ -126,6 +150,9 @@ const RegularFees = () => {
               onMouseLeave={() => setShowMaintenanceHint(false)}
             >
               System maintenance
+            </td>
+            <td>
+              <Check color='#47a67c' />
             </td>
             <td>
               <Check color='#47a67c' />
@@ -154,6 +181,9 @@ const RegularFees = () => {
             <td>
               <Check color='#47a67c' />
             </td>
+            <td>
+              <Check color='#47a67c' />
+            </td>
           </tr>
           <tr>
             <td
@@ -165,6 +195,9 @@ const RegularFees = () => {
             </td>
             <td>
               <X />
+            </td>
+            <td>
+              <Check color='#47a67c' />
             </td>
             <td>
               <Check color='#47a67c' />
@@ -190,6 +223,9 @@ const RegularFees = () => {
             <td>
               Up to <b>10</b> <SubText>hours/year</SubText>
             </td>
+            <td>
+              Up to <b>5</b> <SubText>hours/year</SubText>
+            </td>
           </tr>
           <tr>
             <td
@@ -200,13 +236,16 @@ const RegularFees = () => {
               Additional support
             </td>
             <td>
-              $125 <SubText>/hour</SubText>
+              $150 <SubText>/hour</SubText>
             </td>
             <td>
-              $125 <SubText>/hour</SubText>
+              $150 <SubText>/hour</SubText>
             </td>
             <td>
-              $125 <SubText>/hour</SubText>
+              $150 <SubText>/hour</SubText>
+            </td>
+            <td>
+              $150 <SubText>/hour</SubText>
             </td>
           </tr>
           <tr>
@@ -232,6 +271,11 @@ const RegularFees = () => {
               <br />
               <SubText className='text-muted'>within 1 business day</SubText>
             </td>
+            <td>
+              Priority
+              <br />
+              <SubText className='text-muted'>within 1 business day</SubText>
+            </td>
           </tr>
           <tr className='secondary'>
             <td
@@ -240,6 +284,11 @@ const RegularFees = () => {
               onMouseLeave={() => setShowDiscountHint(false)}
             >
               Loyalty discount
+            </td>
+            <td>
+              <b>15%</b>
+              <br />
+              <SubText className='text-muted'>3+ REDCap projects</SubText>
             </td>
             <td>
               <b>15%</b>
@@ -338,7 +387,7 @@ const RegularFees = () => {
     </Fragment>
   )
 }
-export default RegularFees
+export default ServicePlans
 
 const Table = Styled.div`
   border: none;
@@ -365,7 +414,7 @@ const SubText = Styled.small`
 `
 
 const FeeContainer = Styled.div`
-  margin-top: 225px;
+  margin-top: 300px;
   overflow-x: auto;
 
   @media only screen and (max-width: ${(props) => props.theme.mobileBreakPoint}){
