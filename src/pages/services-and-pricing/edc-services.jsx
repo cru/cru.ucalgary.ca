@@ -101,7 +101,7 @@ const EDCServicesPage = () => {
             </p>
             <ul>
               <li><b>Clinical Trial Add-On:</b> Enhanced support for all other clinical trials, but at less rigour and lower cost than the CCTT.</li>
-            <li><b>Registry Add-On:</b> In addition to the enhanced security and support services, registries get up to XX of storage</li>
+            <li><b>Registry Add-On:</b> Enhanced security and support services ensure high data quality standards that are essential for longitudinal data.</li>
             </ul>
         <div className='text-center mt-5'>
           <h5>See below for the full breakdown of service plans</h5>
