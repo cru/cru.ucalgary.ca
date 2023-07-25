@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styled from 'styled-components'
-import { ChevronsDown } from 'react-feather'
-import { Row, Col } from 'reactstrap'
+import { ChevronDown, ChevronRight, ChevronsDown } from 'react-feather'
+import { Collapse } from 'reactstrap'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
@@ -11,6 +11,8 @@ import { Link } from 'gatsby'
 
 
 const EDCServicesPage = () => {
+  const [showCollapse, setShowCollapse] = useState('')
+
   return (
     <Layout title='Electronic Data Capture Services' page='edc-services'>
       <div style={{ height: 60 }} />
@@ -132,6 +134,100 @@ const EDCServicesPage = () => {
                 </Link>
               </AddOn>
             </DXAddOns>
+
+            <FAQ className='mt-5'>
+          <h2>Frequently Asked Questions</h2>
+          <div>
+            <b
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
+              id='one'
+              onClick={() => setShowCollapse(showCollapse === '1' ? '' : '1')}
+            >
+              {showCollapse === '1' ? (
+                <ChevronDown size={24} className='mr-2' />
+              ) : (
+                <ChevronRight size={24} className='mr-2' />
+              )}
+              If my project is a regulated clinical trial, am I required to subscribe to the CCTT?
+            </b>
+            <Collapse isOpen={showCollapse === '1'}>
+              <p>Yes, regulated clinical trials are required to subscribe to the CCTT. This ensures all regulatory requirements are met and we can best support in case of an audit.</p>
+            </Collapse>
+          </div>
+          <div>
+            <b
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
+              id='two'
+              onClick={() => setShowCollapse(showCollapse === '2' ? '' : '2')}
+            >
+              {showCollapse === '2' ? (
+                <ChevronDown size={24} className='mr-2' />
+              ) : (
+                <ChevronRight size={24} className='mr-2' />
+              )}
+              If my project is a clinical trial or registry, am I required to subscribe to the add-ons?
+            </b>
+            <Collapse isOpen={showCollapse === '2'}>
+              <p>Yes, as these add-ons provide additional privacy and security measures and supporting documentation tailored to these project types.</p>
+            </Collapse>
+          </div>
+          <div>
+            <b
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
+              id='three'
+              onClick={() => setShowCollapse(showCollapse === '3' ? '' : '3')}
+            >
+              {showCollapse === '31' ? (
+                <ChevronDown size={24} className='mr-2' />
+              ) : (
+                <ChevronRight size={24} className='mr-2' />
+              )}
+              If my project is not a clinical trial or registry, can I subscribe to the CCTT or add-ons?
+            </b>
+            <Collapse isOpen={showCollapse === '3'}>
+              <p>Yes, absolutely! Any project looking for additional privacy and security measures are welcome to subscribe to the CCTT or add-ons. Please indicate on your intake survey submission or let us know at <a href='mailto:cru.finance@ucalgary.ca'>cru.finance@ucalgary.ca</a>
+
+</p>
+            </Collapse>
+          </div>
+          <div>
+            <b
+              style={{
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: 0,
+              }}
+              id='four'
+              onClick={() => setShowCollapse(showCollapse === '4' ? '' : '4')}
+            >
+              {showCollapse === '4' ? (
+                <ChevronDown size={24} className='mr-2' />
+              ) : (
+                <ChevronRight size={24} className='mr-2' />
+              )}
+              If I don’t need REDCap for a full year, can I get a discount?
+            </b>
+            <Collapse isOpen={showCollapse === '4'}>
+              <p>In some cases, annual maintenance fees can be pro-rated for less than a year. Please reach out to us at <a href='mailto:cru.finance@ucalgary.ca'>cru.finance@ucalgary.ca</a> to discuss further.</p>
+            </Collapse>
+          </div>
+        </FAQ>
       </Padding>
       <div style={{ height: '100px' }} />
       <CruFragment />
@@ -165,4 +261,9 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+`
+const FAQ = Styled.div `
+text-align: left;
+margin: 16px;
+padding: 16px;
 `

@@ -6,16 +6,11 @@ import { Link } from 'gatsby'
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
+import styled from 'styled-components'
 
 function RedcapValidationPage() {
-  const [showOne, toggleOne] = useState(false)
-  const [showTwo, toggleTwo] = useState(false)
-  const [showThree, toggleThree] = useState(false)
-  const [showFour, toggleFour] = useState(false)
-  const [showFive, toggleFive] = useState(false)
-  const [showSix, toggleSix] = useState(false)
-  const [showSeven, toggleSeven] = useState(false)
-  const [showEight, toggleEight] = useState(false)
+  const [showCollapse, setShowCollapse] = useState('')
+
 
   return (
     <Layout title='REDCap Validation!' page='redcap-validation' group='newsroom'>
@@ -25,9 +20,9 @@ function RedcapValidationPage() {
         <div style={{ height: 55 }} />
         <div className='alert alert-warning'>
           Due to a critical security vulnerability notice received from Vanderbilt
-          University, the CRU has completed an emergency upgrade to REDCap 13.1.28 <br />
+          University, the CRU has completed an emergency upgrade to REDCap 13.1.37 <br />
           <br />
-          <b>REDCap 13.1.28 Validation Materials (Coming Soon)!</b>
+          <b>REDCap 13.1.37 Validation Materials (Coming Soon)!</b>
         </div>
         <div style={{ height: 20 }} />
         <p>
@@ -65,10 +60,10 @@ function RedcapValidationPage() {
           </a>
           . We look forward to continuing our collaborations.
         </p>
-        <div className='mt-5'>
-          <h3>Frequently Asked Questions (FAQs)</h3>
+        <FAQ className='mt-5'>
+          <h2>Frequently Asked Questions</h2>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -76,16 +71,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='one'
-              onClick={() => toggleOne(!showOne)}
+              onClick={() => setShowCollapse(showCollapse === '1' ? '' : '1')}
             >
-              {showOne ? (
+              {showCollapse === '1' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               What does “validated” mean?
-            </h5>
-            <Collapse isOpen={showOne}>
+            </b>
+            <Collapse isOpen={showCollapse === '1'}>
               <ul>
                 <li>
                   Health Canada and ICH GCP outline requirements for electronic data
@@ -111,7 +106,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -119,16 +114,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='two'
-              onClick={() => toggleTwo(!showTwo)}
+              onClick={() => setShowCollapse(showCollapse === '2' ? '' : '2')}
             >
-              {showTwo ? (
+              {showCollapse === '2' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               What are the benefits of a validated REDCap instance?
-            </h5>
-            <Collapse isOpen={showTwo}>
+            </b>
+            <Collapse isOpen={showCollapse === '2'}>
               <ul>
                 <li>
                   REDCap is an easy-to-use EDC platform. It is widely used and many
@@ -146,7 +141,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -154,16 +149,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='three'
-              onClick={() => toggleThree(!showThree)}
+              onClick={() => setShowCollapse(showCollapse === '3' ? '' : '3')}
             >
-              {showThree ? (
+              {showCollapse === '31' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               What will this cost?
-            </h5>
-            <Collapse isOpen={showThree}>
+            </b>
+            <Collapse isOpen={showCollapse === '3'}>
               <ul>
                 <li>
                   The CRU is developing a new pricing structure that will provide more
@@ -192,7 +187,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -200,16 +195,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='four'
-              onClick={() => toggleFour(!showFour)}
+              onClick={() => setShowCollapse(showCollapse === '4' ? '' : '4')}
             >
-              {showFour ? (
+              {showCollapse === '4' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               My project is currently on REDCap 7. Can I move it to REDCap 10?
-            </h5>
-            <Collapse isOpen={showFour}>
+            </b>
+            <Collapse isOpen={showCollapse === '4'}>
               <ul>
                 <li>
                   The CRU is doing a phased rollout of REDCap 10. As part of REDCap
@@ -242,7 +237,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -250,16 +245,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='five'
-              onClick={() => toggleFive(!showFive)}
+              onClick={() => setShowCollapse(showCollapse === '5' ? '' : '5')}
             >
-              {showFive ? (
+              {showCollapse === '5' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               Can I start a new project on REDCap 10?
-            </h5>
-            <Collapse isOpen={showFive}>
+            </b>
+            <Collapse isOpen={showCollapse === '5'}>
               <ul>
                 <li>
                   If you are running a clinical trial, yes – you can start a new project
@@ -298,7 +293,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -306,16 +301,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='six'
-              onClick={() => toggleSix(!showSix)}
+              onClick={() => setShowCollapse(showCollapse === '6' ? '' : '6')}
             >
-              {showSix ? (
+              {showCollapse === '6' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               What will happen as part of REDCap Revitalization?
-            </h5>
-            <Collapse isOpen={showSix}>
+            </b>
+            <Collapse isOpen={showCollapse === '6'}>
               <ul>
                 <li>
                   Some of the initiatives and new services included in REDCap
@@ -337,7 +332,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -345,16 +340,16 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='seven'
-              onClick={() => toggleSeven(!showSeven)}
+              onClick={() => setShowCollapse(showCollapse === '7' ? '' : '7')}
             >
-              {showSeven ? (
+              {showCollapse === '7' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               Why is the CRU changing so much?
-            </h5>
-            <Collapse isOpen={showSeven}>
+            </b>
+            <Collapse isOpen={showCollapse === '7'}>
               <ul>
                 <li>
                   Research needs and technical solutions have evolved over time. Based on
@@ -382,7 +377,7 @@ function RedcapValidationPage() {
             </Collapse>
           </div>
           <div>
-            <h5
+            <b
               style={{
                 cursor: 'pointer',
                 display: 'flex',
@@ -390,17 +385,17 @@ function RedcapValidationPage() {
                 marginTop: 0,
               }}
               id='eight'
-              onClick={() => toggleEight(!showEight)}
+              onClick={() => setShowCollapse(showCollapse === '8' ? '' : '8')}
             >
-              {showEight ? (
+              {showCollapse === '8' ? (
                 <ChevronDown size={24} className='mr-2' />
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
               It sounds like the CRU is doing lots! How can I stay up to date on what the
               CRU is doing?
-            </h5>
-            <Collapse isOpen={showEight}>
+            </b>
+            <Collapse isOpen={showCollapse === '8'}>
               <ul>
                 <li>
                   We’ll be posting updates and announcements on our{' '}
@@ -413,7 +408,7 @@ function RedcapValidationPage() {
               </ul>
             </Collapse>
           </div>
-        </div>
+        </FAQ>
         <div className='mt-5'>
           <i>
             REDCap validation was supported in part by the{' '}
@@ -438,3 +433,10 @@ function RedcapValidationPage() {
 }
 
 export default RedcapValidationPage
+
+
+const FAQ = styled.div `
+text-align: left;
+margin: 16px;
+padding: 16px;
+`

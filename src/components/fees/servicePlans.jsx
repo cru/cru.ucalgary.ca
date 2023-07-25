@@ -438,7 +438,7 @@ const ServicePlans = () => {
       </Popover>
       <Popover target='registryaddon' isOpen={showHint === 'registryaddon'}>
         <PopoverBody style={{fontSize: '14px'}}>
-        Registries often store identifiable health data over extended periods of time. The Registry Add-On provides enhanced privacy and security measures. <br/>Includes:
+        Registries often store identifiable health data over extended periods of time. The Registry Add-On provides enhanced privacy and security measures and extra storage for large participant populations. <br/>Includes:
         <ul>
             <li>Reports describing the validation of REDCap and platform security measures </li>
             <li>
