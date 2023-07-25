@@ -21,6 +21,12 @@ const Alert = () => {
   return (
     <AlertSlider>
       <Slider {...sliderSettings} style={{ width: '90%' }}>
+      <AlertHeader onClick={() => navigate('/newsroom/dataxplor')}>
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <h6>Launching: DataXplor! Unlock the power of your REDCap data with our new data tools.</h6>
+            <small className='text-muted'>Click here for more info</small>
+          </div>
+        </AlertHeader>
         <AlertHeader onClick={() => navigate('/newsroom/redcap-validation')}>
           <div style={{ textAlign: 'center', width: '100%' }}>
             <h6>CRU Hosts a Validated REDCap!</h6>

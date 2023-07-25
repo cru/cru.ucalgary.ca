@@ -1,11 +1,14 @@
 import React from 'react'
 import Styled from 'styled-components'
 import { ChevronsDown } from 'react-feather'
+import { Row, Col } from 'reactstrap'
 
 import Layout from '../../containers/layout'
 import Padding from '../../containers/padding'
 import CruFragment from '../../components/crufragment'
 import ServicePlans from '../../components/fees/servicePlans'
+import { Link } from 'gatsby'
+
 
 const EDCServicesPage = () => {
   return (
@@ -113,6 +116,22 @@ const EDCServicesPage = () => {
                 </i>
               </b>
             </p>
+            <h2 style={{textAlign: 'center', marginTop: '64px'}}>DataXplor add-ons</h2>
+            <DXAddOns>
+              <AddOn >
+                <Link to={'/newsroom/dataxplor'}>
+                <h3>DataViz &rarr;</h3>
+                <p className='text-muted'>Easily create custom visualizations of your REDCap data in real-time.</p>
+                </Link>
+                
+              </AddOn>
+              <AddOn >
+              <Link to={'/newsroom/dataxplor'}>
+                <h3>DataLytics &rarr;</h3>
+                <p className='text-muted'>A real-time monitoring tool that provides a comprehensive view of your research study.</p>
+                </Link>
+              </AddOn>
+            </DXAddOns>
       </Padding>
       <div style={{ height: '100px' }} />
       <CruFragment />
@@ -123,14 +142,27 @@ const EDCServicesPage = () => {
 
 export default EDCServicesPage
 
-const Divider = Styled.hr`
-  background: linear-gradient(to right, rgb(32, 32, 32) 32.3%, ${(props) =>
-    props.theme.brandSecondColor} 32.3%, ${(props) =>
-  props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
+const DXAddOns = Styled.div`
+display: flex;
+justify-content: center;
 `
-const OverviewHeader = Styled.div`
-  background: linear-gradient(to right, #fff 33.3%, ${(props) =>
-    props.theme.brandSecondColor} 32.3%, ${(props) =>
-  props.theme.brandSecondColor} 67.7%, ${(props) => props.theme.brandPrimColor} 67.7%);
-  padding: 8px;
+
+const AddOn = Styled.div `
+text-align: left;
+width: 400px;
+margin: 16px;
+padding: 16px;
+ border-radius: ${(props) => props.theme.borderRadius};
+ background-color: ${(props) => props.theme.navBarAccent};
+ cursor: pointer;
+ transition: all ease 150ms;
+
+ :hover {
+  scale: 1.1;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 `
