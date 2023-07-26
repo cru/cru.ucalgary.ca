@@ -133,7 +133,7 @@ const EDCServicesPage = () => {
         <h2 style={{ textAlign: 'center', marginTop: '64px' }}>DataXplor add-ons</h2>
         <DXAddOns>
           <AddOn>
-            <Link to={'/newsroom/dataxplor'}>
+            <Link to={'/services-and-pricing/dataxplor'}>
               <h3>DataViz &rarr;</h3>
               <p className='text-muted'>
                 Easily create custom visualizations of your REDCap data in real-time.
@@ -141,7 +141,7 @@ const EDCServicesPage = () => {
             </Link>
           </AddOn>
           <AddOn>
-            <Link to={'/newsroom/dataxplor'}>
+            <Link to={'/services-and-pricing/dataxplor'}>
               <h3>DataLytics &rarr;</h3>
               <p className='text-muted'>
                 A real-time monitoring tool that provides a comprehensive view of your
