@@ -36,7 +36,7 @@ const theme = {
   borderRadius: '5px',
   pageMaxWidth: '1200px',
   pageMobilePadding: '25px',
-  pageDesktopPadding: '140px',
+  pageDesktopPadding: '25px',
 
   // Media Queries
   mobileBreakPoint: '600px',
