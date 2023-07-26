@@ -11,7 +11,6 @@ import styled from 'styled-components'
 function RedcapValidationPage() {
   const [showCollapse, setShowCollapse] = useState('')
 
-
   return (
     <Layout title='REDCap Validation!' page='redcap-validation' group='newsroom'>
       <div style={{ height: 60 }} />
@@ -434,9 +433,8 @@ function RedcapValidationPage() {
 
 export default RedcapValidationPage
 
-
-const FAQ = styled.div `
-text-align: left;
-margin: 16px;
-padding: 16px;
+const FAQ = styled.div`
+  text-align: left;
+  margin: 16px;
+  padding: 16px;
 `
