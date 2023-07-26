@@ -14,7 +14,7 @@ const EDCServicesPage = () => {
   const [showCollapse, setShowCollapse] = useState('')
 
   return (
-    <Layout title='Electronic Data Capture Services' page='edc-services'>
+    <Layout title='Electronic Data Capture Services' page='edc-services' group='services-and-pricing'>
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Electronic Data Capture Services</h1>
@@ -121,14 +121,14 @@ const EDCServicesPage = () => {
             <h2 style={{textAlign: 'center', marginTop: '64px'}}>DataXplor add-ons</h2>
             <DXAddOns>
               <AddOn >
-                <Link to={'/newsroom/dataxplor'}>
+                <Link to={'/services-and-pricing/dataxplor'}>
                 <h3>DataViz &rarr;</h3>
                 <p className='text-muted'>Easily create custom visualizations of your REDCap data in real-time.</p>
                 </Link>
                 
               </AddOn>
               <AddOn >
-              <Link to={'/newsroom/dataxplor'}>
+              <Link to={'/services-and-pricing/dataxplor'}>
                 <h3>DataLytics &rarr;</h3>
                 <p className='text-muted'>A real-time monitoring tool that provides a comprehensive view of your research study.</p>
                 </Link>

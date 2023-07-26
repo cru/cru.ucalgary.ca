@@ -6,7 +6,7 @@ import CruFragment from '../../components/crufragment'
 
 const DataXplorPage = () => {
   return (
-    <Layout title='DataXplor Released' page='dataxplor' group='newsroom'>
+    <Layout title='DataXplor Released' page='dataxplor' group='services-and-pricing'>
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Launching: DataXplor!</h1>
