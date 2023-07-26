@@ -7,7 +7,11 @@ import CruFragment from '../../components/crufragment'
 
 const CustomPlatformsPage = () => {
   return (
-    <Layout title='Custom Research Platforms' page='custom-platforms' group='services-and-pricing'>
+    <Layout
+      title='Custom Research Platforms'
+      page='custom-platforms'
+      group='services-and-pricing'
+    >
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Custom Research Platforms</h1>

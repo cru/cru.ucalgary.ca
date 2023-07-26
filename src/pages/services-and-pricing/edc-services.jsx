@@ -13,7 +13,11 @@ const EDCServicesPage = () => {
   const [showCollapse, setShowCollapse] = useState('')
 
   return (
-    <Layout title='Electronic Data Capture Services' page='edc-services' group='services-and-pricing'>
+    <Layout
+      title='Electronic Data Capture Services'
+      page='edc-services'
+      group='services-and-pricing'
+    >
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Electronic Data Capture Services</h1>

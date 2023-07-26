@@ -7,7 +7,11 @@ import CruFragment from '../../components/crufragment'
 
 const MethodsAnalyticsPage = () => {
   return (
-    <Layout title='Methods and Analytics Services' page='methods-analytics-services' group='services-and-pricing'>
+    <Layout
+      title='Methods and Analytics Services'
+      page='methods-analytics-services'
+      group='services-and-pricing'
+    >
       <div style={{ height: 60 }} />
       <Padding>
         <h1>Methods and Analytics Services</h1>

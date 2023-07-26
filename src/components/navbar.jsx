@@ -115,7 +115,7 @@ const NavBar = ({ activePage, activeGroup }) => {
               'edc-services',
               'custom-platforms',
               'methods-analytics-services',
-              'dataxplor'
+              'dataxplor',
             ].find((el) => el === activePage)}
             active={activeGroup === 'services-and-pricing'}
           />
