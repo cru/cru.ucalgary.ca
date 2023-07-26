@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 import { ArrowRight } from 'react-feather'
 import RipRight from '../images/svg-backgrounds/collab-crop-rightside.svg'
 import RipLeft from '../images/svg-backgrounds/collab-crop-leftside.svg'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -48,9 +49,12 @@ const getPartnersList = (data) => {
 
   data.allPartnersJson.edges.forEach((item) =>
     partners.push(
-      <ImgContainer key={item.node.name}>
-        <img src={item.node.image.src.childImageSharp.fluid.src} alt={item.node.name} />
-      </ImgContainer>
+      <div key={item.node.name}>
+        <GatsbyImage
+          image={item.node.image.src.childImageSharp.gatsbyImageData}
+          alt={item.node.name}
+        />
+      </div>
     )
   )
 
@@ -69,9 +73,13 @@ const ParterBanner = () => {
                   image {
                     src {
                       childImageSharp {
-                        fluid {
-                          ...GatsbyImageSharpFluid
-                        }
+                        gatsbyImageData(
+                          quality: 100
+                          layout: FIXED
+                          width: 140
+                          formats: [AUTO, WEBP, AVIF]
+                          placeholder: BLURRED
+                        )
                       }
                     }
                   }
@@ -154,20 +162,5 @@ const Banner = Styled.div`
   span {
     text-decoration:none;
     color: grey;
-  }
-`
-
-const ImgContainer = Styled.div`
-  height: 90px;
-  display:inline-block;
-  outline: none;
-
-  img{
-    width:140px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-
   }
 `

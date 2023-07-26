@@ -28,7 +28,7 @@ const EmailFAB = () => {
             className='mr-2'
             style={{ display: toggle ? 'block' : 'none' }}
           />
-          <Text style={{ display: toggle ? 'block' : 'none' }}>Email CRU</Text>
+          <Text style={{ display: toggle ? 'block' : 'none' }}>Email Us</Text>
           <EmailForm style={{ display: toggle ? 'none' : 'flex' }} />
         </FabButton>
       </ButtonContainer>

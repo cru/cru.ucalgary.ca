@@ -15,6 +15,16 @@ const AnnouncementsPage = () => {
         <div style={{ height: 55 }} />
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
+            July 2023
+          </h6>
+          <ul>
+            <li>
+              <Link to='/services-and-pricing/dataxplor'>Launching: DataXplor!</Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
             December 2022
           </h6>
           <ul>
