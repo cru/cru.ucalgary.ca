@@ -210,10 +210,10 @@ const ServicePlans = () => {
               <X />
             </td>
             <td>
-            <X />
+              <X />
             </td>
             <td>
-            <X />
+              <X />
             </td>
             <td>
               <Check color='#47a67c' />
@@ -231,10 +231,10 @@ const ServicePlans = () => {
               <X />
             </td>
             <td>
-            <X />
+              <X />
             </td>
             <td>
-            <X />
+              <X />
             </td>
             <td>
               <Check color='#47a67c' />
@@ -249,13 +249,13 @@ const ServicePlans = () => {
               Clinical Trial add-on
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
               <Check color='#47a67c' />
@@ -270,13 +270,13 @@ const ServicePlans = () => {
               Registry add-on
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
-            +$500 <SubText>/year</SubText>
+              +$500 <SubText>/year</SubText>
             </td>
             <td>
               <Check color='#47a67c' />
@@ -385,7 +385,7 @@ const ServicePlans = () => {
         </Table>
       </FeeContainer>
       <Popover target='standardSupport' isOpen={showHint === 'standardSupport'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Standard support services include:
           <ul>
             <li>Account creation/re-activation</li>
@@ -396,13 +396,13 @@ const ServicePlans = () => {
         </PopoverBody>
       </Popover>
       <Popover target='backups' isOpen={showHint === 'backups'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           REDCap data is backed up daily to <b>minimize data loss</b> in the unlikely case
           of system interruptions.
         </PopoverBody>
       </Popover>
       <Popover target='maintenance' isOpen={showHint === 'maintenance'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Ongoing system maintenance includes infrastructure design, monitoring, patching,
           and security reviews.
           <br />
@@ -411,48 +411,64 @@ const ServicePlans = () => {
         </PopoverBody>
       </Popover>
       <Popover target='updates' isOpen={showHint === 'updates'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Platform updates ensure newer modern REDCap features are available to UCalgary
           researchers.
         </PopoverBody>
       </Popover>
       <Popover target='manager' isOpen={showHint === 'manager'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Your project needs will be serviced by a dedicated point of contact who better
           understands your project and how it functions.
         </PopoverBody>
       </Popover>
       <Popover target='ccaddon' isOpen={showHint === 'ccaddon'}>
-        <PopoverBody style={{fontSize: '14px'}}>
-        Clinical trials that do not require the same rigour as regulated trials, but benefit from enhanced support. <br/>Includes:
-        <ul>
-            <li>Reports describing the validation of REDCap and platform security measures </li>
+        <PopoverBody style={{ fontSize: '14px' }}>
+          Clinical trials that do not require the same rigour as regulated trials, but
+          benefit from enhanced support. <br />
+          Includes:
+          <ul>
             <li>
-            Best practice guidance documents to empower the research team, including for project-level validation, project security, and maintaining data integrity
+              Reports describing the validation of REDCap and platform security measures{' '}
             </li>
-            <li>Training support for REDCap, including a training course and user manual </li>
+            <li>
+              Best practice guidance documents to empower the research team, including for
+              project-level validation, project security, and maintaining data integrity
+            </li>
+            <li>
+              Training support for REDCap, including a training course and user manual{' '}
+            </li>
             <li>Discounted access to our DataXplor tools!</li>
             <li>And much more! Contact us for more information.</li>
           </ul>
         </PopoverBody>
       </Popover>
       <Popover target='registryaddon' isOpen={showHint === 'registryaddon'}>
-        <PopoverBody style={{fontSize: '14px'}}>
-        Registries often store identifiable health data over extended periods of time. The Registry Add-On provides enhanced privacy and security measures and extra storage for large participant populations. <br/>Includes:
-        <ul>
-            <li>Reports describing the validation of REDCap and platform security measures </li>
+        <PopoverBody style={{ fontSize: '14px' }}>
+          Registries often store identifiable health data over extended periods of time.
+          The Registry Add-On provides enhanced privacy and security measures and extra
+          storage for large participant populations. <br />
+          Includes:
+          <ul>
             <li>
-            Best practice guidance documents to empower the research team, including for project-level validation, project security, and maintaining data integrity
+              Reports describing the validation of REDCap and platform security measures{' '}
             </li>
-            <li>Training support for REDCap, including a training course and user manual </li>
+            <li>
+              Best practice guidance documents to empower the research team, including for
+              project-level validation, project security, and maintaining data integrity
+            </li>
+            <li>
+              Training support for REDCap, including a training course and user manual{' '}
+            </li>
             <li>Discounted access to our DataXplor tools!</li>
             <li>And much more! Contact us for more information.</li>
           </ul>
         </PopoverBody>
       </Popover>
       <Popover target='advancedSupport' isOpen={showHint === 'advancedSupport'}>
-        <PopoverBody style={{fontSize: '14px'}}>
-          “Advanced support” encapsulates all specialized support requests. <br/>Includes:
+        <PopoverBody style={{ fontSize: '14px' }}>
+          “Advanced support” encapsulates all specialized support requests. <br />
+          Includes:
           <ul>
             <li>Consultation on how to implement a specific feature or module</li>
             <li>
@@ -467,13 +483,13 @@ const ServicePlans = () => {
         </PopoverBody>
       </Popover>
       <Popover target='additionalSupport' isOpen={showHint === 'additionalSupport'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Additional support beyond the included allocation is available on an hourly
           basis.
         </PopoverBody>
       </Popover>
       <Popover target='response' isOpen={showHint === 'response'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           Service level indicates time for a CRU team member to acknowledge your request
           and action it with the relevant team member. <br />
           Support requests from Premium tier projects will take priority for resolution,
@@ -482,7 +498,7 @@ const ServicePlans = () => {
         </PopoverBody>
       </Popover>
       <Popover target='discount' isOpen={showHint === 'discount'}>
-        <PopoverBody style={{fontSize: '14px'}}>
+        <PopoverBody style={{ fontSize: '14px' }}>
           For researchers with 3 or more REDCap projects, a 15% discount is applied to
           your total platform maintenance fees!
         </PopoverBody>

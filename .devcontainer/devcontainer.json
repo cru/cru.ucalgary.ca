@@ -19,7 +19,7 @@
         "IronGeek.vscode-env",
         "ecmel.vscode-html-css",
         "wix.vscode-import-cost",
-        "esbenp.prettier-vscode",
+        "esbenp.prettier-vscode"
       ]
     }
   }
