@@ -19,7 +19,7 @@ const AnnouncementsPage = () => {
           </h6>
           <ul>
             <li>
-              <Link to='/newsroom/dataxplor'>Launching: DataXplor!</Link>
+              <Link to='/services-and-pricing/dataxplor'>Launching: DataXplor!</Link>
             </li>
           </ul>
         </Group>
