@@ -82,7 +82,7 @@ const NavBar = ({ activePage, activeGroup }) => {
             pages={[
               { page: 'data-lifecycle-management', text: 'Data Lifecycle Management' },
               { page: 'machine-learning', text: 'Machine Learning' },
-              { page: 'policy-documents', text: 'Policy Documents' },
+              // { page: 'policy-documents', text: 'Policy Documents' },
               { page: 'project-validation-guide', text: 'Project Validation Guide' },
               { page: 'downloads', text: 'Downloads' },
             ]}
