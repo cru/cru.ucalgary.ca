@@ -204,7 +204,7 @@ const ServicePlans = () => {
               onMouseEnter={() => setShowHint('audit')}
               onMouseLeave={() => setShowHint('')}
             >
-              Guarunteed response times for audit support
+              Guaranteed response times for audit support
             </td>
             <td>
               <X />
