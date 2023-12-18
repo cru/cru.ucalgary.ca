@@ -84,7 +84,6 @@ const NavBar = ({ activePage, activeGroup }) => {
               { page: 'machine-learning', text: 'Machine Learning' },
               // { page: 'policy-documents', text: 'Policy Documents' },
               { page: 'project-validation-guide', text: 'Project Validation Guide' },
-              { page: 'downloads', text: 'Downloads' },
             ]}
             group='resources'
             selectedPage={[
@@ -92,7 +91,6 @@ const NavBar = ({ activePage, activeGroup }) => {
               'machine-learning',
               'policy-documents',
               'project-validation-guide',
-              'downloads',
             ].find((el) => el === activePage)}
             active={activeGroup === 'resources'}
           />

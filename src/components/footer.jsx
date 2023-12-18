@@ -35,9 +35,6 @@ const Footer = () => {
             <Link style={{ textDecoration: 'none' }} to='/resources/machine-learning'>
               <LinkStyle>Machine Learning</LinkStyle>
             </Link>
-            <Link style={{ textDecoration: 'none' }} to='/resources/downloads'>
-              <LinkStyle>Downloads</LinkStyle>
-            </Link>
             <Link
               style={{ textDecoration: 'none' }}
               to='/services-and-pricing/edc-services'
