@@ -15,6 +15,16 @@ const AnnouncementsPage = () => {
         <div style={{ height: 55 }} />
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
+            December 2023
+          </h6>
+          <ul>
+            <li>
+              <Link to='/newsroom/seasonal-closure-2023'>Seasonal Closure 2023</Link>
+            </li>
+          </ul>
+        </Group>
+        <Group>
+          <h6 className='text-muted' style={{ marginTop: 0 }}>
             July 2023
           </h6>
           <ul>
@@ -28,9 +38,6 @@ const AnnouncementsPage = () => {
             December 2022
           </h6>
           <ul>
-            <li>
-              <Link to='/newsroom/seasonal-closure-2022'>Seasonal Closure 2022</Link>
-            </li>
             <li>
               <Link to='/newsroom/redcap-decommission'>REDCap 6 & 7 Decommissioned</Link>
             </li>

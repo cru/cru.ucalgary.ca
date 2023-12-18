@@ -21,6 +21,12 @@ const Alert = () => {
   return (
     <AlertSlider>
       <Slider {...sliderSettings} style={{ width: '90%' }}>
+        <AlertHeader onClick={() => navigate('/newsroom/seasonal-closure-2023')}>
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <h6>University of Calgary 2023 Seasonal Closure:</h6>
+            <small className='text-muted'>Click here for more info</small>
+          </div>
+        </AlertHeader>
         <AlertHeader onClick={() => navigate('/services-and-pricing/dataxplor')}>
           <div style={{ textAlign: 'center', width: '100%' }}>
             <h6>
