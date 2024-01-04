@@ -15,19 +15,22 @@ const AnnouncementsPage = () => {
         <div style={{ height: 55 }} />
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
-            December 2023
+            2024
           </h6>
           <ul>
             <li>
-              <Link to='/newsroom/seasonal-closure-2023'>Seasonal Closure 2023</Link>
+              <Link to='/newsroom/redcap-upgrade'>Announcing Validated RC 13.7.29</Link>
             </li>
           </ul>
         </Group>
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
-            July 2023
+            2023
           </h6>
           <ul>
+            <li>
+              <Link to='/newsroom/seasonal-closure-2023'>Seasonal Closure 2023</Link>
+            </li>
             <li>
               <Link to='/services-and-pricing/dataxplor'>Launching: DataXplor!</Link>
             </li>
@@ -35,42 +38,21 @@ const AnnouncementsPage = () => {
         </Group>
         <Group>
           <h6 className='text-muted' style={{ marginTop: 0 }}>
-            December 2022
+            2022
           </h6>
           <ul>
             <li>
               <Link to='/newsroom/redcap-decommission'>REDCap 6 & 7 Decommissioned</Link>
             </li>
-          </ul>
-        </Group>
-        <Group>
-          <h6 className='text-muted' style={{ marginTop: 0 }}>
-            November 2022
-          </h6>
-          <ul>
             <li>
               <Link to='/newsroom/seed-grant'>
                 The Clinical Research Fund SEED Grant Competition is now open! Up to
                 $25,000 in credits available for CRU support services.
               </Link>
             </li>
-          </ul>
-        </Group>
-        <Group>
-          <h6 className='text-muted' style={{ marginTop: 0 }}>
-            March 2022
-          </h6>
-          <ul>
             <li>
               <Link to='/newsroom/redcap-validation'>REDCap Validation!</Link>
             </li>
-          </ul>
-        </Group>
-        <Group>
-          <h6 className='text-muted' style={{ marginTop: 0 }}>
-            January 2022
-          </h6>
-          <ul>
             <li>
               <Link to='/newsroom/covid-19'>COVID-19 Notice</Link>
             </li>

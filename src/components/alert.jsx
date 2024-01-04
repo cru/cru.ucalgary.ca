@@ -21,9 +21,9 @@ const Alert = () => {
   return (
     <AlertSlider>
       <Slider {...sliderSettings} style={{ width: '90%' }}>
-        <AlertHeader onClick={() => navigate('/newsroom/seasonal-closure-2023')}>
+        <AlertHeader onClick={() => navigate('/newsroom/redcap-upgrade')}>
           <div style={{ textAlign: 'center', width: '100%' }}>
-            <h6>University of Calgary 2023 Seasonal Closure:</h6>
+            <h6>Announcing Validated RC 13.7.29</h6>
             <small className='text-muted'>Click here for more info</small>
           </div>
         </AlertHeader>
@@ -33,12 +33,6 @@ const Alert = () => {
               Launching: DataXplor! Unlock the power of your REDCap data with our new data
               tools.
             </h6>
-            <small className='text-muted'>Click here for more info</small>
-          </div>
-        </AlertHeader>
-        <AlertHeader onClick={() => navigate('/newsroom/redcap-validation')}>
-          <div style={{ textAlign: 'center', width: '100%' }}>
-            <h6>CRU Hosts a Validated REDCap!</h6>
             <small className='text-muted'>Click here for more info</small>
           </div>
         </AlertHeader>
