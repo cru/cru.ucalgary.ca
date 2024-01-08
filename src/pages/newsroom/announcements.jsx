@@ -19,7 +19,8 @@ const AnnouncementsPage = () => {
           </h6>
           <ul>
             <li>
-              <Link to='/newsroom/redcap-upgrade'>Announcing Validated RC 13.7.29</Link>
+              {/* <Link to='/newsroom/redcap-upgrade'>Announcing Validated RC 13.7.29</Link> */}
+              <Link to='/newsroom/redcap-upgrade'>RC Upgrade Advisory</Link>
             </li>
           </ul>
         </Group>

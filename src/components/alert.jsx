@@ -23,10 +23,16 @@ const Alert = () => {
       <Slider {...sliderSettings} style={{ width: '90%' }}>
         <AlertHeader onClick={() => navigate('/newsroom/redcap-upgrade')}>
           <div style={{ textAlign: 'center', width: '100%' }}>
-            <h6>Announcing Validated RC 13.7.29</h6>
+            <h6>RC upgrade advisory</h6>
             <small className='text-muted'>Click here for more info</small>
           </div>
         </AlertHeader>
+        {/* <AlertHeader onClick={() => navigate('/newsroom/redcap-upgrade')}>
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <h6>Announcing Validated RC 13.7.29</h6>
+            <small className='text-muted'>Click here for more info</small>
+          </div>
+        </AlertHeader> */}
         <AlertHeader onClick={() => navigate('/services-and-pricing/dataxplor')}>
           <div style={{ textAlign: 'center', width: '100%' }}>
             <h6>
