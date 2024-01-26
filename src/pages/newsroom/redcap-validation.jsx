@@ -17,43 +17,77 @@ function RedcapValidationPage() {
       <Padding>
         <h1>Validated REDCap is now available at Cumming School of Medicine (CRU)!</h1>
         <div style={{ height: 55 }} />
-        <div className='alert alert-warning'>
-          Due to a critical security vulnerability notice received from Vanderbilt
-          University, the CRU has completed an emergency upgrade to REDCap 13.1.37 <br />
-          <br />
-          <b>REDCap 13.1.37 Validation Materials (Coming Soon)!</b>
-        </div>
-        <div style={{ height: 20 }} />
         <p>
           We are excited to announce that the CRU has completed the validation of its
-          REDCap 12.4.31 instance.{' '}
+          REDCap 13.7 instance.{' '}
           <b>
-            This REDCap instance meets Health Canada/ICH GCP requirements to run phase 3
-            and regulatory clinical trials.
+            This{' '}
+            <a
+              href='https://redcap.cru.ucalgary.ca/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='external-link'
+            >
+              REDCap
+            </a>{' '}
+            instance meets Health Canada/ICH GCP requirements to run phase 3 and
+            regulatory clinical trials.
           </b>
         </p>
         <p>
-          This marks the start of a largescale REDCap Revitalization initiative at the
-          CRU. We have listened to your feedback and recommendations and will be evolving
-          our REDCap services to better meet your needs. Examples include offering newer
-          REDCap versions with additional features, enhanced support services to help
-          study teams learn the REDCap tool, and a more transparent fee structure for
-          easier budgeting. We will share additional information in the coming months,
-          including a launch-date of our Revitalized REDCap services. For additional
-          information, please see the attached frequently asked questions.
+          The upgrade introduces exciting features and enhancements to elevate the user
+          experience:
         </p>
+        <ul>
+          <li>
+            New MyCap mobile app: Specifically designed to enhance participant engagement
+            and retention, especially in projects with regular participant contact, such
+            as daily or weekly surveys.
+          </li>
+          <li>
+            Multi-language support: Facilitates effortless language switching in
+            instruments, benefiting both data entry personnel and survey respondents.
+          </li>
+          <li>
+            New data export options: Seamless integration with Tableau for enhanced data
+            analysis.
+          </li>
+          <li>
+            New inline preview option for uploaded images and PDF files (instead of only
+            seeing the filename in an upload field and downloading to view it, the
+            uploaded image/file can be displayed in RC)
+          </li>
+          <li>
+            New embed option for files sent via text and email. These file/image
+            attachments are stored in the new "Miscellaneous File Attachments" folder in
+            the File Repository.
+          </li>
+        </ul>
         <p>
-          We are happy to assist you with your electronic data capture needs. Please feel
-          free to initiate a project request at our{' '}
+          We are delighted to support you with your electronic data capture requirements.
+          If you are considering starting a new REDCap project, please complete our{' '}
           <a
-            href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
+            href='https://redcap.cru.ucalgary.ca/surveys/?s=7L49EPE94D'
             target='_blank'
             rel='noopener noreferrer'
             className='external-link'
           >
-            service desk
+            intake survey
+          </a>
+          .
+        </p>
+        <p>
+          For additional information, please explore our{' '}
+          <a
+            href='https://researchcalgary.atlassian.net/wiki/spaces/CCTSTRED'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='external-link'
+          >
+            REDCap Resource Centre
           </a>{' '}
-          or by emailing us at{' '}
+          and check the attached frequently asked questions. For inquiries or concerns,
+          please reach out to us at{' '}
           <a href='mailto:cru@ucalgary.ca' className='external-link'>
             cru@ucalgary.ca
           </a>
@@ -160,14 +194,16 @@ function RedcapValidationPage() {
             <Collapse isOpen={showCollapse === '3'}>
               <ul>
                 <li>
-                  The CRU is developing a new pricing structure that will provide more
-                  support for all project types and greater flexibility based on project
-                  and researcher needs. Additional details to come as part of REDCap
-                  Revitalization.
+                  The CRU has developed a new (
+                  <Link to='https://cru.ucalgary.ca/services-and-pricing/edc-services/'>
+                    pricing and support structure
+                  </Link>
+                  ) that provides tailored support for all project types and greater
+                  flexibility based on project and researcher needs.
                   <ul>
                     <li>
-                      Exact project development costs will continue to be estimated from
-                      intake meetings and consultations.
+                      Exact development costs for CRU supported REDCap project builds will
+                      continue to be estimated from intake meetings and consultations.
                     </li>
                   </ul>
                 </li>
@@ -193,56 +229,6 @@ function RedcapValidationPage() {
                 alignItems: 'center',
                 marginTop: 0,
               }}
-              id='four'
-              onClick={() => setShowCollapse(showCollapse === '4' ? '' : '4')}
-            >
-              {showCollapse === '4' ? (
-                <ChevronDown size={24} className='mr-2' />
-              ) : (
-                <ChevronRight size={24} className='mr-2' />
-              )}
-              My project is currently on REDCap 7. Can I move it to REDCap 10?
-            </b>
-            <Collapse isOpen={showCollapse === '4'}>
-              <ul>
-                <li>
-                  The CRU is doing a phased rollout of REDCap 10. As part of REDCap
-                  Revitalization, we will be migrating all projects to REDCap 10.
-                </li>
-                <li>
-                  Migration to REDCap 10 is mandatory. We will be decommissioning the
-                  REDCap 6 and 7 instances.
-                </li>
-                <li>
-                  The phased approach enables us to migrate projects free of charge. Thank
-                  you in advance for your understanding.
-                </li>
-                <li>
-                  Projects will be emailed with migration details and timelines.
-                  Migrations are estimated to start in March 2022.
-                </li>
-                <li>
-                  Migration will not affect project data. Project data will remain secure
-                  and there is no data loss in the migration process.
-                </li>
-                <li>
-                  If you no longer use your REDCap project and would like to close it,
-                  please contact us at{' '}
-                  <a href='mailto:cru@ucalgary.ca' className='external-link'>
-                    cru@ucalgary.ca
-                  </a>
-                </li>
-              </ul>
-            </Collapse>
-          </div>
-          <div>
-            <b
-              style={{
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                marginTop: 0,
-              }}
               id='five'
               onClick={() => setShowCollapse(showCollapse === '5' ? '' : '5')}
             >
@@ -251,42 +237,24 @@ function RedcapValidationPage() {
               ) : (
                 <ChevronRight size={24} className='mr-2' />
               )}
-              Can I start a new project on REDCap 10?
+              How do I open a new project on the CRU’s validated REDCap platform?
             </b>
             <Collapse isOpen={showCollapse === '5'}>
               <ul>
                 <li>
-                  If you are running a clinical trial, yes – you can start a new project
-                  on REDCap 10. Please contact us at{' '}
-                  <a href='mailto:cru@ucalgary.ca' className='external-link'>
-                    cru@ucalgary.ca
-                  </a>{' '}
-                  or via our{' '}
+                  To request the creation of new REDCap user accounts, the creation of a
+                  new REDCap project, CRU support to build your REDCap project, and a
+                  variety of other tools offered by the CRU, please complete an{' '}
                   <a
-                    href='https://researchcalgary.atlassian.net/servicedesk/customer/portal/7'
+                    href='https://redcap.cru.ucalgary.ca/surveys/?s=7L49EPE94D'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='external-link'
                   >
-                    service desk
-                  </a>{' '}
-                  to initiate your project.
-                </li>
-                <li>
-                  If you are starting a new CRU-supported project (i.e., the CRU is
-                  supporting project build and configuration), it will be built in REDCap
-                  10.
-                </li>
-                <li>
-                  Otherwise, new projects will start in REDCap 7 until the REDCap 10
-                  instance is officially launched for all project types, at which point it
-                  will be migrated to REDCap 10.
-                  <ul>
-                    <li>
-                      If you believe you have unique needs that require REDCap 10 before
-                      the official launch, please contact us.
-                    </li>
-                  </ul>
+                    intake survey
+                  </a>
+                  . A member of our team will then address your request as soon as
+                  possible.
                 </li>
               </ul>
             </Collapse>
@@ -318,8 +286,9 @@ function RedcapValidationPage() {
                     <li>Validated REDCap instance to support regulatory trials</li>
                     <li>A single unified instance requiring only one log-in</li>
                     <li>
-                      A new support structure, including training courses and drop-in
-                      hours for quick consultations
+                      A new support structure, including updated and detailed
+                      documentation, REDCap training, and updated methods for accessing
+                      CRU support
                     </li>
                     <li>
                       A new pricing model that’s more transparent and inclusive to help
@@ -397,8 +366,8 @@ function RedcapValidationPage() {
             <Collapse isOpen={showCollapse === '8'}>
               <ul>
                 <li>
-                  We’ll be posting updates and announcements on our{' '}
-                  <Link to='newsroom/announcements'>website</Link>
+                  We’ll be posting updates and announcements on our website, as well as
+                  sending important CRU updates to all users via email.
                 </li>
                 <li>
                   Want to help us on our journey? We will be putting out a call for
