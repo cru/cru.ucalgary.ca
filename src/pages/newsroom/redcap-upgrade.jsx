@@ -9,12 +9,12 @@ const Covid19Page = () => {
     <Layout title='REDCap Upgrade' page='redcap-upgrade' group='newsroom'>
       <div style={{ height: 60 }} />
       <Padding>
-        <h1>Announcing Validated RC 13.7.29 </h1>
+        <h1>Announcing Validated RC 13.7 </h1>
         <div style={{ height: 55 }} />
         <p>
           We are excited to announce the successful upgrade and validation of REDCap to
-          version 13.7.29 by CRU. This instance of REDCap adheres to the requirements set
-          by Health Canada/ICH GCP for conducting phase 3 and regulatory clinical trials.
+          version 13.7 by CRU. This instance of REDCap adheres to the requirements set by
+          Health Canada/ICH GCP for conducting phase 3 and regulatory clinical trials.
         </p>
         <p>
           The upgrade introduces exciting features and enhancements to elevate the user
